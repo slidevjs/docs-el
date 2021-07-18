@@ -1,6 +1,6 @@
-# Use Theme
+# Χρησιμοποίηστε Θέμα
 
-Changing the theme in Slidev is surprisingly easy. All you need to do is to add the `theme:` field in your frontmatter.
+Η αλλαγή του θέματος στο Slidev είναι εκπληκτικά εύκολη. Το μόνο που χρειάζεται να κάνετε είναι να προσθέσετε το πεδίο `theme:` στο frontmatter σας.
 
 ```yaml
 ---
@@ -8,7 +8,7 @@ theme: seriph
 ---
 ```
 
-You can start the server, which will prompt you to install the theme automatically
+Μπορείτε να ξεκινήστε τον διακομιστή, ο οποίος αυτόματα θα σας ζητήσει να εγκαταστήσετε το θέμα
 
 <div class="language-md">
 <pre>
@@ -16,25 +16,25 @@ You can start the server, which will prompt you to install the theme automatical
 </pre>
 </div>
 
-or install the theme manually via
+ή εγκαταστήστε το θέμα χειροκίνητα μέσω
 
 ```bash
 $ npm install @slidev/theme-seriph
 ```
 
-And that's all, enjoy the new theme! For more details about the usage, you can refer to the theme's README.
+Και αυτό είναι όλο, απολαύστε το νέο θέμα! Για περισσότερες λεπτομέρειες σχετικά με τη χρήση, μπορείτε να ανατρέξετε στο README του θέματος.
 
-Want to share your theme? Learn about [how to write a theme](/themes/write-a-theme).
+Θέλετε να μοιραστείτε το θέμα σας? Μάθετε για το [πως να δημιουργήσετε ένα θέμα](/themes/write-a-theme).
 
-## Eject Theme
+## Εξαγωγή Θέματος
 
-If you want to get full control of the current theme, you can **eject** it to your local file system and modify it as you want. By running the following command
+Αν θέλετε να αποκτήσετε τον πλήρη έλεγχο του τρέχοντος θέματος, μπορείτε να **εξάγετε** στο τοπικό σας σύστημα αρχείων και να το τροποποιήσετε όπως θέλετε. Εκτελώντας την ακόλουθη εντολή
 
 ```bash
 $ slidev theme eject
 ```
 
-It will eject the theme you are using currently into `./theme`, and changed your frontmatter to 
+Θα εξαγάγει το θέμα που χρησιμοποιείτε αυτή τη στιγμή στο `./theme`, και αλλάξει το frontmatter σε 
 
 ```yaml
 ---
@@ -42,16 +42,16 @@ theme: ./theme
 ---
 ```
 
-This could also be helpful if you want to make a theme based on an existing one. If you do, remember to mention the original theme and the author :)
+Αυτό θα μπορούσε επίσης να είναι χρήσιμο αν θέλετε να κάνετε ένα θέμα βασισμένο σε ένα υπάρχον. Εάν το κάνετε, θυμηθείτε να αναφέρετε το αρχικό θέμα και τον συγγραφέα :)
 
-## Local Theme
+## Τοπικό Θέμα
 
-As you probably found out from the previous section, you can have a local theme for your project. By having a **relative path** in your theme field.
+Όπως πιθανώς ανακαλύψατε από την προηγούμενη ενότητα, μπορείτε να έχετε ένα τοπικό θέμα για το έργο σας. Έχοντας ένα **σχετικό path** στο πεδίο του θέματος σας.
 
 ```yaml
 ---
-theme: ./path/to/theme
+theme: ./path/για/το/θέμα
 ---
 ```
 
-Refer to [how to write a theme](/themes/write-a-theme) for more details.
+Ανατρέξτε στο [πως να δημιουργήσετε ένα θέμα](/themes/write-a-theme) για περισσότερες πληροφορίες.

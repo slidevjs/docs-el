@@ -1,24 +1,24 @@
-# Themes Gallery
+# Συλλογή Θεμάτων
 
-Browse awesome themes available for Slidev here.
+Περιηγηθείτε σε φοβερά θέματα διαθέσιμα για το Slidev εδώ.
 
-Read more about [how to use a theme](/themes/use), or [how to write your own](/themes/write-a-theme) and share with the community!
+Διαβάστε περισσότερα για το [πως να χρησιμοποίησετε ένα Θέμα](/themes/use), ή για το [πως να δημιουργήσετε το δικό σας](/themes/write-a-theme) και μοιραστείτε το με την κοινότητα!
 
-## Official Themes
+## Επίσημα Θέματα
 
 <ClientOnly>
   <ThemeGallery collection="official"/>
 </ClientOnly>
 
-## Community Themes
+## Θέματα της Κοινότητας
 
-Here are the curated themes made by the community.
+Εδώ είναι τα επιμελημένα θέματα από την κοινότητα.
 
-<!-- Edit in ./docs/.vitepress/themes.ts -->
+<!-- Επεξεργαστείτε στο ./docs/.vitepress/themes.ts -->
 <ClientOnly>
   <ThemeGallery collection="community"/>
 </ClientOnly>
 
-## More Themes
+## Περισσότερα θέματα
 
-Find all the [themes available on NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).
+Βρείτε όλα τα [θέματα διαθέσιμα στο NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).

@@ -73,8 +73,8 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### themes/
 
-- [ ] `gallery.md` - Theme gallery
-- [ ] `use.md` - How to use Slidev themes
+- [X] `gallery.md` - Theme gallery
+- [X] `use.md` - How to use Slidev themes
 - [ ] `write-a-theme.md` - Write your own theme
 
 ## Publishing your translations
