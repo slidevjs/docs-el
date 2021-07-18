@@ -1,8 +1,8 @@
 # [sli.dev](https://sli.dev)
 
-Documentation for [Slidev](https://github.com/slidevjs/slidev)
+Οδηγίες χρήσης για το [Slidev](https://github.com/slidevjs/slidev)
 
-## Translations
+## Μεταφράσεις
 
 | | Repo | Site | Maintainers |
 |---|---|---:|---|
@@ -14,7 +14,7 @@ Documentation for [Slidev](https://github.com/slidevjs/slidev)
 | Việt Nam | [docs-vn](https://github.com/slidevjs/docs-vn) | [vn.sli.dev](https://vn.sli.dev) | [@bongudth](https://github.com/bongudth) |
 | Deutsch | [docs-de](https://github.com/slidevjs/docs-de) | [de.sli.dev](https://de.sli.dev) | [@fabiankachlock](https://github.com/fabiankachlock) |
 
-## Start Server Locally
+## Ξεκινήστε τον διακομιστή τοπικά
 
 ```
 npm i -g pnpm
@@ -23,10 +23,10 @@ pnpm i
 pnpm run dev
 ```
 
-And then visit `http://localhost:3000`
+Και στη συνέχεια επισκεφθείτε `http://localhost:3000`
 
-Or install the [Vite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) to edit side-by-side.
+Ή εγκαταστήστε την [επέκταση Vite για το VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) για να επεξεργαστείτε δίπλα-δίπλα.
 
-## Help on Translating
+## Βοηθήστε στη Μετάφραση
 
-See [TRANSLATIONS.md](/TRANSLATIONS.md)
+Δείτε [TRANSLATIONS.md](/TRANSLATIONS.md)

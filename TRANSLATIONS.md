@@ -17,9 +17,9 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ## Getting started
 
-- [ ] Fork the main docs repo: [slidevjs/docs](https://github.com/slidevjs/docs)
-- [ ] Translate README.md, you can take one of the already translated repositories as an example.
-- [ ] Share your repo's link to the `#translations` channel telling people you are working on it and find collaborators. 
+- [X] Fork the main docs repo: [slidevjs/docs](https://github.com/slidevjs/docs)
+- [X] Translate README.md, you can take one of the already translated repositories as an example.
+- [X] Share your repo's link to the `#translations` channel telling people you are working on it and find collaborators. 
 
 ## Translating Markdown files
 
