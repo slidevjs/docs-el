@@ -1,14 +1,14 @@
-# Curated Covers
+# Επιμελημένα Εξώφυλλα
 
-We curated a few cover images to demonstrate our starter template.
+Επιμεληθήκαμε μερικά εξώφυλλα για να επιδείξουμε το αρχικό μας πρότυπο.
 
 ![](/screenshots/covers.png)
 
 ```yaml
 ---
-# random image from the curated collection
+# τυχαία εικόνα από την επιμελημένη συλλογή
 background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 ```
 
-If you enjoy any of them, check out our [Unsplash collection](https://unsplash.com/collections/94734566/slidev) and find out their authors.
+Αν σας αρέσει κάποιο από αυτά, δείτε την [συλλογή Unsplash](https://unsplash.com/collections/94734566/slidev) μας και μάθετε τους συγγραφείς τους.

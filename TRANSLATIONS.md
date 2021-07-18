@@ -69,7 +69,7 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### resources/
 
-- [ ] `covers.md` - Curated covers for Slidev
+- [X] `covers.md` - Curated covers for Slidev
 
 ### themes/
 
