@@ -28,10 +28,10 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### .vitepress/
 
-- [ ] `config.js` - Sitemap
-- [ ] `/theme/components/WorkingInProgress.vue` - WIP notice shown in mainpage
-- [ ] `/theme/components/demo/Demo.vue` - Animated demo shown in mainpage
-- [ ] `/theme/components/Environment.vue` - Describes the environment of a setting.
+- [X] `config.js` - Sitemap
+- [X] `/theme/components/WorkingInProgress.vue` - WIP notice shown in mainpage
+- [X] `/theme/components/demo/Demo.vue` - Animated demo shown in mainpage
+- [X] `/theme/components/Environment.vue` - Describes the environment of a setting.
 
 ### builtin/
 

@@ -2,62 +2,62 @@
 
 const Guide = [
   {
-    text: 'Why Slidev',
+    text: 'Γιατί Slidev',
     link: '/guide/why',
   },
   {
-    text: 'Getting Started',
+    text: 'Ξεκινώντας',
     link: '/guide/',
   },
   {
-    text: 'Installation',
+    text: 'Εγκατάσταση',
     link: '/guide/install',
   },
   {
-    text: 'Markdown Syntax',
+    text: 'Σύνταξη Markdown',
     link: '/guide/syntax',
   },
   {
-    text: 'Navigation',
+    text: 'Πλοήγηση',
     link: '/guide/navigation',
   },
   {
-    text: 'Animations',
+    text: 'Κινήσεις',
     link: '/guide/animations',
   },
   {
-    text: 'Exporting',
+    text: 'Εξαγωγή',
     link: '/guide/exporting',
   },
   {
-    text: 'Record Presentation',
+    text: 'Καταγραφή Παρουσίασης',
     link: '/guide/recording',
   },
   {
-    text: 'Presenter Mode',
+    text: 'Λειτουργία Παρουσιαστή',
     link: '/guide/presenter-mode',
   },
   {
-    text: 'Editor Integrations',
+    text: 'Ενσωματώσεις Συντάκτη',
     link: '/guide/editors',
   },
   {
-    text: 'FAQ',
+    text: 'Συχνές Ερωτήσεις',
     link: '/guide/faq',
   },
 ]
 
 const Theme = [
   {
-    text: 'Use Theme',
+    text: 'Χρησιμοποίηστε Θέμα',
     link: '/themes/use',
   },
   {
-    text: 'Theme Gallery',
+    text: 'Συλλογή Θεμάτων',
     link: '/themes/gallery',
   },
   {
-    text: 'Write a Theme',
+    text: 'Δημιουργήστε ένα Θέμα',
     link: '/themes/write-a-theme',
   },
 ]
@@ -94,47 +94,47 @@ const Translations = [
 
 const Customizations = [
   {
-    text: 'Customizations',
+    text: 'Προσαρμογές',
     link: '/custom/',
   },
   {
-    text: 'Directory Structure',
+    text: 'Δομή Φακέλου',
     link: '/custom/directory-structure',
   },
   {
-    text: 'Fonts',
+    text: 'Γραμματοσειρές',
     link: '/custom/fonts',
   },
   {
-    text: 'Highlighters',
+    text: 'Επισημαντήρες',
     link: '/custom/highlighters',
   },
   {
-    text: 'Configure Vue',
+    text: 'Ρυθμίστε Vue',
     link: '/custom/config-vue',
   },
   {
-    text: 'Configure Vite',
+    text: 'Ρυθμίστε Vite',
     link: '/custom/config-vite',
   },
   {
-    text: 'Configure Windi CSS',
+    text: 'Ρυθμίστε Windi CSS',
     link: '/custom/config-windicss',
   },
   {
-    text: 'Configure Monaco',
+    text: 'Ρυθμίστε Monaco',
     link: '/custom/config-monaco',
   },
   {
-    text: 'Configure KaTeX',
+    text: 'Ρυθμίστε KaTeX',
     link: '/custom/config-katex',
   },
   {
-    text: 'Configure Mermaid',
+    text: 'Ρυθμίστε Mermaid',
     link: '/custom/config-mermaid',
   },
   {
-    text: 'Configure Shortcuts',
+    text: 'Ρυθμίστε Συντομεύσεις',
     link: '/custom/config-shortcuts',
   },
   {
@@ -149,30 +149,30 @@ const Customizations = [
 
 const Resources = [
   {
-    text: 'Showcases',
+    text: 'Παρουσιάσεις',
     link: '/showcases',
   },
   {
-    text: 'Curated Covers',
+    text: 'Επιμελημένα Εξώφυλλα',
     link: '/resources/covers',
   },
 ]
 
 const slidebars = [
   {
-    text: 'Guide',
+    text: 'Οδηγός',
     children: Guide,
   },
   {
-    text: 'Themes',
+    text: 'Θέματα',
     children: Theme,
   },
   {
-    text: 'Customizations',
+    text: 'Προσαρμογές',
     children: Customizations,
   },
   {
-    text: 'Built-in',
+    text: 'Ενσωματωμένα',
     children: [
       {
         text: 'Components',
@@ -191,13 +191,13 @@ const slidebars = [
  */
 module.exports = {
   title: 'Slidev',
-  description: 'Presentation slides for developers',
+  description: 'Διαφάνειες παρουσίασης για προγραμματιστές',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'author', content: 'Anthony Fu' }],
     ['meta', { property: 'og:title', content: 'Slidev' }],
     ['meta', { property: 'og:image', content: 'https://sli.dev/og-image.png' }],
-    ['meta', { property: 'og:description', content: 'Presentation slides for developers' }],
+    ['meta', { property: 'og:description', content: 'Διαφάνειες παρουσίασης για προγραμματιστές' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:creator', content: '@slidevjs' }],
     ['meta', { name: 'twitter:image', content: 'https://sli.dev/og-image.png' }],
@@ -210,36 +210,36 @@ module.exports = {
     logo: '/logo.svg',
     docsBranch: 'main',
     editLinks: true,
-    editLinkText: 'Suggest changes to this page',
+    editLinkText: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
 
     algolia: {
       apiKey: '1a5c5a504139c58f428974c78c55291d',
       indexName: 'slidev',
       searchParameters: {
         // for translations maintainers: change the filter to your locale code (subdomain name)
-        facetFilters: ['language:en']
+        facetFilters: ['language:el']
       }
     },
 
     nav: [
       {
-        text: 'Guide',
+        text: 'Οδηγός',
         items: Guide,
       },
       {
-        text: 'Theme',
+        text: 'Θέμα',
         items: Theme,
       },
       {
-        text: 'Customize',
+        text: 'Προσαρμόστε',
         items: Customizations,
       },
       {
-        text: 'Resources',
+        text: 'Πηγές',
         items: Resources,
       },
       {
-        text: 'English',
+        text: 'Ελληνικά',
         items: Translations,
       },
     ],
