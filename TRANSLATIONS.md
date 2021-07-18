@@ -23,8 +23,8 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ## Translating Markdown files
 
-- [ ] `showcases.md` - A gallery showcase of Slidev presentations.
-- [ ] `index.md` - Mainpage content, note that some of it is buried under Vue components listed further below.
+- [X] `showcases.md` - A gallery showcase of Slidev presentations.
+- [X] `index.md` - Mainpage content, note that some of it is buried under Vue components listed further below.
 
 ### .vitepress/
 

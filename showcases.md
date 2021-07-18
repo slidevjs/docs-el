@@ -2,9 +2,9 @@
 sidebar: false
 ---
 
-# Showcases
+# Παρουσιάσεις
 
-Talks / Presentations using Slidev.
+Ομιλίες / Παρουσιάσεις που χρησιμοποιούν Slidev.
 
-<!-- Edit in ./docs/.vitepress/showcases.ts -->
+<!-- Επεξεργαστείτε στο ./docs/.vitepress/showcases.ts -->
 <ShowCases />
