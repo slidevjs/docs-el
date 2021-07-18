@@ -1,17 +1,17 @@
 # Components
 
-## Built-in Components
+## Ενσωματωμένα Components
 
-> The documentations of this section is still working in progress. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directly.
+> Οι οδηγίες χρήσης αυτής της ενότητας βρίσκονται ακόμη σε εξέλιξη. Πριν από αυτό, μπορείτε να ρίξετε απευθείας μία ματιά στον [πηγαίο κώδικα](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin).
 
-## Custom Components
+## Προσαρμοσμένα Components
 
-Create a directory `components/` under your project root, and simply put your custom Vue components under it, then you can use it with the same name in your markdown file!
+Δημιουργήστε ένα φάκελο `components/` στη ρίζα του έργου σας, και απλά βάλτε τα προσαρμοσμένα Vue components σας σε αυτόν, στη συνέχεια μπορείτε να το χρησιμοποιήσετε με το ίδιο όνομα στο αρχείο markdown σας!
 
-Read more in the [Customization](/custom/directory-structure#components) section.
+Διαβάστε περισσότερα στην ενότητα [Προσαρμογές](/custom/directory-structure#components).
 
-## Theme-provided Components
+## Components που παρέχονται από το θέμα
 
-Themes can provide components as well. Please read their documentations for what they have provided.
+Τα θέματα επίσης μπορούν να παρέχουν components. Παρακαλούμε διαβάστε τις οδηγίες χρήσης τους για ό,τι προσφέρουν.
 
-Check more in the [directory structure](/custom/directory-structure) section.
+Δείτε περισσότερα στην ενότητα [δομή φακέλου](/custom/directory-structure).

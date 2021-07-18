@@ -35,8 +35,8 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### builtin/
 
-- [ ] `components.md` - Use [Vue components](https://v3.vuejs.org/guide/component-basics.html) inside Slidev
-- [ ] `layouts.md` - Use Vue layouts inside Slidev
+- [X] `components.md` - Use [Vue components](https://v3.vuejs.org/guide/component-basics.html) inside Slidev
+- [X] `layouts.md` - Use Vue layouts inside Slidev
 
 ### custom/
 

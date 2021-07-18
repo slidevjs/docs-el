@@ -1,15 +1,15 @@
 # Layouts
 
-## Built-in Layouts
+## Ενσωματωμένα Layouts
 
-> The documentations of this section is still working in progress. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts) directly.
+> Οι οδηγίες χρήσης αυτής της ενότητας βρίσκονται ακόμη σε εξέλιξη. Πριν από αυτό, μπορείτε να ρίξετε απευθείας μία ματιά στον [πηγαίο κώδικα](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts).
 
-## Custom Layouts
+## Προσαρμοσμένα Layouts
 
-Create a directory `layouts/` under your project root, and simply put your custom Vue layout components under it.
+Δημιουργήστε ένα φάκελο `layouts/` στη ρίζα του έργου σας, και απλά βάλτε τα προσαρμοσμένα Vue layout components σας σε αυτόν.
 
-Read more in the [Customization](/custom/directory-structure#layouts) section.
+Διαβάστε περισσότερα στην ενότητα [Προσαρμογές](/custom/directory-structure#layouts).
 
-## Theme-provided Layouts
+## Layouts που παρέχονται από το θέμα
 
-Themes can provide layouts or override existing ones. Please read their documentation for what they have provided.
+Τα θέματα μπορούν να παρέχουν layouts ή να παρακάμψουν τα υπάρχοντα. Παρακαλούμε διαβάστε τις οδηγίες χρήσης τους για ό,τι προσφέρουν.
