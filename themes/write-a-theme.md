@@ -1,34 +1,34 @@
-# Write a Theme
+# Δημιουργήστε ένα Θέμα
 
-To get started, we recommend you use our generator for scaffolding your first theme
+Για να ξεκινήσετε, σας προτείνουμε να χρησιμοποιήσετε τη γεννήτριά μας για να δημιουργήσετε τον σκελετό του πρώτου σας θέματος
 
 ```bash
 $ npm init slidev-theme
 ```
 
-Then you can modify and play with it. You can also refer to the [official themes](/themes/gallery) as examples.
+Στη συνέχεια, μπορείτε να το τροποποιήσετε και να παίξετε μαζί του. Μπορείτε επίσης να ανατρέξετε στα [επίσημα θέματα](/themes/gallery) για παραδείγματα.
 
-## Capability
+## Ικανότητα
 
-A theme can contribute to the following points:
+Ένα θέμα μπορεί να συμβάλλει στα ακόλουθα σημεία:
 
 - Global styles
-- Provide default configurations (fonts, color schema, highlighters, etc.)
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-- Extend Windi CSS configurations
-- Configure tools like Monaco and Prism
+- Παροχή προεπιλεγμένων ρυθμίσεων (γραμματοσειρές, χρωματικό σχήμα, επισημαντήρες, κτλ.)
+- Παροχή προσαρμοσμένων layouts ή παράκαμψη των υπάρχον
+- Παροχή προσαρμοσμένων components ή παράκαμψη των υπάρχον
+- Επέκταση ρυθμίσεων του Windi CSS
+- Ρύθμιση εργαλείων όπως Monaco και Prism
 
-## Conventions
+## Συμβάσεις
 
-Themes are published to npm registry, and they should follow the conventions below:
+Τα θέματα δημοσιεύονται στο μητρώο npm, και θα πρέπει να ακολουθούν τις παρακάτω συμβάσεις:
 
-- Package name should start with `slidev-theme-`, for example: `slidev-theme-awesome`
-- Add `slidev-theme` and `slidev` in the `keywords` field of your `package.json`
+- Το όνομα του πακέτου πρέπει να αρχίζει με `slidev-theme-`, για παράδειγμα: `slidev-theme-awesome`
+- Προσθέστε `slidev-theme` και `slidev` στο πεδίο `keywords` του `package.json` σας
 
-## Setup
+## Στήσιμο
 
-To set up the testing playground for your theme, you can create `example.md` with the following frontmatter, to tell Slidev you are using the current directory as a theme.
+Για να στήσετε το πεδίο δοκιμών για το θέμα σας, μπορείτε να δημιουργήσετε `example.md` με το ακόλουθο frontmatter, για να πείτε στο Slidev ότι χρησιμοποιείτε τον τρέχοντα φάκελο ως θέμα.
 
 ```md
 ---
@@ -36,7 +36,7 @@ theme: ./
 ---
 ```
 
-Optionally, you can also add some scripts to your `packages.json`
+Προαιρετικά, μπορείτε επίσης να προσθέσετε κάποια scripts στο `packages.json` σας
 
 ```json
 // package.json
@@ -50,15 +50,15 @@ Optionally, you can also add some scripts to your `packages.json`
 }
 ```
 
-To publish your theme, simply run `npm publish` and you are good to go. There is no build process required (which means you can directly publish `.vue` and `.ts` files, Slidev is smart enough to understand them).
+Για να δημοσιεύσετε το θέμα σας, απλά εκτελέστε `npm publish` και είστε έτοιμοι. Δεν απαιτείται διαδικασία κατασκευής (που σημαίνει ότι μπορείτε να δημοσιεύσετε απευθείας αρχεία `.vue` και `.ts`, το Slidev είναι αρκετά έξυπνο για να τα καταλάβει).
 
-Theme contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/). 
+Τα σημεία συνεισφοράς του θέματος ακολουθούν τις ίδιες συμβάσεις με την τοπική ρυθμίση, παρακαλούμε ανατρέξτε [στις οδηγίες για τις συμβάσεις ονομασίας](/custom/). 
 
-## Default Configurations
+## Προεπιλεγμένες Ρυθμίσεις
 
-> Available since v0.19
+> Διαθέσιμο από v0.19
 
-A theme can provide default [configurations](/custom/#frontmatter-configures) via `package.json`.
+Ένα θέμα μπορεί να παρέχει προεπιλεγμένες [ρυθμίσεις](/custom/#ρυθμίσεις-frontmatter) μέσω του `package.json`.
 
 ```json
 // package.json
@@ -76,15 +76,15 @@ A theme can provide default [configurations](/custom/#frontmatter-configures) vi
 }
 ```
 
-Fonts will be auto imported from [Google Fonts](https://fonts.google.com/).
+Οι γραμματοσειρές θα εισαχθούν αυτόματα από το [Google Fonts](https://fonts.google.com/).
 
-Learn more about [fonts](/custom/fonts) and [frontmatter configurations](/custom/#frontmatter-configures).
+Μάθετε περισσότερα για τις [γραμματοσειρές](/custom/fonts) και τις [ρυθμίσεις frontmatter](/custom/#ρυθμίσεις-frontmatter).
 
-## Theme Metadata
+## Μεταδεδομένα θέματος
 
-### Color Schema
+### Χρωματικό Σχήμα
 
-By default, Slidev assumes themes support both light mode and dark mode. If you only want your theme be presented in a designed color schema, you will need to specify it explicitly in `package.json`
+Εξ ορισμού, το Slidev υποθέτει ότι τα θέματα υποστηρίζουν τόσο τη φωτεινή όσο και τη σκοτεινή λειτουργία. Αν θέλετε το θέμα σας να παρουσιάζεται μόνο σε ένα σχεδιασμένο χρωματικό σχήμα, θα πρέπει να το καθορίσετε ρητά στο `package.json`
 
 ```json
 // package.json
@@ -95,47 +95,47 @@ By default, Slidev assumes themes support both light mode and dark mode. If you 
     "slidev"
   ],
   "slidev": {
-    "colorSchema": "light" // or "dark" or "both"
+    "colorSchema": "light" // ή "dark" ή "both"
   }
 }
 ```
 
-To access the dark mode when creating your theme styles, you can wrap the dark-mode-specific css inside a `dark` class:
+Για να αποκτήσετε πρόσβαση στη σκοτεινή λειτουργία κατά τη δημιουργία των στυλ του θέματός σας, μπορείτε να τυλίξετε το css ειδικά για τη σκοτεινή λειτουργία μέσα σε ένα `dark` class:
 
 ```css
-/* general css here */
+/* γενικό css εδώ */
 
 html:not(.dark) {
-  /* light mode css here */
+  /* φωτεινή λειτουργία css εδώ */
 }
 
 html.dark {
-  /* dark mode css here */
+  /* σκοτεινή λειτουργία css εδώ */
 }
 ```
 
-Slidev toggles a `dark` class on the page's `html` element for switching color schema.
+Το Slidev εναλλάσσει ένα `dark` class στο στοιχείο `html` της σελίδας για εναλλαγή χρωματικού σχήματος.
 
-### Highlighter
+### Επισημαντήρας
 
-Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+Τα χρώματα επισήμανσης σύνταξης παρέχονται επίσης στο θέμα. Υποστηρίζουμε και [Prism](https://prismjs.com/) και [Shiki](https://github.com/shikijs/shiki). Για περισσότερες πληροφορίες ανατρέξτε [στις οδηγίες επισήμανσης σύνταξης](/custom/highlighters).
 
-You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
+Μπορείτε να υποστηρίξετε ένα από τα δύο ή και τα δύο. Ανατρέξτε στο προεπιλεγμένο θέμα για παραδείγματα ρυθμίσεων [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
 
-Also, remember to specify the supported highlighters in your `package.json`
+Επίσης, θυμηθείτε να καθορίσετε τους υποστηριζόμενους επισημαντήρες στο `package.json` σας
 
 ```json
 // package.json
 {
   "slidev": {
-    "highlighter": "shiki" // or "prism" or "all"
+    "highlighter": "shiki" // ή "prism" ή "all"
   }
 }
 ```
 
-### Slidev Version
+### Έκδοση Slidev
 
-If the theme is relying on a specific feature of Slidev that are newly introduced, you can set the minimal Slidev version required to have your theme working properly:
+Εάν το θέμα βασίζεται σε ένα συγκεκριμένο χαρακτηριστικό του Slidev που εισάχθηκε πρόσφατα, μπορείτε να ορίσετε την ελάχιστη έκδοση του Slidev που απαιτείται για να λειτουργεί σωστά το θέμα σας:
 
 ```json
 // package.json
@@ -146,4 +146,4 @@ If the theme is relying on a specific feature of Slidev that are newly introduce
 }
 ```
 
-If users are using older versions of Slidev, an error will be thrown.
+Εάν οι χρήστες χρησιμοποιούν παλαιότερες εκδόσεις του Slidev, θα εμφανιστεί ένα σφάλμα.
