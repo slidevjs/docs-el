@@ -1,8 +1,8 @@
-# Configure KaTeX
+# Ρυθμίστε KaTeX
 
 <Environment type="node" />
 
-Create `./setup/katex.ts` with the following content:
+Δημιουργήστε `./setup/katex.ts` με το εξής περιεχόμενο:
 
 ```ts
 import { defineKatexSetup } from '@slidev/types'
@@ -14,4 +14,4 @@ export default defineKatexSetup(() => {
 })
 ```
 
-With the setup, you can provide the custom setting for [KaTex Options](https://katex.org/docs/options.html). Refer to the type definitions and their documentation for more details.
+Με το setup, μπορείτε να δώσετε την προσαρμοσμένη ρύθμιση για τις [Επιλογές KaTex](https://katex.org/docs/options.html). Ανατρέξτε στους ορισμούς των τύπων και στις οδηγίες χρήσης τους για περισσότερες λεπτομέρειες.

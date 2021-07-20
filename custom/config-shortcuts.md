@@ -1,10 +1,10 @@
-# Configure Shortcuts
+# Ρυθμίστε Συντομεύσεις
 
-> Available since v0.20
+> Διαθέσιμο από v0.20
 
 <Environment type="client" />
 
-Create `./setup/shortcuts.ts` with the following content:
+Δημιουργήστε `./setup/shortcuts.ts` με το εξής περιεχόμενο:
 
 ```ts
 import { defineShortcutsSetup, NavOperations } from '@slidev/types'
@@ -25,8 +25,8 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-With the setup, you can provide the custom setting for shortcuts mentioned in [Navigation](/guide/navigation#navigation-bar). The above configuration binds next animation or slide to <kbd>enter</kbd> and previous animation or slide to <kbd>backspace</kbd>.
+Με το setup, μπορείτε να παρέχετε την προσαρμοσμένη ρύθμιση για τις συντομεύσεις που αναφέρεται στην [Πλοήγηση](/guide/navigation#μπάρα-πλοήγησης). Η παραπάνω ρύθμιση δεσμεύει την επόμενη κίνηση ή διαφάνεια στο <kbd>enter</kbd> και την προηγούμενη κίνηση ή διαφάνεια στο <kbd>backspace</kbd>.
 
-The configuration function receives an object with some navigation methods, and returns an array containing some shortcut configuration. Refer to the type definitions for more details.
+Η συνάρτηση ρύθμισης λαμβάνει ένα object με κάποιες μεθόδους πλοήγησης, και επιστρέφει ένα array που περιέχει κάποιες ρυθμίσεις συντόμευσης. Ανατρέξτε στους ορισμούς των τύπων για περισσότερες λεπτομέρειες.
 
-Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
+Ανατρέξτε στο [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) για περισσότερες λεπτομέρειες σχετικά με το key pressed event.

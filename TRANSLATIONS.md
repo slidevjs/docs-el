@@ -40,13 +40,13 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### custom/
 
-- [ ] `config-katex.md` - Configuring Katex
-- [ ] `config-mermaid.md` - Configuring Mermaid
-- [ ] `config-monaco.md` - Configuring Monaco
-- [ ] `config-shortcuts.md` - Configuring Shortcuts
-- [ ] `config-vite.md` - Configuring Vite
-- [ ] `config-vue.md` - Configuring Vue
-- [ ] `config-windicss.md`- Configuring Windicss
+- [X] `config-katex.md` - Configuring Katex
+- [X] `config-mermaid.md` - Configuring Mermaid
+- [X] `config-monaco.md` - Configuring Monaco
+- [X] `config-shortcuts.md` - Configuring Shortcuts
+- [X] `config-vite.md` - Configuring Vite
+- [X] `config-vue.md` - Configuring Vue
+- [X] `config-windicss.md`- Configuring Windicss
 - [ ] `directory-structure.md` - Configuring the directory structure
 - [ ] `fonts.md` - Configuring fonts
 - [ ] `global-layers.md` - Configuring the global layers

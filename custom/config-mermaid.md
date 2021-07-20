@@ -1,8 +1,8 @@
-# Configure Mermaid
+# Ρυθμίστε Mermaid
 
 <Environment type="client" />
 
-Create `./setup/mermaid.ts` with the following content:
+Δημιουργήστε `./setup/mermaid.ts` με το εξής περιεχόμενο:
 
 ```ts
 import { defineMermaidSetup } from '@slidev/types'
@@ -14,4 +14,4 @@ export default defineMermaidSetup(() => {
 })
 ```
 
-With the setup, you can provide a custom default setting for [Mermaid](https://mermaid-js.github.io/). Refer to the type definitions and its documentation for more details.
+Με το setup, μπορείτε να δώσετε την προσαρμοσμένη ρύθμιση για το [Mermaid](https://mermaid-js.github.io/). Ανατρέξτε στους ορισμούς των τύπων και στις οδηγίες χρήσης τους για περισσότερες λεπτομέρειες.

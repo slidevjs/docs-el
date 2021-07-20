@@ -1,12 +1,12 @@
-# Configure Vite
+# Ρυθμίστε Vite
 
 <Environment type="node" />
 
-Slidev is powered by [Vite](http://vitejs.dev/) under the hood. This means you can leverage Vite's great plugin system to customize your slides even further.
+Το Slidev λειτουργεί με τη βοήθεια του [Vite](http://vitejs.dev/) εσωτερικά. Αυτό σημαίνει ότι μπορείτε να αξιοποιήσετε εξαιρετικό σύστημα πρόσθετων του Vite για να προσαρμόσετε ακόμα περισσότερο τις διαφάνειές σας.
 
-The `vite.config.ts` will be respected if you have one.
+Το `vite.config.ts` θα γίνει σεβαστό, αν έχετε ένα.
 
-Slidev has the following plugins preconfigured:
+Το Slidev έχει προρυθμισμένα τα ακόλουθα πρόσθετα:
 
 - [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue)
 - [vite-plugin-md](https://github.com/antfu/vite-plugin-md)
@@ -15,13 +15,13 @@ Slidev has the following plugins preconfigured:
 - [vite-plugin-icons](https://github.com/antfu/vite-plugin-icons)
 - [vite-plugin-remote-assets](https://github.com/antfu/vite-plugin-remote-assets)
 
-Learn more about the [pre-configurations here](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
+Μάθετε περισσότερα για τις [προρυθμίσεις εδώ](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
 
-## Configure Internal Plugins
+## Ρύθμιση Εσωτερικών Πρόσθετων
 
-> Available since v0.21
+> Διαθέσιμο από v0.21
 
-To configure the built-in plugins list above, create `vite.config.ts` with the following content. Please note Slidev has some preconfigure options for those plugins, this usage will override some of them, which could potentially cause the app to break. Please treat this as **an advanced feature**, make sure you know what you are doing before moving on.
+Για να ρυθμίσετε τα ενσωματωμένα πρόσθετα της παραπάνω λίστας, δημιουργήστε `vite.config.ts` με το εξής περιεχόμενο. Παρακαλώ σημειώστε ότι το Slidev έχει κάποιες προκαθορισμένες επιλογές για αυτά τα πρόσθετα, αυτή η χρήση θα παρακάμψει κάποιες από αυτές, το οποίο θα μπορούσε ενδεχομένως να προκαλέσει σφάλμα στην εφαρμογή. Παρακαλούμε αντιμετωπίστε το ως **μια λειτουργία για προχωρημένους**, βεβαιωθείτε ότι γνωρίζετε τι κάνετε πριν προχωρήσετε.
 
 ```ts
 import { defineConfig } from 'vite'
@@ -29,18 +29,18 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   slidev: {
     vue: {
-      /* vue options */
+      /* ρυθμίσεις vue */
     },
     markdown: {
-      /* markdown-it options */
+      /* ρυθμίσεις markdown-it */
       markdownItSetup(md) {
-        /* custom markdown-it plugins */
+        /* προσαρμοσμένα πρόσθετα markdown-it */
         md.use(/* ... */)
       },
     },
-    /* options for other plugins */
+    /* ρυθμίσεις για άλλα πρόσθετα */
   },
 })
 ```
 
-See the [type declarations](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) for more options.
+Δείτε τους [ορισμούς των τύπων](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) για περισσότερες επιλογές.

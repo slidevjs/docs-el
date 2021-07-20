@@ -1,22 +1,22 @@
-# Configure Monaco
+# Ρυθμίστε Monaco
 
 <Environment type="client" />
 
-Create `./setup/monaco.ts` with the following content:
+Δημιουργήστε `./setup/monaco.ts` με το εξής περιεχόμενο:
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
 
 export default defineMonacoSetup(async (monaco) => {
-  // use `monaco` to configure
+  // χρησιμοποιήστε `monaco` για να το ρυθμίσετε
 })
 ```
 
-Learn more about [configuring Monaco](https://github.com/Microsoft/monaco-editor).
+Μάθετε περισσότερα για την [ρύθμιση του Monaco](https://github.com/Microsoft/monaco-editor).
 
-## Usage
+## Χρήση
 
-To use Monaco in your slides, simply append `{monaco}` to your code snippets:
+Για να χρησιμοποιήσετε το Monaco στις διαφάνειές σας, απλά προσθέστε `{monaco}` στα αποσπάσματα του κώδικά σας:
 
 ~~~js
 //```js
@@ -29,7 +29,7 @@ plusOne.value++ // error
 //```
 ~~~
 
-To
+Σε
 
 ~~~js
 //```js {monaco}
@@ -42,19 +42,19 @@ plusOne.value++ // error
 //```
 ~~~
 
-## Exporting
+## Εξαγωγή
 
-By default, Monaco will ONLY work on `dev` mode. If you would like to have it available in the exported SPA, configure it in your frontmatter:
+Από προεπιλογή, το Monaco θα λειτουργήσει ΜΟΝΟ σε λειτουργία `dev`. Αν θέλετε να το έχετε διαθέσιμο στο εξαγόμενο SPA, ρυθμίστε το στο frontmatter σας:
 
 ```yaml
 ---
-monaco: true # default "dev"
+monaco: true # προεπιλεγμένο "dev"
 ---
 ```
 
-## Types Auto Installing
+## Αυτόματη Εγκατάσταση Τύπων
 
-When use TypeScript with Monaco, types for dependencies will be installed to the client-side automatically.
+Όταν χρησιμοποιείτε TypeScript με το Monaco, οι τύποι εξαρτήσεων θα εγκατασταθούν αυτόματα στο client-side.
 
 ~~~ts
 //```ts {monaco}
@@ -65,11 +65,11 @@ const counter = ref(0)
 //```
 ~~~
 
-In the example above, make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest to get the types working for the editor automatically!
+Στο παραπάνω παράδειγμα, βεβαιωθείτε ότι τα `vue` και `@vueuse/core` είναι εγκατεστημένα τοπικά ως dependencies / devDependencies, το Slidev θα αναλάβει τα υπόλοιπα, ώστε οι τύποι να λειτουργούν αυτόματα για τον συντάκτη!
 
-## Configure Themes
+## Ρύθμιση Θεμάτων
 
-The theme is controlled by Slidev based on the light/dark theme. If you want to customize it, you can pass the theme id to the setup function:
+Το θέμα ελέγχεται από το Slidev με βάση το φωτεινό/σκοτεινό θέμα. Αν θέλετε να το προσαρμόσετε, μπορείτε να περάσετε το id του θέματος στη συνάρτηση setup:
 
 ```ts
 // ./setup/monaco.ts
@@ -85,12 +85,12 @@ export default defineMonacoSetup(() => {
 })
 ```
 
-If you want to load custom themes:
+Αν θέλετε να φορτώσετε προσαρμοσμένα θέματα:
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
 
-// change to your themes
+// αλλάξετε στα θέματά σας
 import dark from 'theme-vitesse/themes/vitesse-dark.json'
 import light from 'theme-vitesse/themes/vitesse-light.json'
 
@@ -107,4 +107,4 @@ export default defineMonacoSetup((monaco) => {
 })
 ```
 
-> If you are creating a theme for Slidev, use dynamic `import()` inside the setup function to get better tree-shaking and code-splitting results.
+> Εάν δημιουργείτε ένα θέμα για το Slidev, χρησιμοποιήστε δυναμικά `import()` μέσα στη συνάρτηση setup για να έχετε καλύτερα αποτελέσματα σε tree-shaking και code-splitting.
