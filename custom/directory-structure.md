@@ -1,30 +1,30 @@
-# Directory Structure
+# Δομή Φακέλου
 
-Slidev employs some directory structure conventions to minimize the configuration surface and to make the functionality extensions flexible and intuitive.
+Το Slidev χρησιμοποιεί ορισμένες συμβάσεις δομής φακέλου για την ελαχιστοποίηση της επιφάνειας ρύθμισης και για να γίνουν οι επεκτάσεις λειτουργικότητας ευέλικτες και διαισθητικές.
 
-The basic structure is as follows:
+Η βασική δομή έχει ως εξής:
 
 ```bash
 your-slidev/
-  ├── components/       # custom components
-  ├── layouts/          # custom layouts
-  ├── public/           # static assets
-  ├── setup/            # custom setup / hooks
-  ├── styles/           # custom style
-  ├── index.html        # injections to index.html
-  ├── slides.md         # the main slides entry
-  └── vite.config.ts   # extending vite config
+  ├── components/       # προσαρμοσμένα components
+  ├── layouts/          # προσαρμοσμένα layouts
+  ├── public/           # στατικά assets
+  ├── setup/            # προσαρμοσμένα setup / hooks
+  ├── styles/           # προσαρμοσμένα style
+  ├── index.html        # injections στο index.html
+  ├── slides.md         # η κύρια είσοδος διαφανειών
+  └── vite.config.ts   # επεκτείνοντας το vite config
 ```
 
-All of them are optional.
+Όλα είναι προαιρετικά.
 
 ## Components
 
-Conventions: `./components/*.{vue,js,ts,jsx,tsx,md}`
+Συμβάσεις: `./components/*.{vue,js,ts,jsx,tsx,md}`
 
-Components inside this directory can be directly used in the slides Markdown with the same component name as the file name.
+Τα components μέσα σε αυτόν το φάκελο μπορούν να χρησιμοποιηθούν άμεσα στις διαφάνειες Markdown με το ίδιο όνομα component όπως το όνομα του αρχείου.
 
-For example:
+Για παράδειγμα:
 
 ```bash
 your-slidev/
@@ -37,24 +37,24 @@ your-slidev/
 ```md
 <!-- slides.md -->
 
-# My Slide
+# Η διαφάνεια μου
 
 <MyComponent :count="4"/>
 
-<!-- both namings work -->
+<!-- και οι δύο ονομασίες λειτουργούν -->
 
 <hello-world foo="bar">
   Slot
 </hello-world>
 ```
 
-This feature is powered by [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), learn more there.
+Αυτή η δυνατότητα λειτουργεί με τη βοήθεια του [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), μάθετε περισσότερα εκεί.
 
-Slidev also provides some [built-in components](/builtin/components) for you to use.
+Το Slidev παρέχει επίσης κάποια [ενσωματωμένα components](/builtin/components) για να χρησιμοποιήσετε.
 
 ## Layouts
 
-Conventions: `./layouts/*.{vue,js,ts,jsx,tsx}`
+Συμβάσεις: `./layouts/*.{vue,js,ts,jsx,tsx}`
 
 ```
 your-slidev/
@@ -64,7 +64,7 @@ your-slidev/
       └── my-cool-theme.vue
 ```
 
-You can use any filename for your layout. You then reference your layout in you YAML header using the filename.
+Μπορείτε να χρησιμοποιήσετε οποιοδήποτε όνομα αρχείου για το layout σας. Στη συνέχεια, αναφέρετε το layout σας στην επικεφαλίδα YAML σας χρησιμοποιώντας το όνομα αρχείου.
 
 ```yaml
 ---
@@ -72,9 +72,9 @@ layout: my-cool-theme
 ---
 ```
 
-If the layout you provide has the same name as a built-in layout or a theme layout, your custom layout will take precedence over the built-in/theme layout. The priority order is `local > theme > built-in`.
+Αν το layout που παρέχετε έχει το ίδιο όνομα με ένα ενσωματωμένο layout ή ένα layout θέματος, το προσαρμοσμένο layout σας θα έχει προτεραιότητα έναντι του ενσωματωμένου/θεματικού layout. Η σειρά προτεραιότητας είναι `τοπικό > θεματικό > ενσωματωμένο`.
 
-In the layout component, use `<slot/>` for the slide content. For example:
+Στο layout component, χρησιμοποιήστε `<slot/>` για το περιεχόμενο της διαφάνειας. Για παράδειγμα:
 
 ```html
 <!-- default.vue -->
@@ -87,15 +87,15 @@ In the layout component, use `<slot/>` for the slide content. For example:
 
 ## Public
 
-Conventions: `./public/*`
+Συμβάσεις: `./public/*`
 
-Assets in this directory will be served at root path `/` during dev, and copied to the root of the dist directory as-is. Read more about [Vite's `public` directory](https://vitejs.dev/guide/assets.html#the-public-directory).
+Τα assets σε αυτό το φάκελο θα σερβίρεται στη διαδρομή της ρίζας `/` κατά dev, και αντιγράφεται στη ρίζα του φακέλου dist ως έχει. Διαβάστε περισσότερα για τον [φάκελο `public` του Vite](https://vitejs.dev/guide/assets.html#the-public-directory).
 
 ## Style
 
-Conventions: `./style.css` | `./styles/index.{css,js,ts}`
+Συμβάσεις: `./style.css` | `./styles/index.{css,js,ts}`
 
-Files following this convention will be injected to the App root. If you need to import multiple css entries, you can create the following structure and managing the import order yourself.
+Τα αρχεία που ακολουθούν αυτή τη σύμβαση θα γίνονται injected στη ρίζα της εφαρμογής. Εάν πρέπει να εισαγάγετε πολλαπλές καταχωρήσεις css, μπορείτε να δημιουργήσετε την ακόλουθη δομή και να διαχειριστείτε μόνοι σας τη σειρά εισαγωγής.
 
 ```bash
 your-slidev/
@@ -115,7 +115,7 @@ import './code.css'
 import './layouts.css'
 ```
 
-Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+Τα styles θα επεξεργαστούν από το [Windi CSS](http://windicss.org/) και το [PostCSS](https://postcss.org/), ώστε να μπορείτε να χρησιμοποιήσετε css nesting και [at-directives](https://windicss.org/features/directives.html) κατευθείαν. Για παράδειγμα:
 
 ```less
 .slidev-layout {
@@ -135,15 +135,15 @@ Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](http
 }
 ```
 
-[Learn more about the syntax](https://windicss.org/features/directives.html).
+[Μάθετε περισσότερα για τη σύνταξη](https://windicss.org/features/directives.html).
 
 ## `index.html`
 
-Conventions: `index.html`
+Συμβάσεις: `index.html`
 
-The `index.html` provides the ability to inject meta tags and/or scripts to the main `index.html`
+Το `index.html` παρέχει τη δυνατότητα να κάνετε inject meta tags και/ή scripts στο κύριο `index.html`
 
-For example, for the following custom `index.html`:
+Για παράδειγμα, για το ακόλουθο προσαρμοσμένο `index.html`:
 
 ```html
 <!-- ./index.html -->
@@ -157,7 +157,7 @@ For example, for the following custom `index.html`:
 </body>
 ```
 
-The final hosted `index.html` will be:
+Το τελικό `index.html` που θα φιλοξενηθεί θα είναι:
 
 ```html
 <!DOCTYPE html>
@@ -181,7 +181,7 @@ The final hosted `index.html` will be:
 
 ## Global Layers
 
-Conventions: `global-top.vue` | `global-bottom.vue`
+Συμβάσεις: `global-top.vue` | `global-bottom.vue`
 
-Learn more: [Global Layers](/custom/global-layers)
+Μάθετε περισσότερα: [Global Layers](/custom/global-layers)
 

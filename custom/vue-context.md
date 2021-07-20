@@ -1,73 +1,73 @@
 # Vue Global Context
 
-Slidev injected a [global Vue context](https://v3.vuejs.org/api/application-config.html#globalproperties) `$slidev` for advanced conditions or navigation controls.
+Το Slidev έκανε inject ένα [global Vue context](https://v3.vuejs.org/api/application-config.html#globalproperties) `$slidev` για προηγμένες συνθήκες ή χειριστήρια πλοήγησης.
 
-## Usage
+## Χρήση
 
-You can access it anywhere in your markdown and Vue template, with the ["Mustache" syntax](https://v3.vuejs.org/guide/template-syntax.html#interpolations).
+Μπορείτε να έχετε πρόσβαση σε αυτό οπουδήποτε στα markdown και Vue template, με την [σύνταξη "Mustache"](https://v3.vuejs.org/guide/template-syntax.html#interpolations).
 
 ```md
 <!-- slides.md -->
 
-# Page 1
+# Σελίδα 1
 
-Current page is: {{ $slidev.nav.currentPage }}
+Η τρέχουσα σελίδα είναι: {{ $slidev.nav.currentPage }}
 ```
 
 ```html
 <!-- Foo.vue -->
 
 <template>
-  <div>Title: {{ $slidev.configs.title }}</div>
-  <button @click="$slidev.nav.next">Next Page</button>
+  <div>Τίτλος: {{ $slidev.configs.title }}</div>
+  <button @click="$slidev.nav.next">Επόμενη Σελίδα</button>
 </template>
 ```
 
-## Properties
+## Ιδιότητες
 
 ### `$slidev.nav`
 
-A reactive object holding the properties and controls of the slides navigation. For examples:
+Ένα αντιδραστικό object που περιέχει τις ιδιότητες και τα χειριστήρια της πλοήγησης των διαφανειών. Για παραδείγματα:
 
 ```js
-$slidev.nav.next() // go next step
+$slidev.nav.next() // πήγαινετε στο επόμενο βήμα
 
-$slidev.nav.nextSlide() // go next slide (skip v-clicks)
+$slidev.nav.nextSlide() // πήγαινετε στην επόμενη διαφάνεια (παραλείψετε ν-clicks)
 
-$slidev.nav.go(10) // go slide #10
+$slidev.nav.go(10) // πήγαινετε στην διαφάνεια #10
 ```
 
 ```js
-$slidev.nav.currentPage // current slide number
+$slidev.nav.currentPage // αριθμός τρέχουσας διαφάνειας
 
-$slidev.nav.currentLayout // current layout id
+$slidev.nav.currentLayout // id τρέχοντος layout
 
-$slidev.nav.clicks // current clicks count
+$slidev.nav.clicks // σύνολο τρεχόντων clicks
 ```
 
-For more properties available, refer to the [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts) exports.
+Για περισσότερες διαθέσιμες ιδιότητες, ανατρέξτε στις εξαγωγές του [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts).
 
 ### `$slidev.configs`
 
-A reactive object holding the parsed [configurations in the first frontmatter](/custom/#frontmatter-configures) of your `slides.md`. For example
+Ένα αντιδραστικό object κρατάει τις αναλυμένες [ρυθμίσεις στο πρώτο frontmatter](/custom/#ρυθμίσεις-frontmatter) του `slides.md` σας. Για παράδειγμα
 
 ```yaml
 ---
-title: My First Slidev!
+title: Το πρώτο μου Slidev!
 ---
 ```
 
 ```
-{{ $slidev.configs.title }} // 'My First Slidev!'
+{{ $slidev.configs.title }} // 'Το πρώτο μου Slidev!'
 ```
 
 ### `$slidev.themeConfigs`
 
-A reactive object holding the parsed theme configurations.
+Ένα αντιδραστικό object κρατάει τις αναλυμένες ρυθμίσεις του θέματος.
 
 ```yaml
 ---
-title: My First Slidev!
+title: Το πρώτο μου Slidev!
 themeConfig:
   primary: #213435
 ---

@@ -1,56 +1,56 @@
 # Global Layers
 
-> Available since v0.17
+> Διαθέσιμο από v0.17
 
-Global layers allow you to have custom components that **persistent** across slides. This could be useful for having footers, cross-slides animations, global effects, etc.
+Τα global layers σας επιτρέπουν να έχετε προσαρμοσμένα στοιχεία που είναι **μόνιμα** σε όλες τις διαφάνειες. Αυτό θα μπορούσε να είναι χρήσιμο για footers, κινήσεις διαφανειών, global effects, κτλ.
 
-Slidev provides two layers for this usage, create `global-top.vue` or `global-bottom.vue` under your project root and it will pick up automatically.
+Το Slidev παρέχει δύο layers για αυτή τη χρήση, δημιουργήστε `global-top.vue` ή `global-bottom.vue` στη ρίζα του έργου σας και θα το αναλάβει αυτόματα.
 
-Layers relationship:
+Σχέση layers:
 
 - Global Top (`global-top.vue`)
-- Slides
+- Διαφάνειες
 - Global Bottom (`global-bottom.vue`)
 
-## Example
+## Παράδειγμα
 
 ```html
 <!-- global-top.vue -->
 <template>
-  <footer class="absolute bottom-0 left-0 right-0 p-2">Your Name</footer>
+  <footer class="absolute bottom-0 left-0 right-0 p-2">Το ονομά σας</footer>
 </template>
 ```
 
-The text `Your Name` will appear to all your slides.
+Το κείμενο `Το ονομά σας` θα εμφανιστεί σε όλες τις διαφάνειές σας.
 
-To enabled it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+Για να το ενεργοποιήσετε υπό όρους, μπορείτε να το εφαρμόσετε με το [Vue Global Context](/custom/vue-context).
 
 ```html
-<!-- hide the footer from Page 4 -->
+<!-- κρύψτε το footer στην Σελίδα 4 -->
 <template>
   <footer
     v-if="$slidev.nav.currentPage !== 4"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Το ονομά σας
   </footer>
 </template>
 ```
 
 ```html
-<!-- hide the footer from "cover" layout -->
+<!-- κρύψτε το footer στο "cover" layout -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Το ονομά σας
   </footer>
 </template>
 ```
 
 ```html
-<!-- an example footer for pages -->
+<!-- ένα παράδειγμα footer για τις σελίδες -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"

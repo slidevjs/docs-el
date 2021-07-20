@@ -1,61 +1,61 @@
-# Fonts
+# Γραμματοσειρές
 
-> Available since v0.20
+> Διαθέσιμο από v0.20
 
-While you can use HTML and CSS to custom the fonts and style for your slides as you want, Slidev also provides a convenient way to use them effortlessly.
+Ενώ μπορείτε να χρησιμοποιήσετε HTML και CSS για να προσαρμόσετε τις γραμματοσειρές και το style για τις διαφάνειές σας όπως θέλετε, το Slidev παρέχει επίσης έναν βολικό τρόπο για την αβίαστη χρήση τους.
 
-In your fontmatter, configure as following
+Στο fontmatter σας, ρυθμίστε τα εξής
 
 ```yaml
 ---
 fonts:
-  # basically the text
+  # ουσιαστικά το κείμενο
   sans: 'Robot'
-  # use with `font-serif` css class from windicss
+  # χρήση με το `font-serif` css class από το windicss
   serif: 'Robot Slab'
-  # for code blocks, inline code, etc.
+  # για μπλοκ κώδικα, γραμμικό κώδικα κτλ.
   mono: 'Fira Code'
 ---
 ```
 
-And that's all.
+Και αυτό είναι όλο.
 
-Fonts will be **imported automatically from [Google Fonts](https://fonts.google.com/)**. That means you can use any fonts available on Google Fonts directly.
+Οι γραμματοσειρές θα **εισαχθούν αυτόματα από το [Google Fonts](https://fonts.google.com/)**. Αυτό σημαίνει ότι μπορείτε να χρησιμοποιήσετε απευθείας οποιεσδήποτε γραμματοσειρές είναι διαθέσιμες στο Google Fonts.
 
-## Local Fonts
+## Τοπικές Γραμματοσειρές
 
-By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing. 
+Εξ ορισμού, το Slidev υποθέτει ότι όλες οι γραμματοσειρές που καθορίζονται μέσω των ρυθμίσεων `fonts` προέρχονται από το Google Fonts. Αν θέλετε να χρησιμοποιήσετε τοπικές γραμματοσειρές, καθορίστε το `fonts.local` για να εξαιρεθείτε από την αυτόματη εισαγωγή. 
 
 ```yaml
 ---
 fonts:
-  # like font-family in css, you can use `,` to separate multiple fonts for fallback
+  # όπως το font-family σε css, μπορείτε να χρησιμοποιήσετε `,` για να διαχωρίσετε πολλαπλές γραμματοσειρές ως εφεδρικές
   sans: 'Helvetica Neue,Robot'
-  # mark 'Helvetica Neue' as local font
+  # σημαδέψτε 'Helvetica Neue' ως τοπική γραμματοσειρά
   local: 'Helvetica Neue'
 ---
 ```
 
-## Weights & Italic
+## Βάρη & Πλάγια
 
-By default, Slidev imports three weights `200`,`400`,`600` for each font. You can configure them by:
+Εξ ορισμού, το Slidev εισάγει τρία βάρη `200`,`400`,`600` για κάθε γραμματοσειρά. Μπορείτε να τις ρυθμίσετε με:
 
 ```yaml
 ---
 fonts:
   sans: 'Robot'
-  # default
+  # προεπιλογή
   weights: '200,400,600'
-  # import italic fonts, default `false`
+  # εισαγωγή πλάγιων γραμματοσειρών, προεπιλογή `false`
   italic: false
 ---
 ```
 
-This configuration applies to all web fonts. For more fine-grained controls of each font's weights, you will need to manually import them with [HTML](/custom/directory-structure.html#index-html) and CSS.
+Αυτή η ρύθμιση ισχύει για όλες τις γραμματοσειρές ιστού. Για πιο λεπτομερή έλεγχο των βαρών κάθε γραμματοσειράς, θα πρέπει να τα εισαγάγετε χειροκίνητα με [HTML](/custom/directory-structure.html#index-html) και CSS.
 
-## Fallback Fonts
+## Εφεδρικές Γραμματοσειρές
 
-For most of the scenarios, you only need to specify the "special font" and Slidev will append the fallback fonts for you, for example:
+Στα περισσότερα σενάρια, χρειάζεται να καθορίσετε μόνο την "ειδική γραμματοσειρά" και το Slidev θα προσθέσει τις εφεδρικές γραμματοσειρές για εσάς, για παράδειγμα:
 
 ```yaml
 ---
@@ -66,7 +66,7 @@ fonts:
 ---
 ```
 
-will result in 
+θα έχει ως αποτέλεσμα 
 
 ```css
 .font-sans {
@@ -80,7 +80,7 @@ will result in
 }
 ```
 
-If you want to disable the fallback fonts, configure as following
+Εάν θέλετε να απενεργοποιήσετε τις εφεδρικές γραμματοσειρές, ρυθμίστε ως εξής
 
 ```yaml
 ---
@@ -90,12 +90,12 @@ fonts:
 ---
 ```
 
-## Providers
+## Πάροχοι
 
-- Options: `google` | `none`
-- Default: `google`
+- Επιλογές: `google` | `none`
+- Προεπιλογή: `google`
 
-Currently, only Google Fonts is supported, we are planned to add more providers in the future. Specify to `none` will disable the auto-importing feature entirely and treat all the fonts local.
+Επί του παρόντος, υποστηρίζεται μόνο το Google Fonts, σχεδιάζουμε να προσθέσουμε περισσότερους παρόχους στο μέλλον. Αν ορίσετε την τιμή `none`, θα απενεργοποιήσετε εντελώς τη δυνατότητα αυτόματης εισαγωγής και θα αντιμετωπίσετε όλες τις γραμματοσειρές ως τοπικές.
 
 ```yaml
 ---

@@ -47,12 +47,12 @@ In case it's already been translated but you're wondering how to maintain it, sk
 - [X] `config-vite.md` - Configuring Vite
 - [X] `config-vue.md` - Configuring Vue
 - [X] `config-windicss.md`- Configuring Windicss
-- [ ] `directory-structure.md` - Configuring the directory structure
-- [ ] `fonts.md` - Configuring fonts
-- [ ] `global-layers.md` - Configuring the global layers
-- [ ] `highlighters.md` - Configuring code highlighters
-- [ ] `index.md`- Customizations index page
-- [ ] `vue-context.md` - The Vue global context
+- [X] `directory-structure.md` - Configuring the directory structure
+- [X] `fonts.md` - Configuring fonts
+- [X] `global-layers.md` - Configuring the global layers
+- [X] `highlighters.md` - Configuring code highlighters
+- [X] `index.md`- Customizations index page
+- [X] `vue-context.md` - The Vue global context
 
 ### guide/
 
