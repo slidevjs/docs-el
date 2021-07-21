@@ -1,18 +1,18 @@
-# Editor Support
+# Υποστήριξη Συντάκτη
 
-Since Slidev is using Markdown as the source entry, you can use ANY editors you love to write it.
+Δεδομένου ότι το Slidev χρησιμοποιεί Markdown ως πηγή εισόδου, μπορείτε να χρησιμοποιήσετε ΟΠΟΙΟΝΔΗΠΟΤΕ συντάκτη αγαπάτε για να το γράψετε.
 
-If you want some high-level management to your slides, we have provided the following editor integrations for you!
+Αν θέλετε κάποια υψηλού επιπέδου διαχείριση των διαφανειών σας, σας παρέχουμε τις ακόλουθες ενσωματώσεις επεξεργαστή!
 
-## Integrated Editor
+## Ενσωματωμένος Συντάκτης
 
-Slidev comes with an integrated [CodeMirror](https://codemirror.net/) editor that will instantly reload and save the changes to your file. 
+Το Slidev περιλαμβάνει ένα ενσωματωμένο συντάκτη [CodeMirror](https://codemirror.net/) που θα επαναφορτώσει και θα αποθηκεύσει αμέσως τις αλλαγές στο αρχείο σας. 
 
-Click the <carbon-edit class="inline-icon-btn"/> button to open it.
+Κάντε κλικ στο κουμπί <carbon-edit class="inline-icon-btn"/> για να το ανοίξετε.
 
 ![](/screenshots/integrated-editor.png)
 
-## VS Code Extension
+## Επέκταση VS Code
 
 <p align="center">
     <a href="https://github.com/slidevjs/slidev" target="_blank">
@@ -28,15 +28,15 @@ Click the <carbon-edit class="inline-icon-btn"/> button to open it.
     </a>
 </p>
 
-The VS Code extension provides some features to help you better organize your slides and have a quick overview of them.
+Η επέκταση VS Code παρέχει ορισμένες δυνατότητες που σας βοηθούν να οργανώσετε καλύτερα τις διαφάνειές σας και να έχετε μια γρήγορη επισκόπηση αυτών.
 
-### Features
+### Δυνατότητες
 
-- View slides in the side panel
-- Go to next / prev buttons
-- Re-ordering slides
-- Folding for slide blocks
-- Convert Markdown to HTML
+- Προβολή διαφανειών στον πλευρικό πίνακα
+- Κουμπιά μετάβασης στην επόμενη / προηγούμενη διαφάνεια
+- Αναδιάταξη διαφανειών
+- Αναδίπλωση για block ολίσθησης
+- Μετατροπή Markdown σε HTML
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
