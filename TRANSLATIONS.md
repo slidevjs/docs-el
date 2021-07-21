@@ -60,7 +60,7 @@ In case it's already been translated but you're wondering how to maintain it, sk
 - [X] `editors.md` - Editor integrations
 - [X] `exporting.md`- Exporting your slides
 - [ ] `faq.md` - Frequent Answered Questions
-- [ ] `index.md` - Getting started with Slidev
+- [X] `index.md` - Getting started with Slidev
 - [X] `navigation.md` - Navigation across slides
 - [X] `presenter-mode.md`- Toggling presenter mode
 - [X] `recording.md`- Recording your presentation
