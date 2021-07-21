@@ -1,33 +1,33 @@
-# Navigation
+# Πλοήγηση
 
-## Navigation Bar
+## Μπάρα Πλοήγησης
 
-Move your mouse to the left bottom corner of Slidev page, the navigation bar will be appeared.
+Μετακινήστε το ποντίκι σας στην αριστερή κάτω γωνία της σελίδας Slidev, θα εμφανιστεί η μπάρα πλοήγησης.
 
 ![](/screenshots/navbar.png)
 
-| Shortcuts | Button | Description |
+| Συντομεύσεις | Κουμπί | Περιγραφή |
 | --- | --- | --- |
-| <kbd>f</kbd> | <carbon-maximize class="inline-icon-btn"/> <carbon-minimize class="inline-icon-btn"/> | toggle fullscreen |
-| <kbd>right</kbd> / <kbd>space</kbd> | <carbon-arrow-right class="inline-icon-btn"/> | next animation or slide |
-| <kbd>left</kbd> | <carbon-arrow-left class="inline-icon-btn"/> | previous animation or slide |
-| <kbd>up</kbd> | - |  previous slide |
-| <kbd>down</kbd> | - | next slide |
-| <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | toggle [slides overview](#slides-overview) |
-| <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | toggle dark mode |
-| - | <carbon-user-avatar class="inline-icon-btn"/> | toggle [camera view](/guide/recording#camera-view) |
-| - | <carbon-video class="inline-icon-btn"/> | [recording](/guide/recording#camera-view) |
-| - | <carbon-user-speaker class="inline-icon-btn"/> | enter [presenter mode](/guide/presenter-mode) |
-| - | <carbon-edit class="inline-icon-btn"/> | toggle [integrated editor](/guide/editors#integrated-editor) |
-| - | <carbon-download class="inline-icon-btn"/> | download slides (only appear in [SPA build](/guide/exporting#single-page-application-spa)) |
-| - | <carbon-information class="inline-icon-btn"/> | show information about the slides |
-| - | <carbon-settings-adjust class="inline-icon-btn"/> | show settings menu |
-| <kbd>g</kbd> | - | show goto... |
+| <kbd>f</kbd> | <carbon-maximize class="inline-icon-btn"/> <carbon-minimize class="inline-icon-btn"/> | εναλλαγή πλήρους οθόνης |
+| <kbd>δεξιά</kbd> / <kbd>κενό</kbd> | <carbon-arrow-right class="inline-icon-btn"/> | επόμενη κίνηση ή διαφάνεια |
+| <kbd>αριστερά</kbd> | <carbon-arrow-left class="inline-icon-btn"/> | προηγούμενη κίνηση ή διαφάνεια |
+| <kbd>πάνω</kbd> | - |  προηγούμενη διαφάνεια |
+| <kbd>κάτω</kbd> | - | επόμενη διαφάνεια |
+| <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | εναλλαγή εμφάνισης της [επισκόπησης διαφανειών](#επισκόπηση-διαφανειών) |
+| <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | εναλλαγή σκοτεινής λειτουργίας |
+| - | <carbon-user-avatar class="inline-icon-btn"/> | εναλλαγή [προβολής κάμερας](/guide/recording#πpοβολή-κάμεpας) |
+| - | <carbon-video class="inline-icon-btn"/> | [καταγραφή παρουσίασης](/guide/recording#πpοβολή-κάμεpας) |
+| - | <carbon-user-speaker class="inline-icon-btn"/> | ενεργοποιήση της [λειτουργίας παρουσιαστή](/guide/presenter-mode) |
+| - | <carbon-edit class="inline-icon-btn"/> | εναλλαγή εμφάνισης του [ενσωματωμένου συντάκτη](/guide/editors#ενσωματωμένος-συντάκτης) |
+| - | <carbon-download class="inline-icon-btn"/> | λήψη διαφανειών (εμφανίζεται μόνο σε [κατασκευή SPA](/guide/exporting#single-page-application-spa)) |
+| - | <carbon-information class="inline-icon-btn"/> | εμφάνιση πληροφοριών σχετικά με τις διαφάνειες |
+| - | <carbon-settings-adjust class="inline-icon-btn"/> | εμφάνιση μενού ρυθμίσεων |
+| <kbd>g</kbd> | - | εμφάνιση goto... |
 
 <br>
 
-## Slides Overview
+## Επισκόπηση Διαφανειών
 
-By pressing <kbd>o</kbd> or clicking the <carbon-apps class="inline-icon-btn"/> button in the navigation bar, you can have the overview of your slides so you can jump between them easily. 
+Πατώντας το πλήκτρο <kbd>o</kbd> ή κάνοντας click στο κουμπί <carbon-apps class="inline-icon-btn"/> στη μπάρα πλοήγησης, μπορείτε να έχετε την επισκόπηση των διαφανειών σας, ώστε να μπορείτε να μεταπηδάτε εύκολα μεταξύ τους. 
 
 ![](/screenshots/slides-overview.png)
