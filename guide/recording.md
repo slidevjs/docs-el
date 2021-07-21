@@ -1,17 +1,17 @@
-# Recording
+# Καταγραφή Παρουσίασης
 
-Slidev has a built-in recording and camera view. You can use them to record your presentation easily in one place.
+Το Slidev έχει ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας. Μπορείτε να τα χρησιμοποιήσετε για να καταγράψετε την παρουσίασή σας εύκολα σε ένα μέρος.
 
-## Camera View
+## Προβολή Κάμερας
 
-Click the <carbon-user-avatar class="inline-icon-btn"/> button in the navigation panel to show your camera view in the presentation. You can drag to move it, and use the handler on the right bottom corner to resize it. The size and position will persist in `localStorage` and will therefore be consistent across multiple refreshes, so no need to worry about that.
+Κάντε click στο <carbon-user-avatar class="inline-icon-btn"/> κουμπί στον πίνακα πλοήγησης για να εμφανίσετε την προβολή της κάμεράς σας στην παρουσίαση. Μπορείτε να το σύρετε για να το μετακινήσετε και να χρησιμοποιήσετε το χειριστήριο στη δεξιά κάτω γωνία για να αλλάξετε το μέγεθός του. Το μέγεθος και η θέση θα παραμείνουν στο `localStorage` και επομένως θα είναι συνεπή ανάμεσα σε πολλαπλές ανανεώσεις, οπότε δεν χρειάζεται να ανησυχείτε γι' αυτό.
 
 <Tweet id="1395006771027120133" />
 
-## Recording
+## Καταγραφή Παρουσίασης
 
-Clicking the <carbon-video class="inline-icon-btn"/> button in the navigation panel will bring up a dialog for you. Here you can choose to either record your camera embedded in your slides or to separate them into two video files.
+Κάνοντας click στο <carbon-video class="inline-icon-btn"/> κουμπί στον πίνακα πλοήγησης θα σας εμφανίσει ένα παράθυρο διαλόγου. Εδώ μπορείτε να επιλέξετε είτε να καταγράψετε την κάμερά σας ενσωματωμένη στις διαφάνειές σας είτε να τις διαχωρίσετε σε δύο αρχεία βίντεο.
 
-This feature is powered by [RecordRTC](https://github.com/muaz-khan/RecordRTC) and uses the [WebRTC API](https://webrtc.org/).
+Αυτή η δυνατότητα λειτουργεί με τη βοήθεια του [RecordRTC](https://github.com/muaz-khan/RecordRTC) και χρησιμοποιεί το [WebRTC API](https://webrtc.org/).
 
 ![](/screenshots/recording.png)
