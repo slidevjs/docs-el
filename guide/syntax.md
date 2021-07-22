@@ -1,29 +1,29 @@
-# Markdown Syntax
+# Σύνταξη Markdown
 
-Slides are written within **a single markdown file** (by default `./slides.md`). 
+Οι διαφάνειες γράφονται μέσα σε **ένα ενιαίο αρχείο markdown** (εξ ορισμού `./slides.md`). 
 
-You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [Windi CSS](https://windicss.org) is also supported. Use `---` padded with a new line to separate your slides. 
+Μπορείτε να χρησιμοποιήσετε [τις δυνατότητες του Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) όπως θα κάνατε κανονικά, με την πρόσθετη υποστήριξη του ενσωματωμένου HTML και των Vue Components. Επίσης υποστηρίζεται styling χρησιμοποιώντας [Windi CSS](https://windicss.org). Χρησιμοποιήστε το `---` συνοδευμένο από μια νέα γραμμή για να διαχωρίσετε τις διαφάνειές σας. 
 
 ~~~md
 # Slidev
 
-Hello, World!
+Γεια σου, Κόσμε!
 
 ---
 
-# Page 2
+# Σελίδα 2
 
-Directly use code blocks for highlighting
+Άμεση χρήση code blocks για επισήμανση
 
 //```ts
-console.log('Hello, World!')
+console.log('Γεια σου, Κόσμε!')
 //```
 
 ---
 
-# Page 3
+# Σελίδα 3
 
-You can directly use Windi CSS and Vue components to style and enrich your slides.
+Μπορείτε να χρησιμοποιήσετε απευθείας τα Windi CSS και Vue components για να διαμορφώσετε και να εμπλουτίσετε τις διαφάνειές σας.
 
 <div class="p-3">
   <Tweet id="20" />
@@ -32,7 +32,7 @@ You can directly use Windi CSS and Vue components to style and enrich your slide
 
 ## Front Matter & Layouts
 
-Specify layouts and other metadata for each slide by converting the separators into [front matter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+Καθορίστε layouts και άλλα μεταδεδομένα για κάθε διαφάνεια μετατρέποντας τα διαχωριστικά σε [front matter blocks](https://jekyllrb.com/docs/front-matter/). Κάθε frontmatter αρχίζει με μια τριπλή παύλα και τελειώνει με μια άλλη. Τα κείμενα μεταξύ τους είναι objects δεδομένων σε μορφή [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Για παράδειγμα:
 
 ~~~md
 ---
@@ -41,7 +41,7 @@ layout: cover
 
 # Slidev
 
-This is the cover page.
+Αυτό είναι το εξώφυλλο.
 
 ---
 layout: center
@@ -49,34 +49,34 @@ background: './images/background-1.png'
 class: 'text-white'
 ---​
 
-# Page 2
+# Σελίδα 2
 
-This is a page with the layout `center` and a background image.
+Αυτή είναι μια σελίδα με το layout `center` και μια εικόνα φόντου.
 
 ---
 
-# Page 3
+# Σελίδα 3
 
-This is a default page without any additional metadata.
+Πρόκειται για μια προεπιλεγμένη σελίδα χωρίς πρόσθετα μεταδεδομένα.
 ~~~
 
-Refer to [customization](/custom/) for more details.
+Ανατρέξτε στις [προσαρμογές](/custom/) για περισσότερες πληροφορίες.
 
 ## Code Blocks
 
-One big reason I am building Slidev is needing to make my code look just right in the slides. So just as you expected, you can use Markdown flavored code block to highlight your code.
+Ένας μεγάλος λόγος που φτιάχνω το Slidev είναι ότι πρέπει να κάνω τον κώδικά μου να φαίνεται σωστά στις διαφάνειες. Έτσι, όπως ακριβώς περιμένατε, μπορείτε να χρησιμοποιήσετε code block με μορφή Markdown για να επισημάνετε τον κώδικά σας.
 
 ~~~ts
 //```ts
-console.log('Hello, World!')
+console.log('Γεια σου, Κόσμε!')
 //```
 ~~~
 
-We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shiki/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+Υποστηρίζουμε και [Prism](http://prismjs.com) και [Shiki](https://github.com/shiki/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
 
-### Line Highlighting
+### Επισήμανση Γραμμής
 
-To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1.
+Για να επισημάνετε συγκεκριμένες γραμμές, απλά προσθέστε τους αριθμούς γραμμών μέσα σε μία αγκύλη `{}`. Οι αριθμοί γραμμών αρχίζουν να μετρούν από το 1.
 
 ~~~ts
 //```ts {2,3}
@@ -89,7 +89,7 @@ function add(
 //```
 ~~~
 
-To change the highlight in multiple steps, you can use `|` to separate them. For example
+Για να αλλάξετε την επισήμανση σε πολλαπλά βήματα, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε. Για παράδειγμα
 
 ~~~ts
 //```ts {2-3|5|all}
@@ -102,26 +102,26 @@ function add(
 //```
 ~~~
 
-This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
+Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
 
 ### Monaco Editor
 
-Whenever you want to do some modification in the presentation, simply add `{monaco}` after the language id — it turns the block into a fully-featured Monaco editor!
+Κάθε φορά που θέλετε να κάνετε κάποια τροποποίηση στην παρουσίαση, απλά προσθέστε `{monaco}` μετά το αναγνωριστικό γλώσσας - αυτό μετατρέπει το block σε έναν πλήρως εξοπλισμένο Monaco editor!
 
 ~~~ts
 //```ts {monaco}
-console.log('HelloWorld')
+console.log('ΓειαΣουΚόσμε')
 //```
 ~~~
 
-Learn more about [configuring Monaco](/custom/config-monaco).
+Μάθετε περισσότερα για την [ρύθμιση Monaco](/custom/config-monaco).
 
-## Embedded Styles
+## Ενσωματωμένα Styles
 
-You can use `<style>` tag in your Markdown directly to override styles for the **current slide**.
+Μπορείτε να χρησιμοποιήσετε την ετικέτα `<style>` στο Markdown σας απευθείας για να παρακάμψετε τα styles για την **τρέχουσα διαφάνεια**.
 
 ```md
-# This is Red
+# Αυτό είναι Red
 
 <style>
 h1 {
@@ -131,17 +131,17 @@ h1 {
 
 ---
 
-# Next slide is not affected
+# Η επόμενη διαφάνεια δεν επηρεάζεται
 ```
 
-`<style>` tag in Markdown is always [scoped](https://vue-loader.vuejs.org/guide/scoped-css.html). To have global style overrides, check out the [customization section](/custom/directory-structure#style).
+Η ετικέτα `<style>` στο Markdown είναι πάντα [περιορισμένη](https://vue-loader.vuejs.org/guide/scoped-css.html). Για να έχετε global style παρακάμψεις, δείτε την [ενότητα προσαρμογής](/custom/directory-structure#style).
 
-Powered by [Windi CSS](https://windicss.org), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+Με την βοήθεια του [Windi CSS](https://windicss.org), μπορείτε να χρησιμοποιήσετε άμεσα εμφωλευμένα css και [οδηγίες](https://windicss.org/features/directives.html) (π.χ. `@apply`)
 
 ```md
 # Slidev
 
-> Hello `world`
+> Γεια σου `κόσμε`
 
 <style>
 blockquote {
@@ -152,40 +152,41 @@ blockquote {
 </style>
 ```
 
-## Static Assets
+## Στατικά Assets
 
-Just like you would do in markdown, you can use images pointing to a remote or local url.
+Ακριβώς όπως θα κάνατε σε markdown, μπορείτε να χρησιμοποιήσετε εικόνες από μια απομακρυσμένη ή τοπική διεύθυνση URL.
 
-For remote assets, the built-in [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) will cache them into the disk at the first run so you can have instant loading even for large images later on.
+Για τα απομακρυσμένα assets, το ενσωματωμένο [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) θα τα αποθηκεύσει στη μνήμη cache στο δίσκο κατά την πρώτη εκτέλεση, ώστε να μπορείτε να έχετε άμεση φόρτωση ακόμα και για μεγάλες εικόνες αργότερα.
 
 ```md
 ![Remote Image](https://sli.dev/favicon.png)
 ```
 
-For local assets, put them into the [`public` folder](/custom/directory-structure.html#public) and reference them with **leading slash**.
+Για τοπικά assets, τοποθετήστε τα στο [φάκελο `public`](/custom/directory-structure.html#public) και αναφερθείτε σε αυτά με **slash από μπροστά**.
 
 ```md
-![Local Image](/pic.png)
+![Local Image](/pic.Αυτό είναι το εξώφυλλο.
+png)
 ```
 
-For you want to apply custom sizes or styles, you can convert them to the `<img>` tag 
+Αν θέλετε να εφαρμόσετε προσαρμοσμένα μεγέθη ή styles, μπορείτε να τα μετατρέψετε σε ετικέτα `<img>` 
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
 ```
 
-## Notes
+## Σημειώσεις
 
-You can also take notes for each slide. They will show up in [Presenter Mode](/guide/presenter-mode) for you to reference during presentations.
+Μπορείτε επίσης να κρατάτε σημειώσεις για κάθε διαφάνεια. Θα εμφανίζονται στη [Λειτουργία Παρουσιαστή](/guide/presenter-mode) για να μπορείτε να ανατρέχετε σε αυτές κατά τη διάρκεια των παρουσιάσεων.
 
-In Markdown, the last comment block in each slide will be treated as a note.
+Σε Markdown, το τελευταίο block σχολίων σε κάθε διαφάνεια θα αντιμετωπίζεται ως σημείωση.
 
 ~~~md
 ---
 layout: cover
 ---
 
-# Page 1
+# Σελίδα 1
 
 This is the cover page.
 
@@ -193,35 +194,35 @@ This is the cover page.
 
 ---
 
-# Page 2
+# Σελίδα 2
 
-<!-- This is NOT a note because it precedes the content of the slide -->
+<!-- Αυτό ΔΕΝ είναι σημείωση, διότι προηγείται του περιεχομένου της διαφάνειας. -->
 
-The second page
+Αυτό είναι το εξώφυλλο.
 
 <!--
-This is another note
+Αυτή είναι μια άλλη σημείωση
 -->
 ~~~
 
-## Icons
+## Εικονίδια
 
-Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) and [Iconify](https://iconify.design/).
+Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας. Με την βοήθεια του [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) και του [Iconify](https://iconify.design/).
 
-The naming follows [Iconify](https://iconify.design/)'s conversion `{collection-name}-{icon-name}`. For example:
+Η ονομασία ακολουθεί τη μετατροπή του [Iconify](https://iconify.design/) `{collection-name}-{icon-name}`. Για παράδειγμα:
 
-- `<mdi-account-circle />` - <mdi-account-circle /> from [Material Design Icons](https://github.com/Templarian/MaterialDesign)
-- `<carbon-badge />` - <carbon-badge /> from [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
-- `<uim-rocket />` - <uim-rocket /> from [Unicons Monochrome](https://github.com/Iconscout/unicons)
-- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> from [Twemoji](https://github.com/twitter/twemoji)
-- `<logos-vue />` - <logos-vue /> from [SVG Logos](https://github.com/gilbarbara/logos)
-- And much more...
+- `<mdi-account-circle />` - <mdi-account-circle /> από τα [Material Design Icons](https://github.com/Templarian/MaterialDesign)
+- `<carbon-badge />` - <carbon-badge /> από το [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
+- `<uim-rocket />` - <uim-rocket /> από τα [Unicons Monochrome](https://github.com/Iconscout/unicons)
+- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> από τα [Twemoji](https://github.com/twitter/twemoji)
+- `<logos-vue />` - <logos-vue /> από τα [SVG Logos](https://github.com/gilbarbara/logos)
+- Και πολλά άλλα...
 
-Browse and search for all the icons available with [Icônes](https://icones.js.org/).
+Περιηγηθείτε και αναζητήστε όλα τα εικονίδια που είναι διαθέσιμα με το [Icônes](https://icones.js.org/).
 
-### Styling Icons
+### Μορφοποίηση Εικονιδίων
 
-You can style the icons just like other HTML elements. For example:
+Μπορείτε να διαμορφώσετε τα εικονίδια όπως και τα άλλα στοιχεία HTML. Για παράδειγμα:
 
 ```html
 <uim-rocket />
@@ -235,11 +236,11 @@ You can style the icons just like other HTML elements. For example:
 
 ## Slots
 
-> Available since v0.18
+> Διαθέσιμο από v0.18
 
-Some layouts can provide multiple contributing points using [Vue's named slots](https://v3.vuejs.org/guide/component-slots.html).
+Ορισμένα layouts μπορούν να παρέχουν πολλαπλά σημεία συμβολής χρησιμοποιώντας [τα named slots του Vue](https://v3.vuejs.org/guide/component-slots.html).
 
-For example, in [`two-cols` layout](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), you can have two columns left (`default` slot) and right (`right` slot) side by side.
+Για παράδειγμα, στο [`two-cols` layout](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), μπορείτε να έχετε δύο στήλες αριστερά (`default` slot) και δεξιά (`right` slot) δίπλα-δίπλα.
 
 ```md
 ---
@@ -248,50 +249,50 @@ layout: two-cols
 
 <template v-slot:default>
 
-# Left
+# Αριστερά
 
-This shows on the left
+Αυτό εμφανίζεται στα αριστερά
 
 </template>
 <template v-slot:right>
 
-# Right
+# Δεξιά
 
-This shows on the right
+Αυτό εμφανίζεται στα δεξιά
 
 </template>
 ```
 
 <div class="grid grid-cols-2 rounded border border-gray-400 border-opacity-50 px-10 pb-4">
 <div>
-<h3>Left</h3>
-<p>This shows on the left</p>
+<h3>Αριστερά</h3>
+<p>Αυτό εμφανίζεται στα αριστερά</p>
 </div>
 <div>
-<h3>Right</h3>
-<p>This shows on the right</p>
+<h3>Δεξιά</h3>
+<p>Αυτό εμφανίζεται στα δεξιά</p>
 </div>
 </div>
 
-We also provide a shorthand syntax sugar `::name::` for slot name. The following example works exactly the same as the previous one.
+Παρέχουμε επίσης μια συντόμευση σύνταξης `::name::` για το όνομα του slot. Το ακόλουθο παράδειγμα λειτουργεί ακριβώς όπως και το προηγούμενο.
 
 ```md
 ---
 layout: two-cols
 ---
 
-# Left
+# Αριστερά
 
-This shows on the left
+Αυτό εμφανίζεται στα αριστερά
 
 ::right::
 
-# Right
+# Δεξιά
 
-This shows on the right
+Αυτό εμφανίζεται στα δεξιά
 ```
 
-You can also explicitly specify the default slot and provide in the custom order
+Μπορείτε επίσης να καθορίσετε ρητά το προεπιλεγμένο slot και να το παρέχετε στην προσαρμοσμένη σειρά
 
 ```md
 ---
@@ -300,20 +301,20 @@ layout: two-cols
 
 ::right::
 
-# Right
+# Δεξιά
 
-This shows on the right
+Αυτό εμφανίζεται στα δεξιά
 
 ::default::
 
-# Left
+# Αριστερά
 
-This shows on the left
+Αυτό εμφανίζεται στα αριστερά
 ```
 
-## Configurations
+## Ρυθμίσεις
 
-All configurations needed can be defined in the Markdown file. For example:
+Όλες οι ρυθμίσεις που απαιτούνται μπορούν να οριστούν στο αρχείο Markdown. Για παράδειγμα:
 
 ```md
 ---
@@ -324,20 +325,20 @@ background: 'https://source.unsplash.com/1600x900/?nature,water'
 
 # Slidev
 
-This is the cover page.
+Αυτό είναι το εξώφυλλο.
 ```
 
-Learn more about [frontmatter configurations](/custom/#frontmatter-configures).
+Μάθετε περισσότερα για [τις ρυθμίσεις frontmatter](/custom/#ρυθμίσεις-frontmatter).
 
 ## LaTeX
 
-Slidev comes with LaTeX support out-of-box, powered by [KaTeX](https://katex.org/).
+Το Slidev έρχεται με ενσωματωμένη υποστήριξη για LaTeX, με τη βοήθεια του [KaTeX](https://katex.org/).
 
 <Tweet id="1392246507793915904" />
 
-### Inline
+### Γραμμική
 
-Surround your LaTeX with a single `$` on each side for inline rendering.
+Περιβάλλετε το LaTeX σας με ένα απλό `$` σε κάθε πλευρά για γραμμική απεικόνιση.
 
 ```md
 $\sqrt{3x-1}+(1+x)^2$
@@ -345,8 +346,8 @@ $\sqrt{3x-1}+(1+x)^2$
 
 ### Block
 
-Use two (`$$`) for block rendering. This mode uses bigger symbols and centers
-the result.
+Χρησιμοποιήστε δύο (`$$`) για απεικόνιση block. Αυτή η λειτουργία χρησιμοποιεί μεγαλύτερα σύμβολα και κεντράρει
+το αποτέλεσμα.
 
 ```md
 $$
@@ -363,67 +364,67 @@ $$
 $$
 ```
 
-Learn more: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
+Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
-## Diagrams
+## Διαγράμματα
 
-You can also create diagrams / graphs from textual descriptions in your Markdown, powered by [Mermaid](https://mermaid-js.github.io/mermaid).
+Μπορείτε επίσης να δημιουργήσετε διαγράμματα / γραφήματα από περιγραφές κειμένου στο Markdown σας, με τη βοήθεια του [Mermaid](https://mermaid-js.github.io/mermaid).
 
-Code blocks marked as `mermaid` will be converted to digrams, for example:
+Code blocks που χαρακτηρίζονται ως `mermaid` θα μετατρέπονται σε διαγράμματα, για παράδειγμα:
 
 ~~~md
 //```mermaid
 sequenceDiagram
-  Alice->John: Hello John, how are you?
-  Note over Alice,John: A typical interaction
+  Αλίκη->Γιάννης: Γεια σου Γιάννη, τι κάνεις;
+  Σημείωση για την Αλίκη, Γιάννη: Μια τυπική επικοινωνία
 //```
 ~~~
 
-You can further pass an options object to it to specify the scaling and theming. The syntax of the object is a JavaScript object literal, you will need to add quotes (`'`) for strings and use comma (`,`) between keys.
+Μπορείτε επίσης να του περάσετε ένα object επιλογών για να καθορίσετε την κλιμάκωση και τη θεματοποίηση. Η σύνταξη του object είναι ένα JavaScript object literal, θα πρέπει να προσθέσετε εισαγωγικά (`'`) για τα strings και να χρησιμοποιήσετε κόμμα (`,`) μεταξύ κλειδιών.
 
 ~~~md
 //```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+B[Κείμενο] --> C{Απόφαση}
+C -->|Ένα| D[Αποτέλεσμα 1]
+C -->|Δύο| E[Αποτέλεσμα 2]
 //```
 ~~~
 
-Learn more: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
+Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
 
-## Multiple Entries
+## Πολλαπλές Είσοδοι
 
-> Available since v0.15
+> Διαθέσιμο από v0.15
 
-You can split your `slides.md` into multiple files and organize them as you want.
+Μπορείτε να χωρίσετε το `slides.md` σας σε πολλαπλά αρχεία και να τα οργανώσετε όπως θέλετε.
 
 `slides.md` :
 
 ```md
-# Page 1
+# Σελίδα 1
 
-This is a normal page
+Αυτή είναι μια κανονική σελίδα
 
 ---
 src: ./subpage2.md
 ---
 
-<!-- this page will be loaded from './subpage2.md' -->
-Inline content will be ignored
+<!-- αυτή η σελίδα θα φορτωθεί από το './subpage2.md' -->
+Το γραμμικό υλικό θα αγνοηθεί
 ```
 
 `subpage2.md` :
 
 ```md
-# Page 2
+# Σελίδα 2
 
-This page is from another file
+Αυτή η σελίδα είναι από ένα άλλο αρχείο
 ```
 
-### Frontmatter Merging
+### Συγχώνευση Frontmatter
 
-You can provide frontmatters from both your main entry and external markdown pages. If there are the same keys in them, the ones from the **main entry have the higher priority**. For example
+Μπορείτε να παρέχετε frontmatters τόσο από την κύρια είσοδό σας όσο και από εξωτερικές σελίδες markdown. Εάν υπάρχουν τα ίδια κλειδιά σε αυτές, αυτά από την **κύρια είσοδο έχουν μεγαλύτερη προτεραιότητα**. Για παράδειγμα
 
 `slides.md` :
 
@@ -443,12 +444,12 @@ layout: cover
 background: https://sli.dev/foo.png
 ---
 
-# Cover
+# Εξώφυλλο
 
-Cover Page
+Σελίδα Εξωφύλλου
 ```
 
-They will end up being equivalent of the following page:
+Θα καταλήξουν να είναι ισοδύναμα της επόμενης σελίδας:
 
 ```md
 ---
@@ -457,14 +458,14 @@ background: https://sli.dev/bar.png
 class: text-center
 ---
 
-# Cover
+# Εξώφυλλο
 
-Cover Page
+Σελίδα Εξωφύλλου
 ```
 
-### Page Reusing
+### Επαναχρησιμοποίηση Σελίδων
 
-With the multi-entries support, reusing pages could be straightforward. For example:
+Με την υποστήριξη πολλαπλών εισόδων, η επαναχρησιμοποίηση σελίδων είναι απλή. Για παράδειγμα:
 
 ```yaml
 ---
@@ -480,7 +481,7 @@ src: ./content.md
 ---
 
 ---
-# reuse
+# επαναχρησιμοποίηση
 src: ./content.md
 ---
 ```

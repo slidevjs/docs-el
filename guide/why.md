@@ -1,70 +1,70 @@
-# Why Slidev
+# Γιατί Slidev
 
-There are a lot of feature-rich, general-purpose, WYSIWYG slides makers like [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) and [Apple Keynote](https://www.apple.com/keynote/). They work pretty well for making nice slides with animations, charts, and many other things, while being very intuitive and easy to learn. So why bother making Slidev?
+Υπάρχουν πολλοί πλούσιοι σε δυνατότητες, γενικής χρήσης, κατασκευαστές διαφανειών WYSIWYG όπως το [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) και το [Apple Keynote](https://www.apple.com/keynote/). Λειτουργούν πολύ καλά για τη δημιουργία ωραίων διαφανειών με κινήσεις, διαγράμματα και πολλά άλλα πράγματα, ενώ είναι πολύ διαισθητικές και εύκολες στην εκμάθηση. Οπότε γιατί να μπεις στον κόπο να δημιουργήσεις το Slidev?
 
-Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with. 
+Το Slidev έχει ως στόχο να παρέχει την ευελιξία και τη διαδραστικότητα στους προγραμματιστές ώστε να κάνουν τις παρουσιάσεις τους ακόμη πιο ενδιαφέρουσες, εκφραστικές και ελκυστικές, χρησιμοποιώντας τα εργαλεία και τις τεχνολογίες με τις οποίες είναι ήδη εξοικειωμένοι. 
 
-When working with WYSIWYG editors, it is easy to get distracted by the styling options. Slidev remedies that by separating the content and visuals. This allows you to focus on one thing at a time, while also being able to reuse the themes from the community. Slidev does not seek to replace other slide deck builders entirely. Rather, it focuses on catering to the developer community.
+Όταν εργάζεστε με επεξεργαστές WYSIWYG, είναι εύκολο να σας αποσπάσουν την προσοχή οι επιλογές μορφοποίησης. Το Slidev διορθώνει αυτό με το διαχωρισμό του περιεχομένου και των γραφικών. Αυτό σας επιτρέπει να επικεντρωθείτε σε ένα πράγμα τη φορά, ενώ παράλληλα μπορείτε να επαναχρησιμοποιήσετε τα θέματα της κοινότητας. Το Slidev δεν επιδιώκει να αντικαταστήσει εξ ολοκλήρου άλλους κατασκευαστές διαφανειών. Αντίθετα, επικεντρώνεται στην εξυπηρέτηση της κοινότητας των προγραμματιστών.
 
 ## Slidev
 
 ![](/screenshots/cover.png)
 
-Here are a few of the coolest features of Slidev:
+Ακολουθούν μερικά από τα πιο cool χαρακτηριστικά του Slidev:
 
 ## Markdown-based
 
-Slidev uses an extended Markdown format to store and organize your slides in a single plain text file. This lets you focus on making the content. And since the content and styles are separated, this also made it possible to switch between different themes effortlessly.
+Το Slidev χρησιμοποιεί μια εκτεταμένη μορφή Markdown για να αποθηκεύει και να οργανώνει τις διαφάνειές σας σε ένα ενιαίο αρχείο απλού κειμένου. Αυτό σας επιτρέπει να επικεντρωθείτε στη δημιουργία του υλικού. Και δεδομένου ότι το υλικό και τα styles είναι διαχωρισμένα, αυτό καθιστά επίσης δυνατή την αβίαστη εναλλαγή μεταξύ διαφορετικών θεμάτων.
 
-Learn more about [Slidev's Markdown Syntax](/guide/syntax).
+Μάθετε περισσότερα για την [Σύνταξη Markdown του Slidev](/guide/syntax).
 
-## Themable
+## Θεματοποιήσιμο
 
-Themes for Slidev can be shared and installed using npm packages. You then apply them with only one line of config.
+Θέματα για το Slidev μπορούν να μοιραστούν και να εγκατασταθούν χρησιμοποιώντας με πακέτα npm. Στη συνέχεια τα εφαρμόζετε με μία μόνο γραμμή ρύθμισης.
 
-Check out the [theme gallery](/themes/gallery) or [learn how to write a theme](/themes/write-a-theme).
+Δείτε την [συλλογή θεμάτων](/themes/gallery) ή [μάθετε πώς να δημιουργήσετε ένα θέμα](/themes/write-a-theme).
 
-## Developer Friendly
+## Φιλικό προς Προγραμματιστές
 
-Slidev provides first-class support for code snippets for developers. It supports both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki) to get pixel perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
+Το Slidev παρέχει πρώτης τάξεως υποστήριξη για αποσπάσματα κώδικα για προγραμματιστές. Υποστηρίζει και [Prism](https://prismjs.com/) και [Shiki](https://github.com/shikijs/shiki) για να έχετε τέλεια επισήμανση σύνταξης, ενώ παράλληλα να μπορείτε να τροποποιείτε τον κώδικα ανά πάσα στιγμή. Με ενσωματωμένο το [Monaco editor](https://microsoft.github.io/monaco-editor/), σας δίνει επίσης τη δυνατότητα να κάνετε live coding / επίδειξη στην παρουσίασή σας με αυτόματη συμπλήρωση, type hovering και ακόμη και υποστήριξη ελέγχου τύπων TypeScript.
 
-Learn more about [highlighters](/custom/highlighters) and [Monaco configuration](/custom/config-monaco).
+Μάθετε περισσότερα για τους [επισημαντήρες](/custom/highlighters) και [ρύθμιση Monaco](/custom/config-monaco).
 
-## Fast
+## Γρήγορο
 
-Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [Windi CSS](https://windicss.org/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+Το Slidev λειτουργεί με τη βοήθεια του [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) και [Windi CSS](https://windicss.org/), που σας δίνουν την πιο υπέροχη εμπειρία συγγραφής. Κάθε αλλαγή που κάνατε θα αντικατοπτρίζεται στις διαφάνειές σας **αμέσως**.
 
-Find more about [our tech stack](/guide/#tech-stack).
+Μάθετε περισσότερα για την [στοίβα τεχνολογίας μας](/guide/#tech-stack).
 
-## Interactive & Expressive
+## Διαδραστικό & Εκφραστικό
 
-You can write custom Vue components and use them directly inside your markdown file. You can also interact with them inside the presentation to express your idea in a more interesting and intuitive way.
+Μπορείτε να γράψετε προσαρμοσμένα Vue components και να τα χρησιμοποιήσετε απευθείας μέσα στο αρχείο markdown σας. Μπορείτε επίσης να αλληλεπιδράσετε με αυτά μέσα στην παρουσίαση για να εκφράσετε την ιδέα σας με έναν πιο ενδιαφέροντα και διαισθητικό τρόπο.
 
-## Recording Support
+## Υποστήριξη Καταγραφής Παρουσίασης
 
-Slidev provides built-in recording and camera view. You can share your presentation with your camera view inside, or record and save them separately for your screen and camera. All with one go, no additional tools are needed.
+Το Slidev έχει ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας. Μπορείτε να μοιραστείτε την παρουσίασή σας με την προβολή της κάμεράς σας μέσα ή να τις καταγράψετε και να τις αποθηκεύσετε ξεχωριστά για την οθόνη και την κάμερά σας. Όλα με μία κίνηση, χωρίς να απαιτούνται πρόσθετα εργαλεία.
 
-Learn more about [recording here](/guide/recording).
+Μάθετε περισσότερα για την [καταγραφή παρουσίασης εδώ](/guide/recording).
 
-## Portable
+## Φορητό
 
-Export your slides into PDF, PNGs, or even a hostable Single-page Application (SPA) with a single command, and share them anywhere.
+Εξαγωγή σε PDF, PNGs, ή ακόμα και σε ένα φιλοξενήσιμο Single-page Application (SPA) με μία μόνο εντολή, και μοιραστείτε τα οπουδήποτε.
 
-Read more about that in the [exporting docs](/guide/exporting).
+Διαβάστε περισσότερα γι' αυτό στις [οδηγίες εξαγωγής](/guide/exporting).
 
 ## Hackable
 
-Being powered by web technologies, anything that can be done in a web app is also possible with Slidev. For example, WebGL, API requests, iframes, or even live sharing. It's up to your imagination!
+Όντας βασισμένο σε τεχνολογίες ιστού, οτιδήποτε μπορεί να γίνει σε μια εφαρμογή ιστού είναι επίσης δυνατό με το Slidev. Για παράδειγμα, WebGL, αιτήσεις API, iframes ή ακόμη και live sharing. Εξαρτάται από τη φαντασία σας!
 
-## Give it a Try
+## Δοκιμάστε το
 
-Playing around with Slidev will tell you more than a thousand words. You are just one command away:
+Παίζοντας με το Slidev θα σας πει περισσότερα από χίλιες λέξεις. Είστε μόνο μια εντολή μακριά:
 
 ```bash
 $ npm init slidev
 ```
 
-Or have a quick preview of it:
+Ή για να έχετε μια γρήγορη προεπισκόπηση:
 
 <div class="aspect-9/16 relative">
 <iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

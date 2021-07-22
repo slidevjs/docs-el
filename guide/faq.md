@@ -1,63 +1,63 @@
-# FAQ
+# Συχνές Ερωτήσεις
 
-## Grids
+## Πλέγματα
 
-Since Slidev is based on the Web, you can apply any grid layouts as you want. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), or even [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), you get the full controls.
+Από τη στιγμή που το Slidev βασίζεται στο Διαδίκτυο, μπορείτε να εφαρμόσετε οποιοδήποτε layout πλέγματος όπως θέλετε. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), ή ακόμα και [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), έχετε τον πλήρη έλεγχο.
 
-Since we have [Windi CSS](https://windicss.org/) built-in, here is one simple way for you to reference:
+Από τη στιγμή που έχουμε ενσωματωμένο το [Windi CSS](https://windicss.org/), εδώ είναι ένας απλός τρόπος για να αναφερθείτε:
 
 ```html
 <div class="grid grid-cols-2 gap-4">
 <div>
 
-The first column
+Η πρώτη στήλη
 
 </div>
 <div>
 
-The second column
+Η δεύτερη στήλη
 
 </div>
 </div>
 ```
 
-Go further, you can customize the size of each columns like:
+Για να προχωρήσετε περαιτέρω, μπορείτε να προσαρμόσετε το μέγεθος κάθε στήλης όπως:
 
 ```html
 <div class="grid grid-cols-[200px,1fr,10%] gap-4">
 <div>
 
-The first column (200px)
+Η πρώτη στήλη (200px)
 
 </div>
 <div>
 
-The second column (auto fit)
+Η δεύτερη στήλη (auto fit)
 
 </div>
 <div>
 
-The third column (10% width to parent container)
+Η τρίτη στήλη (10% πλάτος στο parent container)
 
 </div>
 </div>
 ```
 
-Learn more about [Windi CSS Grids](https://windicss.org/utilities/grid.html).
+Μάθετε περισσότερα για το [Windi CSS Grids](https://windicss.org/utilities/grid.html).
 
-## Positioning
+## Τοποθέτηση
 
-Slides are defined in fixed sizes (default `980x552px`) and scale to fit with the user screen. You can safely use absolute position in your slides as they will scale along with the screen.
+Οι διαφάνειες ορίζονται σε σταθερά μεγέθη (προεπιλογή `980x552px`) και να προσαρμόζεται στην οθόνη του χρήστη. Μπορείτε να χρησιμοποιήσετε με ασφάλεια απόλυτη θέση στις διαφάνειές σας, καθώς αυτές θα κλιμακώνονται μαζί με την οθόνη.
 
-For example:
+Για παράδειγμα:
 
 ```html
 <div class="absolute left-30px bottom-30px">
-This is a left-bottom aligned footer
+Αυτό είναι ένα footer ευθυγραμμισμένο αριστερά προς τα κάτω
 </div>
 ```
 
-To change the canvas' actual size, you can pass the `canvasWidth` options in your first frontmatter:
+Για να αλλάξετε το πραγματικό μέγεθος του καμβά, μπορείτε να περάσετε τις επιλογές `canvasWidth` στο πρώτο σας frontmatter:
 
 ```yaml
 ---
@@ -65,16 +65,16 @@ canvasWidth: 800
 ---
 ```
 
-## Font Size
+## Μέγεθος Γραμματοσειράς
 
-If you feel the font size in your slides are too small, you can adjust it in a few ways:
+Αν αισθάνεστε ότι το μέγεθος της γραμματοσειράς στις διαφάνειές σας είναι πολύ μικρό, μπορείτε να το προσαρμόσετε με διάφορους τρόπους:
 
-### Override Local Style
+### Παράκαμψη Τοπικού Style
 
-You can override styles for each slide with the inlined `<style>` tag.
+Μπορείτε να παρακάμψετε τα στυλ για κάθε διαφάνεια με την ενσωματωμένη ετικέτα `<style>`.
 
 ```md
-# Page 1
+# Σελίδα 1
 
 <style>
 h1 {
@@ -84,16 +84,16 @@ h1 {
 
 ---
 
-# Page 2
+# Σελίδα 2
 
-This will not be affected.
+Αυτό δεν θα επηρεαστεί.
 ```
 
-Learn more: [Embedded Styles](/guide/syntax.html#embedded-styles)
+Μάθετε περισσότερα: [Ενσωματωμένα Styles](/guide/syntax.html#ενσωματωμένα-styles)
 
-### Override Global Style
+### Παράκαμψη Global Style
 
-You can provide custom global styles by creating `./style.css`, for example
+Μπορείτε να παρέχετε προσαρμοσμένα global styles δημιουργώντας το `./style.css`, για παράδειγμα
 
 ```css
 /* style.css */ 
@@ -103,29 +103,29 @@ h1 {
 }
 ```
 
-Learn more: [Global Style](/custom/directory-structure.html#style)
+Μάθετε περισσότερα: [Global Style](/custom/directory-structure.html#style)
 
-### Scale the Canvas
+### Κλιμάκωση του Καμβά
 
-Changing the canvas' actual size will scale all your contents(text, images, components, etc.) and slides
+Η αλλαγή του πραγματικού μεγέθους του καμβά θα κλιμακώσει όλα τα περιεχόμενά σας (κείμενο, εικόνες, στοιχεία κτλ.) και τις διαφάνειες
 
 ```yaml
 ---
-# default: 980
-# since the canvas gets smaller, the visual size will become larger
+# προεπιλογή: 980
+# δεδομένου ότι ο καμβάς μικραίνει, το οπτικό μέγεθος θα γίνει μεγαλύτερο
 canvasWidth: 800
 ---
 ```
 
-### Use Transform
+### Χρήση Transform
 
-We provide a built-in component `<Transform />`, which is a thin wrapper of CSS transform property.
+Παρέχουμε ένα ενσωματωμένο στοιχείο `<Transform />` component, το οποίο είναι ένα λεπτό περιτύλιγμα της ιδιότητας CSS transform.
 
 ```md
 <Transform :scale="1.4">
 
-- Item 1
-- Item 2
+- Στοιχείο 1
+- Στοιχείο 2
 
 </Transform>
 ```
