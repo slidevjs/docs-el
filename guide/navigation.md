@@ -16,7 +16,7 @@
 | <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | εναλλαγή εμφάνισης της [επισκόπησης διαφανειών](#επισκόπηση-διαφανειών) |
 | <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | εναλλαγή σκοτεινής λειτουργίας |
 | - | <carbon-user-avatar class="inline-icon-btn"/> | εναλλαγή [προβολής κάμερας](/guide/recording#πpοβολή-κάμεpας) |
-| - | <carbon-video class="inline-icon-btn"/> | [καταγραφή παρουσίασης](/guide/recording#πpοβολή-κάμεpας) |
+| - | <carbon-video class="inline-icon-btn"/> | [καταγραφή παρουσίασης](/guide/recording#καταγpαφή-παpουσίασης-1) |
 | - | <carbon-user-speaker class="inline-icon-btn"/> | ενεργοποιήση της [λειτουργίας παρουσιαστή](/guide/presenter-mode) |
 | - | <carbon-edit class="inline-icon-btn"/> | εναλλαγή εμφάνισης του [ενσωματωμένου συντάκτη](/guide/editors#ενσωματωμένος-συντάκτης) |
 | - | <carbon-download class="inline-icon-btn"/> | λήψη διαφανειών (εμφανίζεται μόνο σε [κατασκευή SPA](/guide/exporting#single-page-application-spa)) |

@@ -19,7 +19,7 @@ titleTemplate: '%s - Slidev'
 download: true
 # επισημαντής σύνταξης, μπορεί να είναι 'prism' ή 'shiki'
 highlighter: 'prism'
-# ενεργοποίηση του επεξεργαστή monaco, προεπιλογή σε dev only
+# ενεργοποίηση του επεξεργαστή monaco, προεπιλογή μόνο σε dev
 monaco: 'dev'
 
 # αναγκάστε χρωματικό σχήμα για τις διαφάνειες, μπορεί να είναι 'auto', 'light', ή 'dark'
@@ -46,7 +46,7 @@ defaults:
 # πληροφορίες για τις διαφάνειές σας, μπορεί να είναι ένα markdown string
 info: |
   ## Slidev
-  My first [Slidev](http://sli.dev/) presentations!
+  Η πρώτη μου παρουσίαση [Slidev](http://sli.dev/)!
 ---
 ```
 
@@ -58,7 +58,7 @@ info: |
 
 Ανατρέξτε στην ενότητα [Δομή Φακέλου](/custom/directory-structure).
 
-## Config Tools
+## Ρυθμίστε Εργαλεία
 
 - [Επισημαντήρες](/custom/highlighters)
 - [Ρυθμίστε Vue](/custom/config-vue)

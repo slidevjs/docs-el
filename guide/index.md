@@ -13,12 +13,12 @@
 - 📝 [**Βασισμένο στο Markdown**](/guide/syntax.html) - χρησιμοποιήστε τους αγαπημένους σας συντάκτες και ροή εργασίας
 - 🧑‍💻 [**Φιλικό προς Προγραμματιστές**](/guide/syntax.html#code-blocks) - ενσωματωμένοι επισημαντήρες σύνταξης, live coding, κτλ.
 - 🎨 [**Θεματοποιήσιμο**](/themes/gallery.html) - θέματα μπορούν να μοιραστούν και να χρησιμοποιηθούν με πακέτα npm
-- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) on-demand εργαλεία, εύκολα στη χρήση ενσωματωμένα stylesheets
-- 🤹 [**Διαδραστικό**](/custom/directory-structure.html#components) - ενσωμάτωση Vue components απρόσκοπτα
+- 🌈 [**Stylish**](/guide/syntax.html#ενσωματωμένα-styles) - [Windi CSS](https://windicss.org/) on-demand εργαλεία, εύκολα στη χρήση ενσωματωμένα stylesheets
+- 🤹 [**Διαδραστικό**](/custom/directory-structure.html#components) - απρόσκοπτη ενσωμάτωση Vue components
 - 🎙 [**Λειτουργία Παρουσιαστή**](/guide/presenter-mode.html) - χρησιμοποιήστε ένα άλλο παράθυρο ή ακόμα και το τηλέφωνό σας για να ελέγξετε τις διαφάνειές σας
 - 🧮 [**LaTeX**](/guide/syntax.html#latex) - Ενσωματωμένη υποστήριξη μαθηματικών εξισώσεων LaTeX
-- 📰 [**Διαγράμματα**](/guide/syntax.html#diagrams) - Δημιουργεί διαγράμματα με περιγραφές κειμένου 
-- 🌟 [**Εικονίδια**](/guide/syntax.html#icons) - Απευθείας πρόσβαση σε εικονίδια από οποιοδήποτε σύνολο εικονιδίων 
+- 📰 [**Διαγράμματα**](/guide/syntax.html#διαγpάμματα) - Δημιουργεί διαγράμματα με περιγραφές κειμένου 
+- 🌟 [**Εικονίδια**](/guide/syntax.html#εικονίδια) - Απευθείας πρόσβαση σε εικονίδια από οποιοδήποτε σύνολο εικονιδίων 
 - 💻 [**Συντάκτες**](/guide/editors.html) - Ενσωματωμένος συντάκτης, ή [επέκταση για το VS Code](https://github.com/slidevjs/slidev-vscode)
 - 🎥 [**Καταγραφή Παρουσίασης**](/guide/recording.html) - ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας
 - 📤 [**Φορητό**](/guide/exporting.html) - εξαγωγή σε PDF, PNGs, ή ακόμα και σε ένα φιλοξενήσιμο SPA

@@ -32,7 +32,7 @@ highlighter: shiki
 
 <Environment type="node" />
 
-Create `./setup/shiki.ts` file with the following content
+Δημιουργήστε `./setup/shiki.ts` με το εξής περιεχόμενο
 
 ```ts
 /* ./setup/shiki.ts */

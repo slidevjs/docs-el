@@ -13,7 +13,7 @@ your-slidev/
   ├── styles/           # προσαρμοσμένα style
   ├── index.html        # injections στο index.html
   ├── slides.md         # η κύρια είσοδος διαφανειών
-  └── vite.config.ts   # επεκτείνοντας το vite config
+  └── vite.config.ts    # επεκτείνοντας το vite config
 ```
 
 Όλα είναι προαιρετικά.

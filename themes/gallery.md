@@ -21,4 +21,4 @@
 
 ## Περισσότερα θέματα
 
-Βρείτε όλα τα [θέματα διαθέσιμα στο NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).
+Βρείτε όλα τα [διαθέσιμα θέματα στο NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).

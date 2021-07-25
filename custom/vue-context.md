@@ -1,6 +1,6 @@
 # Vue Global Context
 
-Το Slidev έκανε inject ένα [global Vue context](https://v3.vuejs.org/api/application-config.html#globalproperties) `$slidev` για προηγμένες συνθήκες ή χειριστήρια πλοήγησης.
+Το Slidev κάνει inject ένα [global Vue context](https://v3.vuejs.org/api/application-config.html#globalproperties) `$slidev` για προηγμένες συνθήκες ή χειριστήρια πλοήγησης.
 
 ## Χρήση
 
