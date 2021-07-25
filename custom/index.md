@@ -19,6 +19,8 @@ titleTemplate: '%s - Slidev'
 download: true
 # επισημαντής σύνταξης, μπορεί να είναι 'prism' ή 'shiki'
 highlighter: 'prism'
+# εμφάνιση αριθμών γραμμών σε blocks
+lineNumbers: false
 # ενεργοποίηση του επεξεργαστή monaco, προεπιλογή μόνο σε dev
 monaco: 'dev'
 
@@ -50,7 +52,7 @@ info: |
 ---
 ```
 
-Δείτε τους [ορισμούς των τύπων](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) για περισσότερες επιλογές.
+Δείτε τους [ορισμούς των τύπων](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) για περισσότερες επιλογές.
 
 ## Δομή Φακέλου
 
