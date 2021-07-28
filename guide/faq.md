@@ -21,7 +21,11 @@
 </div>
 ```
 
+<<<<<<< HEAD
 Για να προχωρήσετε περαιτέρω, μπορείτε να προσαρμόσετε το μέγεθος κάθε στήλης όπως:
+=======
+Go further, you can customize the size of each column like:
+>>>>>>> d9b5a2ed4eea5c454b14f823f740a050ef45f079
 
 ```html
 <div class="grid grid-cols-[200px,1fr,10%] gap-4">
