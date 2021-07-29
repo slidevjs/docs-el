@@ -370,11 +370,7 @@ $$
 
 Μπορείτε επίσης να δημιουργήσετε διαγράμματα / γραφήματα από περιγραφές κειμένου στο Markdown σας, με τη βοήθεια του [Mermaid](https://mermaid-js.github.io/mermaid).
 
-<<<<<<< HEAD
 Τα code blocks που χαρακτηρίζονται ως `mermaid` θα μετατρέπονται σε διαγράμματα, για παράδειγμα:
-=======
-Code blocks marked as `mermaid` will be converted to diagrams, for example:
->>>>>>> d9b5a2ed4eea5c454b14f823f740a050ef45f079
 
 ~~~md
 //```mermaid
