@@ -94,6 +94,10 @@ const Translations = [
     text: 'Deutsch',
     link: 'https://de.sli.dev{{pathname}}',
   },
+  {
+    text: 'Português (BR)',
+    link: 'https://br.sli.dev{{pathname}}',
+  },
 ]
 
 const Customizations = [
