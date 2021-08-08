@@ -2,112 +2,109 @@
 
 ## Ενσωματωμένα Layouts
 
-<<<<<<< HEAD
-> Οι οδηγίες χρήσης αυτής της ενότητας βρίσκονται ακόμη σε εξέλιξη. Πριν από αυτό, μπορείτε να ρίξετε απευθείας μία ματιά στον [πηγαίο κώδικα](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts).
-=======
-> As themes may override layouts behaviour, the best way to know exactly the usage, parameters and examples is referring their documentation.
+> Καθώς τα θέματα μπορούν να παρακάμψουν τη συμπεριφορά των layouts, ο καλύτερος τρόπος για να μάθετε ακριβώς τη χρήση, τις παραμέτρους και τα παραδείγματα είναι να ανατρέξετε στις οδηγίες χρήσης τους.
 
 
 ### `center`
 
-Displays the content in the middle of the sreen.
+Εμφανίζει το περιεχόμενο στο κέντρο της οθόνης.
 
 ### `cover`
 
-Used to display the cover page for the presentation, may contain the presentation title, contextualization, etc.
+Χρησιμοποιείται για την εμφάνιση του εξώφυλλου της παρουσίασης, το οποίο μπορεί να περιέχει τον τίτλο της παρουσίασης, τα συμφραζόμενα κλπ.
 
 ### `default`
 
-The most baisc layout, to display any kind of content.
+Το πιο βασικό layout, για την εμφάνιση οποιουδήποτε είδους περιεχομένου.
 
 ### `end`
 
-The final page for the presentation.
+Η τελική σελίδα της παρουσίασης.
 
 ### `fact`
 
-To show some fact or data with a lot of prominence on the screen.
+Για να παρουσιάσετε κάποιο γεγονός ή δεδομένο με πολύ έμφαση στην οθόνη.
 
 ### `full`
 
-Use all the space of the screen to display the content.
+Χρησιμοποιήστε όλο το χώρο της οθόνης για την εμφάνιση του περιεχομένου.
 
 ### `image-left`
 
-Shows an image on the left side of the screen, the content will be placed on the right side.
+Εμφανίζει μια εικόνα στην αριστερή πλευρά της οθόνης, το περιεχόμενο θα τοποθετηθεί στη δεξιά πλευρά.
 
-#### Usage
+#### Χρήση
 
 ```yaml
 ---
 layout: image-left
 
-# the image source
-image: ./path/to/the/image
+# η πηγή της εικόνας
+image: ./path/για/την/εικόνα
 
-# a custom class name to the content
-class: my-cool-content-on-the-right
+# ένα προσαρμοσμένο όνομα class για το περιεχόμενο
+class: το-cool-περιεχόμενό-μου-στα-δεξιά
 ---
 ```
 
 ### `image-right`
 
-Shows an image on the right side of the screen, the content will be placed on the left side.
+Εμφανίζει μια εικόνα στη δεξιά πλευρά της οθόνης, το περιεχόμενο θα τοποθετηθεί στην αριστερή πλευρά.
 
-#### Usage
+#### Χρήση
 
 ```yaml
 ---
 layout: image-right
 
-# the image source
-image: ./path/to/the/image
+# η πηγή της εικόνας
+image: ./path/για/την/εικόνα
 
-# a custom class name to the content
-class: my-cool-content-on-the-left
+# ένα προσαρμοσμένο όνομα class για το περιεχόμενο
+class: το-cool-περιεχόμενό-μου-στα-αριστερά
 ---
 ```
 
 ### `image`
 
-Shows an image as the main content of the page.
+Εμφανίζει μια εικόνα ως το κύριο περιεχόμενο της σελίδας.
 
-#### Usage
+#### Χρήση
 
 ```yaml
 ---
 layout: image
 
-# the image source
-image: ./path/to/the/image
+# η πηγή της εικόνας
+image: ./path/για/την/εικόνα
 ---
 ```
 
 ### `intro`
 
-To introduce the presentation, usually with the presentation title, a short description, the author, etc.
+Για την εισαγωγή της παρουσίασης, συνήθως με τον τίτλο της παρουσίασης, μια σύντομη περιγραφή, τον συγγραφέα κλπ.
 
 ### `none`
 
-A layout without any existent styling.
+Ένα layout χωρίς κανένα υπάρχον styling.
 
 ### `quote`
 
-To display a quotation with prominience.
+Για να εμφανίσετε ένα απόσπασμα με έμφαση.
 
 ### `section`
 
-Used to mark the beginning of a new presentation section.
+Χρησιμοποιείται για να σηματοδοτήσει την έναρξη μιας νέας ενότητας παρουσίασης.
 
 ### `statement`
 
-Make an affirmation/statement as the main page content.
+Κάντε μια διαβεβαίωση/δήλωση ως το κύριο περιεχόμενο της σελίδας.
 
 ### `two-cols`
 
-Separates the page content in two columns.
+Διαχωρίζει το περιεχόμενο της σελίδας σε δύο στήλες.
 
-#### Usage
+#### Χρήση
 
 
 ```md
@@ -115,17 +112,16 @@ Separates the page content in two columns.
 layout: two-cols
 ---
 
-# Left
+# Αριστερά
 
-This shows on the left
+Αυτό εμφανίζεται στα αριστερά
 
 ::right::
 
-# Right
+# Δεξιά
 
-This shows on the right
+Αυτό εμφανίζεται στα δεξιά
 ```
->>>>>>> 1167e7a94ea649de6b3cd27aec6585258f0d477e
 
 ## Προσαρμοσμένα Layouts
 
