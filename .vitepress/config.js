@@ -161,6 +161,10 @@ const Resources = [
     link: '/showcases',
   },
   {
+    text: 'Μαθησιακοί Πόροι',
+    link: '/resources/learning',
+  },
+  {
     text: 'Επιμελημένα Εξώφυλλα',
     link: '/resources/covers',
   },
