@@ -161,15 +161,11 @@ const Resources = [
     link: '/showcases',
   },
   {
-<<<<<<< HEAD
-    text: 'Επιμελημένα Εξώφυλλα',
-=======
-    text: 'Learning Resources',
+    text: 'Μαθησιακοί Πόροι',
     link: '/resources/learning',
   },
   {
-    text: 'Curated Covers',
->>>>>>> 9ea35932b94caae076abe8c4e0df6914298d4ebe
+    text: 'Επιμελημένα Εξώφυλλα',
     link: '/resources/covers',
   },
 ]
