@@ -1,28 +1,28 @@
-# Static Hosting
+# Στατική Φιλοξενία
 
 ## Build Single Page Applications (SPA)
 
-You can also build the slides into a self-hostable SPA:
+Μπορείτε επίσης να μετατρέψετε τις διαφάνειες σε ένα αυτο-φιλοξενούμενο SPA:
 
 ```bash
 $ slidev build
 ```
 
-The generated application will be available under `dist/` and then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever you want. Now you can share your slides with the rest of the world with a single link.
+Η παραγόμενη εφαρμογή θα είναι διαθέσιμη στο `dist/` και στη συνέχεια μπορείτε να την φιλοξενήσετε στα [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), ή όπου αλλού θέλετε. Τώρα μπορείτε να μοιραστείτε τις διαφάνειές σας με τον υπόλοιπο κόσμο με έναν μόνο σύνδεσμο.
 
-### Base Path
+### Βασικό Path
 
-To deploy your slides under sub-routes, you will need to pass the `--base` option. For example:
+Για να εγκαταστήσετε τις διαφάνειές σας κάτω από υποδιαδρομές, θα πρέπει να περάσετε την επιλογή `--base`. Για παράδειγμα:
 
 ```bash
-$ slidev build --base /talks/my-cool-talk/
+$ slidev build --base /ομιλίες/η-cool-ομιλία-μου/
 ```
 
-Refer to [Vite's documentation](https://vitejs.dev/guide/build.html#public-base-path) for more details.
+Ανατρέξτε στις [οδηγίες χρήσης του Vite](https://vitejs.dev/guide/build.html#public-base-path) για περισσότερες πληροφορίες.
 
-### Provide Downloadable PDF
+### Παροχή PDF με δυνατότητα λήψης
 
-You can provide a downloadable PDF to the viewers of your SPA with the following config:
+Μπορείτε να παρέχετε ένα PDF με δυνατότητα λήψης στους θεατές του SPA σας με την ακόλουθη ρύθμιση:
 
 ```md
 ---
@@ -30,9 +30,9 @@ download: true
 ---
 ```
 
-Slidev will generate a pdf file along with the build, and a download button will be displayed in the SPA.
+Το Slidev θα δημιουργήσει ένα αρχείο pdf μαζί με την κατασκευή και ένα κουμπί λήψης θα εμφανιστεί στο SPA.
 
-You can also provide a custom url to the PDF. In that case, the rendering process will be skipped.
+Μπορείτε επίσης να δώσετε μια προσαρμοσμένη διεύθυνση URL για το PDF. Σε αυτή την περίπτωση, η διαδικασία απεικόνισης θα παραλειφθεί.
 
 ```md
 ---
@@ -40,24 +40,24 @@ download: 'https://myside.com/my-talk.pdf'
 ---
 ```
 
-## Examples
+## Παραδείγματα
 
-Here are a few examples of the exported SPA:
+Ακολουθούν μερικά παραδείγματα εξαγομένων SPA:
 
-- [Starter Template](https://sli.dev/demo/starter)
-- [Composable Vue](https://talks.antfu.me/2021/composable-vue) by [Anthony Fu](https://github.com/antfu)
+- [Πρότυπο Εκκίνησης](https://sli.dev/demo/starter)
+- [Composable Vue](https://talks.antfu.me/2021/composable-vue) του [Anthony Fu](https://github.com/antfu)
 
-For more, check out [Showcases](/showcases).
+Για περισσότερα, δείτε τις [Παρουσιάσεις](/showcases).
 
-## Hosting
+## Φιλοξενία
 
-We recommend to use `npm init slidev@lastest` to scaffolding your project, which contains the necessary configuration files for hosting services out-of-box.
+Συνιστούμε να χρησιμοποιήσετε το `npm init slidev@lastest` για την δημιουργία του έργου σας, το οποίο περιέχει τα απαραίτητα αρχεία ρυθμίσεων για τις υπηρεσίες φιλοξενίας.
 
 ### Netlify
 
 - [Netlify](https://netlify.com/)
 
-Create `netlify.toml` in your project root with the following content.
+Δημιουργήστε το αρχείο `netlify.toml` στη ρίζα του έργου σας με το ακόλουθο περιεχόμενο.
 
 ```ts
 [build.environment]
@@ -73,13 +73,13 @@ Create `netlify.toml` in your project root with the following content.
   status = 200
 ```
 
-Then go to your Netlify dashboard, create new site with the repository.
+Στη συνέχεια, μεταβείτε στο πίνακα ελέγχου του Netlify και δημιουργήστε ένα νέο ιστότοπο με το repository.
 
 ## Vercel
 
 - [Vercel](https://vercel.com/)
 
-Create `vercel.json` in your project root with the following content.
+Δημιουργήστε το αρχείο `vercel.json` στη ρίζα του έργου σας με το ακόλουθο περιεχόμενο.
 
 ```json
 {
@@ -89,13 +89,13 @@ Create `vercel.json` in your project root with the following content.
 }
 ```
 
-Then go to your Vercel dashboard, create new site with the repository.
+Στη συνέχεια, μεταβείτε στο πίνακα ελέγχου του Vercel και δημιουργήστε ένα νέο ιστότοπο με το repository.
 
 ## GitHub Pages
 
 - [GitHub Pages](https://pages.github.com/)
 
-Create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions.
+Δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions.
 
 ```yaml
 name: Deploy pages

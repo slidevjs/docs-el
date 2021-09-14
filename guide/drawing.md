@@ -1,20 +1,20 @@
-# Drawing & Annotations
+# Ζωγραφική & Σημειώσεις
 
-> Available since v0.23
+> Διαθέσιμο από v0.23
 
-We have [drauu](https://github.com/antfu/drauu) built-in for drawing and annotation that could enhance your presentation further.
+Έχουμε ενσωματωμένο το [drauu](https://github.com/antfu/drauu) για ζωγραφική και σημειώσεις που θα μπορούσαν να βελτιώσουν περαιτέρω την παρουσίασή σας.
 
-To start, click the <carbon-pen class="inline-icon-btn"/> icon in the toolbar and start drawing. It's also available in the [Presenter Mode](/guide/presenter-mode). Drawings and annotations you created will be **synced up** automatically across all instances in real-time.
+Για να ξεκινήσετε, κάντε κλικ στο εικονίδιο <carbon-pen class="inline-icon-btn"/> στη γραμμή εργαλείων και αρχίστε να ζωγραφίζετε. Είναι επίσης διαθέσιμο στη [Λειτουργία Παρουσιαστή](/guide/presenter-mode). Οι ζωγραφιές και οι σημειώσεις που δημιουργήσατε θα **συγχρονιστούν** αυτόματα σε όλες τις εφαρμογές σε πραγματικό χρόνο.
 
 <Tweet id="1424027510342250499" />
 
-## Use with Stylus Pen
+## Χρήση με Stylus Pen
 
-When using a stylus pen on a tablet (for example, iPad with Apple Pencil), Slidev could smartly detect the input type. You can directly draw on your slides with the pen without turning on the drawing mode, while having your fingers or mouse control the navigation.
+Όταν χρησιμοποιείτε ένα stylus pen σε ένα tablet (για παράδειγμα, iPad με Apple Pencil), το Slidev μπορεί να ανιχνεύσει έξυπνα τον τύπο εισόδου. Μπορείτε να ζωγραφίσετε απευθείας στις διαφάνειές σας με το στυλό χωρίς να ενεργοποιήσετε τη λειτουργία ζωγραφικής, ενώ τα δάχτυλα ή το ποντίκι σας ελέγχουν την πλοήγηση.
 
-## Persist Drawings
+## Επίμονες Ζωγραφιές
 
-The following frontmatter configuration allows you to persist your drawings as SVGs under `.slidev/drawings` directory and have them inside your exported pdf or hosted site.
+Η ακόλουθη ρύθμιση frontmatter σας επιτρέπει να διατηρήσετε τα σχέδιά σας ως SVGs στον φάκελο `.slidev/drawings` και να τα έχετε μέσα στο εξαγόμενο pdf σας ή στο φιλοξενούμενο ιστότοπο.
 
 ```md
 ---
@@ -23,9 +23,9 @@ drawings:
 ---
 ```
 
-## Disable Drawings
+## Απενεργοποίηση Ζωγραφιών
 
-Entirely:
+Εντελώς:
 
 ```md
 ---
@@ -34,7 +34,7 @@ drawings:
 ---
 ```
 
-Only in Development:
+Μόνο σε Development:
 
 ```md
 ---

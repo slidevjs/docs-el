@@ -30,15 +30,11 @@ const Guide = [
     link: '/guide/exporting',
   },
   {
-<<<<<<< HEAD
-    text: 'Καταγραφή Παρουσίασης',
-=======
-    text: 'Static Hosting',
+    text: 'Στατική Φιλοξενία',
     link: '/guide/hosting',
   },
   {
-    text: 'Record Presentation',
->>>>>>> 565eb6709aa69ec36842f22c104f90ef741d9440
+    text: 'Καταγραφή Παρουσίασης',
     link: '/guide/recording',
   },
   {
@@ -46,15 +42,11 @@ const Guide = [
     link: '/guide/presenter-mode',
   },
   {
-<<<<<<< HEAD
-    text: 'Ενσωματώσεις Συντάκτη',
-=======
-    text: 'Drawing & Annonations',
+    text: 'Ζωγραφική & Σημειώσεις',
     link: '/guide/drawing',
   },
   {
-    text: 'Editor Integrations',
->>>>>>> 565eb6709aa69ec36842f22c104f90ef741d9440
+    text: 'Ενσωματώσεις Συντάκτη',
     link: '/guide/editors',
   },
   {
