@@ -16,10 +16,11 @@
 - 🌈 [**Stylish**](/guide/syntax.html#ενσωματωμένα-styles) - [Windi CSS](https://windicss.org/) on-demand εργαλεία, εύκολα στη χρήση ενσωματωμένα stylesheets
 - 🤹 [**Διαδραστικό**](/custom/directory-structure.html#components) - απρόσκοπτη ενσωμάτωση Vue components
 - 🎙 [**Λειτουργία Παρουσιαστή**](/guide/presenter-mode.html) - χρησιμοποιήστε ένα άλλο παράθυρο ή ακόμα και το τηλέφωνό σας για να ελέγξετε τις διαφάνειές σας
-- 🧮 [**LaTeX**](/guide/syntax.html#latex) - Ενσωματωμένη υποστήριξη μαθηματικών εξισώσεων LaTeX
-- 📰 [**Διαγράμματα**](/guide/syntax.html#διαγpάμματα) - Δημιουργεί διαγράμματα με περιγραφές κειμένου 
-- 🌟 [**Εικονίδια**](/guide/syntax.html#εικονίδια) - Απευθείας πρόσβαση σε εικονίδια από οποιοδήποτε σύνολο εικονιδίων 
-- 💻 [**Συντάκτες**](/guide/editors.html) - Ενσωματωμένος συντάκτης, ή [επέκταση για το VS Code](https://github.com/slidevjs/slidev-vscode)
+- 🎨 [**Ζωγραφική**](/guide/drawing.html) - ζωγραφίστε και σημειώστε πάνω στις διαφάνειές σας
+- 🧮 [**LaTeX**](/guide/syntax.html#latex) - ενσωματωμένη υποστήριξη μαθηματικών εξισώσεων LaTeX
+- 📰 [**Διαγράμματα**](/guide/syntax.html#διαγpάμματα) - δημιουργεί διαγράμματα με περιγραφές κειμένου 
+- 🌟 [**Εικονίδια**](/guide/syntax.html#εικονίδια) - απευθείας πρόσβαση σε εικονίδια από οποιοδήποτε σύνολο εικονιδίων 
+- 💻 [**Συντάκτες**](/guide/editors.html) - ενσωματωμένος συντάκτης, ή [επέκταση για το VS Code](https://github.com/slidevjs/slidev-vscode)
 - 🎥 [**Καταγραφή Παρουσίασης**](/guide/recording.html) - ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας
 - 📤 [**Φορητό**](/guide/exporting.html) - εξαγωγή σε PDF, PNGs, ή ακόμα και σε ένα φιλοξενήσιμο SPA
 - ⚡️ [**Γρήγορο**](https://vitejs.dev) - άμεση επαναφόρτωση με τη βοήθεια του [Vite](https://vitejs.dev)
@@ -36,6 +37,7 @@
 - [RecordRTC](https://recordrtc.org) - Ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας
 - [VueUse](https://vueuse.org) οικογένεια -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), κτλ.
 - [Iconify](https://iconify.design/) - Συλλογή εικονιδίων.
+- [Drauu](https://github.com/antfu/drauu) - Υποστήριξη ζωγραφικής και σημειώσεων
 - [KaTeX](https://katex.org/) - Μαθηματική απεικόνιση LaTeX.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Κειμενικά Διαγράμματα.
 

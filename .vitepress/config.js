@@ -30,12 +30,20 @@ const Guide = [
     link: '/guide/exporting',
   },
   {
+    text: 'Στατική Φιλοξενία',
+    link: '/guide/hosting',
+  },
+  {
     text: 'Καταγραφή Παρουσίασης',
     link: '/guide/recording',
   },
   {
     text: 'Λειτουργία Παρουσιαστή',
     link: '/guide/presenter-mode',
+  },
+  {
+    text: 'Ζωγραφική & Σημειώσεις',
+    link: '/guide/drawing',
   },
   {
     text: 'Ενσωματώσεις Συντάκτη',
