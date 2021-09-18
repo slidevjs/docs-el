@@ -43,7 +43,7 @@ drawings:
 ---
 ```
 
-Only in Presenter Mode:
+Μόνο σε Λειτουργία Παρουσιαστή:
 
 ```md
 ---
@@ -52,9 +52,9 @@ drawings:
 ---
 ```
 
-## Drawing Syncing
+## Συγχρονισμός Ζωγραφιών
 
-By default, Slidev syncs up your drawings across all instances. If you are sharing your slides with others, you might want to disable the syncing by:
+Από προεπιλογή, το Slidev συγχρονίζει τις ζωγραφιές σας σε όλες τις εφαρμογές. Αν μοιράζεστε τις διαφάνειές σας με άλλους, ίσως θελήσετε να απενεργοποιήσετε το συγχρονισμό μέσω:
 
 ```md
 ---
@@ -63,6 +63,6 @@ drawings:
 ---
 ```
 
-With this config, only the drawing from the presenter instance will be able to sync with others.
+Με αυτή τη ρύθμιση, μόνο οι ζωγραφιές από την εφαρμογή του παρουσιαστή θα μπορούν να συγχρονιστούν με άλλες.
 
 

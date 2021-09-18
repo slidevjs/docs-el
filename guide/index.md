@@ -43,21 +43,17 @@
 
 ### Δημιουργία σκελετού για την Πρώτη Σας Παρουσίαση
 
-<<<<<<< HEAD
-Με NPM:
-=======
 <br>
 
-#### Try it Online
+#### Δοκιμάστε το Online
 
 [sli.dev/new](https://sli.dev/new)
 
 [![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://sli.dev/new)
 
-#### Create Locally
+#### Δημιουργήστε Τοπικά
 
-With NPM:
->>>>>>> 7dc63d28be77f9c3b208ece23969befdc0d99204
+Με NPM:
 
 ```bash
 $ npm init slidev
