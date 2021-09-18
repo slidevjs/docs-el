@@ -43,6 +43,16 @@
 
 ### Δημιουργία σκελετού για την Πρώτη Σας Παρουσίαση
 
+<br>
+
+#### Δοκιμάστε το Online
+
+[sli.dev/new](https://sli.dev/new)
+
+[![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://sli.dev/new)
+
+#### Δημιουργήστε Τοπικά
+
 Με NPM:
 
 ```bash
