@@ -75,7 +75,7 @@ download: 'https://myside.com/my-talk.pdf'
 
 Στη συνέχεια, μεταβείτε στο πίνακα ελέγχου του Netlify και δημιουργήστε ένα νέο ιστότοπο με το repository.
 
-## Vercel
+### Vercel
 
 - [Vercel](https://vercel.com/)
 
