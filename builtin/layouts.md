@@ -7,7 +7,11 @@
 
 ### `center`
 
+<<<<<<< HEAD
 Εμφανίζει το περιεχόμενο στο κέντρο της οθόνης.
+=======
+Displays the content in the middle of the screen.
+>>>>>>> a261c239adbbea08fafc043330460e1e7bb16e54
 
 ### `cover`
 
