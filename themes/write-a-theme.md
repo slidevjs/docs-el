@@ -120,7 +120,11 @@ html.dark {
 
 Τα χρώματα επισήμανσης σύνταξης παρέχονται επίσης στο θέμα. Υποστηρίζουμε και [Prism](https://prismjs.com/) και [Shiki](https://github.com/shikijs/shiki). Για περισσότερες πληροφορίες ανατρέξτε [στις οδηγίες επισήμανσης σύνταξης](/custom/highlighters).
 
+<<<<<<< HEAD
 Μπορείτε να υποστηρίξετε ένα από τα δύο ή και τα δύο. Ανατρέξτε στο προεπιλεγμένο θέμα για παραδείγματα ρυθμίσεων [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
+=======
+You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
+>>>>>>> ce73d5801d6634c1734058202032c57f3360bfe3
 
 Επίσης, θυμηθείτε να καθορίσετε τους υποστηριζόμενους επισημαντήρες στο `package.json` σας
 
