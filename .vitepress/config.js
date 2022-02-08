@@ -106,8 +106,6 @@ const Translations = [
     text: 'Português (BR)',
     link: 'https://br.sli.dev{{pathname}}',
   },
-<<<<<<< HEAD
-=======
   {
     text: 'Ελληνικά',
     link: 'https://el.sli.dev{{pathname}}',
@@ -116,7 +114,6 @@ const Translations = [
     text: '日本語',
     link: 'https://ja.sli.dev{{pathname}}',
   },
->>>>>>> d99ebc341368cc7f6df4ae4cbd893a171a853aa6
 ]
 
 const Customizations = [
