@@ -33,6 +33,8 @@ aspectRatio: '16/9'
 # πραγματικό πλάτος του καμβά, μονάδα σε px
 canvasWidth: 980
 
+# favicon, μπορεί να είναι θέση τοπικού αρχείου ή διεύθυνση URL
+favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
 # οι γραμματοσειρές θα εισαχθούν αυτόματα από το Google fonts
 # Μάθετε περισσότερα: https://el.sli.dev/custom/fonts
 fonts:
