@@ -73,7 +73,11 @@ console.log('Γεια σου, Κόσμε!')
 //```
 ~~~
 
+<<<<<<< HEAD
 Υποστηρίζουμε και [Prism](http://prismjs.com) και [Shiki](https://github.com/shiki/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
+=======
+We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 871a293da7f02bedf8804133bf6a4af060611eb0
 
 ### Επισήμανση Γραμμής
 
