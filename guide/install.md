@@ -62,14 +62,9 @@ $ slidev
 
 ## Εγκατάσταση σε Docker
 
-<<<<<<< HEAD
-Αν χρειάζεστε έναν γρήγορο τρόπο για να εκτελέσετε μια παρουσίαση με containers, μπορείτε να χρησιμοποιήσετε την προκατασκευασμένη εικόνα [docker](https://hub.docker.com/r/stig124/slidev) που συντηρείται από τον [stig124](https://github.com/Stig124), ή φτιάξτε το δικό σας.
+Αν χρειάζεστε έναν γρήγορο τρόπο για να εκτελέσετε μια παρουσίαση με containers, μπορείτε να χρησιμοποιήσετε την προκατασκευασμένη εικόνα [docker](https://hub.docker.com/r/stig124/slidev) που συντηρείται από τον [tangramor](https://github.com/tangramor), ή φτιάξτε το δικό σας.
 
-Ανατρέξτε στο [slidevjs/container repo](https://github.com/slidevjs/container) για περισσότερες πληροφορίες.
-=======
-If you need a rapid way to run a presentation with containers, you can use the prebuilt [docker](https://hub.docker.com/r/tangramor/slidev) image maintained by [tangramor](https://github.com/tangramor), or build your own.
-
-Just run following command in your work folder:
+Απλά εκτελέστε την ακόλουθη εντολή στο φάκελο εργασίας σας:
 
 ```bash
 docker run --name slidev --rm -it \
@@ -79,14 +74,14 @@ docker run --name slidev --rm -it \
     tangramor/slidev:latest
 ```
 
-If your work folder is empty, it will generate a template `slides.md` and other related files under your work folder, and launch the server on port `3030`. 
+Εάν ο φάκελος εργασίας σας είναι άδειος, θα δημιουργήσει ένα πρότυπο `slides.md` και άλλα σχετικά αρχεία, και θα ξεκινήσει τον διακομιστή στη θύρα `3030`. 
 
-You can access your slides from http://localhost:3030/
+Μπορείτε να έχετε πρόσβαση στις διαφάνειές σας από το http://localhost:3030/
 
 
-### Build deployable image
+### Δημιουργία εικόνας που μπορεί να γίνει deploy
 
-Or you can create your own slidev project to a docker image with Dockerfile:
+Ή μπορείτε να δημιουργήσετε το δικό σας slidev project σε μία εικόνα docker με ένα Dockerfile:
 
 ```Dockerfile
 FROM tangramor/slidev:latest
@@ -95,36 +90,36 @@ ADD . /slidev
 
 ```
 
-Create the docker image: `docker build -t myppt .`
+Δημιουργήσετε την εικόνα docker: `docker build -t myppt .`
 
-And run the container: `docker run --name myslides --rm --user node -p 3030:3030 myppt`
+Και εκτελέστε το container: `docker run --name myslides --rm --user node -p 3030:3030 myppt`
 
-You can visit your slides from http://localhost:3030/
-
-
-### Build hostable SPA (Single Page Application)
-
-Run command `docker exec -i slidev npx slidev build` on the running container `slidev`. It will generate static HTML files under `dist` folder.
+Μπορείτε να επισκεφθείτε τις διαφάνειές σας από το http://localhost:3030/
 
 
-#### Host on Github Pages
+### Κατασκευή φιλοξενήσιμης εφαρμογής SPA (Single Page Application)
 
-You can host `dist` in a static web site such as [Github Pages](https://tangramor.github.io/slidev_docker/) or Gitlab Pages. 
-
-Because in Github pages the url may contain subfolder, so you need to modify the generated `index.html` to change `href="/assets/xxx` to `href="./assets/xxx`. Or you may use `--base=/<subfolder>/` option during the build process, such as: `docker exec -i slidev npx slidev build --base=/slidev_docker/`.
-
-And to avoid Jekyll build process, you need to add an empty file `.nojekyll`.
+Εκτελέστε την εντολή `docker exec -i slidev npx slidev build` στο τρέχον container `slidev`. Θα δημιουργήσει στατικά αρχεία HTML στο φάκελο `dist`.
 
 
-#### Host by docker
+#### Φιλοξενήστε στο Github Pages
 
-You can also host it by yourself with docker:
+Μπορείτε να φιλοξενήσετε το `dist` σε μια στατική ιστοσελίδα όπως το [Github Pages](https://tangramor.github.io/slidev_docker/) ή το Gitlab Pages. 
+
+Επειδή στο Github pages το url μπορεί να περιέχει υποφακέλους, πρέπει να τροποποιήσετε το παραγόμενο `index.html` για να αλλάξετε το `href="/assets/xxx` σε `href="./assets/xxx`. Ή μπορείτε να χρησιμοποιήσετε την επιλογή `--base=/<subfolder>/` κατά τη διάρκεια της διαδικασίας κατασκευής, όπως: `docker exec -i slidev npx slidev build --base=/slidev_docker/`.
+
+Και για να αποφύγετε τη διαδικασία κατασκευής του Jekyll, πρέπει να προσθέσετε ένα κενό αρχείο `.nojekyll`.
+
+
+#### Φιλοξενήστε σε docker
+
+Μπορείτε επίσης να το φιλοξενήσετε μόνοι σας με docker:
 
 ```bash
 docker run --name myslides --rm -p 80:80 -v ${PWD}/dist:/usr/share/nginx/html nginx:alpine
 ```
 
-Or create a static image with following Dockerfile:
+Ή δημιουργήστε μια στατική εικόνα με ένα Dockerfile:
 
 ```Dockerfile
 FROM nginx:alpine
@@ -133,12 +128,11 @@ COPY dist /usr/share/nginx/html
 
 ```
 
-Create the docker image: `docker build -t mystaticppt .`
+Δημιουργήσετε την εικόνα docker: `docker build -t mystaticppt .`
 
-And run the container: `docker run --name myslides --rm -p 80:80 mystaticppt`
+Και εκτελέστε το container: `docker run --name myslides --rm -p 80:80 mystaticppt`
 
-You can visit your slides from http://localhost/
+Μπορείτε να επισκεφθείτε τις διαφάνειές σας από το http://localhost/
 
 
-Refer to the [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) for more details.
->>>>>>> 1abac97d69f2a4c1bf1ea213947287922b7adba4
+Ανατρέξτε στο [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) για περισσότερες πληροφορίες.
