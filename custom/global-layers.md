@@ -4,13 +4,15 @@
 
 Τα global layers σας επιτρέπουν να έχετε προσαρμοσμένα στοιχεία που είναι **μόνιμα** σε όλες τις διαφάνειες. Αυτό θα μπορούσε να είναι χρήσιμο για footers, κινήσεις διαφανειών, global effects, κτλ.
 
-Το Slidev παρέχει δύο layers για αυτή τη χρήση, δημιουργήστε `global-top.vue` ή `global-bottom.vue` στη ρίζα του έργου σας και θα το αναλάβει αυτόματα.
+Το Slidev παρέχει τρία layers για αυτή τη χρήση, δημιουργήστε `global-top.vue`, `global-bottom.vue` ή `custom-nav-controls.vue` στη ρίζα του έργου σας και θα το αναλάβει αυτόματα.
 
 Σχέση layers:
 
 - Global Top (`global-top.vue`)
 - Διαφάνειες
 - Global Bottom (`global-bottom.vue`)
+- NavControls
+  - Προσαρμοσμένοι έλεγχοι πλοήγησης (`custom-nav-controls.vue`)
 
 ## Παράδειγμα
 
@@ -22,6 +24,17 @@
 ```
 
 Το κείμενο `Το ονομά σας` θα εμφανιστεί σε όλες τις διαφάνειές σας.
+
+```html
+<!-- custom-nav-controls -->
+<template>
+  <button class="icon-btn" title="Next" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
+</template>
+```
+
+Το κουμπί  `Next` θα εμφανιστεί στο NavControls.
 
 Για να το ενεργοποιήσετε υπό όρους, μπορείτε να το εφαρμόσετε με το [Vue Global Context](/custom/vue-context).
 
@@ -58,5 +71,15 @@
   >
     {{ $slidev.nav.currentPage }} / {{ $slidev.nav.total }}
   </footer>
+</template>
+```
+
+```html
+<!-- custom-nav-controls -->
+<!-- κρύψτε το κουμπί στη λειτουργία παρουσιαστή -->
+<template>
+  <button v-if="!$slidev.nav.isPresenter" class="icon-btn" title="Next" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
 </template>
 ```
