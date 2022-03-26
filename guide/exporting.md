@@ -19,17 +19,13 @@ $ slidev export
 
 Μετά από λίγα δευτερόλεπτα, οι διαφάνειές σας θα είναι έτοιμες στο `./slides-exports.pdf`.
 
-<<<<<<< HEAD
-### Εξαγωγή Βημάτων Clicks
-=======
-In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+Σε περίπτωση που θέλετε να εξάγετε τις διαφάνειές σας χρησιμοποιώντας τη σκοτεινή έκδοση του θέματος, χρησιμοποιήστε την επιλογή `--dark`:
 
 ```bash
 $ slidev export --dark
 ```
 
-### Export Clicks Steps
->>>>>>> d68398ac58d3e8efc2f6d29119938f4a4382f617
+### Εξαγωγή Βημάτων Clicks
 
 > Διαθέσιμο από v0.21
 
