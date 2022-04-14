@@ -17,11 +17,7 @@ $ npm i -D playwright-chromium
 $ slidev export
 ```
 
-<<<<<<< HEAD
-Μετά από λίγα δευτερόλεπτα, οι διαφάνειές σας θα είναι έτοιμες στο `./slides-exports.pdf`.
-=======
-After a few seconds, your slides will be ready at `./slides-export.pdf`.
->>>>>>> 9fa6829bca1bd8a2262cbc20eb2759d08a0f11fa
+Μετά από λίγα δευτερόλεπτα, οι διαφάνειές σας θα είναι έτοιμες στο `./slides-export.pdf`.
 
 Σε περίπτωση που θέλετε να εξάγετε τις διαφάνειές σας χρησιμοποιώντας τη σκοτεινή έκδοση του θέματος, χρησιμοποιήστε την επιλογή `--dark`:
 
