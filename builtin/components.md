@@ -8,57 +8,53 @@
 
 Εισαγωγή πίνακα περιεχομένων (TOC).
 
-<<<<<<< HEAD
-Οι τίτλοι και τα επίπεδα τίτλων ανακτώνται αυτόματα από το πρώτο στοιχείο τίτλου κάθε διαφάνειας.
-=======
-If you want a slide to not appear in the `<Toc>` component, you can use in the front matter block of the slide:
+Αν θέλετε μια διαφάνεια να μην εμφανίζεται στο στοιχείο `<Toc>`, μπορείτε να χρησιμοποιήσετε στο μπλοκ front matter της διαφάνειας:
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
-Titles are displayed using the [`<Titles>` component](#titles)
+Οι τίτλοι εμφανίζονται χρησιμοποιώντας το [στοιχείο `<Titles>`](#titles)
 
-#### Usage
+#### Χρήση
 
 ~~~md
 <Toc />
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `columns` (`string | number`, default: `1`): The number of columns of the display
-* `listClass` (`string | string[]`, default: `''`): Classes to apply to the table of contents list
-* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
-* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Display all items
-  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
-  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+* `columns` (`string | number`, προεπιλογή: `1`): Ο αριθμός των στηλών της απεικόνισης
+* `listClass` (`string | string[]`, προεπιλογή: `''`): Κλάσεις που εφαρμόζονται στον πίνακα περιεχομένων
+* `maxDepth` (`string | number`, προεπιλογή: `Infinity`): Το μέγιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
+* `minDepth` (`string | number`, προεπιλογή: `1`): Το ελάχιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
+* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, προεπιλογή: `'all'`):
+  * `'all'`: Εμφάνιση όλων των στοιχείων
+  * `'onlyCurrentTree'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο (ενεργό στοιχείο, γονείς και παιδιά του ενεργού στοιχείου)
+  * `'onlySiblings'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο και των άμεσων αδελφών τους
 
 ### `Link`
 
-Insert a link you can use to navigate to a given slide.
+Εισάγετε έναν σύνδεσμο που μπορείτε να χρησιμοποιήσετε για να πλοηγηθείτε σε μια συγκεκριμένη διαφάνεια.
 
-#### Usage
+#### Χρήση
 
 ~~~md
-<Link to="42">Go to slide 42</Link>
-<Link to="42" title="Go to slide 42"/>
+<Link to="42">Πηγαίνετε στη διαφάνεια 42</Link>
+<Link to="42" title="Πηγαίνετε στη διαφάνεια 42"/>
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `to` (`string | number`): The path of the slide to navigate to (slides starts from `1`)
-* `title` (`string`): The title to display
+* `to` (`string | number`): Η διαδρομή της διαφάνειας στην οποία θέλετε να πλοηγηθείτε (οι διαφάνειες ξεκινούν από το `1`)
+* `title` (`string`): Ο τίτλος που θα εμφανιστεί
 
 ### `Titles`
 
-Insert the main title from a slide parsed as HTML.
+Εισάγετε τον κύριο τίτλο από μια διαφάνεια που επεξεργάζεται ως HTML.
 
-Titles and title levels get automatically retrieved from the first title element of each slides.
->>>>>>> 0daa359721a2cdbb0abac8fc5f5e1c00dd7b4452
+Οι τίτλοι και τα επίπεδα τίτλων ανακτώνται αυτόματα από το πρώτο στοιχείο τίτλου κάθε διαφάνειας.
 
 Μπορείτε να παρακάμψετε αυτή την αυτόματη συμπεριφορά για μια διαφάνεια χρησιμοποιώντας τη σύνταξη front matter:
 ```yml
@@ -68,42 +64,21 @@ level: 2
 ---
 ```
 
-<<<<<<< HEAD
-Ή αν προτιμάτε να μην εμφανίζεται καθόλου η διαφάνεια στο TOC, μπορείτε να χρησιμοποιήσετε:
-```yml
----
-hideInToc: true
----
-```
-
 #### Χρήση
-=======
-#### Usage
 
-The `<Titles>` component is a virtual component you can import with:
+Το στοιχείο `<Titles>` είναι ένα εικονικό στοιχείο που μπορείτε να εισαγάγετε με:
 ```js
 import Titles from '/@slidev/titles.md'
 ```
 
-Then you can use it with:
->>>>>>> 0daa359721a2cdbb0abac8fc5f5e1c00dd7b4452
+Στη συνέχεια, μπορείτε να το χρησιμοποιήσετε με:
 ~~~md
 <Titles no="42" />
 ~~~
 
 Παράμετροι:
 
-<<<<<<< HEAD
-* `columns` (`string | number`, προεπιλογή: `1`): Ο αριθμός των στηλών της απεικόνισης
-* `maxDepth` (`string | number`, προεπιλογή: `Infinity`): Το μέγιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
-* `minDepth` (`string | number`, προεπιλογή: `1`): Το ελάχιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, προεπιλογή: `'all'`):
-  * `'all'`: Εμφάνιση όλων των στοιχείων
-  * `'onlyCurrentTree'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο (ενεργό στοιχείο, γονείς και παιδιά του ενεργού στοιχείου)
-  * `'onlySiblings'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο και των άμεσων αδελφών τους
-=======
-* `no` (`string | number`): The number of the slide to display the title from (slides starts from `1`)
->>>>>>> 0daa359721a2cdbb0abac8fc5f5e1c00dd7b4452
+* `no` (`string | number`): Ο αριθμός της διαφάνειας από την οποία θα εμφανιστεί ο τίτλος (οι διαφάνειες ξεκινούν από το `1`)
 
 ## Προσαρμοσμένα Components
 
