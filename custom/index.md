@@ -8,7 +8,12 @@
 
 ```yaml
 ---
+<<<<<<< HEAD
 # id ή όνομα πακέτου θέματος
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+>>>>>>> 87e46ef57643c3aa0f8551691b431a7cec3ed0c4
 theme: 'default'
 # τίτλος της διαφάνειάς σας, αν δεν καθοριστεί θα προκύψει αυτόματα από την πρώτη επικεφαλίδα
 title: 'Slidev'
