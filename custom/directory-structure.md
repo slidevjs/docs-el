@@ -89,7 +89,7 @@ layout: my-cool-theme
 
 Συμβάσεις: `./public/*`
 
-Τα assets σε αυτό το φάκελο θα σερβίρεται στη διαδρομή της ρίζας `/` κατά dev, και αντιγράφεται στη ρίζα του φακέλου dist ως έχει. Διαβάστε περισσότερα για τον [φάκελο `public` του Vite](https://vitejs.dev/guide/assets.html#the-public-directory).
+Τα assets σε αυτό το φάκελο θα σερβίρεται στο path της ρίζας `/` κατά dev, και αντιγράφεται στη ρίζα του φακέλου dist ως έχει. Διαβάστε περισσότερα για τον [φάκελο `public` του Vite](https://vitejs.dev/guide/assets.html#the-public-directory).
 
 ## Style
 
