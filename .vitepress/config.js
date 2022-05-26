@@ -72,11 +72,11 @@ const Theme = [
 
 const Addon = [
   {
-    text: 'Use Addon',
+    text: 'Χρήση Πρόσθετου',
     link: '/addons/use',
   },
   {
-    text: 'Write an Addon',
+    text: 'Γράψτε ένα Πρόσθετο',
     link: '/addons/write-an-addon',
   },
 ]
