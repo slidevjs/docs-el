@@ -70,6 +70,17 @@ const Theme = [
   },
 ]
 
+const Addon = [
+  {
+    text: 'Χρήση Πρόσθετου',
+    link: '/addons/use',
+  },
+  {
+    text: 'Γράψτε ένα Πρόσθετο',
+    link: '/addons/write-an-addon',
+  },
+]
+
 const Translations = [
   {
     text: 'Ελληνικά',
@@ -196,6 +207,10 @@ const slidebars = [
     children: Theme,
   },
   {
+    text: 'Πρόσθετα',
+    children: Addon,
+  },
+  {
     text: 'Προσαρμογές',
     children: Customizations,
   },
@@ -259,6 +274,10 @@ module.exports = {
         items: Theme,
       },
       {
+        text: 'Πρόσθετο',
+        items: Addon,
+      },
+      {
         text: 'Προσαρμόστε',
         items: Customizations,
       },
@@ -275,6 +294,7 @@ module.exports = {
     sidebar: {
       '/guide/': slidebars,
       '/themes/': slidebars,
+      '/addons/': slidebars,
       '/custom/': slidebars,
       '/builtin/': slidebars,
       '/resources/': slidebars,

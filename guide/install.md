@@ -137,7 +137,7 @@ COPY dist /usr/share/nginx/html
 
 Ανατρέξτε στο [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) για περισσότερες πληροφορίες.
 
-### Περιβάλλον Γραμμής Εντολών (CLI)
+## Περιβάλλον Γραμμής Εντολών (CLI)
 
 `@slidev/cli` Εκθέστε μερικές εντολές που μπορείτε να χρησιμοποιήσετε με το `npx slidev ...` ή προσθέτοντας scripts στο `package.json`:
 ```json
@@ -160,7 +160,7 @@ COPY dist /usr/share/nginx/html
 npm run slidev -- --open
 ```
 
-#### `slidev [entry]`
+### `slidev [entry]`
 
 Ξεκινήστε έναν τοπικό διακομιστή για το Slidev.
 
@@ -175,7 +175,7 @@ npm run slidev -- --open
 * `--force`, `-f` (`boolean`, προεπιλογή `false`): αναγκάζει τον βελτιστοποιητή να αγνοήσει την προσωρινή μνήμη και να κάνει re-bundle.
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
 
-#### `slidev build [entry]`
+### `slidev build [entry]`
 
 Κατασκευή φιλοξενήσιμου SPA.
 
@@ -189,7 +189,7 @@ npm run slidev -- --open
 * `--download` (`boolean`, προεπιλογή: `false`): επιτρέπει τη λήψη των διαφανειών σε μορφή PDF μέσα στο SPA.
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
 
-#### `slidev export [entry]`
+### `slidev export [entry]`
 
 Εξαγωγή διαφανειών σε PDF (ή άλλη μορφή).
 
@@ -205,13 +205,13 @@ npm run slidev -- --open
 * `--with-clicks`, `-c` (`boolean`, προεπιλογή: `false`): εξαγωγή σελίδων για κάθε κλικ (δείτε https://el.sli.dev/guide/animations.html#κινήσεις-click).
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
 
-#### `slidev format [entry]`
+### `slidev format [entry]`
 
 Διαμορφώστε το αρχείο markdown.
 
 * `[entry]` (`string`, προεπιλογή: `slides.md`): το path για την είσοδο διαφανειών markdown.
 
-#### `slidev theme [subcommand]`
+### `slidev theme [subcommand]`
 
 Λειτουργίες που σχετίζονται με το θέμα.
 
