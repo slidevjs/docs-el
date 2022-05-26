@@ -1,19 +1,19 @@
-# Use Addon
+# Χρήση Πρόσθετου
 
-Addons are sets of additionnal components, layouts, styles, configuration...etc. that you can use in your presentation.
+Τα πρόσθετα είναι σύνολα επιπρόσθετων στοιχείων, διατάξεων, στυλ, ρυθμίσεων... κ.λπ. που μπορείτε να χρησιμοποιήσετε στην παρουσίασή σας.
 
-They are quite similar to [themes](/themes/use), but in general:
+Μοιάζουν αρκετά με [τα θέματα](/themes/use), αλλά γενικά:
 
-* they don't affect the global styles of your slides
-* you can use multiple addons in one presentation
+* δεν επηρεάζουν το συνολικό στυλ των διαφανειών σας
+* μπορείτε να χρησιμοποιήσετε πολλαπλά πρόσθετα σε μία παρουσίαση
 
-To use addons, you have to install them manually via:
+Για να χρησιμοποιήσετε πρόσθετα, πρέπει να τα εγκαταστήσετε χειροκίνητα μέσω:
 
 ```bash
 $ npm install [slidev-addon-package1] [slidev-addon-package2]
 ```
 
-And then declare the addons either in your frontmatter:
+Και στη συνέχεια δηλώστε τα πρόσθετα είτε στο frontmatter σας:
 
 ```yaml
 ---
@@ -23,7 +23,7 @@ addons:
 ---
 ```
 
-Or in your `package.json` file:
+Είτε στο αρχείο `package.json` σας:
 
 ```json
 // package.json

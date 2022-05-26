@@ -137,11 +137,7 @@ COPY dist /usr/share/nginx/html
 
 Ανατρέξτε στο [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) για περισσότερες πληροφορίες.
 
-<<<<<<< HEAD
-### Περιβάλλον Γραμμής Εντολών (CLI)
-=======
-## Command Line Interface (CLI)
->>>>>>> 18216961c9b829103d7ee5bc6c426cb525c3d51c
+## Περιβάλλον Γραμμής Εντολών (CLI)
 
 `@slidev/cli` Εκθέστε μερικές εντολές που μπορείτε να χρησιμοποιήσετε με το `npx slidev ...` ή προσθέτοντας scripts στο `package.json`:
 ```json

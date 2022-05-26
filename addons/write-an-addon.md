@@ -1,41 +1,41 @@
-# Write an Addon
+# Γράψτε ένα Πρόσθετο
 
-> Available since v0.32.1
+> Διαθέσιμο από v0.32.1
 
-## Capability
+## Δυνατότητα
 
-An addon can contribute to the following points:
+Ένα πρόσθετο μπορεί να συμβάλει στα ακόλουθα σημεία:
 
-- Global styles (use with caution has it is more the role of [themes](/themes/use))
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-- Extend Windi CSS configurations
-- Configure tools like Monaco and Prism
+- Global στυλ (χρησιμοποιήστε τα με προσοχή, είναι περισσότερο ο ρόλος [των θεμάτων](/themes/use))
+- Παροχή προσαρμοσμένων διατάξεων ή υπέρβαση της υπάρχουσας
+- Παροχή προσαρμοσμένων στοιχείων ή παράκαμψη του υπάρχοντος
+- Επέκταση των ρυθμίσεων του Windi CSS
+- Ρύθμιση εργαλείων όπως το Monaco και το Prism
 
-## Conventions
+## Συμβάσεις
 
-Adons are published to npm registry, and they should follow the conventions below:
+Τα πρόσθετα δημοσιεύονται στο μητρώο npm και πρέπει να ακολουθούν τις παρακάτω συμβάσεις:
 
-- Package name should start with `slidev-addon-`, for example: `slidev-addon-awesome`
-- Add `slidev-addon` and `slidev` in the `keywords` field of your `package.json`
+- Το όνομα του πακέτου πρέπει να αρχίζει με `slidev-addon-`, για παράδειγμα: `slidev-addon-awesome`
+- Προσθέστε `slidev-addon` και `slidev` στο πεδίο `keywords` του `package.json` σας
 
 ## Setup
 
-### Initialization
+### Αρχικοποίηση
 
-To create your addon, start by creating a directory with create a `package.json` file (you can use `npm init`).
+Για να δημιουργήσετε το πρόσθετό σας, ξεκινήστε δημιουργώντας έναν φάκελο με ένα αρχείο `package.json` (μπορείτε να χρησιμοποιήσετε `npm init`).
 
-Then, install slidev dependencies:
+Στη συνέχεια, εγκαταστήστε τις τα dependencies του slidev:
 
 ```bash
 $ npm install -D @slidev/cli
 ```
 
-### Testing
+### Έλεγχος
 
-To set up the testing playground for your addon, you can create an `example.md` file with some content.
+Για να δημιουργήσετε το πεδίο δοκιμών για το πρόσθετό σας, μπορείτε να δημιουργήσετε ένα αρχείο `example.md` με κάποιο περιεχόμενο.
 
-And optionally, you can also add some scripts to your `packages.json`
+Και προαιρετικά, μπορείτε επίσης να προσθέσετε κάποια scripts στο `packages.json` σας
 
 ```json
 // package.json
@@ -49,15 +49,15 @@ And optionally, you can also add some scripts to your `packages.json`
 }
 ```
 
-To publish your theme, simply run `npm publish` and you are good to go. There is no build process required (which means you can directly publish `.vue` and `.ts` files, Slidev is smart enough to understand them).
+Για να δημοσιεύσετε το προσθετό σας, απλά εκτελέστε `npm publish` και είστε έτοιμοι. Δεν απαιτείται διαδικασία κατασκευής (που σημαίνει ότι μπορείτε να δημοσιεύσετε απευθείας αρχεία `.vue` και `.ts`, το Slidev είναι αρκετά έξυπνο για να τα καταλάβει).
 
-Addon contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/). 
+Τα σημεία συνεισφοράς του πρόσθετου ακολουθούν τις ίδιες συμβάσεις με την τοπική ρυθμίση, παρακαλούμε ανατρέξτε [στις οδηγίες για τις συμβάσεις ονομασίας](/custom/). 
 
-## Addon metadata
+## Μεταδεδομένα πρόσθετου
 
-### Slidev Version
+### Έκδοση Slidev
 
-If the addon is relying on a specific feature of Slidev that are newly introduced, you can set the minimal Slidev version required to have your addon working properly:
+Εάν το πρόσθετο βασίζεται σε ένα συγκεκριμένο χαρακτηριστικό του Slidev που εισήχθη πρόσφατα, μπορείτε να ορίσετε την ελάχιστη έκδοση Slidev που απαιτείται για να λειτουργήσει σωστά το πρόσθετό σας:
 
 ```json
 // package.json
@@ -68,4 +68,4 @@ If the addon is relying on a specific feature of Slidev that are newly introduce
 }
 ```
 
-If users are using older versions of Slidev, an error will be thrown.
+Εάν οι χρήστες χρησιμοποιούν παλαιότερες εκδόσεις του Slidev, θα εμφανιστεί σφάλμα.

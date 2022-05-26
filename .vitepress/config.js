@@ -207,15 +207,11 @@ const slidebars = [
     children: Theme,
   },
   {
-<<<<<<< HEAD
-    text: 'Προσαρμογές',
-=======
-    text: 'Addons',
+    text: 'Πρόσθετα',
     children: Addon,
   },
   {
-    text: 'Customizations',
->>>>>>> 18216961c9b829103d7ee5bc6c426cb525c3d51c
+    text: 'Προσαρμογές',
     children: Customizations,
   },
   {
@@ -278,15 +274,11 @@ module.exports = {
         items: Theme,
       },
       {
-<<<<<<< HEAD
-        text: 'Προσαρμόστε',
-=======
-        text: 'Addon',
+        text: 'Πρόσθετο',
         items: Addon,
       },
       {
-        text: 'Customize',
->>>>>>> 18216961c9b829103d7ee5bc6c426cb525c3d51c
+        text: 'Προσαρμόστε',
         items: Customizations,
       },
       {
