@@ -14,7 +14,11 @@
 
 ## Συμβάσεις
 
+<<<<<<< HEAD
 Τα πρόσθετα δημοσιεύονται στο μητρώο npm και πρέπει να ακολουθούν τις παρακάτω συμβάσεις:
+=======
+Addons are published to npm registry, and they should follow the conventions below:
+>>>>>>> 1f593abfecc4e3c936d81017efcc046ecffc2408
 
 - Το όνομα του πακέτου πρέπει να αρχίζει με `slidev-addon-`, για παράδειγμα: `slidev-addon-awesome`
 - Προσθέστε `slidev-addon` και `slidev` στο πεδίο `keywords` του `package.json` σας
@@ -49,7 +53,11 @@ $ npm install -D @slidev/cli
 }
 ```
 
+<<<<<<< HEAD
 Για να δημοσιεύσετε το προσθετό σας, απλά εκτελέστε `npm publish` και είστε έτοιμοι. Δεν απαιτείται διαδικασία κατασκευής (που σημαίνει ότι μπορείτε να δημοσιεύσετε απευθείας αρχεία `.vue` και `.ts`, το Slidev είναι αρκετά έξυπνο για να τα καταλάβει).
+=======
+To publish your addon, simply run `npm publish` and you are good to go. There is no build process required (which means you can directly publish `.vue` and `.ts` files, Slidev is smart enough to understand them).
+>>>>>>> 1f593abfecc4e3c936d81017efcc046ecffc2408
 
 Τα σημεία συνεισφοράς του πρόσθετου ακολουθούν τις ίδιες συμβάσεις με την τοπική ρυθμίση, παρακαλούμε ανατρέξτε [στις οδηγίες για τις συμβάσεις ονομασίας](/custom/). 
 

@@ -1,6 +1,10 @@
 # Χρήση Πρόσθετου
 
+<<<<<<< HEAD
 Τα πρόσθετα είναι σύνολα επιπρόσθετων στοιχείων, διατάξεων, στυλ, ρυθμίσεων... κ.λπ. που μπορείτε να χρησιμοποιήσετε στην παρουσίασή σας.
+=======
+Addons are sets of additional components, layouts, styles, configuration...etc. that you can use in your presentation.
+>>>>>>> 1f593abfecc4e3c936d81017efcc046ecffc2408
 
 Μοιάζουν αρκετά με [τα θέματα](/themes/use), αλλά γενικά:
 
