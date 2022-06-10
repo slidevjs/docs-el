@@ -103,10 +103,7 @@ function add(
 //```
 ~~~
 
-<<<<<<< HEAD
-Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
-=======
-To skip highlighting any lines, you can set the line number to `0`. For example
+Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
 
 ~~~ts {0}
 //```ts {0}
@@ -119,8 +116,7 @@ function add(
 //```
 ~~~
 
-This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
->>>>>>> 2f3c88e83091a9ba81a79b5e07b67fab660957db
+Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
 
 ### Monaco Editor
 
