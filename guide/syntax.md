@@ -73,7 +73,7 @@ console.log('Γεια σου, Κόσμε!')
 //```
 ~~~
 
-Υποστηρίζουμε και [Prism](http://prismjs.com) και [Shiki](https://github.com/shikijs/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
+Υποστηρίζουμε και [Prism](https://prismjs.com) και [Shiki](https://github.com/shikijs/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
 
 ### Επισήμανση Γραμμής
 
@@ -220,7 +220,7 @@ layout: cover
 
 ## Εικονίδια
 
-Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας. Με την βοήθεια του [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) και του [Iconify](https://iconify.design/).
+Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
 
 Η ονομασία ακολουθεί τη μετατροπή του [Iconify](https://iconify.design/) `{collection-name}-{icon-name}`. Για παράδειγμα:
 
