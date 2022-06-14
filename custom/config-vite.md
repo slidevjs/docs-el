@@ -2,11 +2,7 @@
 
 <Environment type="node" />
 
-<<<<<<< HEAD
-Το Slidev λειτουργεί με τη βοήθεια του [Vite](http://vitejs.dev/) εσωτερικά. Αυτό σημαίνει ότι μπορείτε να αξιοποιήσετε το εξαιρετικό σύστημα πρόσθετων του Vite για να προσαρμόσετε ακόμα περισσότερο τις διαφάνειές σας.
-=======
-Slidev is powered by [Vite](https://vitejs.dev/) under the hood. This means you can leverage Vite's great plugin system to customize your slides even further.
->>>>>>> 0d7183dcb5054d1cc1d9af406b951526a92f09b6
+Το Slidev λειτουργεί με τη βοήθεια του [Vite](https://vitejs.dev/) εσωτερικά. Αυτό σημαίνει ότι μπορείτε να αξιοποιήσετε το εξαιρετικό σύστημα πρόσθετων του Vite για να προσαρμόσετε ακόμα περισσότερο τις διαφάνειές σας.
 
 Το `vite.config.ts` θα γίνει σεβαστό, αν έχετε ένα.
 
