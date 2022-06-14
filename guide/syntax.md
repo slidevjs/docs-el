@@ -73,7 +73,11 @@ console.log('Γεια σου, Κόσμε!')
 //```
 ~~~
 
+<<<<<<< HEAD
 Υποστηρίζουμε και [Prism](http://prismjs.com) και [Shiki](https://github.com/shikijs/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
+=======
+We support [Prism](https://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 0d7183dcb5054d1cc1d9af406b951526a92f09b6
 
 ### Επισήμανση Γραμμής
 
@@ -220,7 +224,11 @@ layout: cover
 
 ## Εικονίδια
 
+<<<<<<< HEAD
 Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας. Με την βοήθεια του [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) και του [Iconify](https://iconify.design/).
+=======
+Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`unplugin-icons`](https://github.com/antfu/unplugin-icons) and [Iconify](https://iconify.design/).
+>>>>>>> 0d7183dcb5054d1cc1d9af406b951526a92f09b6
 
 Η ονομασία ακολουθεί τη μετατροπή του [Iconify](https://iconify.design/) `{collection-name}-{icon-name}`. Για παράδειγμα:
 
