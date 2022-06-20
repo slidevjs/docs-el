@@ -29,4 +29,20 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 
 Η συνάρτηση ρύθμισης λαμβάνει ένα object με κάποιες μεθόδους πλοήγησης, και επιστρέφει ένα array που περιέχει κάποιες ρυθμίσεις συντόμευσης. Ανατρέξτε στους ορισμούς των τύπων για περισσότερες λεπτομέρειες.
 
+Ο τύπος `key` επιτρέπει μόνο συμβολοσειρές, αλλά μπορείτε να δεσμεύσετε πολλαπλά πλήκτρα χρησιμοποιώντας την ακόλουθη σύμβαση:
+
+```ts
+import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+
+export default defineShortcutsSetup((nav: NavOperations) => {
+  return [
+    {
+      key: 'ShiftLeft+ArrowRight',
+      fn: () => nav.next(),
+      autoRepeat: true,
+    }
+  ]
+})
+```
+
 Ανατρέξτε στο [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) για περισσότερες λεπτομέρειες σχετικά με το key pressed event.
