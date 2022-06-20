@@ -29,10 +29,7 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 
 Η συνάρτηση ρύθμισης λαμβάνει ένα object με κάποιες μεθόδους πλοήγησης, και επιστρέφει ένα array που περιέχει κάποιες ρυθμίσεις συντόμευσης. Ανατρέξτε στους ορισμούς των τύπων για περισσότερες λεπτομέρειες.
 
-<<<<<<< HEAD
-Ανατρέξτε στο [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) για περισσότερες λεπτομέρειες σχετικά με το key pressed event.
-=======
-The `key` type only allows for strings, but you can still bind multiple keys by using following convention:
+Ο τύπος `key` επιτρέπει μόνο συμβολοσειρές, αλλά μπορείτε να δεσμεύσετε πολλαπλά πλήκτρα χρησιμοποιώντας την ακόλουθη σύμβαση:
 
 ```ts
 import { defineShortcutsSetup, NavOperations } from '@slidev/types'
@@ -48,5 +45,4 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
->>>>>>> 893d0b65c494856dc47a8834adc01480dbf6a161
+Ανατρέξτε στο [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) για περισσότερες λεπτομέρειες σχετικά με το key pressed event.
