@@ -6,6 +6,7 @@
 
 ```bash
 your-slidev/
+<<<<<<< HEAD
   ├── components/       # προσαρμοσμένα components
   ├── layouts/          # προσαρμοσμένα layouts
   ├── public/           # στατικά assets
@@ -14,6 +15,16 @@ your-slidev/
   ├── index.html        # injections στο index.html
   ├── slides.md         # η κύρια είσοδος διαφανειών
   └── vite.config.ts    # επεκτείνοντας το vite config
+=======
+  ├── components/       # custom components
+  ├── layouts/          # custom layouts
+  ├── public/           # static assets
+  ├── setup/            # custom setup / hooks
+  ├── styles/           # custom style
+  ├── index.html        # injections to index.html
+  ├── slides.md         # the main slides entry
+  └── vite.config.ts    # extending vite config
+>>>>>>> c8121c161efd5a726d336648d2b101540c346dd2
 ```
 
 Όλα είναι προαιρετικά.
