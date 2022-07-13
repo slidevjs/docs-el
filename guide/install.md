@@ -18,7 +18,7 @@ $ npm init slidev@latest
 $ yarn create slidev
 ```
 
-Ακολουθήστε τις οδηγίες και θα ανοίξει αυτόματα η προβολή διαφανειών στη διεύθυνση http://localhost:3030/.
+Ακολουθήστε τις οδηγίες και θα ανοίξει αυτόματα η προβολή διαφανειών στη διεύθυνση `http://localhost:3030/`.
 
 Περιέχει επίσης το βασικό setup και ένα σύντομο demo με οδηγίες για το πώς να ξεκινήσετε με το Slidev.
 
@@ -76,7 +76,7 @@ docker run --name slidev --rm -it \
 
 Εάν ο φάκελος εργασίας σας είναι άδειος, θα δημιουργήσει ένα πρότυπο `slides.md` και άλλα σχετικά αρχεία, και θα ξεκινήσει τον διακομιστή στη θύρα `3030`. 
 
-Μπορείτε να έχετε πρόσβαση στις διαφάνειές σας από το http://localhost:3030/
+Μπορείτε να έχετε πρόσβαση στις διαφάνειές σας από το `http://localhost:3030/`
 
 
 ### Δημιουργία εικόνας που μπορεί να γίνει deploy
@@ -94,7 +94,7 @@ ADD . /slidev
 
 Και εκτελέστε το container: `docker run --name myslides --rm --user node -p 3030:3030 myppt`
 
-Μπορείτε να επισκεφθείτε τις διαφάνειές σας από το http://localhost:3030/
+Μπορείτε να επισκεφθείτε τις διαφάνειές σας από το `http://localhost:3030/`
 
 
 ### Κατασκευή φιλοξενήσιμης εφαρμογής SPA (Single Page Application)
@@ -125,7 +125,6 @@ docker run --name myslides --rm -p 80:80 -v ${PWD}/dist:/usr/share/nginx/html ng
 FROM nginx:alpine
 
 COPY dist /usr/share/nginx/html
-
 ```
 
 Δημιουργήσετε την εικόνα docker: `docker build -t mystaticppt .`
@@ -133,7 +132,6 @@ COPY dist /usr/share/nginx/html
 Και εκτελέστε το container: `docker run --name myslides --rm -p 80:80 mystaticppt`
 
 Μπορείτε να επισκεφθείτε τις διαφάνειές σας από το http://localhost/
-
 
 Ανατρέξτε στο [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) για περισσότερες πληροφορίες.
 
