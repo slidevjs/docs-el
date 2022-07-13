@@ -48,11 +48,7 @@ your-slidev/
 </hello-world>
 ```
 
-<<<<<<< HEAD
-Αυτή η δυνατότητα λειτουργεί με τη βοήθεια του [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), μάθετε περισσότερα εκεί.
-=======
-This feature is powered by [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components), learn more there.
->>>>>>> 8b430eefeed2277fc07f273ce000804365333b56
+Αυτή η δυνατότητα λειτουργεί με τη βοήθεια του [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components), μάθετε περισσότερα εκεί.
 
 Το Slidev παρέχει επίσης κάποια [ενσωματωμένα components](/builtin/components) για να χρησιμοποιήσετε.
 
