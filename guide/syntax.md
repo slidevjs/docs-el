@@ -103,13 +103,9 @@ function add(
 //```
 ~~~
 
-<<<<<<< HEAD
-Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
-=======
-This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
+Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
 
-To skip highlighting any lines, you can set the line number to `0`. For example
->>>>>>> 8c6068ac1dd3da821a6d4ef1d039063dcb34bc25
+Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
 
 ~~~ts {0}
 //```ts {0}
@@ -122,11 +118,8 @@ function add(
 //```
 ~~~
 
-<<<<<<< HEAD
-Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
-=======
-If the code doesn't fit into one slide, you can pass an extra maxHeight option which will set fixed height
-and enable scrolling
+Αν ο κώδικας δεν χωράει σε μία διαφάνεια, μπορείτε να περάσετε μια επιπλέον επιλογή maxHeight που θα ορίσει σταθερό ύψος
+και θα ενεργοποιήσει το scrolling
 
 ~~~ts {2|3|7|12}
 //```ts {2|3|7|12} {maxHeight:'100'}
@@ -140,7 +133,6 @@ function add(
 const c = add(1, 2)
 //```
 ~~~
->>>>>>> 8c6068ac1dd3da821a6d4ef1d039063dcb34bc25
 
 ### Monaco Editor
 
