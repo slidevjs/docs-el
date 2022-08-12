@@ -1,3 +1,4 @@
+
 # Στατική Φιλοξενία
 
 ## Build Single Page Applications (SPA)
@@ -95,7 +96,9 @@ download: 'https://myside.com/my-talk.pdf'
 
 - [GitHub Pages](https://pages.github.com/)
 
-Δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions.
+Για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages:
+- ανεβάστε όλα τα αρχεία του έργου στο repo σας (π.χ. με το όνομα `name_of_repo`)
+- δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions. Σε αυτό το αρχείο, αντικαταστήστε το `<name_of_repo>` με το `name_of_repo`.
 
 ```yaml
 name: Deploy pages
@@ -110,8 +113,10 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: npm install
+      - name: Install slidev
+        run:  npm i -g @slidev/cli
       - name: Build
-        run: npm run build
+        run: slidev build --base <name_of_repo>
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
@@ -119,3 +124,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+- Στο repository σας, μεταβείτε στην επιλογή Setting>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "gh- pages" και "root". Κάντε κλικ στο save.
+- Τέλος, αφού εκτελεστούν όλες οι διαδικασίες εργασιών, θα πρέπει να εμφανιστεί ένας σύνδεσμος προς τις διαφάνειες στο Setting>Pages.

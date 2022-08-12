@@ -21,7 +21,7 @@ info: false
 # ενεργοποιήστε τη λήψη pdf στην κατασκευή SPA, μπορεί επίσης να είναι ένα προσαρμοσμένο url
 download: false
 # όνομα αρχείου του αρχείου εξαγωγής
-exportFilename: 'slidev-exported.pdf'
+exportFilename: 'slidev-exported'
 # επισημαντής σύνταξης, μπορεί να είναι 'prism' ή 'shiki'
 highlighter: 'prism'
 # εμφάνιση αριθμών γραμμών σε blocks
