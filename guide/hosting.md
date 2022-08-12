@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-# Στατική Φιλοξενία
-=======
 
-# Static Hosting
->>>>>>> e9156da7e3b01f48ac2a90552936da50c797d88d
+# Στατική Φιλοξενία
 
 ## Build Single Page Applications (SPA)
 
@@ -100,13 +96,9 @@ download: 'https://myside.com/my-talk.pdf'
 
 - [GitHub Pages](https://pages.github.com/)
 
-<<<<<<< HEAD
-Δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions.
-=======
-To deploy your slides on GitHub Pages:
-- upload all the files of the project in your repo (i.e. named `name_of_repo`)
-- create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions. In this file, replace `<name_of_repo>`with `name_of_repo`.
->>>>>>> e9156da7e3b01f48ac2a90552936da50c797d88d
+Για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages:
+- ανεβάστε όλα τα αρχεία του έργου στο repo σας (π.χ. με το όνομα `name_of_repo`)
+- δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions. Σε αυτό το αρχείο, αντικαταστήστε το `<name_of_repo>` με το `name_of_repo`.
 
 ```yaml
 name: Deploy pages
