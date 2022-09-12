@@ -2,15 +2,19 @@
 
 > Διαθέσιμο από v0.20
 
+> Since v0.35.6 (excluded), you decide which base shortcuts to keep (see `...base,` below).
+
 <Environment type="client" />
 
 Δημιουργήστε `./setup/shortcuts.ts` με το εξής περιεχόμενο:
 
 ```ts
-import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+import type { NavOperations, ShortcutOptions } from '@slidev/types'
+import { defineShortcutsSetup } from '@slidev/types'
 
-export default defineShortcutsSetup((nav: NavOperations) => {
+export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]) => {
   return [
+    ...base, // keep the existing shortcuts
     {
       key: 'enter',
       fn: () => nav.next(),
@@ -32,10 +36,12 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 Ο τύπος `key` επιτρέπει μόνο συμβολοσειρές, αλλά μπορείτε να δεσμεύσετε πολλαπλά πλήκτρα χρησιμοποιώντας την ακόλουθη σύμβαση:
 
 ```ts
-import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+import type { NavOperations, ShortcutOptions } from '@slidev/types'
+import { defineShortcutsSetup } from '@slidev/types'
 
-export default defineShortcutsSetup((nav: NavOperations) => {
+export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]) => {
   return [
+    ...base,
     {
       key: 'ShiftLeft+ArrowRight',
       fn: () => nav.next(),
