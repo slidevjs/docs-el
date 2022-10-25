@@ -1,6 +1,8 @@
 # Εξαγωγή
 
-## PDF
+## Slides
+
+### PDF
 
 > Η εξαγωγή σε PDF ή PNG βασίζεται στο [Playwright](https://playwright.dev) για την απεικόνιση. Επομένως, θα πρέπει να εγκαταστήσετε το [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) για να χρησιμοποιήσετε αυτή τη λειτουργία.
 > Αν κάνετε εξαγωγή σε περιβάλλον CI, μπορεί να σας φανεί χρήσιμος [ο οδηγός CI του playwright](https://playwright.dev/docs/ci).
@@ -25,7 +27,11 @@ $ slidev export
 $ slidev export --dark
 ```
 
+<<<<<<< HEAD
 ### Εξαγωγή Βημάτων Clicks
+=======
+#### Export Clicks Steps
+>>>>>>> 37da379f2085eaf0e279e3b3929565606e0df481
 
 > Διαθέσιμο από v0.21
 
@@ -35,7 +41,7 @@ $ slidev export --dark
 $ slidev export --with-clicks
 ```
 
-## PNGs
+### PNGs
 
 Όταν περνάτε την επιλογή `--format png`, το Slidev θα εξάγει εικόνες PNG για κάθε διαφάνεια αντί για PDF.
 
@@ -43,6 +49,20 @@ $ slidev export --with-clicks
 $ slidev export --format png
 ```
 
-## Single-Page Application (SPA)
+### Single-Page Application (SPA)
 
+<<<<<<< HEAD
 Δείτε την [Στατική Φιλοξενία](/guide/hosting).
+=======
+See [Static Hosting](/guide/hosting).
+
+## Presenter notes
+
+> Available since v0.36.8
+
+Export only the presenter notes (the last comment block for each slide) into a text document in PDF.
+
+```bash
+$ slidev export-notes
+```
+>>>>>>> 37da379f2085eaf0e279e3b3929565606e0df481
