@@ -6,6 +6,8 @@
 
 <Environment type="client" />
 
+## Ξεκινώντας
+
 Δημιουργήστε `./setup/shortcuts.ts` με το εξής περιεχόμενο:
 
 ```ts
@@ -33,6 +35,8 @@ export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]
 
 Η συνάρτηση ρύθμισης λαμβάνει ένα object με κάποιες μεθόδους πλοήγησης, και επιστρέφει ένα array που περιέχει κάποιες ρυθμίσεις συντόμευσης. Ανατρέξτε στους ορισμούς των τύπων για περισσότερες λεπτομέρειες.
 
+## Σύνθετη δέσμευση πλήκτρων
+
 Ο τύπος `key` επιτρέπει μόνο συμβολοσειρές, αλλά μπορείτε να δεσμεύσετε πολλαπλά πλήκτρα χρησιμοποιώντας την ακόλουθη σύμβαση:
 
 ```ts
@@ -45,6 +49,28 @@ export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]
     {
       key: 'ShiftLeft+ArrowRight',
       fn: () => nav.next(),
+      autoRepeat: true,
+    }
+  ]
+})
+```
+
+## Σύνθετες λειτουργίες πλοήγησης
+
+Οι λειτουργίες πλοήγησης `nav` σας επιτρέπουν να έχετε πρόσβαση σε ορισμένες λειτουργίες πέρα από τις βασικές _επόμενη διαφάνεια_ ή _προηγούμενη διαφάνεια_. Δείτε τις ακόλουθες περιπτώσεις χρήσης:
+
+```ts
+import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+
+export default defineShortcutsSetup((nav: NavOperations) => {
+  return [
+    {
+      key: 'e',
+      
+      // Ορίστε τη συντόμευση πληκτρολογίου `e` που θα χρησιμοποιείται ως σελιδοδείκτης
+      // ή ένα είδος γρήγορης πρόσβασης, για να πλοηγηθείτε συγκεκριμένα στο
+      // διαφάνεια με αριθμό 42
+      fn: () => nav.go(42),
       autoRepeat: true,
     }
   ]
