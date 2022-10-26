@@ -6,13 +6,9 @@
 
 <Environment type="client" />
 
-<<<<<<< HEAD
-Δημιουργήστε `./setup/shortcuts.ts` με το εξής περιεχόμενο:
-=======
-## Getting started
+## Ξεκινώντας
 
-Create `./setup/shortcuts.ts` with the following content:
->>>>>>> 37da379f2085eaf0e279e3b3929565606e0df481
+Δημιουργήστε `./setup/shortcuts.ts` με το εξής περιεχόμενο:
 
 ```ts
 import type { NavOperations, ShortcutOptions } from '@slidev/types'
@@ -39,13 +35,9 @@ export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]
 
 Η συνάρτηση ρύθμισης λαμβάνει ένα object με κάποιες μεθόδους πλοήγησης, και επιστρέφει ένα array που περιέχει κάποιες ρυθμίσεις συντόμευσης. Ανατρέξτε στους ορισμούς των τύπων για περισσότερες λεπτομέρειες.
 
-<<<<<<< HEAD
-Ο τύπος `key` επιτρέπει μόνο συμβολοσειρές, αλλά μπορείτε να δεσμεύσετε πολλαπλά πλήκτρα χρησιμοποιώντας την ακόλουθη σύμβαση:
-=======
-## Advanced key binding
+## Σύνθετη δέσμευση πλήκτρων
 
-The `key` type only allows for strings, but you can still bind multiple keys by using following convention:
->>>>>>> 37da379f2085eaf0e279e3b3929565606e0df481
+Ο τύπος `key` επιτρέπει μόνο συμβολοσειρές, αλλά μπορείτε να δεσμεύσετε πολλαπλά πλήκτρα χρησιμοποιώντας την ακόλουθη σύμβαση:
 
 ```ts
 import type { NavOperations, ShortcutOptions } from '@slidev/types'
@@ -63,12 +55,9 @@ export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]
 })
 ```
 
-<<<<<<< HEAD
-Ανατρέξτε στο [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) για περισσότερες λεπτομέρειες σχετικά με το key pressed event.
-=======
-## Advanced navigation features
+## Σύνθετες λειτουργίες πλοήγησης
 
-The `nav` navigation operations allows you to access some functionalities than basic _next slide_ or _previous slide_. See the following for use-cases:
+Οι λειτουργίες πλοήγησης `nav` σας επιτρέπουν να έχετε πρόσβαση σε ορισμένες λειτουργίες πέρα από τις βασικές _επόμενη διαφάνεια_ ή _προηγούμενη διαφάνεια_. Δείτε τις ακόλουθες περιπτώσεις χρήσης:
 
 ```ts
 import { defineShortcutsSetup, NavOperations } from '@slidev/types'
@@ -78,9 +67,9 @@ export default defineShortcutsSetup((nav: NavOperations) => {
     {
       key: 'e',
       
-      // Set the `e` keyboard shortcut to be used as a bookmark
-      // or quick-access of sorts, to navigate specifically to
-      // slide number 42
+      // Ορίστε τη συντόμευση πληκτρολογίου `e` που θα χρησιμοποιείται ως σελιδοδείκτης
+      // ή ένα είδος γρήγορης πρόσβασης, για να πλοηγηθείτε συγκεκριμένα στο
+      // διαφάνεια με αριθμό 42
       fn: () => nav.go(42),
       autoRepeat: true,
     }
@@ -88,5 +77,4 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
->>>>>>> 37da379f2085eaf0e279e3b3929565606e0df481
+Ανατρέξτε στο [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) για περισσότερες λεπτομέρειες σχετικά με το key pressed event.

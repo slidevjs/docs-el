@@ -1,6 +1,6 @@
 # Εξαγωγή
 
-## Slides
+## Διαφάνειες
 
 ### PDF
 
@@ -27,11 +27,7 @@ $ slidev export
 $ slidev export --dark
 ```
 
-<<<<<<< HEAD
-### Εξαγωγή Βημάτων Clicks
-=======
-#### Export Clicks Steps
->>>>>>> 37da379f2085eaf0e279e3b3929565606e0df481
+#### Εξαγωγή Βημάτων Clicks
 
 > Διαθέσιμο από v0.21
 
@@ -51,18 +47,14 @@ $ slidev export --format png
 
 ### Single-Page Application (SPA)
 
-<<<<<<< HEAD
 Δείτε την [Στατική Φιλοξενία](/guide/hosting).
-=======
-See [Static Hosting](/guide/hosting).
 
-## Presenter notes
+## Σημειώσεις παρουσιαστή
 
-> Available since v0.36.8
+> Διαθέσιμο από v0.36.8
 
-Export only the presenter notes (the last comment block for each slide) into a text document in PDF.
+Εξάγετε μόνο τις σημειώσεις του παρουσιαστή (το τελευταίο μπλοκ σχολίων για κάθε διαφάνεια) σε ένα έγγραφο κειμένου σε PDF.
 
 ```bash
 $ slidev export-notes
 ```
->>>>>>> 37da379f2085eaf0e279e3b3929565606e0df481
