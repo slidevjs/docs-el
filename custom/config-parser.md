@@ -26,7 +26,7 @@
 ```ts
 import { definePreparserSetup } from '@slidev/types'
 
-export default definePreparserSetup((filepath) => {
+export default definePreparserSetup(({filepath, headmatter}) => {
   return [
     {
       transformRawLines(lines) {
@@ -42,7 +42,7 @@ export default definePreparserSetup((filepath) => {
 
 Αυτό το παράδειγμα αντικαθιστά συστηματικά κάθε σειρά με την ένδειξη `@@@` με μια σειρά με την ένδειξη `γεια`. Παρουσιάζει τη δομή ενός αρχείου ρυθμίσεων του preparser και μερικές από τις κύριες έννοιες που περιλαμβάνει ο preparser:
 - Το `definePreparserSetup` πρέπει να κληθεί με μια συνάρτηση ως παράμετρο.
-- Η συνάρτηση λαμβάνει το path του αρχείου (του κεντρικού αρχείου παρουσίασης) και μπορεί να χρησιμοποιήσει αυτές τις πληροφορίες (π.χ. για να ενεργοποιήσει επεκτάσεις με βάση το αρχείο παρουσίασης).
+- Η συνάρτηση λαμβάνει το path του αρχείου (του κεντρικού αρχείου παρουσίασης) και το headmatter (από το αρχείο md). Αυτή μπορεί να χρησιμοποιήσει αυτές τις πληροφορίες (π.χ. για να ενεργοποιήσει επεκτάσεις με βάση το αρχείο παρουσίασης).
 - Η συνάρτηση πρέπει να επιστρέφει μια λίστα επεκτάσεων του preparser.
 - Μια επέκταση μπορεί να περιέχει:
   - μια συνάρτηση `transformRawLines(lines)` που εκτελείται αμέσως μετά το parsing του frontmatter του αρχείου md και λαμβάνει μια λίστα όλων των σειρών (από το αρχείο md). Η συνάρτηση μπορεί να μεταλλάσσει τη λίστα αυθαίρετα.
@@ -75,7 +75,7 @@ export default definePreparserSetup((filepath) => {
 ```ts
 import { definePreparserSetup } from '@slidev/types'
 
-export default definePreparserSetup((filepath) => {
+export default definePreparserSetup(() => {
   return [
     {
       transformRawLines(lines) {
@@ -155,7 +155,7 @@ _scale: 2.5
 ```ts
 import { definePreparserSetup } from '@slidev/types'
 
-export default definePreparserSetup((filepath) => {
+export default definePreparserSetup(() => {
   return [
     {
       transformSlide(content, frontmatter) {
