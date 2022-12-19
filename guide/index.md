@@ -2,7 +2,11 @@
 
 ## Σύνοψη
 
+<<<<<<< HEAD
 Το Slidev <sup>(slide + dev, `/slʌɪdɪv/`)</sup> είναι ένας διαδικτυακός δημιουργός και παρουσιαστής διαφανειών. Είναι σχεδιασμένο για προγραμματιστές ώστε να εστιάζουν στη συγγραφή υλικού σε Markdown έχοντας παράλληλα τη δύναμη του HTML και των Vue components για να παρέχουν τέλεια layouts και σχεδιασμούς με ενσωματωμένες διαδραστικές επιδείξεις στις παρουσιάσεις τους.
+=======
+Slidev <sup>(slide + dev, **/slʌɪdɪv/**)</sup> is a web-based slides maker and presenter. It's designed for developers to focus on writing content in Markdown while also having the power of HTML and Vue components to deliver pixel-perfect layouts and designs with embedded interactive demos in your presentations.
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e
 
 Χρησιμοποιεί ένα πλούσιο σε δυνατότητες αρχείο markdown για τη δημιουργία όμορφων διαφανειών με μια άμεση εμπειρία επαναφόρτωσης, μαζί με πολλές ενσωματωμένες λειτουργίες, όπως live coding, εξαγωγή σε PDF, καταγραφή παρουσιάσεων κ.ο.κ. Εφόσον λειτουργεί με τη βοήθεια του διαδικτύου, μπορείτε να κάνετε οτιδήποτε με το Slidev - οι δυνατότητες είναι απεριόριστες.
 
