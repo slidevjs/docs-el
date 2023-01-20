@@ -80,6 +80,49 @@ import Titles from '/@slidev/titles.md'
 
 * `no` (`string | number`): Ο αριθμός της διαφάνειας από την οποία θα εμφανιστεί ο τίτλος (οι διαφάνειες ξεκινούν από το `1`)
 
+### `LightOrDark`
+
+Χρησιμοποιήστε το για να εμφανίσετε ένα πράγμα ή ένα άλλο ανάλογα με το ενεργό φωτεινό ή σκοτεινό θέμα.
+
+#### Χρήση
+
+Χρησιμοποιήστε το με τα δύο ονομαζόμενα Slots `#dark` και `#light`:
+~~~md
+<LightOrDark>
+  <template #dark>Η σκοτεινή λειτουργία είναι ενεργοποιημένη</template>
+  <template #light>Η φωτεινή λειτουργία είναι ενεργοποιημένη</template>
+</LightOrDark>
+~~~
+
+Τα παρεχόμενα props στο στοιχείο `LightOrDark` θα είναι διαθέσιμα χρησιμοποιώντας scoped slot props:
+~~~md
+<LightOrDark width="100" alt="some image">
+  <template #dark="props">
+    <img src="/dark.png" v-bind="props"/>
+  </template>
+  <template #light="props">
+    <img src="/light.png" v-bind="props"/>
+  </template>
+</LightOrDark>
+~~~
+
+Μπορείτε να παρέχετε markdown στα slots, αλλά θα πρέπει να περιβάλλετε το περιεχόμενο με κενές γραμμές:
+~~~md
+<LightOrDark>
+  <template #dark>
+  
+![dark](/dark.png)
+
+  </template>
+  <template #light>
+  
+![light](/light.png)
+
+  </template>
+</LightOrDark>
+~~~
+
+
 ## Προσαρμοσμένα Components
 
 Δημιουργήστε ένα φάκελο `components/` στη ρίζα του έργου σας, και απλά βάλτε τα προσαρμοσμένα Vue components σας σε αυτόν, στη συνέχεια μπορείτε να το χρησιμοποιήσετε με το ίδιο όνομα στο αρχείο markdown σας!
