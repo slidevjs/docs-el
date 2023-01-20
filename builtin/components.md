@@ -80,24 +80,21 @@ import Titles from '/@slidev/titles.md'
 
 * `no` (`string | number`): Ο αριθμός της διαφάνειας από την οποία θα εμφανιστεί ο τίτλος (οι διαφάνειες ξεκινούν από το `1`)
 
-<<<<<<< HEAD
-## Προσαρμοσμένα Components
-=======
 ### `LightOrDark`
 
-Use it to display one thing or another depending on the active light or dark theme.
+Χρησιμοποιήστε το για να εμφανίσετε ένα πράγμα ή ένα άλλο ανάλογα με το ενεργό φωτεινό ή σκοτεινό θέμα.
 
-#### Usage
+#### Χρήση
 
-Use it with the two named Slots `#dark` and `#light`:
+Χρησιμοποιήστε το με τα δύο ονομαζόμενα Slots `#dark` και `#light`:
 ~~~md
 <LightOrDark>
-  <template #dark>Dark mode is on</template>
-  <template #light>Light mode is on</template>
+  <template #dark>Η σκοτεινή λειτουργία είναι ενεργοποιημένη</template>
+  <template #light>Η φωτεινή λειτουργία είναι ενεργοποιημένη</template>
 </LightOrDark>
 ~~~
 
-Provided props on `LightOrDark` component will be available using scoped slot props:
+Τα παρεχόμενα props στο στοιχείο `LightOrDark` θα είναι διαθέσιμα χρησιμοποιώντας scoped slot props:
 ~~~md
 <LightOrDark width="100" alt="some image">
   <template #dark="props">
@@ -109,7 +106,7 @@ Provided props on `LightOrDark` component will be available using scoped slot pr
 </LightOrDark>
 ~~~
 
-You can provide markdown in the slots, but you will need to surround the content with blank lines:
+Μπορείτε να παρέχετε markdown στα slots, αλλά θα πρέπει να περιβάλλετε το περιεχόμενο με κενές γραμμές:
 ~~~md
 <LightOrDark>
   <template #dark>
@@ -126,8 +123,7 @@ You can provide markdown in the slots, but you will need to surround the content
 ~~~
 
 
-## Custom Components
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+## Προσαρμοσμένα Components
 
 Δημιουργήστε ένα φάκελο `components/` στη ρίζα του έργου σας, και απλά βάλτε τα προσαρμοσμένα Vue components σας σε αυτόν, στη συνέχεια μπορείτε να το χρησιμοποιήσετε με το ίδιο όνομα στο αρχείο markdown σας!
 

@@ -4,11 +4,11 @@
 
 ![](/screenshots/presenter-mode.png)
 
-## Disabling
+## Απενεργοποίηση
 
-Presenter mode is enabled by default.
+Η λειτουργία παρουσιαστή είναι ενεργοποιημένη από προεπιλογή.
 
-You can disable this feature with the following config:
+Μπορείτε να απενεργοποιήσετε αυτή τη λειτουργία με την ακόλουθη ρύθμιση παραμέτρων:
 
 ```md
 ---
@@ -16,20 +16,20 @@ presenter: false
 ---
 ```
 
-Or you can enable it only for `dev` or `build` mode by setting the mode you want in the config:
+Ή μπορείτε να την ενεργοποιήσετε μόνο για τη λειτουργία `dev` ή `build`, ορίζοντας τη λειτουργία που θέλετε στη ρύθμιση παραμέτρων:
 ```md
 ---
 presenter: dev
 ---
 ```
-In that case the presenter will only be available when running `slidev` but not when running `slidev build`.
+Σε αυτή την περίπτωση ο παρουσιαστής θα είναι διαθέσιμος μόνο όταν εκτελείται το `slidev` αλλά όχι όταν εκτελείται το `slidev build`.
 
-## Remote restricted access
+## Περιορισμένη απομακρυσμένη πρόσβαση
 
-You can run your presentation with remote access by running `slidev --remote`.
+Μπορείτε να εκτελέσετε την παρουσίασή σας με απομακρυσμένη πρόσβαση εκτελώντας την εντολή `slidev --remote`.
 
-In that case you may want to share the slides with other people but you don't want them to access the presenter mode to mess up your presentation.
+Σε αυτή την περίπτωση μπορεί να θέλετε να μοιραστείτε τις διαφάνειες με άλλα άτομα, αλλά δεν θέλετε να έχουν πρόσβαση στη λειτουργία παρουσιαστή για να χαλάσουν την παρουσίασή σας.
 
-For this scenario you can provide a password for starting the server by running `slidev --remote=your_password`.
+Στην περίπτωση αυτή μπορείτε να δώσετε έναν κωδικό πρόσβασης για την εκκίνηση του διακομιστή εκτελώντας την εντολή `slidev --remote=your_password`.
 
-In that case you will need to provide the password when accessing `/presenter/*` routes.
+Στη συγκεκριμένη περίπτωση, θα πρέπει να δώσετε τον κωδικό πρόσβασης κατά την πρόσβαση στις διαδρομές `/presenter/*`.
