@@ -18,7 +18,13 @@ titleTemplate: '%s - Slidev'
 # πληροφορίες για τις διαφάνειές σας, μπορεί να είναι μια συμβολοσειρά markdown
 info: false
 
+<<<<<<< HEAD
 # ενεργοποιήστε τη λήψη pdf στην κατασκευή SPA, μπορεί επίσης να είναι ένα προσαρμοσμένο url
+=======
+# enable presenter mode, can be boolean, 'dev' or 'build'
+presenter: true
+# enabled pdf downloading in SPA build, can also be a custom url
+>>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 download: false
 # όνομα αρχείου του αρχείου εξαγωγής
 exportFilename: 'slidev-exported'
