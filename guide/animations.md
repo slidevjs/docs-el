@@ -200,12 +200,9 @@ clicks: 3
 
 ## Μεταβάσεις Σελίδων
 
-<<<<<<< HEAD
-> Ενσωματωμένη υποστήριξη για τις διαφάνειες ΔΕΝ παρέχεται ΑΚΟΜΑ στην τρέχουσα έκδοση. Σχεδιάζουμε να προσθέσουμε την υποστήριξή τους στην επόμενη κύρια έκδοση. Πριν γίνει αυτό, μπορείτε ακόμα να χρησιμοποιήσετε τα προσαρμοσμένα styles και τα libraries σας για να το κάνετε αυτό.
-=======
-> Available since v0.39.0
+> Διαθέσιμο από v0.39.0
 
-Slidev supports page transitions out of the box. You can enable it by setting the `transition` frontmatter option:
+Το Slidev υποστηρίζει μεταβάσεις σελίδων. Μπορείτε να τις ενεργοποιήσετε θέτοντας την επιλογή `transition` του frontmatter:
 
 ```md
 ---
@@ -213,20 +210,20 @@ transition: slide-left
 ---
 ```
 
-This will give you a nice sliding effects on slide switching. Setting it in the frontmatter will apply to all slides. You can also set different transition per slide.
+Αυτό θα σας δώσει ένα ωραίο εφέ ολίσθησης κατά την εναλλαγή των διαφανειών. Η ρύθμισή του στο frontmatter θα ισχύει για όλες τις διαφάνειες. Μπορείτε επίσης να ορίσετε διαφορετική μετάβαση ανά διαφάνεια.
 
-### Builtin Transitions
+### Ενσωματωμένες μεταβάσεις
 
-- `fade` - Crossfade in/out
-- `fade-out` - Fade out and then fade in
-- `slide-left` - Slides to the left, slide to right when going back
-- `slide-right` - Slides to the right, slide to left when going back
-- `slide-top` - Slides to the top, slide to bottom when going back
-- `slide-bottom` - Slides to the bottom, slide to top when going back
+- `fade` - Crossfade κατά την είσοδο/έξοδο
+- `fade-out` - Fade out και μετά fade in
+- `slide-left` - Ολισθαίνει προς τα αριστερά, ολισθαίνει προς τα δεξιά κατά την επιστροφή
+- `slide-right` - Ολισθαίνει προς τα δεξιά, ολισθαίνει προς τα αριστερά κατά την επιστροφή
+- `slide-top` - Ολισθαίνει προς τα πάνω, ολισθαίνει προς τα κάτω κατά την επιστροφή
+- `slide-bottom` - Ολισθαίνει προς τα κάτω, ολισθαίνει προς τα πάνω κατά την επιστροφή
 
-### Custom Transitions
+### Προσαρμοσμένες μεταβάσεις
 
-Slidev's page transitions are powered by [Vue Transition](https://vuejs.org/guide/built-ins/transition.html). You can provide your custom transitions by:
+Οι μεταβάσεις σελίδων του Slidev λειτουργούν μέσω του [Vue Transition](https://vuejs.org/guide/built-ins/transition.html). Μπορείτε να παρέχετε τις δικές σας προσαρμοσμένες μεταβάσεις με:
 
 ```md
 ---
@@ -234,7 +231,7 @@ transition: my-transition
 ---
 ```
 
-and then in your custom stylesheets:
+και στη συνέχεια στα προσαρμοσμένα stylesheets σας:
 
 ```css
 .my-transition-enter-active,
@@ -248,11 +245,11 @@ and then in your custom stylesheets:
 }
 ```
 
-Learn more how it works in [Vue Transition](https://vuejs.org/guide/built-ins/transition.html).
+Μάθετε περισσότερα για το πώς λειτουργεί στο [Vue Transition](https://vuejs.org/guide/built-ins/transition.html).
 
-### Forward & Backward Transitions
+### Μεταβάσεις προς τα εμπρός και προς τα πίσω
 
-You can specify different transitions for forward and backward navigation using `|` as a separator in the transition name:
+Μπορείτε να καθορίσετε διαφορετικές μεταβάσεις για πλοήγηση προς τα εμπρός και προς τα πίσω χρησιμοποιώντας το `|` ως διαχωριστικό στο όνομα της μετάβασης:
 
 ```md
 ---
@@ -260,11 +257,11 @@ transition: go-forward | go-backward
 ---
 ```
 
-With this, when you go from slide 1 to slide 2, the `go-forward` transition will be applied. When you go from slide 2 to slide 1, the `go-backward` transition will be applied.
+Με αυτό, όταν μεταβαίνετε από τη διαφάνεια 1 στη διαφάνεια 2, θα εφαρμόζεται η μετάβαση `go-forward`. Όταν πηγαίνετε από τη διαφάνεια 2 στη διαφάνεια 1, θα εφαρμόζεται η μετάβαση `go-backward`.
 
-### Advanced Usage
+### Σύνθετη Χρήση
 
-The `transition` field accepts an option that will passed to the [`<TransitionGroup>`](https://vuejs.org/api/built-in-components.html#transition) component. For example:
+Το πεδίο `transition` δέχεται μια επιλογή που θα δοθεί στο στοιχείο [`<TransitionGroup>`](https://vuejs.org/api/built-in-components.html#transition). Για παράδειγμα:
 
 ```md
 ---
@@ -274,4 +271,3 @@ transition:
   enterActiveClass: custom-enter-active
 ---
 ```
->>>>>>> 2e53e8c41664c5aa920ca84e738e95c8a05fb349
