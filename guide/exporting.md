@@ -45,9 +45,21 @@ $ slidev export --with-clicks
 $ slidev export --format png
 ```
 
-### Single-Page Application (SPA)
+### Export a range of slides
 
+<<<<<<< HEAD
 Δείτε την [Στατική Φιλοξενία](/guide/hosting).
+=======
+By default, all slides in the presentation are exported. If you want to export a specific slide or a range of slides you can set the `--range` option and specify which slides you would like to export. 
+
+```bash
+$ slidev export --range 1,6-8,10
+```
+
+This option accepts both specific slide numbers and ranges.
+
+The example above would export slides 1,6,7,8, and 10. 
+>>>>>>> 38e076f9a7c55cbd4d7b58579eecb54e77e9723a
 
 ## Σημειώσεις παρουσιαστή
 
@@ -58,3 +70,7 @@ $ slidev export --format png
 ```bash
 $ slidev export-notes
 ```
+
+## Single-Page Application (SPA)
+
+See [Static Hosting](/guide/hosting).

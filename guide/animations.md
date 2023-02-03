@@ -198,11 +198,21 @@ clicks: 3
 
 Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Presets](https://motion.vueuse.org/presets.html)
 
+<<<<<<< HEAD
 ## Μεταβάσεις Σελίδων
+=======
+## Slide Transitions
+
+<div id="pages-transitions" />
+>>>>>>> 38e076f9a7c55cbd4d7b58579eecb54e77e9723a
 
 > Διαθέσιμο από v0.39.0
 
+<<<<<<< HEAD
 Το Slidev υποστηρίζει μεταβάσεις σελίδων. Μπορείτε να τις ενεργοποιήσετε θέτοντας την επιλογή `transition` του frontmatter:
+=======
+Slidev supports slide transitions out of the box. You can enable it by setting the `transition` frontmatter option:
+>>>>>>> 38e076f9a7c55cbd4d7b58579eecb54e77e9723a
 
 ```md
 ---
@@ -214,16 +224,29 @@ transition: slide-left
 
 ### Ενσωματωμένες μεταβάσεις
 
+<<<<<<< HEAD
 - `fade` - Crossfade κατά την είσοδο/έξοδο
 - `fade-out` - Fade out και μετά fade in
 - `slide-left` - Ολισθαίνει προς τα αριστερά, ολισθαίνει προς τα δεξιά κατά την επιστροφή
 - `slide-right` - Ολισθαίνει προς τα δεξιά, ολισθαίνει προς τα αριστερά κατά την επιστροφή
 - `slide-top` - Ολισθαίνει προς τα πάνω, ολισθαίνει προς τα κάτω κατά την επιστροφή
 - `slide-bottom` - Ολισθαίνει προς τα κάτω, ολισθαίνει προς τα πάνω κατά την επιστροφή
+=======
+- `fade` - Crossfade in/out
+- `fade-out` - Fade out and then fade in
+- `slide-left` - Slides to the left (slide to right when going backward)
+- `slide-right` - Slides to the right (slide to left when going backward)
+- `slide-top` - Slides to the top (slide to bottom when going backward)
+- `slide-bottom` - Slides to the bottom (slide to top when going backward)
+>>>>>>> 38e076f9a7c55cbd4d7b58579eecb54e77e9723a
 
 ### Προσαρμοσμένες μεταβάσεις
 
+<<<<<<< HEAD
 Οι μεταβάσεις σελίδων του Slidev λειτουργούν μέσω του [Vue Transition](https://vuejs.org/guide/built-ins/transition.html). Μπορείτε να παρέχετε τις δικές σας προσαρμοσμένες μεταβάσεις με:
+=======
+Slidev's slide transitions are powered by [Vue Transition](https://vuejs.org/guide/built-ins/transition.html). You can provide your custom transitions by:
+>>>>>>> 38e076f9a7c55cbd4d7b58579eecb54e77e9723a
 
 ```md
 ---
