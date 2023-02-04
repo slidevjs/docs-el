@@ -43,7 +43,7 @@
 </div>
 ```
 
-Μάθετε περισσότερα για το [Windi CSS Grids](https://windicss.org/utilities/grid.html).
+Μάθετε περισσότερα για το [Windi CSS Grids](https://windicss.org/utilities/layout/grid.html).
 
 ## Τοποθέτηση
 
