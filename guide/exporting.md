@@ -45,21 +45,17 @@ $ slidev export --with-clicks
 $ slidev export --format png
 ```
 
-### Export a range of slides
+### Εξαγωγή ενός εύρους διαφανειών
 
-<<<<<<< HEAD
-Δείτε την [Στατική Φιλοξενία](/guide/hosting).
-=======
-By default, all slides in the presentation are exported. If you want to export a specific slide or a range of slides you can set the `--range` option and specify which slides you would like to export. 
+Από προεπιλογή, όλες οι διαφάνειες της παρουσίασης εξάγονται. Αν θέλετε να εξάγετε μια συγκεκριμένη διαφάνεια ή ένα εύρος διαφανειών, μπορείτε να ορίσετε την επιλογή `--range` και να καθορίσετε ποιες διαφάνειες θέλετε να εξαχθούν.
 
 ```bash
 $ slidev export --range 1,6-8,10
 ```
 
-This option accepts both specific slide numbers and ranges.
+Αυτή η επιλογή δέχεται συγκεκριμένους αριθμούς διαφανειών και εύρη τιμών.
 
-The example above would export slides 1,6,7,8, and 10. 
->>>>>>> 38e076f9a7c55cbd4d7b58579eecb54e77e9723a
+Το παραπάνω παράδειγμα θα εξάγει τις διαφάνειες 1,6,7,8 και 10.
 
 ## Σημειώσεις παρουσιαστή
 
@@ -73,4 +69,4 @@ $ slidev export-notes
 
 ## Single-Page Application (SPA)
 
-See [Static Hosting](/guide/hosting).
+Δείτε την [Στατική Φιλοξενία](/guide/hosting).

@@ -14,14 +14,11 @@ export default defineMermaidSetup(() => {
 })
 ```
 
-<<<<<<< HEAD
-Με το setup, μπορείτε να δώσετε την προσαρμοσμένη ρύθμιση για το [Mermaid](https://mermaid-js.github.io/). Ανατρέξτε στους ορισμούς των τύπων και στις οδηγίες χρήσης τους για περισσότερες λεπτομέρειες.
-=======
-With the setup, you can provide a custom default setting for [Mermaid](https://mermaid-js.github.io/). Refer to the type definitions and its documentation for more details.
+Με το setup, μπορείτε να δώσετε μια προσαρμοσμένη προεπιλεγμένη ρύθμιση για το [Mermaid](https://mermaid-js.github.io/). Ανατρέξτε στους ορισμούς των τύπων και στις οδηγίες χρήσης τους για περισσότερες λεπτομέρειες.
 
-## Custom theme/styles
+## Προσαρμοσμένο θέμα/στυλ
 
-In case you want to create your custom Mermaid themes or styles, you can do this by defining `themeVariables` like in the following example:
+Σε περίπτωση που θέλετε να δημιουργήσετε τα δικά σας προσαρμοσμένα θέματα ή στυλ για το Mermaid, μπορείτε να το κάνετε αυτό ορίζοντας το `themeVariables` όπως στο παρακάτω παράδειγμα:
 
 ```ts
 import { defineMermaidSetup } from '@slidev/types'
@@ -30,12 +27,12 @@ export default defineMermaidSetup(() => {
   return {
     theme: 'base',
     themeVariables: {
-      // General theme variables
+      // Γενικές μεταβλητές του θέματος
       noteBkgColor: "#181d29",
       noteTextColor: "#F3EFF5cc",
       noteBorderColor: "#404551",
 
-      // Sequence diagram variables
+      // Μεταβλητές διαγράμματος ακολουθίας
       actorBkg: "#0E131F",
       actorBorder: "#44FFD2",
       actorTextColor: "#F3EFF5",
@@ -47,5 +44,4 @@ export default defineMermaidSetup(() => {
 })
 ```
 
-You can find all theme variables on the [Mermaid Theme Configuration](https://mermaid.js.org/config/theming.html) page.
->>>>>>> 38e076f9a7c55cbd4d7b58579eecb54e77e9723a
+Μπορείτε να βρείτε όλες τις μεταβλητές θέματος στη σελίδα [Mermaid Theme Configuration](https://mermaid.js.org/config/theming.html).
