@@ -164,7 +164,7 @@ h1 {
 # Η επόμενη διαφάνεια δεν επηρεάζεται
 ```
 
-Η ετικέτα `<style>` στο Markdown είναι πάντα [περιορισμένη](https://vue-loader.vuejs.org/guide/scoped-css.html). Για να έχετε global style παρακάμψεις, δείτε την [ενότητα προσαρμογής](/custom/directory-structure#style).
+Η ετικέτα `<style>` στο Markdown είναι πάντα [περιορισμένη](https://vuejs.org/api/sfc-css-features.html#scoped-css). Ως αποτέλεσμα, ένας selector με το child combinator (`.a > .b`) είναι άχρηστος ως έχει; δείτε τον προηγούμενο σύνδεσμο. Για να έχετε global style overrides, δείτε την [ενότητα προσαρμογής](/custom/directory-structure#style).
 
 Με την βοήθεια του [Windi CSS](https://windicss.org), μπορείτε να χρησιμοποιήσετε άμεσα εμφωλευμένα css και [οδηγίες](https://windicss.org/features/directives.html) (π.χ. `@apply`)
 
