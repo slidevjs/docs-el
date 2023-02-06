@@ -216,12 +216,21 @@ transition: slide-left
 
 ### Ενσωματωμένες μεταβάσεις
 
+<<<<<<< HEAD
 - `fade` - Crossfade κατά την είσοδο/έξοδο
 - `fade-out` - Fade out και μετά fade in
 - `slide-left` - Ολισθαίνει προς τα αριστερά (ολισθαίνει προς τα δεξιά κατά την επιστροφή)
 - `slide-right` - Ολισθαίνει προς τα δεξιά (ολισθαίνει προς τα αριστερά κατά την επιστροφή)
 - `slide-top` - Ολισθαίνει προς τα πάνω (ολισθαίνει προς τα κάτω κατά την επιστροφή)
 - `slide-bottom` - Ολισθαίνει προς τα κάτω (ολισθαίνει προς τα πάνω κατά την επιστροφή)
+=======
+- `fade` - Crossfade in/out
+- `fade-out` - Fade out and then fade in
+- `slide-left` - Slides to the left (slide to right when going backward)
+- `slide-right` - Slides to the right (slide to left when going backward)
+- `slide-up` - Slides to the top (slide to bottom when going backward)
+- `slide-down` - Slides to the bottom (slide to top when going backward)
+>>>>>>> dbdc820c8574243d4ae38131ae2a53f6a35a9104
 
 ### Προσαρμοσμένες μεταβάσεις
 
