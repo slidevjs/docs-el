@@ -24,7 +24,20 @@ presenter: true
 download: false
 # όνομα αρχείου του αρχείου εξαγωγής
 exportFilename: 'slidev-exported'
+<<<<<<< HEAD
 # επισημαντής σύνταξης, μπορεί να είναι 'prism' ή 'shiki'
+=======
+# export options
+# use export CLI options in camelCase format
+# Learn more: https://sli.dev/guide/exporting.html
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: false
+  withToc: false
+# syntax highlighter, can be 'prism' or 'shiki'
+>>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
 highlighter: 'prism'
 # εμφάνιση αριθμών γραμμών σε blocks
 lineNumbers: false
