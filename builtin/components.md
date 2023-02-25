@@ -2,26 +2,9 @@
 
 ## Ενσωματωμένα Components
 
-<<<<<<< HEAD
-> Οι οδηγίες χρήσης αυτής της ενότητας βρίσκονται ακόμη σε εξέλιξη. Πριν από αυτό, μπορείτε να ρίξετε απευθείας μία ματιά στον [πηγαίο κώδικα](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin).
-
-### `Toc`
-
-Εισαγωγή πίνακα περιεχομένων (TOC).
-
-Αν θέλετε μια διαφάνεια να μην εμφανίζεται στο στοιχείο `<Toc>`, μπορείτε να χρησιμοποιήσετε στο μπλοκ front matter της διαφάνειας:
-```yml
----
-hideInToc: true
----
-```
-
-Οι τίτλοι εμφανίζονται χρησιμοποιώντας το [στοιχείο `<Titles>`](#titles)
-=======
 ### `Arrow`
 
-Draw an arrow.
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
+Σχεδιάστε ένα βέλος.
 
 #### Χρήση
 
@@ -29,7 +12,7 @@ Draw an arrow.
 <Arrow x1="10" y1="20" x2="100" y2="200" />
 ~~~
 
-Or:
+Ή:
 
 ~~~md
 <Arrow v-bind="{ x1:10, y1:10, x2:200, y2:200 }" />
@@ -37,85 +20,30 @@ Or:
 
 Παράμετροι:
 
-<<<<<<< HEAD
-* `columns` (`string | number`, προεπιλογή: `1`): Ο αριθμός των στηλών της απεικόνισης
-* `listClass` (`string | string[]`, προεπιλογή: `''`): Κλάσεις που εφαρμόζονται στον πίνακα περιεχομένων
-* `maxDepth` (`string | number`, προεπιλογή: `Infinity`): Το μέγιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
-* `minDepth` (`string | number`, προεπιλογή: `1`): Το ελάχιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, προεπιλογή: `'all'`):
-  * `'all'`: Εμφάνιση όλων των στοιχείων
-  * `'onlyCurrentTree'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο (ενεργό στοιχείο, γονείς και παιδιά του ενεργού στοιχείου)
-  * `'onlySiblings'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο και των άμεσων αδελφών τους
-=======
-* `x1` (`string | number`, required): start point x position
-* `y1` (`string | number`, required): start point y position
-* `x2` (`string | number`, required): end point x position
-* `y2` (`string | number`, required): end point x position
-* `width` (`string | number`, default: `2`): line width
-* `color` (`string`, default: `'currentColor'`): line color
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
+* `x1` (`string | number`, απαιτείται): θέση x του σημείου εκκίνησης
+* `y1` (`string | number`, απαιτείται): θέση y του σημείου εκκίνησης
+* `x2` (`string | number`, απαιτείται): θέση x του σημείου τέλους
+* `y2` (`string | number`, απαιτείται): θέση y του σημείου τέλους
+* `width` (`string | number`, προεπιλογή: `2`): πλάτος γραμμής
+* `color` (`string`, προεπιλογή: `'currentColor'`): χρώμα γραμμής
 
 ### `AutoFitText`
 
-<<<<<<< HEAD
-Εισάγετε έναν σύνδεσμο που μπορείτε να χρησιμοποιήσετε για να πλοηγηθείτε σε μια συγκεκριμένη διαφάνεια.
-=======
-> Experimental
+> Πειραματικό
 
-Box inside which the font size will automatically adapt to fit the content. Similar to PowerPoint or Keynote TextBox.
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
+Πλαίσιο μέσα στο οποίο το μέγεθος της γραμματοσειράς θα προσαρμόζεται αυτόματα για να ταιριάζει με το περιεχόμενο. Παρόμοιο με το TextBox του PowerPoint ή του Keynote.
 
 #### Χρήση
 
 ~~~md
-<<<<<<< HEAD
-<Link to="42">Πηγαίνετε στη διαφάνεια 42</Link>
-<Link to="42" title="Πηγαίνετε στη διαφάνεια 42"/>
-=======
 <AutoFitText :max="200" :min="100" modelValue="Some text"/>
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
 ~~~
 
 Παράμετροι:
 
-<<<<<<< HEAD
-* `to` (`string | number`): Το path της διαφάνειας στην οποία θέλετε να πλοηγηθείτε (οι διαφάνειες ξεκινούν από το `1`)
-* `title` (`string`): Ο τίτλος που θα εμφανιστεί
-
-### `Titles`
-
-Εισάγετε τον κύριο τίτλο από μια διαφάνεια που επεξεργάζεται ως HTML.
-
-Οι τίτλοι και τα επίπεδα τίτλων ανακτώνται αυτόματα από το πρώτο στοιχείο τίτλου κάθε διαφάνειας.
-
-Μπορείτε να παρακάμψετε αυτή την αυτόματη συμπεριφορά για μια διαφάνεια χρησιμοποιώντας τη σύνταξη front matter:
-```yml
----
-title: Καταπληκτικός τίτλος διαφάνειας
-level: 2
----
-```
-
-#### Χρήση
-
-Το στοιχείο `<Titles>` είναι ένα εικονικό στοιχείο που μπορείτε να εισαγάγετε με:
-```js
-import Titles from '/@slidev/titles.md'
-```
-
-Στη συνέχεια, μπορείτε να το χρησιμοποιήσετε με:
-~~~md
-<Titles no="42" />
-~~~
-
-Παράμετροι:
-
-* `no` (`string | number`): Ο αριθμός της διαφάνειας από την οποία θα εμφανιστεί ο τίτλος (οι διαφάνειες ξεκινούν από το `1`)
-=======
-* `max` (`string | number`, default `100`): Maximum font size
-* `min` (`string | number`, default `30`): Minimum font size
-* `modelValue` (`string`, default `''`): text content
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
+* `max` (`string | number`, προεπιλογή `100`): Μέγιστο μέγεθος γραμματοσειράς
+* `min` (`string | number`, προεπιλογή `30`): Ελάχιστο μέγεθος γραμματοσειράς
+* `modelValue` (`string`, προεπιλογή `''`): το περιεχόμενο κείμενο
 
 ### `LightOrDark`
 
@@ -161,41 +89,41 @@ import Titles from '/@slidev/titles.md'
 
 ### `Link`
 
-Insert a link you can use to navigate to a given slide.
+Εισάγετε έναν σύνδεσμο που μπορείτε να χρησιμοποιήσετε για να πλοηγηθείτε σε μια συγκεκριμένη διαφάνεια.
 
-#### Usage
+#### Χρήση
 
 ~~~md
-<Link to="42">Go to slide 42</Link>
-<Link to="42" title="Go to slide 42"/>
+<Link to="42">Πηγαίνετε στη διαφάνεια 42</Link>
+<Link to="42" title="Πηγαίνετε στη διαφάνεια 42"/>
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `to` (`string | number`): The path of the slide to navigate to (slides starts from `1`)
-* `title` (`string`): The title to display
+* `to` (`string | number`): Το path της διαφάνειας στην οποία θέλετε να πλοηγηθείτε (οι διαφάνειες ξεκινούν από το `1`)
+* `title` (`string`): Ο τίτλος που θα εμφανιστεί
 
 ### `RenderWhen`
 
-Render slot only when the context match (for example when we are in presenter view).
+Κάντε render το slot μόνο όταν ταιριάζει το context (για παράδειγμα όταν είμαστε στο presenter view).
 
-#### Usage
+#### Χρήση
 
 ~~~md
-<RenderWhen context="presenter">This will only be rendered in presenter view.</RenderWhen>
+<RenderWhen context="presenter">Αυτό θα γίνει render μόνο στο presenter view.</RenderWhen>
 ~~~
 
-Context type: `'main' | 'slide' | 'overview' | 'presenter' | 'previewNext'`
+Τύπος context: `'main' | 'slide' | 'overview' | 'presenter' | 'previewNext'`
 
-Parameters:
+Παράμετροι:
 
-* `context` (`Context | Context[]`): context or array of contexts you want the slot to be rendered
+* `context` (`Context | Context[]`): context ή array των contexts που θέλετε να γίνει render το slot
 
 ### `SlideCurrentNo`
 
-Current slide number.
+Αριθμός τρέχουσας διαφάνειας.
 
-#### Usage
+#### Χρήση
 
 ~~~md
 <SlideCurrentNo />
@@ -203,9 +131,9 @@ Current slide number.
 
 ### `SlidesTotal`
 
-Total number of slides.
+Συνολικός αριθμός διαφανειών.
 
-#### Usage
+#### Χρήση
 
 ~~~md
 <SlidesTotal />
@@ -213,69 +141,69 @@ Total number of slides.
 
 ### `Titles`
 
-Insert the main title from a slide parsed as HTML.
+Εισάγετε τον κύριο τίτλο από μια διαφάνεια που επεξεργάζεται ως HTML.
 
-Titles and title levels get automatically retrieved from the first title element of each slides.
+Οι τίτλοι και τα επίπεδα τίτλων ανακτώνται αυτόματα από το πρώτο στοιχείο τίτλου κάθε διαφάνειας.
 
-You can override this automatic behaviour for a slide by using the front matter syntax:
+Μπορείτε να παρακάμψετε αυτή την αυτόματη συμπεριφορά για μια διαφάνεια χρησιμοποιώντας τη σύνταξη front matter:
 ```yml
 ---
-title: Amazing slide title
+title: Καταπληκτικός τίτλος διαφάνειας
 level: 2
 ---
 ```
 
-#### Usage
+#### Χρήση
 
-The `<Titles>` component is a virtual component you can import with:
+Το στοιχείο `<Titles>` είναι ένα εικονικό στοιχείο που μπορείτε να εισαγάγετε με:
 ```js
 import Titles from '/@slidev/titles.md'
 ```
 
-Then you can use it with:
+Στη συνέχεια, μπορείτε να το χρησιμοποιήσετε με:
 ~~~md
 <Titles no="42" />
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `no` (`string | number`): The number of the slide to display the title from (slides starts from `1`)
+* `no` (`string | number`): Ο αριθμός της διαφάνειας από την οποία θα εμφανιστεί ο τίτλος (οι διαφάνειες ξεκινούν από το `1`)
 
 ### `Toc`
 
-Insert a Table Of Content.
+Εισαγωγή πίνακα περιεχομένων (TOC).
 
-If you want a slide to not appear in the `<Toc>` component, you can use in the front matter block of the slide:
+Αν θέλετε μια διαφάνεια να μην εμφανίζεται στο στοιχείο `<Toc>`, μπορείτε να χρησιμοποιήσετε στο μπλοκ front matter της διαφάνειας:
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
-Titles are displayed using the [`<Titles>` component](#titles)
+Οι τίτλοι εμφανίζονται χρησιμοποιώντας το [στοιχείο `<Titles>`](#titles)
 
-#### Usage
+#### Χρήση
 
 ~~~md
 <Toc />
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `columns` (`string | number`, default: `1`): The number of columns of the display
-* `listClass` (`string | string[]`, default: `''`): Classes to apply to the table of contents list
-* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
-* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Display all items
-  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
-  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+* `columns` (`string | number`, προεπιλογή: `1`): Ο αριθμός των στηλών της απεικόνισης
+* `listClass` (`string | string[]`, προεπιλογή: `''`): Κλάσεις που εφαρμόζονται στον πίνακα περιεχομένων
+* `maxDepth` (`string | number`, προεπιλογή: `Infinity`): Το μέγιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
+* `minDepth` (`string | number`, προεπιλογή: `1`): Το ελάχιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
+* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, προεπιλογή: `'all'`):
+  * `'all'`: Εμφάνιση όλων των στοιχείων
+  * `'onlyCurrentTree'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο (ενεργό στοιχείο, γονείς και παιδιά του ενεργού στοιχείου)
+  * `'onlySiblings'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο και των άμεσων αδελφών τους
 
 ### `Transform`
 
-Apply scaling or transforming to elements.
+Εφαρμόστε κλιμάκωση ή μετασχηματισμό σε στοιχεία.
 
-#### Usage
+#### Χρήση
 
 ~~~md
 <Transform :scale="0.5">
@@ -283,45 +211,46 @@ Apply scaling or transforming to elements.
 </Transform>
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `scale` (`number | string`, default `1`): transform scale value
-* `origin` (`string`, default `'top left'`): transform origin value
+* `scale` (`number | string`, προεπιλογή `1`): τιμή κλίμακας μετασχηματισμού
+* `origin` (`string`, προεπιλογή `'top left'`): τιμή προέλευσης μετασχηματισμού
 
 ### `Tweet`
 
-Embed a tweet.
+Ενσωματώστε ένα tweet.
 
-#### Usage
+#### Χρήση
 
 ~~~md
 <Tweet id="20" />
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `id` (`number | string`, required): id of the tweet
-* `scale` (`number | string`, default `1`): transform scale value
-* `conversation` (`string`, default `'none'`): [tweet embed parameter](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
+* `id` (`number | string`, απαιτείται): id του tweet
+* `scale` (`number | string`, προεπιλογή `1`): τιμή κλίμακας μετασχηματισμού
+* `conversation` (`string`, προεπιλογή `'none'`): [παράμετρος ενσωμάτωσης tweet](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
 
 ### `VAfter`, `VClick` and `VClicks`
 
-See https://sli.dev/guide/animations.html
+Δείτε https://el.sli.dev/guide/animations.html
+
 ### `Youtube`
 
-Embed a youtube video.
+Ενσωματώστε ένα βίντεο του youtube.
 
-#### Usage
+#### Χρήση
 
 ~~~md
 <Youtube id="luoMHjh-XcQ" />
 ~~~
 
-Parameters:
+Παράμετροι:
 
-* `id` (`string`, required): id of the youtube video
-* `width` (`number`): width of the video
-* `height` (`number`): height of the video
+* `id` (`string`, απαιτείται): id του βίντεο στο youtube
+* `width` (`number`): πλάτος του βίντεο
+* `height` (`number`): ύψος του βίντεο
 
 ## Προσαρμοσμένα Components
 

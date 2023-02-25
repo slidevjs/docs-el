@@ -9,15 +9,11 @@
 $ slidev build
 ```
 
-<<<<<<< HEAD
-Η παραγόμενη εφαρμογή θα είναι διαθέσιμη στο `dist/` και στη συνέχεια μπορείτε να την φιλοξενήσετε στα [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), ή όπου αλλού θέλετε. Τώρα μπορείτε να μοιραστείτε τις διαφάνειές σας με τον υπόλοιπο κόσμο με έναν μόνο σύνδεσμο.
-=======
-The generated application will be available under `dist/`.
+Η παραγόμενη εφαρμογή θα είναι διαθέσιμη στο `dist/`.
 
-You can test the generated build using a web server (Apache, NGINX, Caddy...etc.) or in the project you can directly run: `npx vite preview`.
+Μπορείτε να δοκιμάσετε την παραγόμενη εφαρμογή χρησιμοποιώντας έναν web server (Apache, NGINX, Caddy...κλπ.) ή στο project μπορείτε να εκτελέσετε απευθείας: `npx vite preview`.
 
-Then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever you want. Now you can share your slides with the rest of the world with a single link.
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
+Και στη συνέχεια μπορείτε να την φιλοξενήσετε στα [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), ή όπου αλλού θέλετε. Τώρα μπορείτε να μοιραστείτε τις διαφάνειές σας με τον υπόλοιπο κόσμο με έναν μόνο σύνδεσμο.
 
 ### Βασικό Path
 
@@ -49,38 +45,34 @@ download: 'https://myside.com/my-talk.pdf'
 ---
 ```
 
-<<<<<<< HEAD
-## Παραδείγματα
-=======
-This can also be done with the CLI option `--download` (`boolean` only).
+Αυτό μπορεί επίσης να γίνει με την επιλογή CLI `--download` (μόνο `boolean`).
 
 ```bash
 $ slidev build --download
 ```
 
-When using the download option, you can also provide the export options:
+Όταν χρησιμοποιείτε την επιλογή λήψης, μπορείτε επίσης να παρέχετε τις επιλογές εξαγωγής:
 
-* By using [CLI export options](/guide/exporting.html)
-* Or [frontmatter export options](/custom/#frontmatter-configures)
+* Χρησιμοποιώντας [επιλογές εξαγωγής CLI](/guide/exporting.html)
+* Ή [επιλογές εξαγωγής frontmatter](/custom/#frontmatter-configures)
 
-### Output directory
+### Φάκελος εξόδου
 
-You can change the output directory using `--out`.
+Μπορείτε να αλλάξετε τον φάκελο εξόδου χρησιμοποιώντας το `--out`.
 
 ```bash
 $ slidev build --dir my-build-folder
 ```
 
-### Watch mode
+### Λειτουργία watch
 
-By passing the `--watch` option the build will run in watch mode and will rebuild anytime the source changes.
+Δίνοντας την επιλογή `--watch` η εφαρμογή θα εκτελείται σε λειτουργία παρακολούθησης και θα ανακατασκευάζεται κάθε φορά που αλλάζει τα αρχεία σας.
 
 ```bash
 $ slidev build --watch
 ```
 
-## Examples
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
+## Παραδείγματα
 
 Ακολουθούν μερικά παραδείγματα εξαγομένων SPA:
 

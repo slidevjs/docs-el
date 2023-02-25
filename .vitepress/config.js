@@ -230,22 +230,8 @@ const slidebars = [
     children: Customizations,
   },
   {
-<<<<<<< HEAD
     text: 'Ενσωματωμένα',
-    children: [
-      {
-        text: 'Components',
-        link: '/builtin/components',
-      },
-      {
-        text: 'Layouts',
-        link: '/builtin/layouts',
-      },
-    ],
-=======
-    text: 'Built-in',
     children: BuiltIn,
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
   },
 ]
 
@@ -303,15 +289,11 @@ module.exports = {
         items: Customizations,
       },
       {
-<<<<<<< HEAD
-        text: 'Πηγές',
-=======
-        text: 'Built-in',
+        text: 'Ενσωματωμένα',
         items: BuiltIn,
       },
       {
-        text: 'Resources',
->>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
+        text: 'Πηγές',
         items: Resources,
       },
       {
