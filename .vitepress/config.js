@@ -186,6 +186,17 @@ const Customizations = [
   }
 ]
 
+const BuiltIn = [
+  {
+    text: 'Components',
+    link: '/builtin/components',
+  },
+  {
+    text: 'Layouts',
+    link: '/builtin/layouts',
+  },
+]
+
 const Resources = [
   {
     text: 'Παρουσιάσεις',
@@ -220,16 +231,7 @@ const slidebars = [
   },
   {
     text: 'Ενσωματωμένα',
-    children: [
-      {
-        text: 'Components',
-        link: '/builtin/components',
-      },
-      {
-        text: 'Layouts',
-        link: '/builtin/layouts',
-      },
-    ],
+    children: BuiltIn,
   },
 ]
 
@@ -285,6 +287,10 @@ module.exports = {
       {
         text: 'Προσαρμόστε',
         items: Customizations,
+      },
+      {
+        text: 'Ενσωματωμένα',
+        items: BuiltIn,
       },
       {
         text: 'Πηγές',

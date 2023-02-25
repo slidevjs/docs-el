@@ -21,13 +21,29 @@ $ slidev export
 
 Μετά από λίγα δευτερόλεπτα, οι διαφάνειές σας θα είναι έτοιμες στο `./slides-export.pdf`.
 
+### PNGs και Markdown
+
+Αν δώσετε την επιλογή `--format png`, το Slidev θα εξάγει εικόνες PNG για κάθε διαφάνεια αντί για ένα αρχείο PDF.
+
+```bash
+$ slidev export --format png
+```
+
+Μπορείτε επίσης να δημιουργήσετε ένα αρχείο markdown που αποτελείται από αρχεία png χρησιμοποιώντας το `--format md`.
+
+```bash
+$ slidev export --format md
+```
+
+### Dark mode
+
 Σε περίπτωση που θέλετε να εξάγετε τις διαφάνειές σας χρησιμοποιώντας τη σκοτεινή έκδοση του θέματος, χρησιμοποιήστε την επιλογή `--dark`:
 
 ```bash
 $ slidev export --dark
 ```
 
-#### Εξαγωγή Βημάτων Clicks
+### Εξαγωγή Βημάτων Clicks
 
 > Διαθέσιμο από v0.21
 
@@ -37,12 +53,38 @@ $ slidev export --dark
 $ slidev export --with-clicks
 ```
 
-### PNGs
+### Slide range
 
-Όταν περνάτε την επιλογή `--format png`, το Slidev θα εξάγει εικόνες PNG για κάθε διαφάνεια αντί για PDF.
+Μπορείτε επίσης να καθορίσετε ένα εύρος διαφανειών για εξαγωγή με την επιλογή `--range`.
 
 ```bash
-$ slidev export --format png
+$ slidev export --range 1,4-5,6
+```
+
+### PDF outline
+
+> Διαθέσιμο από v0.36.10
+
+Μπορείτε να δημιουργήσετε το PDF outline περνώντας την επιλογή `--with-toc`.
+
+```bash
+$ slidev export --with-toc
+```
+
+### Όνομα αρχείου εξόδου
+
+Μπορείτε να καθορίσετε το όνομα του αρχείου εξόδου με την επιλογή `--output`.
+
+```bash
+$ slidev export --output my-pdf-export
+```
+
+Ή στη ρύθμιση frontmatter:
+
+```yaml
+---
+exportFilename: my-pdf-export
+---
 ```
 
 ### Εξαγωγή ενός εύρους διαφανειών
@@ -70,3 +112,21 @@ $ slidev export-notes
 ## Single-Page Application (SPA)
 
 Δείτε την [Στατική Φιλοξενία](/guide/hosting).
+
+## Troubleshooting
+
+### Timeout
+
+Για μεγάλες παρουσιάσεις μπορεί να θέλετε να αυξήσετε το χρονικό όριο του playwrigtht με το `--timeout`.
+
+```bash
+$ slidev export --timeout 60000
+```
+
+### Executable path
+
+Μπορείτε να ορίσετε το path του προγράμματος περιήγησης για το playwright χρησιμοποιώντας το `--executable-path`.
+
+```bash
+$ slidev export --executable-path [path_to_chromium]
+```
