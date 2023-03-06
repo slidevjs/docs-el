@@ -61,7 +61,7 @@ $ slidev build --download
 Μπορείτε να αλλάξετε τον φάκελο εξόδου χρησιμοποιώντας το `--out`.
 
 ```bash
-$ slidev build --dir my-build-folder
+$ slidev build --out my-build-folder
 ```
 
 ### Λειτουργία watch
