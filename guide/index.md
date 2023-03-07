@@ -65,6 +65,12 @@ $ npm init slidev
 $ yarn create slidev
 ```
 
+Με pnpm:
+
+```bash
+$ pnpm create slidev
+```
+
 Ακολουθήστε τις οδηγίες και αρχίστε να δημιουργείτε τις διαφάνειές σας τώρα! Για περισσότερες λεπτομέρειες σχετικά με τη σύνταξη markdown, διαβάστε τον [οδηγό σύνταξης](/guide/syntax).
 
 ### Command Line Interface
