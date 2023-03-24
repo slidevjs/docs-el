@@ -72,7 +72,27 @@ $ slidev build --out my-build-folder
 $ slidev build --watch
 ```
 
+<<<<<<< HEAD
 ## Παραδείγματα
+=======
+### Multiple entries
+
+You can also build multiple slides at once.
+
+```bash
+$ slidev build slides1.md slides1.md
+```
+
+Or
+
+```bash
+$ slidev build *.md
+```
+
+In this case, each input file will generate a folder containing the build in the output directory.
+
+## Examples
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
 
 Ακολουθούν μερικά παραδείγματα εξαγομένων SPA:
 

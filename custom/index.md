@@ -81,12 +81,37 @@ drawings:
   persist: false
   presenterOnly: false
   syncAll: true
+
+# HTML tag attributes
+htmlAttrs:
+  dir: 'ltr'
+  lang: 'en'
 ---
 ```
 
 Δείτε τους [ορισμούς των τύπων](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) για περισσότερες επιλογές.
 
+<<<<<<< HEAD
 ## Δομή Φακέλου
+=======
+## Per slide configuration
+
+In addition, every slide accepts the following configuration in the Frontmatter block:
+
+* `clicks` (`number`): Custom clicks count (learn more [here](/guide/animations.html#custom-clicks-count)).
+* `disabled` (`boolean`): Completely disable the slide.
+* `hide` (`boolean`): Hide sub-slides when using `src` (learn more [here](/guide/syntax.html#multiple-entries)).
+* `hideInToc` (`boolean`): Hide the slide for the `<Toc>` components (learn more [here](/builtin/components.html#toc)).
+* `layout` (`string`): Defines the layout component applied to the slide (learn more [here](/guide/syntax.html#front-matter-layouts) and [here](/builtin/layouts.html)).
+* `level` (`number`): Override the title level for the `<Title>` and `<Toc>` components (only if `title` has also been declared, learn more [here](/builtin/components.html#titles)).
+* `preload` (`boolean`, default `true`): preload the next slide (learn more [here](/guide/animations.html#motion)).
+* `routeAlias` (`string`): create a route alias that can be used in the URL or with the `<Link>` component (learn more [here](/builtin/components.html#link)).
+* `src` (`string`): Includes a markdown file (learn more [here](/guide/syntax.html#multiple-entries)).
+* `title` (`string`): Override the title for the `<Title>` and `<Toc>` components (learn more [here](/builtin/components.html#titles)).
+* `transition` (`string | TransitionProps`): Defines the transition between the slide and the next one (learn more [here](/guide/animations.html#slide-transitions)).
+
+## Directory Structure
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
 
 Το Slidev χρησιμοποιεί συμβάσεις δομής φακέλου για την ελαχιστοποίηση της επιφάνειας ρύθμισης και κάνει τις επεκτάσεις ευέλικτες και διαισθητικές στη λειτουργικότητα.
 

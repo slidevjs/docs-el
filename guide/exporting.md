@@ -97,7 +97,28 @@ $ slidev export --range 1,6-8,10
 
 Αυτή η επιλογή δέχεται συγκεκριμένους αριθμούς διαφανειών και εύρη τιμών.
 
+<<<<<<< HEAD
 Το παραπάνω παράδειγμα θα εξάγει τις διαφάνειες 1,6,7,8 και 10.
+=======
+The example above would export slides 1,6,7,8, and 10.
+
+
+### Multiple entries
+
+You can also export multiple slides at once.
+
+```bash
+$ slidev export slides1.md slides1.md
+```
+
+Or
+
+```bash
+$ slidev export *.md
+```
+
+In this case, each input file will generate its own PDf file.
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
 
 ## Σημειώσεις παρουσιαστή
 
@@ -108,6 +129,8 @@ $ slidev export --range 1,6-8,10
 ```bash
 $ slidev export-notes
 ```
+
+This command also accept multiple entries like for the [export command](#multiple-entries)
 
 ## Single-Page Application (SPA)
 
