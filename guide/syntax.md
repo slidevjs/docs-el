@@ -146,31 +146,27 @@ console.log('ΓειαΣουΚόσμε')
 
 Μάθετε περισσότερα για την [ρύθμιση Monaco](/custom/config-monaco).
 
-<<<<<<< HEAD
-## Ενσωματωμένα Styles
-=======
 ### Monaco diff
 
-Monaco can also generate a diff between two code blocks. Use `{monaco-diff}` to turn the block into a [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) and use `~~~` to separate both original and modified version of the code!
+Το Monaco μπορεί επίσης να δημιουργήσει ένα diff μεταξύ δύο μπλοκ κώδικα. Χρησιμοποιήστε `{monaco-diff}` για να μετατρέψετε το μπλοκ σε [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) και χρησιμοποιήστε `~~~` για να διαχωρίσετε την αρχική και την τροποποιημένη έκδοση του κώδικα!
 
 ```md
 //```ts {monaco-diff}
-This line is removed on the right.
-just some text
+Η γραμμή αυτή αφαιρείται στα δεξιά.
+λίγο κείμενο
 abcd
 efgh
-Some more text
+Λίγο ακόμα κείμενο
 ~~~
-just some text
+λίγο κείμενο
 abcz
 zzzzefgh
-Some more text.
-This line is removed on the left.
+Λίγο ακόμα κείμενο.
+Η γραμμή αυτή αφαιρείται στα αριστερά.
 //```
 ```
 
-## Embedded Styles
->>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
+## Ενσωματωμένα Styles
 
 Μπορείτε να χρησιμοποιήσετε την ετικέτα `<style>` στο Markdown σας απευθείας για να παρακάμψετε τα styles για την **τρέχουσα διαφάνεια**.
 
