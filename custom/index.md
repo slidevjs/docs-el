@@ -81,10 +81,31 @@ drawings:
   persist: false
   presenterOnly: false
   syncAll: true
+
+# HTML tag attributes
+htmlAttrs:
+  dir: 'ltr'
+  lang: 'en'
 ---
 ```
 
 Δείτε τους [ορισμούς των τύπων](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) για περισσότερες επιλογές.
+
+## Ρύθμιση ανά διαφάνεια
+
+Επιπλέον, κάθε διαφάνεια δέχεται την ακόλουθη ρύθμιση στο μπλοκ Frontmatter:
+
+* `clicks` (`number`): Προσαρμοσμένος αριθμός clicks (μάθετε περισσότερα [εδώ](/guide/animations.html#πpοσαpμοσμένος-αpιθμός-clicks)).
+* `disabled` (`boolean`): Απενεργοποιήστε πλήρως τη διαφάνεια.
+* `hide` (`boolean`): Αποκρύψτε τις υπο-διαφάνειες όταν χρησιμοποιείτε το `src` (μάθετε περισσότερα [εδώ](/guide/syntax.html#πολλαπλές-είσοδοι)).
+* `hideInToc` (`boolean`): Αποκρύψτε τη διαφάνεια για τα στοιχεία `<Toc>` (μάθετε περισσότερα [εδώ](/builtin/components.html#toc)).
+* `layout` (`string`): Καθορίζει το στοιχείο διάταξης που εφαρμόζεται στη διαφάνεια (μάθετε περισσότερα [εδώ](/guide/syntax.html#front-matter-layouts) και [εδώ](/builtin/layouts.html)).
+* `level` (`number`): Παρακάμψτε το επίπεδο τίτλου για τα στοιχεία `<Title>` και `<Toc>` (μόνο αν έχει δηλωθεί και το `title`, μάθετε περισσότερα [εδώ](/builtin/components.html#titles)).
+* `preload` (`boolean`, προεπιλογή `true`): προφόρτωση της επόμενης διαφάνειας (μάθετε περισσότερα [εδώ](/guide/animations.html#κίνηση)).
+* `routeAlias` (`string`): δημιουργήστε ένα ψευδώνυμο route που μπορεί να χρησιμοποιηθεί στη διεύθυνση URL ή με το στοιχείο `<Link>` (μάθετε περισσότερα [εδώ](/builtin/components.html#link)).
+* `src` (`string`): Συμπεριλάβετε ένα αρχείο markdown (μάθετε περισσότερα [εδώ](/guide/syntax.html#πολλαπλές-είσοδοι)).
+* `title` (`string`): Παρακάμψτε τον τίτλο για τα στοιχεία `<Title>` και `<Toc>` (μάθετε περισσότερα [εδώ](/builtin/components.html#titles)).
+* `transition` (`string | TransitionProps`): Ορίστε τη μετάβαση μεταξύ της διαφάνειας και της επόμενης (μάθετε περισσότερα [εδώ](/guide/animations.html#μεταβάσεις-διαφανειών)).
 
 ## Δομή Φακέλου
 
