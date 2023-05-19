@@ -18,6 +18,12 @@ $ npm init slidev@latest
 $ yarn create slidev
 ```
 
+Με PNPM:
+
+```bash
+$ pnpm create slidev
+```
+
 Ακολουθήστε τις οδηγίες και θα ανοίξει αυτόματα η προβολή διαφανειών στη διεύθυνση `http://localhost:3030/`.
 
 Περιέχει επίσης το βασικό setup και ένα σύντομο demo με οδηγίες για το πώς να ξεκινήσετε με το Slidev.
