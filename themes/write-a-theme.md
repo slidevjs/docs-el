@@ -128,11 +128,7 @@ html.dark {
 // package.json
 {
   "slidev": {
-<<<<<<< HEAD
-    "highlighter": "shiki" // ή "prism" ή "all"
-=======
-    "highlighter": "shiki" // or "prism" or "both"
->>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
+    "highlighter": "shiki" // ή "prism" ή "both"
   }
 }
 ```
