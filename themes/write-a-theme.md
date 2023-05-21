@@ -64,7 +64,7 @@ theme: ./
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -128,7 +128,7 @@ html.dark {
 // package.json
 {
   "slidev": {
-    "highlighter": "shiki" // ή "prism" ή "all"
+    "highlighter": "shiki" // ή "prism" ή "both"
   }
 }
 ```
