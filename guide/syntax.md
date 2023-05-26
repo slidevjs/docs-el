@@ -2,7 +2,11 @@
 
 Οι διαφάνειες γράφονται μέσα σε **ένα ενιαίο αρχείο markdown** (εξ ορισμού `./slides.md`). 
 
+<<<<<<< HEAD
 Μπορείτε να χρησιμοποιήσετε [τις δυνατότητες του Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) όπως θα κάνατε κανονικά, με την πρόσθετη υποστήριξη του ενσωματωμένου HTML και των Vue Components. Επίσης υποστηρίζεται styling χρησιμοποιώντας [Windi CSS](https://windicss.org). Χρησιμοποιήστε το `---` συνοδευμένο από μια νέα γραμμή για να διαχωρίσετε τις διαφάνειές σας. 
+=======
+You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides. 
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ~~~md
 # Slidev
@@ -186,7 +190,11 @@ h1 {
 
 Η ετικέτα `<style>` στο Markdown είναι πάντα [περιορισμένη](https://vuejs.org/api/sfc-css-features.html#scoped-css). Ως αποτέλεσμα, ένας selector με το child combinator (`.a > .b`) είναι άχρηστος ως έχει; δείτε τον προηγούμενο σύνδεσμο. Για να έχετε global style overrides, δείτε την [ενότητα προσαρμογής](/custom/directory-structure#style).
 
+<<<<<<< HEAD
 Με την βοήθεια του [Windi CSS](https://windicss.org), μπορείτε να χρησιμοποιήσετε άμεσα εμφωλευμένα css και [οδηγίες](https://windicss.org/features/directives.html) (π.χ. `@apply`)
+=======
+Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ```md
 # Slidev

@@ -10,6 +10,7 @@
 
 ### Δυνατότητες
 
+<<<<<<< HEAD
 - 📝 [**Βασισμένο στο Markdown**](/guide/syntax.html) - χρησιμοποιήστε τους αγαπημένους σας συντάκτες και ροή εργασίας
 - 🧑‍💻 [**Φιλικό προς Προγραμματιστές**](/guide/syntax.html#code-blocks) - ενσωματωμένοι επισημαντήρες σύνταξης, live coding, κτλ.
 - 🎨 [**Θεματοποιήσιμο**](/themes/gallery.html) - θέματα μπορούν να μοιραστούν και να χρησιμοποιηθούν με πακέτα npm
@@ -25,6 +26,23 @@
 - 📤 [**Φορητό**](/guide/exporting.html) - εξαγωγή σε PDF, PNGs, ή ακόμα και σε ένα φιλοξενήσιμο SPA
 - ⚡️ [**Γρήγορο**](https://vitejs.dev) - άμεση επαναφόρτωση με τη βοήθεια του [Vite](https://vitejs.dev)
 - 🛠 [**Hackable**](/custom/config-vite.html) - χρησιμοποιώντας πρόσθετα Vite, Vue components, ή οποιαδήποτε πακέτα npm
+=======
+- 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
+- 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
+- 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
+- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - on-demand utilities via [UnoCSS](https://github.com/unocss/unocss) or [Windi CSS](https://windicss.org/).
+- 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
+- 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
+- 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
+- 🧮 [**LaTeX**](/guide/syntax.html#latex) - built-in LaTeX math equations support
+- 📰 [**Diagrams**](/guide/syntax.html#diagrams) - creates diagrams with textual descriptions 
+- 🌟 [**Icons**](/guide/syntax.html#icons) - Access to icons from any iconset directly
+- 💻 [**Editors**](/guide/editors.html) - integrated editor, or [extension for VS Code](https://github.com/slidevjs/slidev-vscode)
+- 🎥 [**Recording**](/guide/recording.html) - built-in recording and camera view
+- 📤 [**Portable**](/guide/exporting.html) - export into PDF, PNGs, or even a hostable SPA
+- ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev)
+- 🛠 [**Hackable**](/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ### Στοίβα Τεχνολογίας
 

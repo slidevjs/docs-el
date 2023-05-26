@@ -32,7 +32,11 @@
 
 ## Γρήγορο
 
+<<<<<<< HEAD
 Το Slidev λειτουργεί με τη βοήθεια των [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) και [Windi CSS](https://windicss.org/), που σας δίνουν την πιο υπέροχη εμπειρία συγγραφής. Κάθε αλλαγή που κάνατε θα αντικατοπτρίζεται στις διαφάνειές σας **αμέσως**.
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 Μάθετε περισσότερα για την [στοίβα τεχνολογίας μας](/guide/#στοίβα-τεχνολογίας).
 

@@ -4,7 +4,11 @@
 
 Από τη στιγμή που το Slidev βασίζεται στο Διαδίκτυο, μπορείτε να εφαρμόσετε οποιοδήποτε layout πλέγματος όπως θέλετε. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), ή ακόμα και [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), έχετε τον πλήρη έλεγχο.
 
+<<<<<<< HEAD
 Από τη στιγμή που έχουμε ενσωματωμένο το [Windi CSS](https://windicss.org/), εδώ είναι ένας απλός τρόπος για να αναφερθείτε:
+=======
+Since we have [UnoCSS](https://windicss.org/) built-in, here is one simple way for you to reference:
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ```html
 <div class="grid grid-cols-2 gap-4">

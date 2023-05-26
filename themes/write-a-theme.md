@@ -13,11 +13,19 @@ $ npm init slidev-theme
 Ένα θέμα μπορεί να συμβάλλει στα ακόλουθα σημεία:
 
 - Global styles
+<<<<<<< HEAD
 - Παροχή προεπιλεγμένων ρυθμίσεων (γραμματοσειρές, χρωματικό σχήμα, επισημαντήρες, κτλ.)
 - Παροχή προσαρμοσμένων layouts ή παράκαμψη των υπαρχόντων
 - Παροχή προσαρμοσμένων components ή παράκαμψη των υπαρχόντων
 - Επέκταση ρυθμίσεων του Windi CSS
 - Ρύθμιση εργαλείων όπως Monaco και Prism
+=======
+- Provide default configurations (fonts, color schema, highlighters, etc.)
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ## Συμβάσεις
 

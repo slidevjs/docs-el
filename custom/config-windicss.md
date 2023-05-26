@@ -2,7 +2,22 @@
 
 <Environment type="node" />
 
+<<<<<<< HEAD
 Το markdown υποστηρίζει εκ φύσεως ενσωματωμένες επισημάνσεις HTML. Επομένως, μπορείτε να διαμορφώσετε το περιεχόμενό σας με τον τρόπο που θέλετε. Για λόγους ευκολίας, έχουμε ενσωματωμένο το [Windi CSS](https://github.com/windicss/windicss), ώστε να μπορείτε να μορφοποιήσετε τη σήμανση απευθείας χρησιμοποιώντας εργαλεία για class. 
+=======
+::: warning
+Since Slidev v0.42.0, [UnoCSS](/custom/config-unocss) become the default CSS framework for Slidev.
+
+You can still use Windi CSS by setting `css: windicss` in the frontmatter.
+```md
+---
+css: windicss
+---
+```
+:::
+
+Markdown naturally supports embedded HTML markups. You can therefore style your content the way you want.
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 Για παράδειγμα:
 
