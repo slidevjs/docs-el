@@ -13,7 +13,7 @@
 - 📝 [**Βασισμένο στο Markdown**](/guide/syntax.html) - χρησιμοποιήστε τους αγαπημένους σας συντάκτες και ροή εργασίας
 - 🧑‍💻 [**Φιλικό προς Προγραμματιστές**](/guide/syntax.html#code-blocks) - ενσωματωμένοι επισημαντήρες σύνταξης, live coding, κτλ.
 - 🎨 [**Θεματοποιήσιμο**](/themes/gallery.html) - θέματα μπορούν να μοιραστούν και να χρησιμοποιηθούν με πακέτα npm
-- 🌈 [**Stylish**](/guide/syntax.html#ενσωματωμένα-styles) - on-demand εργαλεία μέσω των [Windi CSS](https://windicss.org/) ή [UnoCSS](https://github.com/unocss/unocss).
+- 🌈 [**Stylish**](/guide/syntax.html#ενσωματωμένα-styles) - on-demand εργαλεία μέσω των [UnoCSS](https://github.com/unocss/unocss) ή [Windi CSS](https://windicss.org/).
 - 🤹 [**Διαδραστικό**](/custom/directory-structure.html#components) - απρόσκοπτη ενσωμάτωση Vue components
 - 🎙 [**Λειτουργία Παρουσιαστή**](/guide/presenter-mode.html) - χρησιμοποιήστε ένα άλλο παράθυρο ή ακόμα και το τηλέφωνό σας για να ελέγξετε τις διαφάνειές σας
 - 🎨 [**Ζωγραφική**](/guide/drawing.html) - ζωγραφίστε και σημειώστε πάνω στις διαφάνειές σας
