@@ -1,14 +1,11 @@
-# Ρυθμίστε Windi CSS
+# Ρυθμίστε το Windi CSS
 
 <Environment type="node" />
 
-<<<<<<< HEAD
-Το markdown υποστηρίζει εκ φύσεως ενσωματωμένες επισημάνσεις HTML. Επομένως, μπορείτε να διαμορφώσετε το περιεχόμενό σας με τον τρόπο που θέλετε. Για λόγους ευκολίας, έχουμε ενσωματωμένο το [Windi CSS](https://github.com/windicss/windicss), ώστε να μπορείτε να μορφοποιήσετε τη σήμανση απευθείας χρησιμοποιώντας εργαλεία για class. 
-=======
 ::: warning
-Since Slidev v0.42.0, [UnoCSS](/custom/config-unocss) become the default CSS framework for Slidev.
+Από την έκδοση v0.42.0 του Slidev, το [UnoCSS](/custom/config-unocss) έγινε το προεπιλεγμένο framework CSS για το Slidev.
 
-You can still use Windi CSS by setting `css: windicss` in the frontmatter.
+Μπορείτε ακόμη να χρησιμοποιήσετε το Windi CSS, θέτοντας την επιλογή `css: windicss` στο frontmatter.
 ```md
 ---
 css: windicss
@@ -16,8 +13,7 @@ css: windicss
 ```
 :::
 
-Markdown naturally supports embedded HTML markups. You can therefore style your content the way you want.
->>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
+Το markdown υποστηρίζει εκ φύσεως ενσωματωμένες επισημάνσεις HTML. Επομένως, μπορείτε να διαμορφώσετε το περιεχόμενό σας με τον τρόπο που θέλετε.
 
 Για παράδειγμα:
 

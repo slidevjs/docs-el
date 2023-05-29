@@ -115,11 +115,7 @@ import './code.css'
 import './layouts.css'
 ```
 
-<<<<<<< HEAD
-Τα styles θα επεξεργαστούν από το [Windi CSS](https://windicss.org/) και το [PostCSS](https://postcss.org/), ώστε να μπορείτε να χρησιμοποιήσετε css nesting και [at-directives](https://windicss.org/features/directives.html) κατευθείαν. Για παράδειγμα:
-=======
-Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
->>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
+Τα styles θα επεξεργαστούν από το [UnoCSS](https://unocss.dev/) και το [PostCSS](https://postcss.org/), ώστε να μπορείτε να χρησιμοποιήσετε css nesting και [at-directives](https://windicss.org/features/directives.html) κατευθείαν. Για παράδειγμα:
 
 ```less
 .slidev-layout {

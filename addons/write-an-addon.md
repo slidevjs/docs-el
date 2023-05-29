@@ -6,19 +6,11 @@
 
 Ένα πρόσθετο μπορεί να συμβάλει στα ακόλουθα σημεία:
 
-<<<<<<< HEAD
 - Global στυλ (χρησιμοποιήστε τα με προσοχή, είναι περισσότερο ο ρόλος [των θεμάτων](/themes/use))
 - Παροχή προσαρμοσμένων διατάξεων ή υπέρβαση της υπάρχουσας
 - Παροχή προσαρμοσμένων στοιχείων ή παράκαμψη του υπάρχοντος
-- Επέκταση των ρυθμίσεων του Windi CSS
+- Επέκταση των ρυθμίσεων του UnoCSS/Windi CSS
 - Ρύθμιση εργαλείων όπως το Monaco και το Prism
-=======
-- Global styles (use with caution has it is more the role of [themes](/themes/use))
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-- Extend UnoCSS/Windi CSS configurations
-- Configure tools like Monaco and Prism
->>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ## Συμβάσεις
 

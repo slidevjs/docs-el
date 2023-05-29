@@ -153,15 +153,11 @@ const Customizations = [
     link: '/custom/config-vite',
   },
   {
-<<<<<<< HEAD
-    text: 'Ρυθμίστε Windi CSS',
-=======
-    text: 'Configure UnoCSS',
+    text: 'Ρυθμίστε UnoCSS',
     link: '/custom/config-unocss',
   },
   {
-    text: 'Configure Windi CSS',
->>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
+    text: 'Ρυθμίστε Windi CSS',
     link: '/custom/config-windicss',
   },
   {

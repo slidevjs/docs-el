@@ -1,10 +1,6 @@
 # Προσαρμογές
 
-<<<<<<< HEAD
-Το Slidev είναι πλήρως προσαρμόσιμο, από το style έως τις ρυθμίσεις των εργαλείων. Σας επιτρέπει να ρυθμίσετε τα εσωτερικά εργαλεία ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), κτλ.)
-=======
-Slidev is fully customizable, from styling to tooling configurations. It allows you to configure the tools underneath ([Vite](/custom/config-vite), [UnoCSS](/custom/config-unocss), [Monaco](/custom/config-monaco), etc.)
->>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
+Το Slidev είναι πλήρως προσαρμόσιμο, από το style έως τις ρυθμίσεις των εργαλείων. Σας επιτρέπει να ρυθμίσετε τα εσωτερικά εργαλεία ([Vite](/custom/config-vite), [UnoCSS](/custom/config-unocss), [Monaco](/custom/config-monaco), κτλ.)
 
 ## Ρυθμίσεις Frontmatter
 
@@ -119,21 +115,10 @@ htmlAttrs:
 
 ## Ρυθμίστε Εργαλεία
 
-<<<<<<< HEAD
 - [Επισημαντήρες](/custom/highlighters)
 - [Ρυθμίστε Vue](/custom/config-vue)
 - [Ρυθμίστε Vite](/custom/config-vite)
-- [Ρυθμίστε Windi CSS](/custom/config-windicss)
+- [Ρυθμίστε UnoCSS](/custom/config-unocss)
 - [Ρυθμίστε Monaco](/custom/config-monaco)
 - [Ρυθμίστε KaTeX](/custom/config-katex)
 - [Ρυθμίστε Mermaid](/custom/config-mermaid)
-=======
-- [Highlighters](/custom/highlighters)
-- [Configure Vue](/custom/config-vue)
-- [Configure Vite](/custom/config-vite)
-- [Configure UnoCSS](/custom/config-unocss)
-- [Configure Windi CSS](/custom/config-windicss)
-- [Configure Monaco](/custom/config-monaco)
-- [Configure KaTeX](/custom/config-katex)
-- [Configure Mermaid](/custom/config-mermaid)
->>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
