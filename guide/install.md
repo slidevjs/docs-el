@@ -201,23 +201,13 @@ npm run slidev -- --open
 
 Επιλογές:
 
-<<<<<<< HEAD
 * `--output` (`string`, προεπιλογή: χρησιμοποιήστε το `exportFilename` (δείτε https://el.sli.dev/custom/#%CF%81%CF%85%CE%B8%CE%BC%CE%AF%CF%83%CE%B5%CE%B9%CF%82-frontmatter) ή χρησιμοποιήστε `[entry]-export`): το path για την εξαγωγή.
-* `--base` (`'pdf', 'png', 'md'`, προεπιλογή: `'pdf'`): μορφή εξόδου.
+* `--format` (`'pdf', 'png', 'md'`, προεπιλογή: `'pdf'`): μορφή εξόδου.
 * `--timeout` (`number`, προεπιλογή: `30000`): χρονικό όριο για την απεικόνιση της σελίδας εκτύπωσης (δείτε https://playwright.dev/docs/api/class-page#page-goto).
 * `--range` (`string`): περιοχές σελίδων για εξαγωγή (για παράδειγμα: `'1,4-5,6'`).
 * `--dark` (`boolean`, προεπιλογή: `false`): εξαγωγή με σκοτεινό θέμα.
 * `--with-clicks`, `-c` (`boolean`, προεπιλογή: `false`): εξαγωγή σελίδων για κάθε κλικ (δείτε https://el.sli.dev/guide/animations.html#κινήσεις-click).
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
-=======
-* `--output` (`string`, default: use `exportFilename` (see https://sli.dev/custom/#frontmatter-configures) or use `[entry]-export`): path to the output.
-* `--format` (`'pdf', 'png', 'md'`, default: `'pdf'`): output format.
-* `--timeout` (`number`, default: `30000`): timeout for rendering the print page (see https://playwright.dev/docs/api/class-page#page-goto).
-* `--range` (`string`): page ranges to export (example: `'1,4-5,6'`).
-* `--dark` (`boolean`, default: `false`): export as dark theme.
-* `--with-clicks`, `-c` (`boolean`, default: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).
-* `--theme`, `-t` (`string`): override theme.
->>>>>>> e2d97fbd68e86abf383c60d24a33b740d2b414d4
 
 ### `slidev format [entry]`
 
