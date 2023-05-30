@@ -202,7 +202,7 @@ npm run slidev -- --open
 Επιλογές:
 
 * `--output` (`string`, προεπιλογή: χρησιμοποιήστε το `exportFilename` (δείτε https://el.sli.dev/custom/#%CF%81%CF%85%CE%B8%CE%BC%CE%AF%CF%83%CE%B5%CE%B9%CF%82-frontmatter) ή χρησιμοποιήστε `[entry]-export`): το path για την εξαγωγή.
-* `--base` (`'pdf', 'png', 'md'`, προεπιλογή: `'pdf'`): μορφή εξόδου.
+* `--format` (`'pdf', 'png', 'md'`, προεπιλογή: `'pdf'`): μορφή εξόδου.
 * `--timeout` (`number`, προεπιλογή: `30000`): χρονικό όριο για την απεικόνιση της σελίδας εκτύπωσης (δείτε https://playwright.dev/docs/api/class-page#page-goto).
 * `--range` (`string`): περιοχές σελίδων για εξαγωγή (για παράδειγμα: `'1,4-5,6'`).
 * `--dark` (`boolean`, προεπιλογή: `false`): εξαγωγή με σκοτεινό θέμα.
