@@ -77,7 +77,11 @@ console.log('Γεια σου, Κόσμε!')
 
 ### Επισήμανση Γραμμής
 
+<<<<<<< HEAD
 Για να επισημάνετε συγκεκριμένες γραμμές, απλά προσθέστε τους αριθμούς γραμμών μέσα σε μία αγκύλη `{}`. Οι αριθμοί γραμμών αρχίζουν να μετρούν από το 1.
+=======
+To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+>>>>>>> 44920cd4f45ab8edf0e33ec63ba535a44d6418a2
 
 ~~~ts
 //```ts {2,3}
@@ -90,7 +94,37 @@ function add(
 //```
 ~~~
 
+<<<<<<< HEAD
 Για να αλλάξετε την επισήμανση σε πολλαπλά βήματα, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε. Για παράδειγμα
+=======
+You can enable line number to all slides by setting `lineNumbers: true` on the config or enable each code block individually by setting `lines:true`. In case you want to disable the numbering for an specific block when `lineNumbers: true` you can set `lines:false` for that block:
+
+~~~ts
+//```ts {2,3} {lines:true}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+You can also set the starting line for each code block and highlight the lines accordingly, defaults to 1:
+
+~~~ts
+//```ts {6,7} {lines:true, startLine:5}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+To change the highlight in multiple steps, you can use `|` to separate them. For example
+>>>>>>> 44920cd4f45ab8edf0e33ec63ba535a44d6418a2
 
 ~~~ts
 //```ts {2-3|5|all}
