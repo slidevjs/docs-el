@@ -94,14 +94,9 @@
 #### Χρήση
 
 ~~~md
-<<<<<<< HEAD
 <Link to="42">Πηγαίνετε στη διαφάνεια 42</Link>
 <Link to="42" title="Πηγαίνετε στη διαφάνεια 42"/>
-=======
-<Link to="42">Go to slide 42</Link>
-<Link to="42" title="Go to slide 42"/>
-<Link to="solutions" title="Go to solutions"/>
->>>>>>> cd758d99f59b0813a49eb6fe4bb3f07e1b2b4887
+<Link to="solutions" title="Μεταβείτε στις λύσεις"/>
 ~~~
 
 Παράμετροι:
@@ -109,13 +104,13 @@
 * `to` (`string | number`): Το path της διαφάνειας στην οποία θέλετε να πλοηγηθείτε (οι διαφάνειες ξεκινούν από το `1`)
 * `title` (`string`): Ο τίτλος που θα εμφανιστεί
 
-One can use a string as `to`, provided the corresponding route exists, e.g.
+Μπορείτε να χρησιμοποιήσετε μια συμβολοσειρά ως `to`, εφόσον υπάρχει η αντίστοιχη διαδρομή, π.χ.
 
 ~~~md
 ---
 routeAlias: solutions
 ---
-# Now some solutions!
+# Και τώρα μερικές λύσεις!
 ~~~
 
 
