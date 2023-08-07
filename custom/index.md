@@ -15,15 +15,11 @@ theme: 'default'
 title: 'Slidev'
 # titleTemplate της ιστοσελίδας, `%s` θα αντικατασταθεί από τον τίτλο της σελίδας
 titleTemplate: '%s - Slidev'
-<<<<<<< HEAD
-# πληροφορίες για τις διαφάνειές σας, μπορεί να είναι μια συμβολοσειρά markdown
-=======
-# information for your slides, can be a markdown string.
->>>>>>> 8e6b3c049cecb5d4a489bcc06e01f4659bce41c5
+# πληροφορίες για τις διαφάνειές σας, μπορεί να είναι μια συμβολοσειρά markdown.
 info: false
-# author field for exported PDF
+# πεδίο δημιουργού για το εξαγόμενο PDF
 author: Your Name Here
-# keywords field for exported PDF, comma-delimited.
+# πεδίο λέξεων-κλειδιών για το εξαγόμενο PDF, χωρισμένο με κόμμα.
 keywords: keyword1,keyword2
 
 # ενεργοποιήστε τη λειτουργία παρουσιαστή, μπορεί να είναι boolean, 'dev' ή 'build'
