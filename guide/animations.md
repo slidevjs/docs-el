@@ -211,11 +211,7 @@ clicks: 3
 > </div>
 > ```
 
-<<<<<<< HEAD
-Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Presets](https://motion.vueuse.org/presets.html)
-=======
-Learn mode: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/features/directive-usage) | [Presets](https://motion.vueuse.org/features/presets)
->>>>>>> 004c016959e71ed605c7b7239842c541c60f1974
+Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/features/directive-usage) | [Presets](https://motion.vueuse.org/features/presets)
 
 ## Μεταβάσεις Διαφανειών
 
