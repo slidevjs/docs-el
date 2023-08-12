@@ -176,14 +176,11 @@ layout: two-cols
 Αυτό εμφανίζεται στα δεξιά
 ```
 
-<<<<<<< HEAD
-## Προσαρμοσμένα Layouts
-=======
 ### `tow-cols-header`
 
-Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+Διαχωρίζει την επάνω και την κάτω γραμμή του περιεχομένου της σελίδας και η δεύτερη γραμμή διαχωρίζει την αριστερή και τη δεξιά στήλη.
 
-#### Usage
+#### Χρήση
 
 
 ```md
@@ -191,23 +188,22 @@ Separates the upper and lower lines of the page content, and the second line sep
 layout: two-cols-header
 ---
 
-This spans both
+Αυτό καλύπτει και τα δύο
 
 :::left:::
 
-# Left
+# Αριστερά
 
-This shows on the left
+Αυτό εμφανίζεται στα αριστερά
 
 ::right::
 
-# Right
+# Δεξιά
 
-This shows on the right
+Αυτό εμφανίζεται στα δεξιά
 ```
 
-## Custom Layouts
->>>>>>> e83fcdcee0f661e3799f934529a0048122d0806d
+## Προσαρμοσμένα Layouts
 
 Δημιουργήστε ένα φάκελο `layouts/` στη ρίζα του έργου σας, και απλά βάλτε τα προσαρμοσμένα Vue layout components σας σε αυτόν.
 
