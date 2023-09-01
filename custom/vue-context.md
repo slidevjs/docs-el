@@ -76,3 +76,19 @@ themeConfig:
 ```
 {{ $slidev.themeConfigs.primary }} // '#213435'
 ```
+
+### `$nav`
+
+> Διαθέσιμο από v0.43.0
+
+Μια συντομογραφία του `$slidev.nav`.
+
+### `$clicks`
+
+> Διαθέσιμο από v0.43.0
+
+Μια συντομογραφία του `$slidev.nav.clicks`.
+
+```html
+<div v-if="$clicks > 3">Περιεχόμενο</div>
+```
