@@ -561,26 +561,26 @@ src: ./content.md
 ---
 ```
 
-## MDC Syntax
+## Σύνταξη MDC
 
-> Available since v0.43.0
+> Διαθέσιμο από v0.43.0
 
-Slidev has and experimental support for [MDC (Markdown Components) Syntax](https://content.nuxtjs.org/guide/writing/mdc) powered by [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
+Το Slidev έχει πειραματική υποστήριξη για την [MDC (Markdown Components) Σύνταξη](https://content.nuxtjs.org/guide/writing/mdc) που υποστηρίζεται από το [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
 
-You can enable it by add `mdc: true` to the frontmatter of your markdown file.
+Μπορείτε να την ενεργοποιήσετε προσθέτοντας `mdc: true` στο frontmatter του αρχείου markdown σας.
 
 ```md
 ---
 mdc: true
 ---
 
-This is a [red text]{style="color:red"} :inline-component{prop="value"}
+Αυτό είναι ένα [κόκκινο κείμενο]{style="color:red"} :inline-component{prop="value"}
 
 ![](/image.png){width=500px lazy}
 
 ::block-component{prop="value"}
-The **default** slot
+Η **προκαθορισμένη** υποδοχή
 ::
 ```
 
-Learn more about [the syntax](https://content.nuxtjs.org/guide/writing/mdc).
+Μάθετε περισσότερα για [τη σύνταξη](https://content.nuxtjs.org/guide/writing/mdc).

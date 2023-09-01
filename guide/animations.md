@@ -114,21 +114,17 @@ clicks: 3
 </v-clicks>
 ```
 
-<<<<<<< HEAD
-### Μεταβάσεις Στοιχείων
-=======
-### Enter & Leave
+### Είσοδος & Έξοδος
 
-> Available since v0.43.0
+> Διαθέσιμο από v0.43.0
 
-You can also specify the enter and leave index for the `v-click` directive by passing an array. The end index is exclusive.
+Μπορείτε επίσης να καθορίσετε το δείκτη εισόδου και εξόδου για την οδηγία `v-click` περνώντας ένα array. Ο δείκτης τέλους είναι αποκλειστικός.
 
 ```md
-<div v-click="[2, 4]">This will be shown on the 2nd and 3rd clicks, and hide again after the 4th.</div>
+<div v-click="[2, 4]">Αυτό θα εμφανιστεί στο 2ο και 3ο κλικ και θα κρυφτεί ξανά μετά το 4ο.</div>
 ```
 
-### Element Transitions
->>>>>>> 8024ec4e94d2cd81bc6d4a3efee822dde30d9054
+### Μεταβάσεις Στοιχείων
 
 Όταν εφαρμόζετε την οδηγία `v-click` στα στοιχεία σας, θα τους επισυνάψει το όνομα του class `slidev-vclick-target`. Όταν τα στοιχεία είναι κρυμμένα, θα επισυνάπτεται επίσης το όνομα του class `slidev-vclick-hidden`. Για παράδειγμα:
 

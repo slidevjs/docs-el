@@ -79,16 +79,16 @@ themeConfig:
 
 ### `$nav`
 
-> Available since v0.43.0
+> Διαθέσιμο από v0.43.0
 
-A shorthand of `$slidev.nav`.
+Μια συντομογραφία του `$slidev.nav`.
 
 ### `$clicks`
 
-> Available since v0.43.0
+> Διαθέσιμο από v0.43.0
 
-A shorthand of `$slidev.nav.clicks`.
+Μια συντομογραφία του `$slidev.nav.clicks`.
 
 ```html
-<div v-if="$clicks > 3">Content</div>
+<div v-if="$clicks > 3">Περιεχόμενο</div>
 ```
