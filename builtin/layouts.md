@@ -190,7 +190,7 @@ layout: two-cols-header
 
 Αυτό καλύπτει και τα δύο
 
-:::left:::
+::left::
 
 # Αριστερά
 
