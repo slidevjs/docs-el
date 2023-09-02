@@ -27,10 +27,10 @@
 
 ### `$clicks`
 
-`$clicks` hold a number of clicks on the current slide. Can be used conditionally to show different content on clicks.
+Το `$clicks` κρατάει έναν αριθμό κλικ στην τρέχουσα διαφάνεια. Μπορεί να χρησιμοποιηθεί υπό όρους για την εμφάνιση διαφορετικού περιεχομένου ανάλογα με τα κλικ.
 
 ```html
-<div v-if="$clicks > 3">Content</div>
+<div v-if="$clicks > 3">Περιεχόμενο</div>
 ```
 
 ### `$slidev.nav`
@@ -48,18 +48,12 @@ $slidev.nav.go(10) // πήγαινετε στην διαφάνεια #10
 ```js
 $slidev.nav.currentPage // αριθμός τρέχουσας διαφάνειας
 
-<<<<<<< HEAD
 $slidev.nav.currentLayout // id τρέχοντος layout
-
-$slidev.nav.clicks // σύνολο τρεχόντων clicks
-=======
-$slidev.nav.currentLayout // current layout id
->>>>>>> 2fe32c406cbcd27bcfe2100a4d8c08d7cc42adc4
 ```
 
 Για περισσότερες διαθέσιμες ιδιότητες, ανατρέξτε στις εξαγωγές του [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts).
 
-> Note: `$slidev.nav.clicks` is a global state while `$clicks` is local to each slide. It's recommended to **use `$clicks` over `$slidev.nav.clicks`** to avoid clicks changed been triggered on page transitions.
+> Σημείωση: Το `$slidev.nav.clicks` είναι μια global κατάσταση, ενώ το `$clicks` είναι τοπικό για κάθε διαφάνεια. Συνιστάται η **χρήση του `$$clicks` αντί του `$slidev.nav.clicks`** για να αποφύγετε την αλλαγή των κλικ που ενεργοποιούνται κατά τις μεταβάσεις σελίδων.
 
 ### `$slidev.configs`
 
@@ -95,18 +89,4 @@ themeConfig:
 
 > Διαθέσιμο από v0.43.0
 
-<<<<<<< HEAD
 Μια συντομογραφία του `$slidev.nav`.
-
-### `$clicks`
-
-> Διαθέσιμο από v0.43.0
-
-Μια συντομογραφία του `$slidev.nav.clicks`.
-
-```html
-<div v-if="$clicks > 3">Περιεχόμενο</div>
-```
-=======
-A shorthand of `$slidev.nav`.
->>>>>>> 2fe32c406cbcd27bcfe2100a4d8c08d7cc42adc4
