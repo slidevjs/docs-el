@@ -241,12 +241,46 @@ transition: slide-left
 
 ### Ενσωματωμένες μεταβάσεις
 
+<<<<<<< HEAD
 - `fade` - Crossfade κατά την είσοδο/έξοδο
 - `fade-out` - Fade out και μετά fade in
 - `slide-left` - Ολισθαίνει προς τα αριστερά (ολισθαίνει προς τα δεξιά κατά την επιστροφή)
 - `slide-right` - Ολισθαίνει προς τα δεξιά (ολισθαίνει προς τα αριστερά κατά την επιστροφή)
 - `slide-up` - Ολισθαίνει προς τα πάνω (ολισθαίνει προς τα κάτω κατά την επιστροφή)
 - `slide-down` - Ολισθαίνει προς τα κάτω (ολισθαίνει προς τα πάνω κατά την επιστροφή)
+=======
+- `fade` - Crossfade in/out
+- `fade-out` - Fade out and then fade in
+- `slide-left` - Slides to the left (slide to right when going backward)
+- `slide-right` - Slides to the right (slide to left when going backward)
+- `slide-up` - Slides to the top (slide to bottom when going backward)
+- `slide-down` - Slides to the bottom (slide to top when going backward)
+- `view-transition` - Slides with the view transitions API
+
+### View Transitions
+
+> Available since v0.43.0
+
+The **View Transitions API** provides a mechanism for easily creating animated transitions between different DOM states. Learn more how it works in [View Transitions API - MDN Web Docs - Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API).
+
+:::warning
+Experimental: This is not supported by all browsers. Check the [Browser compatibility table](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API#browser_compatibility) carefully before using this.
+:::
+
+You can use the `view-transition-name` CSS property to name view transitions, which creates connections between different page elements and smooth transitions when switching slides.
+
+You can enable [MDC (Markdown Component) Syntax](https://content.nuxtjs.org/guide/writing/mdc) support to conveniently name view-transitions:
+
+```md
+---
+transition: view-transition
+mdc: true
+---
+# View Transition {.inline-block.view-transition-title}
+---
+# View Transition {.inline-block.view-transition-title}
+```
+>>>>>>> 6e0af1f2744db999dfeb58e8528478dea41a1240
 
 ### Προσαρμοσμένες μεταβάσεις
 
