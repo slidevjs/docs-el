@@ -247,6 +247,31 @@ transition: slide-left
 - `slide-right` - Ολισθαίνει προς τα δεξιά (ολισθαίνει προς τα αριστερά κατά την επιστροφή)
 - `slide-up` - Ολισθαίνει προς τα πάνω (ολισθαίνει προς τα κάτω κατά την επιστροφή)
 - `slide-down` - Ολισθαίνει προς τα κάτω (ολισθαίνει προς τα πάνω κατά την επιστροφή)
+- `view-transition` - Ολισθαίνει με το view transitions API
+
+### View Transitions
+
+> Διαθέσιμο από v0.43.0
+
+Το **View Transitions API** παρέχει έναν μηχανισμό για την εύκολη δημιουργία κινούμενων μεταβάσεων μεταξύ διαφορετικών καταστάσεων DOM. Μάθετε περισσότερα για το πώς λειτουργεί στο [View Transitions API - MDN Web Docs - Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API).
+
+:::warning
+Πειραματικό: Αυτό δεν υποστηρίζεται από όλους τους φυλλομετρητές. Ελέγξτε προσεκτικά τον [πίνακα συμβατότητας με προγράμματα περιήγησης](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API#browser_compatibility) πριν το χρησιμοποιήσετε.
+:::
+
+Μπορείτε να χρησιμοποιήσετε την ιδιότητα CSS `view-transition-name` για να ονομάσετε τα view transitions, τα οποία δημιουργούν συνδέσεις μεταξύ διαφορετικών στοιχείων της σελίδας και ομαλές μεταβάσεις κατά την εναλλαγή διαφανειών.
+
+Μπορείτε να ενεργοποιήσετε την υποστήριξη [Σύνταξης MDC (Markdown Component)](https://content.nuxtjs.org/guide/writing/mdc) για να ονομάζετε εύκολα τις μεταβάσεις προβολής:
+
+```md
+---
+transition: view-transition
+mdc: true
+---
+# View Transition {.inline-block.view-transition-title}
+---
+# View Transition {.inline-block.view-transition-title}
+```
 
 ### Προσαρμοσμένες μεταβάσεις
 
