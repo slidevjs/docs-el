@@ -35,21 +35,21 @@
 
 ### `$page`
 
-`$page` holds the number of the current page, 1-indexed.
+Το `$page` περιέχει τον αριθμό της τρέχουσας σελίδας, με 1-δείκτη.
 
 ```md
-Page: {{ $page }}
+Σελίδα: {{ $page }}
 
-Is current page active: {{ $page === $slidev.nav.currentPage }}
+Είναι ενεργή η τρέχουσα σελίδα: {{ $page === $slidev.nav.currentPage }}
 ```
 
 ### `$renderContext`
 
-`$renderContext` holds the current render context, can be `slide`, `overview`, `presenter` or `previewNext`
+Το `$renderContext` περιέχει το τρέχον render context, μπορεί να είναι `slide`, `overview`, `presenter` ή `previewNext`.
 
 ```md
 <div v-if="$renderContext === 'slide'">
-  This content will only be rendered in slides view
+  Αυτό το περιεχόμενο θα εμφανίζεται μόνο στην προβολή διαφανειών
 </div>
 ```
 
