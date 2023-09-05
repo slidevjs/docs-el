@@ -108,3 +108,30 @@ export default defineMonacoSetup((monaco) => {
 ```
 
 > Εάν δημιουργείτε ένα θέμα για το Slidev, χρησιμοποιήστε δυναμικά `import()` μέσα στη συνάρτηση setup για να έχετε καλύτερα αποτελέσματα σε tree-shaking και code-splitting.
+
+## Ρύθμιση του Συντάκτη
+
+> Διαθέσιμο από v0.43.0
+
+Αν θέλετε να προσαρμόσετε τον συντάκτη Monaco, μπορείτε να περάσετε ένα object `editorOptions` που ταιριάζει με τον ορισμό [Monaco IEditorOptions](https://microsoft.github.io/monaco-editor/docs.html#interfaces/editor.IEditorOptions.html).
+
+~~~ts
+//```ts {monaco} { editorOptions: { wordWrap:'on'} }
+console.log('Γεια σου Κόσμε')
+//```
+~~~
+
+Εναλλακτικά, αν θέλετε αυτές οι επιλογές να εφαρμόζονται σε κάθε περίσταση Monaco, μπορείτε να τις επιστρέψετε στη συνάρτηση `defineMonacoSetup`
+
+```ts
+// ./setup/monaco.ts
+import { defineMonacoSetup } from '@slidev/types'
+
+export default defineMonacoSetup(() => {
+  return {
+    editorOptions: {
+      wordWrap: 'on'
+    }
+  }
+})
+```
