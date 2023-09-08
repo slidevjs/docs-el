@@ -441,14 +441,11 @@ $$
 
 Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
-<<<<<<< HEAD
-## Διαγράμματα
-=======
-### LaTex line highlighting
+### Επισήμανση γραμμής LaTeX
 
-> Available since v0.43.1
+> Διαθέσιμο από v0.43.1
 
-To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+Για να επισημάνετε συγκεκριμένες γραμμές, απλά προσθέστε τους αριθμούς γραμμών μέσα στην αγκύλη `{}`. Οι αριθμοί γραμμών αρχίζουν να μετρούν από το 1 από προεπιλογή.
 
 ```md
 $$ {1|3|all}
@@ -461,8 +458,7 @@ $$ {1|3|all}
 $$
 ```
 
-## Diagrams
->>>>>>> 11d34750b965b68677cad6bd79bec396dc878cea
+## Διαγράμματα
 
 Μπορείτε επίσης να δημιουργήσετε διαγράμματα / γραφήματα από περιγραφές κειμένου στο Markdown σας, με τη βοήθεια του [Mermaid](https://mermaid-js.github.io/mermaid).
 
