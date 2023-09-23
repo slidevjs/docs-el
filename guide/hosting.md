@@ -195,5 +195,10 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 ```
+<<<<<<< HEAD
 - Στο repository σας, μεταβείτε στην επιλογή Settings>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "gh-pages" και "root". Κάντε κλικ στο save.
 - Τέλος, αφού εκτελεστούν όλες οι διαδικασίες εργασιών, θα πρέπει να εμφανιστεί ένας σύνδεσμος προς τις διαφάνειες στο Settings>Pages.
+=======
+- In your repository, go to Settings>Pages. Under "Build and deployment", select "Github Actions".
+- Finally, after all workflows are executed, a link to the slides should appear under Settings>Pages.
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
