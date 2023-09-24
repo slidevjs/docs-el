@@ -195,5 +195,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 ```
-- Στο repository σας, μεταβείτε στην επιλογή Settings>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "gh-pages" και "root". Κάντε κλικ στο save.
+- Στο repository σας, μεταβείτε στην επιλογή Settings>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "Github Actions".
 - Τέλος, αφού εκτελεστούν όλες οι διαδικασίες εργασιών, θα πρέπει να εμφανιστεί ένας σύνδεσμος προς τις διαφάνειες στο Settings>Pages.
