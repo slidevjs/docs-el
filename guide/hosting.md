@@ -17,7 +17,11 @@ $ slidev build
 
 ### Βασικό Path
 
+<<<<<<< HEAD
 Για να εγκαταστήσετε τις διαφάνειές σας κάτω από υποδιαδρομές, θα πρέπει να περάσετε την επιλογή `--base`. Για παράδειγμα:
+=======
+To deploy your slides under sub-routes, you will need to pass the `--base` option. The `--base` path **must begin and end** with a slash `/`; for example:
+>>>>>>> b67d676136c95f0c62ed494856d5c2e15901838e
 
 ```bash
 $ slidev build --base /ομιλίες/η-cool-ομιλία-μου/
@@ -139,13 +143,19 @@ $ slidev build *.md
 
 Στη συνέχεια, μεταβείτε στο πίνακα ελέγχου του Vercel και δημιουργήστε ένα νέο ιστότοπο με το repository.
 
-## GitHub Pages
+### GitHub Pages
 
 - [GitHub Pages](https://pages.github.com/)
 
+<<<<<<< HEAD
 Για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages:
 - ανεβάστε όλα τα αρχεία του έργου στο repo σας (π.χ. με το όνομα `name_of_repo`)
 - δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions. Σε αυτό το αρχείο, αντικαταστήστε το `<name_of_repo>` με το `name_of_repo`.
+=======
+To deploy your slides on GitHub Pages:
+- upload all the files of the project in your repo (i.e. named `name_of_repo`)
+- create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions. In this file, replace `<name_of_repo>` with `name_of_repo`. Make sure to leave the leading and trailing slashes in place.
+>>>>>>> b67d676136c95f0c62ed494856d5c2e15901838e
 
 ```yaml
 name: Deploy pages
@@ -183,7 +193,7 @@ jobs:
         run:  npm i -g @slidev/cli
 
       - name: Build
-        run: slidev build --base <name_of_repo>
+        run: slidev build --base /<name_of_repo>/
 
       - uses: actions/configure-pages@v3
 
