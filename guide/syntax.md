@@ -131,7 +131,26 @@ function add(
 
 Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
 
+<<<<<<< HEAD
 Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
+=======
+You can start the highlight at a specific click:
+
+~~~ts
+//```ts {2-3|5|all} {at:0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+This is especially useful when you need to sync different animations (when using `two-cols` layout and list animation for instance).
+
+To skip highlighting any lines, you can set the line number to `0`. For example
+>>>>>>> cbaf809403e519ee40e0980dc672c57d90c1dea2
 
 ~~~ts {0}
 //```ts {0}
