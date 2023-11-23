@@ -12,7 +12,13 @@
 - [@unocss/preset-web-fonts](https://unocss.dev/presets/web-fonts) - Χρήση γραμματοσειρών ιστού με άνεση
 - [@unocss/transformer-directives](https://unocss.dev/transformers/directives) - Χρήση του `@apply` στο CSS
 
+<<<<<<< HEAD
 Επομένως, μπορείτε να διαμορφώσετε το περιεχόμενό σας με τον τρόπο που θέλετε. Για παράδειγμα:
+=======
+Slidev also adds shortcuts as can be seen in its [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/uno.config.ts).
+
+You can therefore style your content the way you want. For example:
+>>>>>>> e041d9f163908ef9fbd5eb7731224b8314fef92a
 
 ```html
 <div class="grid pt-4 gap-4 grid-cols-[100px,1fr]">
