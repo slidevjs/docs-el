@@ -12,6 +12,8 @@
 - [@unocss/preset-web-fonts](https://unocss.dev/presets/web-fonts) - Χρήση γραμματοσειρών ιστού με άνεση
 - [@unocss/transformer-directives](https://unocss.dev/transformers/directives) - Χρήση του `@apply` στο CSS
 
+Το Slidev προσθέτει επίσης συντομεύσεις, όπως μπορείτε να δείτε στον [πηγαίο κώδικα](https://github.com/slidevjs/slidev/blob/main/packages/client/uno.config.ts).
+
 Επομένως, μπορείτε να διαμορφώσετε το περιεχόμενό σας με τον τρόπο που θέλετε. Για παράδειγμα:
 
 ```html
