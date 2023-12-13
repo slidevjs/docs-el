@@ -118,7 +118,11 @@ html.dark {
 
 ### Επισημαντήρας
 
+<<<<<<< HEAD
 Τα χρώματα επισήμανσης σύνταξης παρέχονται επίσης στο θέμα. Υποστηρίζουμε και [Prism](https://prismjs.com/) και [Shiki](https://github.com/shikijs/shiki). Για περισσότερες πληροφορίες ανατρέξτε [στις οδηγίες επισήμανσης σύνταξης](/custom/highlighters).
+=======
+Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/), [Shiki](https://github.com/shikijs/shiki) and [Shikiji](https://github.com/antfu/shikiji). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+>>>>>>> a6529b60e6a2f963398d169ce543df66469f74df
 
 Μπορείτε να υποστηρίξετε ένα από τα δύο ή και τα δύο. Ανατρέξτε στο προεπιλεγμένο θέμα για παραδείγματα ρυθμίσεων [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
 
