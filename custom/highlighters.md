@@ -16,9 +16,9 @@
 
 Όταν έχετε τη δυνατότητα επιλογής, ο συμβιβασμός είναι βασικά:
 
-- **Prism** for easier customization
-- **Shiki** for more accurate highlighting
-- **Shikiji** on top of Shiki, it also enables [TwoSlash](#twoslash) support and custom transformers addons. 
+- **Prism** για ευκολότερη προσαρμογή
+- **Shiki** για πιο ακριβή επισήμανση
+- **Shikiji** πάνω από το Shiki, παρέχει επίσης την υποστήριξη [TwoSlash](#twoslash) και πρόσθετα προσαρμοσμένων μετασχηματιστών.
 
 Το Slidev χρησιμοποιεί το Prism από προεπιλογή για λόγους συμβατότητας. Συνιστούμε τη χρήση του Shikiji για πιο ακριβή και πλούσια σε δυνατότητες επισήμανση, μπορείτε να το χρησιμοποιήσετε προσθέτοντας τα ακόλουθα στο `slides.md` σας:
 
