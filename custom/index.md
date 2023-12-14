@@ -37,11 +37,7 @@ export:
   dark: false
   withClicks: false
   withToc: false
-<<<<<<< HEAD
-# επισημαντής σύνταξης, μπορεί να είναι 'prism' ή 'shiki'
-=======
-# syntax highlighter, can be 'prism', 'shiki' or `shikiji`
->>>>>>> a6529b60e6a2f963398d169ce543df66469f74df
+# επισημαντής σύνταξης, μπορεί να είναι 'prism', 'shiki' ή `shikiji`
 highlighter: 'prism'
 # εμφάνιση αριθμών γραμμών σε blocks
 lineNumbers: false
