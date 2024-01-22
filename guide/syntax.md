@@ -120,7 +120,7 @@ function add(
 Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines:true`. Σε περίπτωση που θέλετε να απενεργοποιήσετε την αρίθμηση για ένα συγκεκριμένο μπλοκ όταν ισχύει το `lineNumbers: true` μπορείτε να ορίσετε το `lines:false` για το συγκεκριμένο μπλοκ:
 
 ~~~ts
-//```ts {2,3} {lines:true}
+//```ts {2,3}{lines:true}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
@@ -133,7 +133,7 @@ function add(
 Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε μπλοκ κώδικα και να επισημάνετε τις γραμμές ανάλογα, η προεπιλεγμένη τιμή είναι 1:
 
 ~~~ts
-//```ts {6,7} {lines:true, startLine:5}
+//```ts {6,7}{lines:true, startLine:5}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
@@ -161,7 +161,7 @@ function add(
 Μπορείτε να ξεκινήσετε την επισήμανση με ένα ορισμένο click:
 
 ~~~ts
-//```ts {2-3|5|all} {at:0}
+//```ts {2-3|5|all}{at:0}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
@@ -171,7 +171,12 @@ function add(
 //```
 ~~~
 
+<<<<<<< HEAD
 Αυτό είναι ιδιαίτερα χρήσιμο όταν χρειάζεται να συγχρονίσετε διαφορετικές κινήσεις (για παράδειγμα, όταν χρησιμοποιείτε διάταξη `two-cols` και κινήσεις λίστας).
+=======
+This is especially useful when you need to sync different animations (when using `two-cols` layout and list animation for instance).
+You may need to set the [custom clicks count](/guide/animations#custom-clicks-count) for the slide progression to function correctly.
+>>>>>>> 9b64ca249c101e7e425d7ca81aebba12658b9b97
 
 Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
 
@@ -190,7 +195,7 @@ function add(
 και θα ενεργοποιήσει το scrolling
 
 ~~~ts {2|3|7|12}
-//```ts {2|3|7|12} {maxHeight:'100px'}
+//```ts {2|3|7|12}{maxHeight:'100px'}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
