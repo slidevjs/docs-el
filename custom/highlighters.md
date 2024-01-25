@@ -110,6 +110,10 @@ export default defineShikijiSetup(() => {
 })
 ```
 
+<<<<<<< HEAD
 Ανατρέξτε στη σελίδα [του Shikiji](https://github.com/antfu/shikji) για όλες τις διαθέσιμες επιλογές.
+=======
+Refer to [Shikiji's docs](https://github.com/antfu/shikiji) for all available options.
+>>>>>>> 145fc07cd89b05477358f72609931fdf9c7d68cf
 
 > Διευκολύνει την προσαρμογή της κοινότητας, όταν δεν παρουσιάζεται το `shikiji.ts`, θα αναζητήσουμε το `shiki.ts` και θα προσπαθήσουμε να το μετατρέψουμε σε επιλογές Shikiji.
