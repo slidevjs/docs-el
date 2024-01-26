@@ -171,12 +171,8 @@ function add(
 //```
 ~~~
 
-<<<<<<< HEAD
 Αυτό είναι ιδιαίτερα χρήσιμο όταν χρειάζεται να συγχρονίσετε διαφορετικές κινήσεις (για παράδειγμα, όταν χρησιμοποιείτε διάταξη `two-cols` και κινήσεις λίστας).
-=======
-This is especially useful when you need to sync different animations (when using `two-cols` layout and list animation for instance).
-You may need to set the [custom clicks count](/guide/animations#custom-clicks-count) for the slide progression to function correctly.
->>>>>>> 145fc07cd89b05477358f72609931fdf9c7d68cf
+Ίσως χρειαστεί να ορίσετε τον [προσαρμοσμένο αριθμό κλικ](/guide/animations#πpοσαpμοσμένος-αpιθμός-clicks) για να λειτουργήσει σωστά η εξέλιξη των διαφανειών.
 
 Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
 
