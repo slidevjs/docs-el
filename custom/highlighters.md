@@ -1,6 +1,10 @@
 # Επισημαντήρες
 
+<<<<<<< HEAD
 Το Slidev περιλαμβάνει δύο επισημαντήρες σύνταξης για να επιλέξετε:
+=======
+Slidev comes with three syntax highlighters for you to choose from:
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
 
 - [Prism](https://prismjs.com/)
 - [Shiki](https://github.com/shikijs/shiki)
@@ -10,7 +14,11 @@
 
 Το **Shiki**, από την άλλη πλευρά, είναι ένας TextMate grammar-powered επισημαντήρας σύνταξης. Δημιουργεί χρωματιστά tokens, ώστε να μην απαιτείται επιπλέον CSS. Δεδομένου ότι έχει εξαιρετική υποστήριξη γραμματικής, τα παραγόμενα χρώματα είναι πολύ ακριβή, ακριβώς όπως αυτά που θα δείτε στο VS Code. Το Shiki επιπλέον περιλαμβάνει [ένα σωρό από ενσωματωμένα θέματα](https://github.com/shikijs/shiki/blob/master/docs/themes.md). Το μειονέκτημα του Shiki είναι ότι απαιτεί επίσης θέματα TextMate (συμβατά με θέματα VS Code) για να κάνει επισήμανση, τα οποία μπορεί να είναι λίγο πιο δύσκολο να προσαρμοστούν.
 
+<<<<<<< HEAD
 Το **Shikiji** είναι μια επανεγγραφή του Shiki σε ESM με πολλές βελτιώσεις και νέες δυνατότητες. Μπορείτε να έχετε [μετασχηματιστές βασισμένους σε AST](https://github.com/antfu/shikiji#hast-transformers) για να προσαρμόσετε τον τρόπο με τον οποίο απεικονίζεται ο κώδικας. Και η υποστήριξη [TwoSlash](#twoslash) έχει επίσης ενσωματωθεί.
+=======
+**Shikiji** is an ESM rewrite of Shiki bringing many improvements and new features. You could have [AST-based transformers](https://github.com/antfu/shikiji#hast-transformers) to customize how the code is rendered. And the [TwoSlash](#twoslash) support is also built-in.
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
 
 Τα θέματα Slidev συνήθως υποστηρίζουν και Prism και Shiki, αλλά ανάλογα με το θέμα που χρησιμοποιείτε, μπορεί να υποστηρίζει μόνο ένα από αυτά.
 
@@ -32,7 +40,11 @@ highlighter: shikiji
 
 Αυτή η λειτουργία είναι διαθέσιμη μόνο όταν θέτετε το `highlighter` σε `shikiji`.
 
+<<<<<<< HEAD
 Το [TwoSlash](https://www.typescriptlang.org/dev/twoslash/) είναι ένα ισχυρό εργαλείο για την απεικόνιση μπλοκ κώδικα TypeScript με πληροφορίες τύπων κατά την αιώρηση ή inlined. Είναι αρκετά χρήσιμο για την προετοιμασία διαφανειών για θέματα σχετικά με JavaScript/TypeScript.
+=======
+[TwoSlash](https://www.typescriptlang.org/dev/twoslash/) is a powerful tool for rendering TypeScript code blocks with type information on hover or inlined. It's quite useful for preparing slides for JavaScript/TypeScript-related topics.
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
 
 Για να το χρησιμοποιήσετε, μπορείτε να προσθέσετε το `twoslash` στο αναγνωριστικό γλώσσας του μπλοκ κώδικα:
 
@@ -42,11 +54,19 @@ console.log('γεια')
 ```
 ~~~
 
+<<<<<<< HEAD
 Ένα παράδειγμα αποσπάσματος κώδικα με ενεργοποιημένο το TwoSlash [βρίσκεται εδώ](https://antfu.me/posts/shikiji-twoslash).
+=======
+An example of TwoSlash enabled code snippet [can be found here](https://antfu.me/posts/shikiji-twoslash).
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
 
 ## Ρυθμίστε Prism
 
+<<<<<<< HEAD
 Για να ρυθμίσετε το Prism σας, μπορείτε απλά να εισαγάγετε το css του θέματος ή να χρησιμοποιήσετε το [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) για να ρυθμίσετε τα θέματα τόσο για τη φωτεινή όσο και για τη σκοτεινή λειτουργία. Ανατρέξτε στις οδηγίες του για περισσότερες λεπτομέρειες.
+=======
+To configure your Prism, you can just import the theme CSS or use [`prism-theme-vars`](https://github.com/antfu/prism-theme-vars) to configure themes for both light and dark mode. Refer to its docs for more details.
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
 
 ## Ρυθμίστε Shiki
 
@@ -112,4 +132,8 @@ export default defineShikijiSetup(() => {
 
 Ανατρέξτε στη σελίδα [του Shikiji](https://github.com/antfu/shikiji) για όλες τις διαθέσιμες επιλογές.
 
+<<<<<<< HEAD
 > Διευκολύνει την προσαρμογή της κοινότητας, όταν δεν παρουσιάζεται το `shikiji.ts`, θα αναζητήσουμε το `shiki.ts` και θα προσπαθήσουμε να το μετατρέψουμε σε επιλογές Shikiji.
+=======
+> It makes it easier for the community to adapt, when no `shikiji.ts` is presented, we will look for `shiki.ts` and try to convert it to Shikiji options.
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
