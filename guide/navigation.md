@@ -28,6 +28,10 @@
 
 ## Επισκόπηση Διαφανειών
 
+<<<<<<< HEAD
 Πατώντας το πλήκτρο <kbd>o</kbd> ή κάνοντας click στο κουμπί <carbon-apps class="inline-icon-btn"/> στη μπάρα πλοήγησης, μπορείτε να έχετε την επισκόπηση των διαφανειών σας, ώστε να μπορείτε να μεταπηδάτε εύκολα μεταξύ τους. 
+=======
+By pressing <kbd>o</kbd> or clicking the <carbon-apps class="inline-icon-btn"/> button in the navigation bar, you can have the overview of your slides so you can jump between them easily.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ![](/screenshots/slides-overview.png)

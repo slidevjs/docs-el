@@ -6,7 +6,11 @@
 
 ## Ενσωματωμένος Συντάκτης
 
+<<<<<<< HEAD
 Το Slidev περιλαμβάνει ένα ενσωματωμένο συντάκτη [CodeMirror](https://codemirror.net/) που θα επαναφορτώσει και θα αποθηκεύσει αμέσως τις αλλαγές στο αρχείο σας. 
+=======
+Slidev comes with an integrated [CodeMirror](https://codemirror.net/) editor that will instantly reload and save the changes to your file.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Κάντε κλικ στο κουμπί <carbon-edit class="inline-icon-btn"/> για να το ανοίξετε.
 
@@ -40,4 +44,4 @@
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
-<Tweet id="1395333405345148930" />
+<TheTweet id="1395333405345148930" />

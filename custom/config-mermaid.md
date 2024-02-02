@@ -27,6 +27,7 @@ export default defineMermaidSetup(() => {
   return {
     theme: 'base',
     themeVariables: {
+<<<<<<< HEAD
       // Γενικές μεταβλητές του θέματος
       noteBkgColor: "#181d29",
       noteTextColor: "#F3EFF5cc",
@@ -39,6 +40,20 @@ export default defineMermaidSetup(() => {
       actorLineColor: "#F3EFF5",
       signalColor: "#F3EFF5",
       signalTextColor: "#F3EFF5",
+=======
+      // General theme variables
+      noteBkgColor: '#181d29',
+      noteTextColor: '#F3EFF5cc',
+      noteBorderColor: '#404551',
+
+      // Sequence diagram variables
+      actorBkg: '#0E131F',
+      actorBorder: '#44FFD2',
+      actorTextColor: '#F3EFF5',
+      actorLineColor: '#F3EFF5',
+      signalColor: '#F3EFF5',
+      signalTextColor: '#F3EFF5',
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
     }
   }
 })

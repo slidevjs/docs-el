@@ -6,7 +6,7 @@
 
 Για να ξεκινήσετε, κάντε κλικ στο εικονίδιο <carbon-pen class="inline-icon-btn"/> στη γραμμή εργαλείων και αρχίστε να ζωγραφίζετε. Είναι επίσης διαθέσιμο στη [Λειτουργία Παρουσιαστή](/guide/presenter-mode). Οι ζωγραφιές και οι σημειώσεις που δημιουργήσατε θα **συγχρονιστούν** αυτόματα σε όλες τις εφαρμογές σε πραγματικό χρόνο.
 
-<Tweet id="1424027510342250499" />
+<TheTweet id="1424027510342250499" />
 
 ## Χρήση με Stylus Pen
 
@@ -18,7 +18,7 @@
 
 ```md
 ---
-drawings: 
+drawings:
   persist: true
 ---
 ```
@@ -29,7 +29,7 @@ drawings:
 
 ```md
 ---
-drawings: 
+drawings:
   enabled: false
 ---
 ```
@@ -38,7 +38,7 @@ drawings:
 
 ```md
 ---
-drawings: 
+drawings:
   enabled: dev
 ---
 ```
@@ -47,7 +47,7 @@ drawings:
 
 ```md
 ---
-drawings: 
+drawings:
   presenterOnly: true
 ---
 ```
@@ -58,11 +58,15 @@ drawings:
 
 ```md
 ---
-drawings: 
+drawings:
   syncAll: false
 ---
 ```
 
+<<<<<<< HEAD
 Με αυτή τη ρύθμιση, μόνο οι ζωγραφιές από την εφαρμογή του παρουσιαστή θα μπορούν να συγχρονιστούν με άλλες.
 
 
+=======
+With this config, only the drawing from the presenter instance will be able to sync with others.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5

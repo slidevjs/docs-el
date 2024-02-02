@@ -89,7 +89,11 @@ exportFilename: my-pdf-export
 
 ### Εξαγωγή ενός εύρους διαφανειών
 
+<<<<<<< HEAD
 Από προεπιλογή, όλες οι διαφάνειες της παρουσίασης εξάγονται. Αν θέλετε να εξάγετε μια συγκεκριμένη διαφάνεια ή ένα εύρος διαφανειών, μπορείτε να ορίσετε την επιλογή `--range` και να καθορίσετε ποιες διαφάνειες θέλετε να εξαχθούν.
+=======
+By default, all slides in the presentation are exported. If you want to export a specific slide or a range of slides you can set the `--range` option and specify which slides you would like to export.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```bash
 $ slidev export --range 1,6-8,10
@@ -99,8 +103,12 @@ $ slidev export --range 1,6-8,10
 
 Το παραπάνω παράδειγμα θα εξάγει τις διαφάνειες 1,6,7,8 και 10.
 
+<<<<<<< HEAD
 
 ### Πολλαπλές καταχωρήσεις
+=======
+### Multiple entries
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Μπορείτε επίσης να εξάγετε πολλές διαφάνειες ταυτόχρονα.
 

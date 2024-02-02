@@ -1,8 +1,20 @@
+<<<<<<< HEAD
 # Σύνταξη Markdown
 
 Οι διαφάνειες γράφονται μέσα σε **ένα ενιαίο αρχείο markdown** (εξ ορισμού `./slides.md`). 
 
 Μπορείτε να χρησιμοποιήσετε [τις δυνατότητες του Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) όπως θα κάνατε κανονικά, με την πρόσθετη υποστήριξη του ενσωματωμένου HTML και των Vue Components. Επίσης υποστηρίζεται styling χρησιμοποιώντας [UnoCSS](/custom/config-unocss). Χρησιμοποιήστε το `---` συνοδευμένο από μια νέα γραμμή για να διαχωρίσετε τις διαφάνειές σας. 
+=======
+---
+outline: deep
+---
+
+# Markdown Syntax
+
+Slides are written within **a single markdown file** (by default `./slides.md`).
+
+You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ~~~md
 # Slidev
@@ -31,9 +43,13 @@ console.log('Γεια σου, Κόσμε!')
 </div>
 ~~~
 
-## Front Matter & Layouts
+## Frontmatter & Layouts
 
+<<<<<<< HEAD
 Καθορίστε layouts και άλλα μεταδεδομένα για κάθε διαφάνεια μετατρέποντας τα διαχωριστικά σε [front matter blocks](https://jekyllrb.com/docs/front-matter/). Κάθε frontmatter αρχίζει με μια τριπλή παύλα και τελειώνει με μια άλλη. Τα κείμενα μεταξύ τους είναι objects δεδομένων σε μορφή [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Για παράδειγμα:
+=======
+Specify layouts and other metadata for each slide by converting the separators into [frontmatter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ~~~md
 ---
@@ -48,7 +64,7 @@ layout: cover
 layout: center
 background: './images/background-1.png'
 class: 'text-white'
----​
+---
 
 # Σελίδα 2
 
@@ -69,22 +85,22 @@ class: 'text-white'
 > ---
 > layout: cover
 > ---
-> 
+>
 > # Slidev
-> 
+>
 > This is the cover page.
-> 
+>
 > ---
-> 
+>
 > ```yaml
 > # The first yaml block will be treated as the frontmatter of that slide
 > layout: center
 > background: './images/background-1.png'
 > class: 'text-white'
 > ```
-> 
+>
 > # Page 2
-> 
+>
 > This is a page with the layout `center` and a background image.
 > ~~~
 >
@@ -94,6 +110,7 @@ class: 'text-white'
 
 Ένας μεγάλος λόγος που φτιάχνω το Slidev είναι ότι πρέπει να κάνω τον κώδικά μου να φαίνεται σωστά στις διαφάνειες. Έτσι, όπως ακριβώς περιμένατε, μπορείτε να χρησιμοποιήσετε code block με μορφή Markdown για να επισημάνετε τον κώδικά σας.
 
+<<<<<<< HEAD
 ~~~ts
 //```ts
 console.log('Γεια σου, Κόσμε!')
@@ -101,74 +118,83 @@ console.log('Γεια σου, Κόσμε!')
 ~~~
 
 Υποστηρίζουμε και [Prism](https://prismjs.com), [Shiki](https://github.com/shikijs/shiki) και [Shikiji](https://github.com/antfu/shikiji) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
+=======
+~~~md
+```ts
+console.log('Hello, World!')
+```
+~~~
+
+We support [Prism](https://prismjs.com), [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ### Επισήμανση Γραμμής
 
 Για να επισημάνετε συγκεκριμένες γραμμές, απλά προσθέστε τους αριθμούς γραμμών μέσα σε μία αγκύλη `{}`. Οι αριθμοί γραμμών αρχίζουν να μετρούν από το 1 από προεπιλογή.
 
-~~~ts
-//```ts {2,3}
+~~~md
+```ts {2,3}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
 Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines:true`. Σε περίπτωση που θέλετε να απενεργοποιήσετε την αρίθμηση για ένα συγκεκριμένο μπλοκ όταν ισχύει το `lineNumbers: true` μπορείτε να ορίσετε το `lines:false` για το συγκεκριμένο μπλοκ:
 
-~~~ts
-//```ts {2,3}{lines:true}
+~~~md
+```ts {2,3}{lines:true}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
 Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε μπλοκ κώδικα και να επισημάνετε τις γραμμές ανάλογα, η προεπιλεγμένη τιμή είναι 1:
 
-~~~ts
-//```ts {6,7}{lines:true, startLine:5}
+~~~md
+```ts {6,7}{lines:true, startLine:5}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
 Για να αλλάξετε την επισήμανση σε πολλαπλά βήματα, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε. Για παράδειγμα
 
-~~~ts
-//```ts {2-3|5|all}
+~~~md
+```ts {2-3|5|all}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
 Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
 
 Μπορείτε να ξεκινήσετε την επισήμανση με ένα ορισμένο click:
 
-~~~ts
-//```ts {2-3|5|all}{at:0}
+~~~md
+```ts {2-3|5|all}{at:0}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
 Αυτό είναι ιδιαίτερα χρήσιμο όταν χρειάζεται να συγχρονίσετε διαφορετικές κινήσεις (για παράδειγμα, όταν χρησιμοποιείτε διάταξη `two-cols` και κινήσεις λίστας).
@@ -176,22 +202,22 @@ function add(
 
 Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
 
-~~~ts {0}
-//```ts {0}
+~~~md {1}
+```ts {0}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
 Αν ο κώδικας δεν χωράει σε μία διαφάνεια, μπορείτε να περάσετε μια επιπλέον επιλογή maxHeight που θα ορίσει σταθερό ύψος
 και θα ενεργοποιήσει το scrolling
 
-~~~ts {2|3|7|12}
-//```ts {2|3|7|12}{maxHeight:'100px'}
+~~~md {1}
+```ts {2|3|7|12}{maxHeight:'100px'}
 function add(
   a: Ref<number> | number,
   b: Ref<number> | number
@@ -200,29 +226,69 @@ function add(
 }
 /// ...as many lines as you want
 const c = add(1, 2)
-//```
+```
 ~~~
+
+### TwoSlash Integration
+
+This feature is only available when you [set `highlighter` to `shiki`](/custom/highlighters)
+
+[TwoSlash](https://twoslash.netlify.app/) is a powerful tool for rendering TypeScript code blocks with type information on hover or inlined. It's quite useful for preparing slides for JavaScript/TypeScript-related topics.
+
+To use it, you can add `twoslash` to the code block's language identifier:
+
+~~~md
+```ts twoslash
+import { ref } from 'vue'
+
+const count = ref(0)
+//            ^?
+```
+~~~
+
+It will be rendered as:
+
+```ts twoslash
+import { ref } from 'vue'
+
+const count = ref(0)
+//            ^?
+```
 
 ### Monaco Editor
 
 Κάθε φορά που θέλετε να κάνετε κάποια τροποποίηση στην παρουσίαση, απλά προσθέστε `{monaco}` μετά το αναγνωριστικό γλώσσας - αυτό μετατρέπει το block σε έναν πλήρως εξοπλισμένο Monaco editor!
 
+<<<<<<< HEAD
 ~~~ts
 //```ts {monaco}
 console.log('ΓειαΣουΚόσμε')
 //```
+=======
+~~~md
+```ts {monaco}
+console.log('HelloWorld')
+```
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ~~~
 
 Μάθετε περισσότερα για την [ρύθμιση Monaco](/custom/config-monaco).
 
-### Monaco diff
+#### Monaco Diff
 
 Το Monaco μπορεί επίσης να δημιουργήσει ένα diff μεταξύ δύο μπλοκ κώδικα. Χρησιμοποιήστε `{monaco-diff}` για να μετατρέψετε το μπλοκ σε [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) και χρησιμοποιήστε `~~~` για να διαχωρίσετε την αρχική και την τροποποιημένη έκδοση του κώδικα!
 
+<<<<<<< HEAD
 ```md
 //```ts {monaco-diff}
 Η γραμμή αυτή αφαιρείται στα δεξιά.
 λίγο κείμενο
+=======
+````md
+```ts {monaco-diff}
+This line is removed on the right.
+just some text
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 abcd
 efgh
 Λίγο ακόμα κείμενο
@@ -230,10 +296,16 @@ efgh
 λίγο κείμενο
 abcz
 zzzzefgh
+<<<<<<< HEAD
 Λίγο ακόμα κείμενο.
 Η γραμμή αυτή αφαιρείται στα αριστερά.
 //```
+=======
+Some more text.
+This line is removed on the left.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ```
+````
 
 ## Ενσωματωμένα Styles
 
@@ -255,7 +327,11 @@ h1 {
 
 Η ετικέτα `<style>` στο Markdown είναι πάντα [περιορισμένη](https://vuejs.org/api/sfc-css-features.html#scoped-css). Ως αποτέλεσμα, ένας selector με το child combinator (`.a > .b`) είναι άχρηστος ως έχει; δείτε τον προηγούμενο σύνδεσμο. Για να έχετε global style overrides, δείτε την [ενότητα προσαρμογής](/custom/directory-structure#style).
 
+<<<<<<< HEAD
 Με την βοήθεια του [UnoCSS](/custom/config-unocss), μπορείτε να χρησιμοποιήσετε άμεσα εμφωλευμένα css και [οδηγίες](https://windicss.org/features/directives.html) (π.χ. `@apply`)
+=======
+Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://unocss.dev/transformers/directives) (e.g. `--uno:` or `@apply`)
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```md
 # Slidev
@@ -265,7 +341,7 @@ h1 {
 <style>
 blockquote {
   code {
-    @apply text-teal-500 dark:text-teal-400;
+    --uno: text-teal-500 dark:text-teal-400;
   }
 }
 </style>
@@ -287,7 +363,11 @@ blockquote {
 ![Local Image](/pic.png)
 ```
 
+<<<<<<< HEAD
 Αν θέλετε να εφαρμόσετε προσαρμοσμένα μεγέθη ή styles, μπορείτε να τα μετατρέψετε σε ετικέτα `<img>` 
+=======
+For you want to apply custom sizes or styles, you can convert them to the `<img>` tag
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
@@ -430,7 +510,27 @@ layout: two-cols
 Αυτό εμφανίζεται στα αριστερά
 ```
 
+<<<<<<< HEAD
 ## Ρυθμίσεις
+=======
+## Import Code Snippets
+
+> Available since v0.47.0
+
+You can import code snippets from existing files via following syntax:
+
+```md
+<<< @/snippets/snippet.js
+```
+
+::: ttp
+The value of `@` corresponds to the source root, the directory where the `slides.md` is located.
+:::
+
+This feature is vendored from VitePress, learn more about it in [VitePress's documentation](https://vitepress.dev/guide/markdown#import-code-snippets).
+
+## Configurations
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Όλες οι ρυθμίσεις που απαιτούνται μπορούν να οριστούν στο αρχείο Markdown. Για παράδειγμα:
 
@@ -452,7 +552,7 @@ background: 'https://source.unsplash.com/1600x900/?nature,water'
 
 Το Slidev έρχεται με ενσωματωμένη υποστήριξη για LaTeX, με τη βοήθεια του [KaTeX](https://katex.org/).
 
-<Tweet id="1392246507793915904" />
+<TheTweet id="1392246507793915904" />
 
 ### Γραμμική
 
@@ -467,7 +567,7 @@ $\sqrt{3x-1}+(1+x)^2$
 Χρησιμοποιήστε δύο (`$$`) για απεικόνιση block. Αυτή η λειτουργία χρησιμοποιεί μεγαλύτερα σύμβολα και κεντράρει
 το αποτέλεσμα.
 
-```md
+```latex
 $$
 \begin{array}{c}
 
@@ -490,7 +590,7 @@ $$
 
 Για να επισημάνετε συγκεκριμένες γραμμές, απλά προσθέστε τους αριθμούς γραμμών μέσα στην αγκύλη `{}`. Οι αριθμοί γραμμών αρχίζουν να μετρούν από το 1 από προεπιλογή.
 
-```md
+```latex
 $$ {1|3|all}
 \begin{array}{c}
 \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &

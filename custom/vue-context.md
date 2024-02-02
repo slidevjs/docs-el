@@ -97,7 +97,7 @@ title: Το πρώτο μου Slidev!
 ---
 title: Το πρώτο μου Slidev!
 themeConfig:
-  primary: #213435
+  primary: # 213435
 ---
 ```
 

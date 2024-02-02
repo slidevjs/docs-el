@@ -8,12 +8,21 @@
 
 ```yaml
 ---
+<<<<<<< HEAD
 # id ή όνομα πακέτου θέματος
 # Μάθετε περισσότερα: https://el.sli.dev/themes/use.html
 theme: 'default'
 # τίτλος της διαφάνειάς σας, αν δεν καθοριστεί θα προκύψει αυτόματα από την πρώτη επικεφαλίδα
 title: 'Slidev'
 # titleTemplate της ιστοσελίδας, `%s` θα αντικατασταθεί από τον τίτλο της σελίδας
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+theme: default
+# title of your slide, will auto infer from the first header if not specified
+title: Slidev
+# titleTemplate for the webpage, `%s` will be replaced by the page's title
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 titleTemplate: '%s - Slidev'
 # πληροφορίες για τις διαφάνειές σας, μπορεί να είναι μια συμβολοσειρά markdown.
 info: false
@@ -26,17 +35,26 @@ keywords: keyword1,keyword2
 presenter: true
 # ενεργοποιήστε τη λήψη pdf στην κατασκευή SPA, μπορεί επίσης να είναι ένα προσαρμοσμένο url
 download: false
+<<<<<<< HEAD
 # όνομα αρχείου του αρχείου εξαγωγής
 exportFilename: 'slidev-exported'
 # επιλογές εξαγωγής
 # χρησιμοποιήστε τις επιλογές εξαγωγής CLI σε μορφή camelCase
 # Μάθετε περισσότερα: https://el.sli.dev/guide/exporting.html
+=======
+# filename of the export file
+exportFilename: slidev-exported
+# export options
+# use export CLI options in camelCase format
+# Learn more: https://sli.dev/guide/exporting.html
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 export:
   format: pdf
   timeout: 30000
   dark: false
   withClicks: false
   withToc: false
+<<<<<<< HEAD
 # επισημαντής σύνταξης, μπορεί να είναι 'prism', 'shiki' ή `shikiji`
 highlighter: 'prism'
 # εμφάνιση αριθμών γραμμών σε blocks
@@ -44,9 +62,19 @@ lineNumbers: false
 # ενεργοποίηση του επεξεργαστή monaco, μπορεί να είναι boolean, 'dev' ή 'build'
 monaco: 'dev'
 # λήψη απομακρυσμένων assets τοπικά χρησιμοποιώντας το vite-plugin-remote-assets, μπορεί να είναι boolean, 'dev' ή 'build'
+=======
+# syntax highlighter, can be 'prism', 'shiki'
+highlighter: shiki
+# show line numbers in code blocks
+lineNumbers: false
+# enable monaco editor, can be boolean, 'dev' or 'build'
+monaco: dev
+# download remote assets in local using vite-plugin-remote-assets, can be boolean, 'dev' or 'build'
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 remoteAssets: false
 # ελέγχει αν τα κείμενα στις διαφάνειες είναι επιλέξιμα
 selectable: true
+<<<<<<< HEAD
 # ενεργοποίηση της εγγραφής διαφανειών, μπορεί να είναι boolean, 'dev' ή 'build'
 record: 'dev'
 
@@ -57,6 +85,18 @@ routerMode: 'history'
 # αναλογία διαστάσεων για τις διαφάνειες
 aspectRatio: '16/9'
 # πραγματικό πλάτος του καμβά, μονάδα σε px
+=======
+# enable slide recording, can be boolean, 'dev' or 'build'
+record: dev
+
+# force color schema for the slides, can be 'auto', 'light', or 'dark'
+colorSchema: auto
+# router mode for vue-router, can be "history" or "hash"
+routerMode: history
+# aspect ratio for the slides
+aspectRatio: 16/9
+# real width of the canvas, unit in px
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 canvasWidth: 980
 # χρησιμοποιείται για την προσαρμογή του θέματος, θα εισάγει τα στυλ της ρίζας ως `--slidev-theme-x` για το χαρακτηριστικό `x`
 themeConfig:
@@ -69,13 +109,13 @@ plantUmlServer: 'https://www.plantuml.com/plantuml'
 # οι γραμματοσειρές θα εισαχθούν αυτόματα από το Google fonts
 # Μάθετε περισσότερα: https://el.sli.dev/custom/fonts
 fonts:
-  sans: 'Roboto'
-  serif: 'Roboto Slab'
-  mono: 'Fira Code'
+  sans: Roboto
+  serif: Roboto Slab
+  mono: Fira Code
 
 # προεπιλεγμένο frontmatter ισχύει για όλες τις διαφάνειες
 defaults:
-  layout: 'default'
+  layout: default
   # ...
 
 # επιλογές σχεδίασης
@@ -88,8 +128,8 @@ drawings:
 
 # HTML tag attributes
 htmlAttrs:
-  dir: 'ltr'
-  lang: 'en'
+  dir: ltr
+  lang: en
 ---
 ```
 
@@ -119,6 +159,7 @@ htmlAttrs:
 
 ## Ρυθμίστε Εργαλεία
 
+<<<<<<< HEAD
 - [Επισημαντήρες](/custom/highlighters)
 - [Ρυθμίστε Vue](/custom/config-vue)
 - [Ρυθμίστε Vite](/custom/config-vite)
@@ -126,3 +167,12 @@ htmlAttrs:
 - [Ρυθμίστε Monaco](/custom/config-monaco)
 - [Ρυθμίστε KaTeX](/custom/config-katex)
 - [Ρυθμίστε Mermaid](/custom/config-mermaid)
+=======
+- [Highlighters](/custom/highlighters)
+- [Configure Vue](/custom/config-vue)
+- [Configure Vite](/custom/config-vite)
+- [Configure UnoCSS](/custom/config-unocss)
+- [Configure Monaco](/custom/config-monaco)
+- [Configure KaTeX](/custom/config-katex)
+- [Configure Mermaid](/custom/config-mermaid)
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5

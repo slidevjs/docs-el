@@ -2,7 +2,11 @@
 
 Υπάρχουν πολλοί πλούσιοι σε δυνατότητες, γενικής χρήσης, κατασκευαστές διαφανειών WYSIWYG όπως το [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) και το [Apple Keynote](https://www.apple.com/keynote/). Λειτουργούν πολύ καλά στη δημιουργία ωραίων διαφανειών με κινήσεις, διαγράμματα και πολλά άλλα πράγματα, ενώ είναι πολύ διαισθητικοί και εύκολοι στην εκμάθηση. Οπότε γιατί να μπούμε στον κόπο να δημιουργήσουμε το Slidev?
 
+<<<<<<< HEAD
 Το Slidev έχει ως στόχο να παρέχει την ευελιξία και τη διαδραστικότητα στους προγραμματιστές ώστε να κάνουν τις παρουσιάσεις τους ακόμη πιο ενδιαφέρουσες, εκφραστικές και ελκυστικές, χρησιμοποιώντας τα εργαλεία και τις τεχνολογίες με τις οποίες είναι ήδη εξοικειωμένοι. 
+=======
+Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Όταν εργάζεστε με επεξεργαστές WYSIWYG, είναι εύκολο να σας αποσπάσουν την προσοχή οι επιλογές μορφοποίησης. Το Slidev διορθώνει αυτό με το διαχωρισμό του περιεχομένου και των γραφικών. Αυτό σας επιτρέπει να επικεντρωθείτε σε ένα πράγμα τη φορά, ενώ παράλληλα μπορείτε να επαναχρησιμοποιήσετε τα θέματα της κοινότητας. Το Slidev δεν επιδιώκει να αντικαταστήσει εξ ολοκλήρου άλλους κατασκευαστές διαφανειών. Αντίθετα, επικεντρώνεται στην εξυπηρέτηση της κοινότητας των προγραμματιστών.
 
@@ -66,6 +70,4 @@ $ npm init slidev
 
 Ή για να έχετε μια γρήγορη προεπισκόπηση:
 
-<div class="aspect-9/16 relative">
-<iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe class="aspect-16/9 rounded-xl w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

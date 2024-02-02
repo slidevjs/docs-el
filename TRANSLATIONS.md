@@ -17,9 +17,15 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ## Getting started
 
+<<<<<<< HEAD
 - [X] Fork the main docs repo: [slidevjs/docs](https://github.com/slidevjs/docs)
 - [X] Translate README.md, you can take one of the already translated repositories as an example.
 - [X] Share your repo's link to the `#translations` channel telling people you are working on it and find collaborators. 
+=======
+- [ ] Fork the main docs repo: [slidevjs/docs](https://github.com/slidevjs/docs)
+- [ ] Translate README.md, you can take one of the already translated repositories as an example.
+- [ ] Share your repo's link to the `#translations` channel telling people you are working on it and find collaborators.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ## Translating Markdown files
 
@@ -40,6 +46,7 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### custom/
 
+<<<<<<< HEAD
 - [X] `config-katex.md` - Configuring Katex
 - [X] `config-mermaid.md` - Configuring Mermaid
 - [X] `config-monaco.md` - Configuring Monaco
@@ -53,6 +60,20 @@ In case it's already been translated but you're wondering how to maintain it, sk
 - [X] `highlighters.md` - Configuring code highlighters
 - [X] `index.md`- Customizations index page
 - [X] `vue-context.md` - The Vue global context
+=======
+- [ ] `config-katex.md` - Configuring Katex
+- [ ] `config-mermaid.md` - Configuring Mermaid
+- [ ] `config-monaco.md` - Configuring Monaco
+- [ ] `config-shortcuts.md` - Configuring Shortcuts
+- [ ] `config-vite.md` - Configuring Vite
+- [ ] `config-vue.md` - Configuring Vue
+- [ ] `directory-structure.md` - Configuring the directory structure
+- [ ] `fonts.md` - Configuring fonts
+- [ ] `global-layers.md` - Configuring the global layers
+- [ ] `highlighters.md` - Configuring code highlighters
+- [ ] `index.md`- Customizations index page
+- [ ] `vue-context.md` - The Vue global context
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ### guide/
 
@@ -92,7 +113,6 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 - `docschina-bot` will periodically submit merge requests from the `slidev/docs` repository. Switch to the branch created in the pull request, make any changes necessary and merge it. [example](https://github.com/slidevjs/docs-fr/pull/13).
 - Sometimes it will occur that a merge request is made and you haven't merged the previous one. The latest PR always checks your main branch against the English one; so you can just close the previous PR(s), move your work to the latest one and merge it.
-
 
 [Working-in-progress translation list](https://discord.com/channels/851817370623410197/851822360955977760/852614294017146900)
 

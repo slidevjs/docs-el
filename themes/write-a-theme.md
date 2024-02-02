@@ -52,7 +52,11 @@ theme: ./
 
 Για να δημοσιεύσετε το θέμα σας, απλά εκτελέστε `npm publish` και είστε έτοιμοι. Δεν απαιτείται διαδικασία κατασκευής (που σημαίνει ότι μπορείτε να δημοσιεύσετε απευθείας αρχεία `.vue` και `.ts`, το Slidev είναι αρκετά έξυπνο για να τα καταλάβει).
 
+<<<<<<< HEAD
 Τα σημεία συνεισφοράς του θέματος ακολουθούν τις ίδιες συμβάσεις με την τοπική ρυθμίση, παρακαλούμε ανατρέξτε [στις οδηγίες για τις συμβάσεις ονομασίας](/custom/). 
+=======
+Theme contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/).
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ## Προεπιλεγμένες Ρυθμίσεις
 
@@ -118,7 +122,11 @@ html.dark {
 
 ### Επισημαντήρας
 
+<<<<<<< HEAD
 Τα χρώματα επισήμανσης σύνταξης παρέχονται επίσης στο θέμα. Υποστηρίζουμε και [Prism](https://prismjs.com/), [Shiki](https://github.com/shikijs/shiki) και [Shikiji](https://github.com/antfu/shikiji). Για περισσότερες πληροφορίες ανατρέξτε [στις οδηγίες επισήμανσης σύνταξης](/custom/highlighters).
+=======
+Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/), [Shiki](https://github.com/shikijs/shiki). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Μπορείτε να υποστηρίξετε ένα από τα δύο ή και τα δύο. Ανατρέξτε στο προεπιλεγμένο θέμα για παραδείγματα ρυθμίσεων [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
 

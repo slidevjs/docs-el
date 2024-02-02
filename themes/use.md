@@ -37,7 +37,11 @@ $ npm install @slidev/theme-seriph
 $ slidev theme eject
 ```
 
+<<<<<<< HEAD
 Θα εξαγάγει το θέμα που χρησιμοποιείτε αυτή τη στιγμή στο `./theme`, και θα αλλάξει το frontmatter σε 
+=======
+It will eject the theme you are using currently into `./theme`, and changed your frontmatter to
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```yaml
 ---

@@ -3,6 +3,7 @@
 <Environment type="node" />
 
 ::: warning
+<<<<<<< HEAD
 Από την έκδοση v0.42.0 του Slidev, το [UnoCSS](/custom/config-unocss) έγινε το προεπιλεγμένο framework CSS για το Slidev.
 
 Μπορείτε ακόμη να χρησιμοποιήσετε το Windi CSS, θέτοντας την επιλογή `css: windicss` στο frontmatter.
@@ -11,6 +12,9 @@
 css: windicss
 ---
 ```
+=======
+Since Slidev v0.47.0, we no longer support Windi CSS. Please migrate to [UnoCSS](/custom/config-unocss).
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 :::
 
 Το markdown υποστηρίζει εκ φύσεως ενσωματωμένες επισημάνσεις HTML. Επομένως, μπορείτε να διαμορφώσετε το περιεχόμενό σας με τον τρόπο που θέλετε.
