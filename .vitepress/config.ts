@@ -1,6 +1,11 @@
-// @ts-check
+import type { DefaultTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
+import vite from '../vite.config'
 
-const Guide = [
+const CURRENT_VERSION = '0.47.1'
+
+const Guide: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Γιατί Slidev',
     link: '/guide/why',
@@ -55,7 +60,18 @@ const Guide = [
   },
 ]
 
-const Theme = [
+const BuiltIn: DefaultTheme.NavItemWithLink[] = [
+  {
+    text: 'Components',
+    link: '/builtin/components',
+  },
+  {
+    text: 'Layouts',
+    link: '/builtin/layouts',
+  },
+]
+
+const Theme: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildren)[] = [
   {
     text: 'Χρησιμοποίηστε Θέμα',
     link: '/themes/use',
@@ -70,7 +86,7 @@ const Theme = [
   },
 ]
 
-const Addon = [
+const Addon: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Χρήση Πρόσθετου',
     link: '/addons/use',
@@ -81,53 +97,7 @@ const Addon = [
   },
 ]
 
-const Translations = [
-  {
-    text: 'Ελληνικά',
-  },
-  {
-    text: 'English',
-    link: 'https://sli.dev{{pathname}}',
-  },
-  {
-    text: '简体中文',
-    link: 'https://cn.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Français',
-    link: 'https://fr.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Español',
-    link: 'https://es.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Русский',
-    link: 'https://ru.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Việt Nam',
-    link: 'https://vn.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Deutsch',
-    link: 'https://de.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Português (BR)',
-    link: 'https://br.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Ελληνικά',
-    link: 'https://el.sli.dev{{pathname}}',
-  },
-  {
-    text: '日本語',
-    link: 'https://ja.sli.dev{{pathname}}',
-  },
-]
-
-const Customizations = [
+const Customizations: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildren)[] = [
   {
     text: 'Προσαρμογές',
     link: '/custom/',
@@ -157,10 +127,6 @@ const Customizations = [
     link: '/custom/config-unocss',
   },
   {
-    text: 'Ρυθμίστε Windi CSS',
-    link: '/custom/config-windicss',
-  },
-  {
     text: 'Ρυθμίστε Monaco',
     link: '/custom/config-monaco',
   },
@@ -187,21 +153,10 @@ const Customizations = [
   {
     text: 'Global Layers',
     link: '/custom/global-layers',
-  }
-]
-
-const BuiltIn = [
-  {
-    text: 'Components',
-    link: '/builtin/components',
-  },
-  {
-    text: 'Layouts',
-    link: '/builtin/layouts',
   },
 ]
 
-const Resources = [
+const Resources: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Παρουσιάσεις',
     link: '/showcases',
@@ -216,33 +171,30 @@ const Resources = [
   },
 ]
 
-const slidebars = [
+const slidebars: DefaultTheme.SidebarItem[] = [
   {
     text: 'Οδηγός',
-    children: Guide,
+    items: Guide,
   },
   {
     text: 'Θέματα',
-    children: Theme,
+    items: Theme,
   },
   {
     text: 'Πρόσθετα',
-    children: Addon,
+    items: Addon,
   },
   {
     text: 'Προσαρμογές',
-    children: Customizations,
+    items: Customizations,
   },
   {
     text: 'Ενσωματωμένα',
-    children: BuiltIn,
+    items: BuiltIn,
   },
 ]
 
-/**
- * @type {import('vitepress').UserConfig}
- */
-module.exports = {
+export default defineConfig({
   title: 'Slidev',
   description: 'Διαφάνειες παρουσίασης για προγραμματιστές',
   head: [
@@ -258,21 +210,33 @@ module.exports = {
     ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.gstatic.com' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500&family=Inter:wght@200;400;500;600', rel: 'stylesheet' }],
   ],
+  markdown: {
+    theme: {
+      light: 'vitesse-light',
+      dark: 'vitesse-dark',
+    },
+    async shikiSetup(shiki) {
+      await shiki.loadLanguage(
+        'html',
+        'xml',
+        'vue',
+        'markdown',
+      )
+    },
+    codeTransformers: [
+      transformerTwoslash(),
+    ],
+  },
+  cleanUrls: true,
   themeConfig: {
-    repo: 'slidevjs/docs',
     logo: '/logo.svg',
-    docsBranch: 'main',
-    editLinks: true,
-    editLinkText: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
+    editLink: {
+      pattern: 'https://github.com/slidevjs/docs-el/edit/main/:path',
+      text: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
+    },
 
-    algolia: {
-      appId: 'LCBV6MIFS6',
-      apiKey: '1ff173fe73b20edc962c1c24c0b1c160',
-      indexName: 'slidev',
-      searchParameters: {
-        // for translations maintainers: change the filter to your locale code (subdomain name)
-        facetFilters: ['language:el']
-      }
+    search: {
+      provider: 'local',
     },
 
     nav: [
@@ -282,28 +246,40 @@ module.exports = {
       },
       {
         text: 'Θέμα',
-        items: Theme,
-      },
-      {
-        text: 'Πρόσθετο',
-        items: Addon,
+        items: [
+          ...Theme,
+          {
+            text: 'Ενσωματωμένα',
+            items: BuiltIn,
+          },
+        ],
       },
       {
         text: 'Προσαρμόστε',
-        items: Customizations,
-      },
-      {
-        text: 'Ενσωματωμένα',
-        items: BuiltIn,
+        items: [
+          ...Customizations,
+          {
+            text: 'Πρόσθετο',
+            items: Addon,
+          },
+        ],
       },
       {
         text: 'Πηγές',
         items: Resources,
       },
       {
-        text: 'Ελληνικά',
-        items: Translations,
+        text: `v${CURRENT_VERSION}`,
+        items: [
+          { text: 'Σημειώσεις Έκδοσης', link: 'https://github.com/slidevjs/slidev/releases' },
+        ],
       },
+    ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/slidevjs/slidev' },
+      { icon: 'twitter', link: 'https://twitter.com/slidevjs' },
+      { icon: 'discord', link: 'https://chat.sli.dev' },
     ],
 
     sidebar: {
@@ -315,5 +291,56 @@ module.exports = {
       '/resources/': slidebars,
       '/': slidebars,
     },
+
+    footer: {
+      message: 'Κυκλοφορεί υπό την άδεια MIT License.',
+      copyright: 'Πνευματικά δικαιώματα © 2020 Anthony Fu.',
+    },
   },
-}
+
+  locales: {
+    root: {
+      label: 'Ελληνικά',
+    },
+    en: {
+      label: 'English',
+      link: 'https://sli.dev/',
+    },
+    zh: {
+      label: '简体中文',
+      link: 'https://cn.sli.dev/',
+    },
+    fr: {
+      label: 'Français',
+      link: 'https://fr.sli.dev/',
+    },
+    es: {
+      label: 'Español',
+      link: 'https://es.sli.dev/',
+    },
+    ru: {
+      label: 'Русский',
+      link: 'https://ru.sli.dev/',
+    },
+    vn: {
+      label: 'Việt Nam',
+      link: 'https://vn.sli.dev/',
+    },
+    de: {
+      label: 'Deutsch',
+      link: 'https://de.sli.dev/',
+    },
+    br: {
+      label: 'Português (BR)',
+      link: 'https://br.sli.dev/',
+    },
+    el: {
+      label: 'Ελληνικά',
+      link: 'https://el.sli.dev/',
+    },
+    ja: {
+      label: '日本語',
+      link: 'https://ja.sli.dev/',
+    },
+  },
+})

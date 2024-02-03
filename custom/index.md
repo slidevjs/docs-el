@@ -10,9 +10,9 @@
 ---
 # id ή όνομα πακέτου θέματος
 # Μάθετε περισσότερα: https://el.sli.dev/themes/use.html
-theme: 'default'
+theme: default
 # τίτλος της διαφάνειάς σας, αν δεν καθοριστεί θα προκύψει αυτόματα από την πρώτη επικεφαλίδα
-title: 'Slidev'
+title: Slidev
 # titleTemplate της ιστοσελίδας, `%s` θα αντικατασταθεί από τον τίτλο της σελίδας
 titleTemplate: '%s - Slidev'
 # πληροφορίες για τις διαφάνειές σας, μπορεί να είναι μια συμβολοσειρά markdown.
@@ -27,7 +27,7 @@ presenter: true
 # ενεργοποιήστε τη λήψη pdf στην κατασκευή SPA, μπορεί επίσης να είναι ένα προσαρμοσμένο url
 download: false
 # όνομα αρχείου του αρχείου εξαγωγής
-exportFilename: 'slidev-exported'
+exportFilename: slidev-exported
 # επιλογές εξαγωγής
 # χρησιμοποιήστε τις επιλογές εξαγωγής CLI σε μορφή camelCase
 # Μάθετε περισσότερα: https://el.sli.dev/guide/exporting.html
@@ -37,25 +37,25 @@ export:
   dark: false
   withClicks: false
   withToc: false
-# επισημαντής σύνταξης, μπορεί να είναι 'prism', 'shiki' ή `shikiji`
-highlighter: 'prism'
+# επισημαντής σύνταξης, μπορεί να είναι 'prism' ή 'shiki'
+highlighter: shiki
 # εμφάνιση αριθμών γραμμών σε blocks
 lineNumbers: false
 # ενεργοποίηση του επεξεργαστή monaco, μπορεί να είναι boolean, 'dev' ή 'build'
-monaco: 'dev'
+monaco: dev
 # λήψη απομακρυσμένων assets τοπικά χρησιμοποιώντας το vite-plugin-remote-assets, μπορεί να είναι boolean, 'dev' ή 'build'
 remoteAssets: false
 # ελέγχει αν τα κείμενα στις διαφάνειες είναι επιλέξιμα
 selectable: true
 # ενεργοποίηση της εγγραφής διαφανειών, μπορεί να είναι boolean, 'dev' ή 'build'
-record: 'dev'
+record: dev
 
 # αναγκάστε χρωματικό σχήμα για τις διαφάνειες, μπορεί να είναι 'auto', 'light', ή 'dark'
-colorSchema: 'auto'
+colorSchema: auto
 # λειτουργία router για το vue-router, μπορεί να είναι "history" ή "hash"
-routerMode: 'history'
+routerMode: history
 # αναλογία διαστάσεων για τις διαφάνειες
-aspectRatio: '16/9'
+aspectRatio: 16/9
 # πραγματικό πλάτος του καμβά, μονάδα σε px
 canvasWidth: 980
 # χρησιμοποιείται για την προσαρμογή του θέματος, θα εισάγει τα στυλ της ρίζας ως `--slidev-theme-x` για το χαρακτηριστικό `x`
@@ -69,13 +69,13 @@ plantUmlServer: 'https://www.plantuml.com/plantuml'
 # οι γραμματοσειρές θα εισαχθούν αυτόματα από το Google fonts
 # Μάθετε περισσότερα: https://el.sli.dev/custom/fonts
 fonts:
-  sans: 'Roboto'
-  serif: 'Roboto Slab'
-  mono: 'Fira Code'
+  sans: Roboto
+  serif: Roboto Slab
+  mono: Fira Code
 
 # προεπιλεγμένο frontmatter ισχύει για όλες τις διαφάνειες
 defaults:
-  layout: 'default'
+  layout: default
   # ...
 
 # επιλογές σχεδίασης
@@ -88,8 +88,8 @@ drawings:
 
 # HTML tag attributes
 htmlAttrs:
-  dir: 'ltr'
-  lang: 'en'
+  dir: ltr
+  lang: en
 ---
 ```
 

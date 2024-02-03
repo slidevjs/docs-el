@@ -22,11 +22,10 @@
 
 Για να το προσαρμόσετε, δημιουργήστε ένα αρχείο `./setup/preparser.ts` με το ακόλουθο περιεχόμενο:
 
-
 ```ts
 import { definePreparserSetup } from '@slidev/types'
 
-export default definePreparserSetup(({filepath, headmatter}) => {
+export default definePreparserSetup(({ filepath, headmatter }) => {
   return [
     {
       transformRawLines(lines) {
@@ -56,7 +55,6 @@ export default definePreparserSetup(({filepath, headmatter}) => {
 Φανταστείτε μια κατάσταση όπου (μέρος) της παρουσίασής σας παρουσιάζει κυρίως εικόνες εξωφύλλου και περιλαμβάνει άλλα αρχεία md. Μπορεί να θέλετε μια συμπαγή σημειογραφία όπου για παράδειγμα (μέρος του) `slides.md` έχει ως εξής:
 
 ```md
-
 @cover: /nice.jpg
 # Καλώς ήρθατε
 @src: page1.md
@@ -66,11 +64,9 @@ export default definePreparserSetup(({filepath, headmatter}) => {
 @cover: https://source.unsplash.com/collection/94734566/1920x1080
 # Ερωτήσεις;
 τα λέμε την επόμενη φορά
-
 ```
 
 Για να επιτρέψετε αυτά τα συντακτικά `@src:` και `@cover:`, δημιουργήστε ένα αρχείο `./setup/preparser.ts` με το ακόλουθο περιεχόμενο:
-
 
 ```ts
 import { definePreparserSetup } from '@slidev/types'
@@ -83,20 +79,26 @@ export default definePreparserSetup(() => {
         while (i < lines.length) {
           const l = lines[i]
           if (l.match(/^@cover:/i)) {
-            lines.splice(i, 1,
+            lines.splice(
+              i,
+              1,
               '---',
               'layout: cover',
               `background: ${l.replace(/^@cover: */i, '')}`,
               '---',
-              '')
+              ''
+            )
             continue
           }
           if (l.match(/^@src:/i)) {
-            lines.splice(i, 1,
+            lines.splice(
+              i,
+              1,
               '---',
               `src: ${l.replace(/^@src: */i, '')}`,
               '---',
-              '')
+              ''
+            )
             continue
           }
           i++
@@ -109,16 +111,12 @@ export default definePreparserSetup(() => {
 
 Και αυτό ήταν όλο.
 
-
 ### Περίπτωση χρήσης 2: χρήση προσαρμοσμένου frontmatter για το περιτύλιγμα των διαφανειών
 
 Φανταστείτε μια περίπτωση όπου συχνά θέλετε να μεγεθύνετε ορισμένες διαφάνειες σας, αλλά εξακολουθείτε να θέλετε να χρησιμοποιήσετε μια ποικιλία από υπάρχουσες διατάξεις, οπότε η δημιουργία μιας νέας διάταξης δεν θα ήταν κατάλληλη.
 Για παράδειγμα, μπορεί να θέλετε να γράψετε το `slides.md` σας ως εξής:
 
 ```md
-
-
-
 ---
 layout: quote
 _scale: 0.75
@@ -143,14 +141,11 @@ _scale: 2.5
 ---
 # Ερωτήσεις;
 τα λέμε την επόμενη φορά
-
 ```
 
 Εδώ χρησιμοποιήσαμε μια κάτω παύλα στο `_scale` για να αποφύγουμε πιθανές συγκρούσεις με τις υπάρχουσες ιδιότητες του frontmatter (πράγματι, η περίπτωση του `scale`, χωρίς κάτω παύλα θα προκαλούσε πιθανά προβλήματα).
 
-
 Για να χειριστείτε αυτή τη σύνταξη `_scale: ...` στο frontmatter, δημιουργήστε ένα αρχείο `./setup/preparser.ts` με το ακόλουθο περιεχόμενο:
-
 
 ```ts
 import { definePreparserSetup } from '@slidev/types'
@@ -161,7 +156,7 @@ export default definePreparserSetup(() => {
       transformSlide(content, frontmatter) {
         if ('_scale' in frontmatter) {
           return [
-            `<Transform :scale=${frontmatter['_scale']}>`,
+            `<Transform :scale=${frontmatter._scale}>`,
             '',
             content,
             '',

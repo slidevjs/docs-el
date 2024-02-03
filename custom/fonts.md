@@ -10,11 +10,11 @@
 ---
 fonts:
   # ουσιαστικά το κείμενο
-  sans: 'Robot'
-  # χρήση με το `font-serif` css class από το windicss
-  serif: 'Robot Slab'
+  sans: Robot
+  # χρήση με το `font-serif` css class από το UnoCSS
+  serif: Robot Slab
   # για μπλοκ κώδικα, γραμμικό κώδικα κτλ.
-  mono: 'Fira Code'
+  mono: Fira Code
 ---
 ```
 
@@ -24,7 +24,7 @@ fonts:
 
 ## Τοπικές Γραμματοσειρές
 
-Εξ ορισμού, το Slidev υποθέτει ότι όλες οι γραμματοσειρές που καθορίζονται μέσω των ρυθμίσεων `fonts` προέρχονται από το Google Fonts. Αν θέλετε να χρησιμοποιήσετε τοπικές γραμματοσειρές, καθορίστε το `fonts.local` για να εξαιρεθείτε από την αυτόματη εισαγωγή. 
+Εξ ορισμού, το Slidev υποθέτει ότι όλες οι γραμματοσειρές που καθορίζονται μέσω των ρυθμίσεων `fonts` προέρχονται από το Google Fonts. Αν θέλετε να χρησιμοποιήσετε τοπικές γραμματοσειρές, καθορίστε το `fonts.local` για να εξαιρεθείτε από την αυτόματη εισαγωγή.
 
 ```yaml
 ---
@@ -32,7 +32,7 @@ fonts:
   # όπως το font-family σε css, μπορείτε να χρησιμοποιήσετε `,` για να διαχωρίσετε πολλαπλές γραμματοσειρές ως εφεδρικές
   sans: 'Helvetica Neue,Robot'
   # σημαδέψτε 'Helvetica Neue' ως τοπική γραμματοσειρά
-  local: 'Helvetica Neue'
+  local: Helvetica Neue
 ---
 ```
 
@@ -43,7 +43,7 @@ fonts:
 ```yaml
 ---
 fonts:
-  sans: 'Robot'
+  sans: Robot
   # προεπιλογή
   weights: '200,400,600'
   # εισαγωγή πλάγιων γραμματοσειρών, προεπιλογή `false`
@@ -60,13 +60,13 @@ fonts:
 ```yaml
 ---
 fonts:
-  sans: 'Robot'
-  serif: 'Robot Slab'
-  mono: 'Fira Code'
+  sans: Robot
+  serif: Robot Slab
+  mono: Fira Code
 ---
 ```
 
-θα έχει ως αποτέλεσμα 
+θα έχει ως αποτέλεσμα
 
 ```css
 .font-sans {
@@ -100,8 +100,6 @@ fonts:
 ```yaml
 ---
 fonts:
-  provider: 'none'
+  provider: none
 ---
 ```
-
-

@@ -75,12 +75,12 @@
 ~~~md
 <LightOrDark>
   <template #dark>
-  
+
 ![dark](/dark.png)
 
   </template>
   <template #light>
-  
+
 ![light](/light.png)
 
   </template>
@@ -112,7 +112,6 @@ routeAlias: solutions
 ---
 # Και τώρα μερικές λύσεις!
 ~~~
-
 
 ### `RenderWhen`
 

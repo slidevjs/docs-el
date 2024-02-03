@@ -60,13 +60,13 @@ export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]
 Οι λειτουργίες πλοήγησης `nav` σας επιτρέπουν να έχετε πρόσβαση σε ορισμένες λειτουργίες πέρα από τις βασικές _επόμενη διαφάνεια_ ή _προηγούμενη διαφάνεια_. Δείτε τις ακόλουθες περιπτώσεις χρήσης:
 
 ```ts
-import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+import { NavOperations, defineShortcutsSetup } from '@slidev/types'
 
 export default defineShortcutsSetup((nav: NavOperations) => {
   return [
     {
       key: 'e',
-      
+
       // Ορίστε τη συντόμευση πληκτρολογίου `e` που θα χρησιμοποιείται ως σελιδοδείκτης
       // ή ένα είδος γρήγορης πρόσβασης, για να πλοηγηθείτε συγκεκριμένα στο
       // διαφάνεια με αριθμό 42

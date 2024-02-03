@@ -18,28 +18,28 @@ export default defineMonacoSetup(async (monaco) => {
 
 Για να χρησιμοποιήσετε το Monaco στις διαφάνειές σας, απλά προσθέστε `{monaco}` στα αποσπάσματα του κώδικά σας:
 
-~~~js
-//```js
+~~~md
+```js
 const count = ref(1)
 const plusOne = computed(() => count.value + 1)
 
 console.log(plusOne.value) // 2
 
 plusOne.value++ // error
-//```
+```
 ~~~
 
 Σε
 
-~~~js
-//```js {monaco}
+~~~md
+```js {monaco}
 const count = ref(1)
 const plusOne = computed(() => count.value + 1)
 
 console.log(plusOne.value) // 2
 
 plusOne.value++ // error
-//```
+```
 ~~~
 
 ## Εξαγωγή
@@ -56,13 +56,13 @@ monaco: true # προεπιλεγμένο "dev"
 
 Όταν χρησιμοποιείτε TypeScript με το Monaco, οι τύποι εξαρτήσεων θα εγκατασταθούν αυτόματα στο client-side.
 
-~~~ts
-//```ts {monaco}
+~~~md
+```ts {monaco}
 import { ref } from 'vue'
 import { useMouse } from '@vueuse/core'
 
 const counter = ref(0)
-//```
+```
 ~~~
 
 Στο παραπάνω παράδειγμα, βεβαιωθείτε ότι τα `vue` και `@vueuse/core` είναι εγκατεστημένα τοπικά ως dependencies / devDependencies, το Slidev θα αναλάβει τα υπόλοιπα, ώστε οι τύποι να λειτουργούν αυτόματα για τον συντάκτη!
@@ -115,10 +115,10 @@ export default defineMonacoSetup((monaco) => {
 
 Αν θέλετε να προσαρμόσετε τον συντάκτη Monaco, μπορείτε να περάσετε ένα object `editorOptions` που ταιριάζει με τον ορισμό [Monaco IEditorOptions](https://microsoft.github.io/monaco-editor/docs.html#interfaces/editor.IEditorOptions.html).
 
-~~~ts
-//```ts {monaco} { editorOptions: { wordWrap:'on'} }
+~~~md
+```ts {monaco} { editorOptions: { wordWrap:'on'} }
 console.log('Γεια σου Κόσμε')
-//```
+```
 ~~~
 
 Εναλλακτικά, αν θέλετε αυτές οι επιλογές να εφαρμόζονται σε κάθε περίσταση Monaco, μπορείτε να τις επιστρέψετε στη συνάρτηση `defineMonacoSetup`

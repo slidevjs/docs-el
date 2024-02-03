@@ -1,6 +1,8 @@
-# Ξεκινώντας
+---
+outline: deep
+---
 
-## Σύνοψη
+# Ξεκινώντας
 
 Το Slidev <sup>(slide + dev, **/slaɪdɪv/**)</sup> είναι ένας διαδικτυακός δημιουργός και παρουσιαστής διαφανειών. Είναι σχεδιασμένο για προγραμματιστές ώστε να εστιάζουν στη συγγραφή υλικού σε Markdown έχοντας παράλληλα τη δύναμη του HTML και των Vue components για να παρέχουν τέλεια layouts και σχεδιασμούς με ενσωματωμένες διαδραστικές επιδείξεις στις παρουσιάσεις τους.
 
@@ -8,17 +10,17 @@
 
 Μπορείτε να μάθετε περισσότερα για το σκεπτικό πίσω από το έργο στην ενότητα [Γιατί Slidev](/guide/why).
 
-### Δυνατότητες
+## Δυνατότητες
 
 - 📝 [**Βασισμένο στο Markdown**](/guide/syntax.html) - χρησιμοποιήστε τους αγαπημένους σας συντάκτες και ροή εργασίας
 - 🧑‍💻 [**Φιλικό προς Προγραμματιστές**](/guide/syntax.html#code-blocks) - ενσωματωμένοι επισημαντήρες σύνταξης, live coding, κτλ.
 - 🎨 [**Θεματοποιήσιμο**](/themes/gallery.html) - θέματα μπορούν να μοιραστούν και να χρησιμοποιηθούν με πακέτα npm
-- 🌈 [**Stylish**](/guide/syntax.html#ενσωματωμένα-styles) - on-demand εργαλεία μέσω των [UnoCSS](https://github.com/unocss/unocss) ή [Windi CSS](https://windicss.org/).
+- 🌈 [**Stylish**](/guide/syntax.html#ενσωματωμένα-styles) - on-demand εργαλεία μέσω των [UnoCSS](https://github.com/unocss/unocss).
 - 🤹 [**Διαδραστικό**](/custom/directory-structure.html#components) - απρόσκοπτη ενσωμάτωση Vue components
 - 🎙 [**Λειτουργία Παρουσιαστή**](/guide/presenter-mode.html) - χρησιμοποιήστε ένα άλλο παράθυρο ή ακόμα και το τηλέφωνό σας για να ελέγξετε τις διαφάνειές σας
 - 🎨 [**Ζωγραφική**](/guide/drawing.html) - ζωγραφίστε και σημειώστε πάνω στις διαφάνειές σας
 - 🧮 [**LaTeX**](/guide/syntax.html#latex) - ενσωματωμένη υποστήριξη μαθηματικών εξισώσεων LaTeX
-- 📰 [**Διαγράμματα**](/guide/syntax.html#διαγpάμματα) - δημιουργεί διαγράμματα με περιγραφές κειμένου 
+- 📰 [**Διαγράμματα**](/guide/syntax.html#διαγpάμματα) - δημιουργεί διαγράμματα με περιγραφές κειμένου
 - 🌟 [**Εικονίδια**](/guide/syntax.html#εικονίδια) - απευθείας πρόσβαση σε εικονίδια από οποιοδήποτε σύνολο εικονιδίων 
 - 💻 [**Συντάκτες**](/guide/editors.html) - ενσωματωμένος συντάκτης, ή [επέκταση για το VS Code](https://github.com/slidevjs/slidev-vscode)
 - 🎥 [**Καταγραφή Παρουσίασης**](/guide/recording.html) - ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας
@@ -26,54 +28,35 @@
 - ⚡️ [**Γρήγορο**](https://vitejs.dev) - άμεση επαναφόρτωση με τη βοήθεια του [Vite](https://vitejs.dev)
 - 🛠 [**Hackable**](/custom/config-vite.html) - χρησιμοποιώντας πρόσθετα Vite, Vue components, ή οποιαδήποτε πακέτα npm
 
-### Στοίβα Τεχνολογίας
+## Δημιουργία σκελετού για την Πρώτη Σας Παρουσίαση
 
-Το Slidev λειτουργεί με το συνδυασμό αυτών των εργαλείων και τεχνολογιών.
+### Δοκιμάστε το Online
 
-- [Vite](https://vitejs.dev) - Ένα εξαιρετικά γρήγορο frontend tooling
-- [Vue 3](https://v3.vuejs.org/) με [Markdown](https://daringfireball.net/projects/markdown/syntax) - Συγκεντρωθείτε στο υλικό έχοντας παράλληλα τη δύναμη του HTML και των Vue components όποτε χρειάζεται.
-- [Windi CSS](https://github.com/windicss/windicss) ή [UnoCSS](https://github.com/unocss/unocss) - On-demand utility-first CSS framework, σχεδιάστε τις διαφάνειές σας με άνεση
-- [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Πρώτης κατηγορίας υποστήριξη αποσπασμάτων κώδικα με δυνατότητα live coding
-- [RecordRTC](https://recordrtc.org) - Ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας
-- [VueUse](https://vueuse.org) οικογένεια -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), κτλ.
-- [Iconify](https://iconify.design/) - Συλλογή εικονιδίων.
-- [Drauu](https://github.com/antfu/drauu) - Υποστήριξη ζωγραφικής και σημειώσεων
-- [KaTeX](https://katex.org/) - Μαθηματική απεικόνιση LaTeX.
-- [Mermaid](https://mermaid-js.github.io/mermaid) - Κειμενικά Διαγράμματα.
-
-### Δημιουργία σκελετού για την Πρώτη Σας Παρουσίαση
-
-<br>
-
-#### Δοκιμάστε το Online
-
-[sli.dev/new](https://sli.dev/new)
+Ξεκινήστε το Slidev απευθείας στο πρόγραμμα περιήγησής σας: [sli.dev/new](https://sli.dev/new)
 
 [![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://sli.dev/new)
 
-#### Δημιουργήστε Τοπικά
+### Δημιουργήστε Τοπικά
 
-Με NPM:
+::: code-group
 
-```bash
-$ npm init slidev
+```bash [npm]
+npm init slidev@latest
 ```
 
-Με Yarn:
-
-```bash
-$ yarn create slidev
+```bash [yarn]
+yarn create slidev
 ```
 
-Με pnpm:
-
-```bash
-$ pnpm create slidev
+```bash [pnpm]
+pnpm create slidev
 ```
+
+:::
 
 Ακολουθήστε τις οδηγίες και αρχίστε να δημιουργείτε τις διαφάνειές σας τώρα! Για περισσότερες λεπτομέρειες σχετικά με τη σύνταξη markdown, διαβάστε τον [οδηγό σύνταξης](/guide/syntax).
 
-### Command Line Interface
+## Command Line Interface
 
 Σε ένα έργο όπου το Slidev είναι εγκατεστημένο, μπορείτε να χρησιμοποιήσετε το `slidev` binary στα npm scripts σας.
 
@@ -95,7 +78,7 @@ $ npx slidev
 
 Τρέξτε `slidev --help` για περισσότερες διαθέσιμες επιλογές.
 
-### Σύνταξη Markdown
+## Σύνταξη Markdown
 
 Το Slidev διαβάζει το αρχείο `slides.md` στη ρίζα του έργου σας και τα μετατρέπει σε διαφάνειες. Κάθε φορά που κάνετε αλλαγές σε αυτό, το περιεχόμενο των διαφανειών θα ενημερώνεται αμέσως. Για παράδειγμα:
 
@@ -110,9 +93,9 @@ $ npx slidev
 
 Άμεση χρήση code blocks για επισήμανση
 
-//```ts
+```ts
 console.log('Γεια σου, κόσμε!')
-//```
+```
 
 ---
 
@@ -120,3 +103,19 @@ console.log('Γεια σου, κόσμε!')
 ~~~
 
 Διαβάστε περισσότερα για τη σύνταξη Markdown του Slidev στο [οδηγός σύνταξης](/guide/syntax).
+
+## Στοίβα Τεχνολογίας
+
+Το Slidev λειτουργεί με το συνδυασμό αυτών των εργαλείων και τεχνολογιών.
+
+- [Vite](https://vitejs.dev) - Ένα εξαιρετικά γρήγορο frontend tooling
+- [Vue 3](https://v3.vuejs.org/) με [Markdown](https://daringfireball.net/projects/markdown/syntax) - Συγκεντρωθείτε στο υλικό έχοντας παράλληλα τη δύναμη του HTML και των Vue components όποτε χρειάζεται.
+- [UnoCSS](https://github.com/unocss/unocss) - On-demand utility-first CSS framework, σχεδιάστε τις διαφάνειές σας με άνεση
+- [Shiki](https://github.com/shikijs/shiki), [Prism](https://github.com/PrismJS/prism), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Πρώτης κατηγορίας υποστήριξη αποσπασμάτων κώδικα με δυνατότητα live coding
+- [RecordRTC](https://recordrtc.org) - Ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας
+- [VueUse](https://vueuse.org) οικογένεια -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), κτλ.
+- [Iconify](https://iconify.design/) - Συλλογή εικονιδίων.
+- [Drauu](https://github.com/antfu/drauu) - Υποστήριξη ζωγραφικής και σημειώσεων
+- [KaTeX](https://katex.org/) - Μαθηματική απεικόνιση LaTeX.
+- [Mermaid](https://mermaid-js.github.io/mermaid) - Κειμενικά Διαγράμματα.
+

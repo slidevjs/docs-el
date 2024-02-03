@@ -115,18 +115,18 @@ import './code.css'
 import './layouts.css'
 ```
 
-Τα styles θα επεξεργαστούν από το [UnoCSS](https://unocss.dev/) και το [PostCSS](https://postcss.org/), ώστε να μπορείτε να χρησιμοποιήσετε css nesting και [at-directives](https://windicss.org/features/directives.html) κατευθείαν. Για παράδειγμα:
+Τα styles θα επεξεργαστούν από το [UnoCSS](https://unocss.dev/) και το [PostCSS](https://postcss.org/), ώστε να μπορείτε να χρησιμοποιήσετε css nesting και [at-directives](https://unocss.dev/transformers/directives#apply) κατευθείαν. Για παράδειγμα:
 
 ```less
 .slidev-layout {
-  @apply px-14 py-10 text-[1.1rem];
+  --uno: px-14 py-10 text-[1.1rem];
 
   h1, h2, h3, h4, p, div {
-    @apply select-none;
+    --uno: select-none;
   }
 
   pre, code {
-    @apply select-text;
+    --uno: select-text;
   }
 
   a {
@@ -135,7 +135,7 @@ import './layouts.css'
 }
 ```
 
-[Μάθετε περισσότερα για τη σύνταξη](https://windicss.org/features/directives.html).
+[Μάθετε περισσότερα για τη σύνταξη](https://unocss.dev/transformers/directives#apply).
 
 ## `index.html`
 
@@ -184,4 +184,3 @@ import './layouts.css'
 Συμβάσεις: `global-top.vue` | `global-bottom.vue`
 
 Μάθετε περισσότερα: [Global Layers](/custom/global-layers)
-

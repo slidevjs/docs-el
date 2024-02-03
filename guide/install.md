@@ -6,23 +6,21 @@
 
 Ο καλύτερος τρόπος για να ξεκινήσετε είναι να χρησιμοποιήσετε το επίσημο πρότυπο εκκίνησης μας.
 
-Με NPM:
+::: code-group
 
-```bash
-$ npm init slidev@latest
+```bash [npm]
+npm init slidev@latest
 ```
 
-Με Yarn:
-
-```bash
-$ yarn create slidev
+```bash [yarn]
+yarn create slidev
 ```
 
-Με PNPM:
-
-```bash
-$ pnpm create slidev
+```bash [pnpm]
+pnpm create slidev
 ```
+
+:::
 
 Ακολουθήστε τις οδηγίες και θα ανοίξει αυτόματα η προβολή διαφανειών στη διεύθυνση `http://localhost:3030/`.
 
@@ -33,20 +31,14 @@ $ pnpm create slidev
 Αν εξακολουθείτε να προτιμάτε να εγκαταστήσετε το Slidev χειροκίνητα ή θα θέλατε να το ενσωματώσετε στα υπάρχοντα έργα σας, μπορείτε να το κάνετε:
 
 ```bash
-$ npm install @slidev/cli @slidev/theme-default
+npm install @slidev/cli @slidev/theme-default
 ```
 ```bash
-$ touch slides.md
+touch slides.md
 ```
 ```bash
-$ npx slidev
+npx slidev
 ```
-
-> Παρακαλείστε να σημειώσετε ότι εάν χρησιμοποιείτε [pnpm](https://pnpm.io), θα πρέπει να ενεργοποιήσετε την επιλογή [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) για να λειτουργήσει σωστά το Slidev:
->
-> ```bash
-> echo 'shamefully-hoist=true' >> .npmrc
-> ```
 
 ## Εγκαταστήστε Globally
 
@@ -55,13 +47,13 @@ $ npx slidev
 Μπορείτε να εγκαταστήσετε το Slidev globally με την ακόλουθη εντολή
 
 ```bash
-$ npm i -g @slidev/cli
+npm i -g @slidev/cli
 ```
 
 Και στη συνέχεια χρησιμοποιήστε `slidev` παντού χωρίς να δημιουργείτε ένα έργο κάθε φορά.
 
 ```bash
-$ slidev
+npx slidev
 ```
 
 Αυτή η εντολή θα προσπαθήσει επίσης να χρησιμοποιήσει το τοπικό `@slidev/cli` εάν έχει βρεθεί στο `node_modules`.
@@ -80,13 +72,12 @@ docker run --name slidev --rm -it \
     tangramor/slidev:latest
 ```
 
-Εάν ο φάκελος εργασίας σας είναι άδειος, θα δημιουργήσει ένα πρότυπο `slides.md` και άλλα σχετικά αρχεία, και θα ξεκινήσει τον διακομιστή στη θύρα `3030`. 
+Εάν ο φάκελος εργασίας σας είναι άδειος, θα δημιουργήσει ένα πρότυπο `slides.md` και άλλα σχετικά αρχεία, και θα ξεκινήσει τον διακομιστή στη θύρα `3030`.
 
 Μπορείτε να έχετε πρόσβαση στις διαφάνειές σας από το `http://localhost:3030/`
 
-
 ### Δημιουργία εικόνας που μπορεί να γίνει deploy
-
+=======
 Ή μπορείτε να δημιουργήσετε το δικό σας slidev project σε μία εικόνα docker με ένα Dockerfile:
 
 ```Dockerfile
@@ -102,20 +93,17 @@ ADD . /slidev
 
 Μπορείτε να επισκεφθείτε τις διαφάνειές σας από το `http://localhost:3030/`
 
-
 ### Κατασκευή φιλοξενήσιμης εφαρμογής SPA (Single Page Application)
 
 Εκτελέστε την εντολή `docker exec -i slidev npx slidev build` στο τρέχον container `slidev`. Θα δημιουργήσει στατικά αρχεία HTML στο φάκελο `dist`.
 
-
 #### Φιλοξενήστε στο Github Pages
 
-Μπορείτε να φιλοξενήσετε το `dist` σε μια στατική ιστοσελίδα όπως το [Github Pages](https://tangramor.github.io/slidev_docker/) ή το Gitlab Pages. 
+Μπορείτε να φιλοξενήσετε το `dist` σε μια στατική ιστοσελίδα όπως το [Github Pages](https://tangramor.github.io/slidev_docker/) ή το Gitlab Pages.
 
 Επειδή στο Github pages το url μπορεί να περιέχει υποφακέλους, πρέπει να τροποποιήσετε το παραγόμενο `index.html` για να αλλάξετε το `href="/assets/xxx` σε `href="./assets/xxx`. Ή μπορείτε να χρησιμοποιήσετε την επιλογή `--base=/<subfolder>/` κατά τη διάρκεια της διαδικασίας κατασκευής, όπως: `docker exec -i slidev npx slidev build --base=/slidev_docker/`.
 
 Και για να αποφύγετε τη διαδικασία κατασκευής του Jekyll, πρέπει να προσθέσετε ένα κενό αρχείο `.nojekyll`.
-
 
 #### Φιλοξενήστε σε docker
 

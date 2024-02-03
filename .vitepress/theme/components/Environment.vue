@@ -3,13 +3,13 @@ defineProps<{ type: 'node' | 'client' }>()
 </script>
 
 <template>
-  <details class="px-4 py-3 mt-4 rounded bg-gray-400 bg-opacity-10">
-    <summary class="outline-none">
+  <details class="p4 mt-4 rounded-lg bg-gray-400 bg-opacity-10">
+    <summary class="outline-none !m0 select-none">
       Περιβάλλον:
-      <span class="capitalize" :class="type === 'node' ? 'text-orange-400' : 'text-green-400'">{{ type }}</span>
+      <span class="capitalize font-bold" :class="type === 'node' ? 'text-orange-400' : 'text-green-400'">{{ type }}</span>
     </summary>
 
-    <div class="mt-2 opacity-75">
+    <div class="pt2 opacity-75">
       <span v-if="type === 'node'">
         Αυτή η λειτουργία ρύθμισης θα εκτελεστεί μόνο σε περιβάλλον Node.js, μπορείτε να έχετε πρόσβαση στο API του Node.
       </span>

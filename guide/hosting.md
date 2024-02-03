@@ -1,4 +1,3 @@
-
 # Στατική Φιλοξενία
 
 ## Build Single Page Applications (SPA)
@@ -109,16 +108,16 @@ $ slidev build *.md
 
 ```ts
 [build.environment]
-  NODE_VERSION = "14"
+NODE_VERSION = '14'
 
-[build]
-  publish = "dist"
-  command = "npm run build"
+  [build]
+publish = 'dist'
+command = 'npm run build'
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  [[redirects]]
+from = '/*'
+to = '/index.html'
+status = 200
 ```
 
 Στη συνέχεια, μεταβείτε στο πίνακα ελέγχου του Netlify και δημιουργήστε ένα νέο ιστότοπο με το repository.
