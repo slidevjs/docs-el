@@ -97,57 +97,7 @@ const Addon: DefaultTheme.NavItemWithLink[] = [
   },
 ]
 
-<<<<<<< HEAD:.vitepress/config.js
-const Translations = [
-  {
-    text: 'Ελληνικά',
-  },
-  {
-    text: 'English',
-    link: 'https://sli.dev{{pathname}}',
-  },
-  {
-    text: '简体中文',
-    link: 'https://cn.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Français',
-    link: 'https://fr.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Español',
-    link: 'https://es.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Русский',
-    link: 'https://ru.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Việt Nam',
-    link: 'https://vn.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Deutsch',
-    link: 'https://de.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Português (BR)',
-    link: 'https://br.sli.dev{{pathname}}',
-  },
-  {
-    text: 'Ελληνικά',
-    link: 'https://el.sli.dev{{pathname}}',
-  },
-  {
-    text: '日本語',
-    link: 'https://ja.sli.dev{{pathname}}',
-  },
-]
-
-const Customizations = [
-=======
 const Customizations: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildren)[] = [
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5:.vitepress/config.ts
   {
     text: 'Προσαρμογές',
     link: '/custom/',
@@ -177,15 +127,7 @@ const Customizations: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildr
     link: '/custom/config-unocss',
   },
   {
-<<<<<<< HEAD:.vitepress/config.js
-    text: 'Ρυθμίστε Windi CSS',
-    link: '/custom/config-windicss',
-  },
-  {
     text: 'Ρυθμίστε Monaco',
-=======
-    text: 'Configure Monaco',
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5:.vitepress/config.ts
     link: '/custom/config-monaco',
   },
   {
@@ -231,45 +173,24 @@ const Resources: DefaultTheme.NavItemWithLink[] = [
 
 const slidebars: DefaultTheme.SidebarItem[] = [
   {
-<<<<<<< HEAD:.vitepress/config.js
     text: 'Οδηγός',
-    children: Guide,
-  },
-  {
-    text: 'Θέματα',
-    children: Theme,
-  },
-  {
-    text: 'Πρόσθετα',
-    children: Addon,
-  },
-  {
-    text: 'Προσαρμογές',
-    children: Customizations,
-  },
-  {
-    text: 'Ενσωματωμένα',
-    children: BuiltIn,
-=======
-    text: 'Guide',
     items: Guide,
   },
   {
-    text: 'Themes',
+    text: 'Θέματα',
     items: Theme,
   },
   {
-    text: 'Addons',
+    text: 'Πρόσθετα',
     items: Addon,
   },
   {
-    text: 'Customizations',
+    text: 'Προσαρμογές',
     items: Customizations,
   },
   {
-    text: 'Built-in',
+    text: 'Ενσωματωμένα',
     items: BuiltIn,
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5:.vitepress/config.ts
   },
 ]
 
@@ -309,28 +230,13 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     logo: '/logo.svg',
-<<<<<<< HEAD:.vitepress/config.js
-    docsBranch: 'main',
-    editLinks: true,
-    editLinkText: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
-
-    algolia: {
-      appId: 'LCBV6MIFS6',
-      apiKey: '1ff173fe73b20edc962c1c24c0b1c160',
-      indexName: 'slidev',
-      searchParameters: {
-        // for translations maintainers: change the filter to your locale code (subdomain name)
-        facetFilters: ['language:el']
-      }
-=======
     editLink: {
-      pattern: 'https://github.com/slidevjs/docs/edit/main/:path',
-      text: 'Suggest changes to this page',
+      pattern: 'https://github.com/slidevjs/docs-el/edit/main/:path',
+      text: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
     },
 
     search: {
       provider: 'local',
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5:.vitepress/config.ts
     },
 
     nav: [
@@ -339,56 +245,34 @@ export default defineConfig({
         items: Guide,
       },
       {
-<<<<<<< HEAD:.vitepress/config.js
         text: 'Θέμα',
-        items: Theme,
-      },
-      {
-        text: 'Πρόσθετο',
-        items: Addon,
-      },
-      {
-        text: 'Προσαρμόστε',
-        items: Customizations,
-      },
-      {
-        text: 'Ενσωματωμένα',
-        items: BuiltIn,
-=======
-        text: 'Theme',
         items: [
           ...Theme,
           {
-            text: 'Built-in',
+            text: 'Ενσωματωμένα',
             items: BuiltIn,
           },
         ],
       },
       {
-        text: 'Customize',
+        text: 'Προσαρμόστε',
         items: [
           ...Customizations,
           {
-            text: 'Addon',
+            text: 'Πρόσθετο',
             items: Addon,
           },
         ],
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5:.vitepress/config.ts
       },
       {
         text: 'Πηγές',
         items: Resources,
       },
       {
-<<<<<<< HEAD:.vitepress/config.js
-        text: 'Ελληνικά',
-        items: Translations,
-=======
         text: `v${CURRENT_VERSION}`,
         items: [
-          { text: 'Release Notes', link: 'https://github.com/slidevjs/slidev/releases' },
+          { text: 'Σημειώσεις Έκδοσης', link: 'https://github.com/slidevjs/slidev/releases' },
         ],
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5:.vitepress/config.ts
       },
     ],
 
@@ -409,14 +293,18 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2020 Anthony Fu.',
+      message: 'Κυκλοφορεί υπό την άδεια MIT License.',
+      copyright: 'Πνευματικά δικαιώματα © 2020 Anthony Fu.',
     },
   },
 
   locales: {
     root: {
+      label: 'Ελληνικά',
+    },
+    en: {
       label: 'English',
+      link: 'https://sli.dev/',
     },
     zh: {
       label: '简体中文',

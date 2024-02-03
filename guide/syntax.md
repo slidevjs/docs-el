@@ -1,20 +1,12 @@
-<<<<<<< HEAD
-# Σύνταξη Markdown
-
-Οι διαφάνειες γράφονται μέσα σε **ένα ενιαίο αρχείο markdown** (εξ ορισμού `./slides.md`). 
-
-Μπορείτε να χρησιμοποιήσετε [τις δυνατότητες του Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) όπως θα κάνατε κανονικά, με την πρόσθετη υποστήριξη του ενσωματωμένου HTML και των Vue Components. Επίσης υποστηρίζεται styling χρησιμοποιώντας [UnoCSS](/custom/config-unocss). Χρησιμοποιήστε το `---` συνοδευμένο από μια νέα γραμμή για να διαχωρίσετε τις διαφάνειές σας. 
-=======
 ---
 outline: deep
 ---
 
-# Markdown Syntax
+# Σύνταξη Markdown
 
-Slides are written within **a single markdown file** (by default `./slides.md`).
+Οι διαφάνειες γράφονται μέσα σε **ένα ενιαίο αρχείο markdown** (εξ ορισμού `./slides.md`).
 
-You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Μπορείτε να χρησιμοποιήσετε [τις δυνατότητες του Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) όπως θα κάνατε κανονικά, με την πρόσθετη υποστήριξη του ενσωματωμένου HTML και των Vue Components. Επίσης υποστηρίζεται styling χρησιμοποιώντας [UnoCSS](/custom/config-unocss). Χρησιμοποιήστε το `---` συνοδευμένο από μια νέα γραμμή για να διαχωρίσετε τις διαφάνειές σας.
 
 ~~~md
 # Slidev
@@ -45,11 +37,7 @@ console.log('Γεια σου, Κόσμε!')
 
 ## Frontmatter & Layouts
 
-<<<<<<< HEAD
-Καθορίστε layouts και άλλα μεταδεδομένα για κάθε διαφάνεια μετατρέποντας τα διαχωριστικά σε [front matter blocks](https://jekyllrb.com/docs/front-matter/). Κάθε frontmatter αρχίζει με μια τριπλή παύλα και τελειώνει με μια άλλη. Τα κείμενα μεταξύ τους είναι objects δεδομένων σε μορφή [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Για παράδειγμα:
-=======
-Specify layouts and other metadata for each slide by converting the separators into [frontmatter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Καθορίστε layouts και άλλα μεταδεδομένα για κάθε διαφάνεια μετατρέποντας τα διαχωριστικά σε [frontmatter blocks](https://jekyllrb.com/docs/front-matter/). Κάθε frontmatter αρχίζει με μια τριπλή παύλα και τελειώνει με μια άλλη. Τα κείμενα μεταξύ τους είναι objects δεδομένων σε μορφή [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Για παράδειγμα:
 
 ~~~md
 ---
@@ -110,23 +98,13 @@ class: 'text-white'
 
 Ένας μεγάλος λόγος που φτιάχνω το Slidev είναι ότι πρέπει να κάνω τον κώδικά μου να φαίνεται σωστά στις διαφάνειες. Έτσι, όπως ακριβώς περιμένατε, μπορείτε να χρησιμοποιήσετε code block με μορφή Markdown για να επισημάνετε τον κώδικά σας.
 
-<<<<<<< HEAD
-~~~ts
-//```ts
-console.log('Γεια σου, Κόσμε!')
-//```
-~~~
-
-Υποστηρίζουμε και [Prism](https://prismjs.com), [Shiki](https://github.com/shikijs/shiki) και [Shikiji](https://github.com/antfu/shikiji) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
-=======
 ~~~md
 ```ts
-console.log('Hello, World!')
+console.log('Γεια σου, Κόσμε!')
 ```
 ~~~
 
-We support [Prism](https://prismjs.com), [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Υποστηρίζουμε και [Prism](https://prismjs.com) και [Shiki](https://github.com/shikijs/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
 
 ### Επισήμανση Γραμμής
 
@@ -229,13 +207,13 @@ const c = add(1, 2)
 ```
 ~~~
 
-### TwoSlash Integration
+### Ενσωμάτωση TwoSlash
 
-This feature is only available when you [set `highlighter` to `shiki`](/custom/highlighters)
+Αυτή η λειτουργία είναι διαθέσιμη μόνο όταν [θέτετε το `highlighter` σε `shiki`](/custom/highlighters)
 
-[TwoSlash](https://twoslash.netlify.app/) is a powerful tool for rendering TypeScript code blocks with type information on hover or inlined. It's quite useful for preparing slides for JavaScript/TypeScript-related topics.
+Το [TwoSlash](https://www.typescriptlang.org/dev/twoslash/) είναι ένα ισχυρό εργαλείο για την απεικόνιση μπλοκ κώδικα TypeScript με πληροφορίες τύπων κατά την αιώρηση ή inlined. Είναι αρκετά χρήσιμο για την προετοιμασία διαφανειών για θέματα σχετικά με JavaScript/TypeScript.
 
-To use it, you can add `twoslash` to the code block's language identifier:
+Για να το χρησιμοποιήσετε, μπορείτε να προσθέσετε το `twoslash` στο αναγνωριστικό γλώσσας του μπλοκ κώδικα:
 
 ~~~md
 ```ts twoslash
@@ -259,17 +237,10 @@ const count = ref(0)
 
 Κάθε φορά που θέλετε να κάνετε κάποια τροποποίηση στην παρουσίαση, απλά προσθέστε `{monaco}` μετά το αναγνωριστικό γλώσσας - αυτό μετατρέπει το block σε έναν πλήρως εξοπλισμένο Monaco editor!
 
-<<<<<<< HEAD
-~~~ts
-//```ts {monaco}
-console.log('ΓειαΣουΚόσμε')
-//```
-=======
 ~~~md
 ```ts {monaco}
-console.log('HelloWorld')
+console.log('ΓειαΣουΚόσμε')
 ```
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ~~~
 
 Μάθετε περισσότερα για την [ρύθμιση Monaco](/custom/config-monaco).
@@ -278,17 +249,10 @@ console.log('HelloWorld')
 
 Το Monaco μπορεί επίσης να δημιουργήσει ένα diff μεταξύ δύο μπλοκ κώδικα. Χρησιμοποιήστε `{monaco-diff}` για να μετατρέψετε το μπλοκ σε [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) και χρησιμοποιήστε `~~~` για να διαχωρίσετε την αρχική και την τροποποιημένη έκδοση του κώδικα!
 
-<<<<<<< HEAD
-```md
-//```ts {monaco-diff}
-Η γραμμή αυτή αφαιρείται στα δεξιά.
-λίγο κείμενο
-=======
 ````md
 ```ts {monaco-diff}
-This line is removed on the right.
-just some text
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Η γραμμή αυτή αφαιρείται στα δεξιά.
+λίγο κείμενο
 abcd
 efgh
 Λίγο ακόμα κείμενο
@@ -296,14 +260,8 @@ efgh
 λίγο κείμενο
 abcz
 zzzzefgh
-<<<<<<< HEAD
 Λίγο ακόμα κείμενο.
 Η γραμμή αυτή αφαιρείται στα αριστερά.
-//```
-=======
-Some more text.
-This line is removed on the left.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ```
 ````
 
@@ -327,11 +285,7 @@ h1 {
 
 Η ετικέτα `<style>` στο Markdown είναι πάντα [περιορισμένη](https://vuejs.org/api/sfc-css-features.html#scoped-css). Ως αποτέλεσμα, ένας selector με το child combinator (`.a > .b`) είναι άχρηστος ως έχει; δείτε τον προηγούμενο σύνδεσμο. Για να έχετε global style overrides, δείτε την [ενότητα προσαρμογής](/custom/directory-structure#style).
 
-<<<<<<< HEAD
-Με την βοήθεια του [UnoCSS](/custom/config-unocss), μπορείτε να χρησιμοποιήσετε άμεσα εμφωλευμένα css και [οδηγίες](https://windicss.org/features/directives.html) (π.χ. `@apply`)
-=======
-Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://unocss.dev/transformers/directives) (e.g. `--uno:` or `@apply`)
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Με την βοήθεια του [UnoCSS](/custom/config-unocss), μπορείτε να χρησιμοποιήσετε άμεσα εμφωλευμένα css και [οδηγίες](https://unocss.dev/transformers/directives) (π.χ. `--uno:` ή `@apply`)
 
 ```md
 # Slidev
@@ -363,11 +317,7 @@ blockquote {
 ![Local Image](/pic.png)
 ```
 
-<<<<<<< HEAD
-Αν θέλετε να εφαρμόσετε προσαρμοσμένα μεγέθη ή styles, μπορείτε να τα μετατρέψετε σε ετικέτα `<img>` 
-=======
-For you want to apply custom sizes or styles, you can convert them to the `<img>` tag
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Αν θέλετε να εφαρμόσετε προσαρμοσμένα μεγέθη ή styles, μπορείτε να τα μετατρέψετε σε ετικέτα `<img>`
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
@@ -510,27 +460,23 @@ layout: two-cols
 Αυτό εμφανίζεται στα αριστερά
 ```
 
-<<<<<<< HEAD
-## Ρυθμίσεις
-=======
-## Import Code Snippets
+## Εισαγωγή Αποσπασμάτων Κώδικα
 
-> Available since v0.47.0
+> Διαθέσιμο από v0.47.0
 
-You can import code snippets from existing files via following syntax:
+Μπορείτε να εισάγετε αποσπάσματα κώδικα από υπάρχοντα αρχεία μέσω της ακόλουθης σύνταξης:
 
 ```md
 <<< @/snippets/snippet.js
 ```
 
-::: ttp
-The value of `@` corresponds to the source root, the directory where the `slides.md` is located.
+::: tip
+Η τιμή του `@` αντιστοιχεί στο root της πηγής, τον κατάλογο όπου βρίσκεται το αρχείο `slides.md`.
 :::
 
-This feature is vendored from VitePress, learn more about it in [VitePress's documentation](https://vitepress.dev/guide/markdown#import-code-snippets).
+Αυτή η λειτουργία προσφέρεται από το VitePress, μάθετε περισσότερα γι' αυτό στην [ιστοσελίδα του VitePress](https://vitepress.dev/guide/markdown#import-code-snippets).
 
-## Configurations
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+## Ρυθμίσεις
 
 Όλες οι ρυθμίσεις που απαιτούνται μπορούν να οριστούν στο αρχείο Markdown. Για παράδειγμα:
 

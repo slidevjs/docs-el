@@ -9,21 +9,12 @@
 ```yaml
 ---
 fonts:
-<<<<<<< HEAD
   # ουσιαστικά το κείμενο
-  sans: 'Robot'
-  # χρήση με το `font-serif` css class από το windicss
-  serif: 'Robot Slab'
-  # για μπλοκ κώδικα, γραμμικό κώδικα κτλ.
-  mono: 'Fira Code'
-=======
-  # basically the text
   sans: Robot
-  # use with `font-serif` css class from UnoCSS
+  # χρήση με το `font-serif` css class από το UnoCSS
   serif: Robot Slab
-  # for code blocks, inline code, etc.
+  # για μπλοκ κώδικα, γραμμικό κώδικα κτλ.
   mono: Fira Code
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ---
 ```
 
@@ -33,24 +24,15 @@ fonts:
 
 ## Τοπικές Γραμματοσειρές
 
-<<<<<<< HEAD
-Εξ ορισμού, το Slidev υποθέτει ότι όλες οι γραμματοσειρές που καθορίζονται μέσω των ρυθμίσεων `fonts` προέρχονται από το Google Fonts. Αν θέλετε να χρησιμοποιήσετε τοπικές γραμματοσειρές, καθορίστε το `fonts.local` για να εξαιρεθείτε από την αυτόματη εισαγωγή. 
-=======
-By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Εξ ορισμού, το Slidev υποθέτει ότι όλες οι γραμματοσειρές που καθορίζονται μέσω των ρυθμίσεων `fonts` προέρχονται από το Google Fonts. Αν θέλετε να χρησιμοποιήσετε τοπικές γραμματοσειρές, καθορίστε το `fonts.local` για να εξαιρεθείτε από την αυτόματη εισαγωγή.
 
 ```yaml
 ---
 fonts:
   # όπως το font-family σε css, μπορείτε να χρησιμοποιήσετε `,` για να διαχωρίσετε πολλαπλές γραμματοσειρές ως εφεδρικές
   sans: 'Helvetica Neue,Robot'
-<<<<<<< HEAD
   # σημαδέψτε 'Helvetica Neue' ως τοπική γραμματοσειρά
-  local: 'Helvetica Neue'
-=======
-  # mark 'Helvetica Neue' as local font
   local: Helvetica Neue
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ---
 ```
 
@@ -61,13 +43,8 @@ fonts:
 ```yaml
 ---
 fonts:
-<<<<<<< HEAD
-  sans: 'Robot'
-  # προεπιλογή
-=======
   sans: Robot
-  # default
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+  # προεπιλογή
   weights: '200,400,600'
   # εισαγωγή πλάγιων γραμματοσειρών, προεπιλογή `false`
   italic: false
@@ -89,11 +66,7 @@ fonts:
 ---
 ```
 
-<<<<<<< HEAD
-θα έχει ως αποτέλεσμα 
-=======
-will result in
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+θα έχει ως αποτέλεσμα
 
 ```css
 .font-sans {

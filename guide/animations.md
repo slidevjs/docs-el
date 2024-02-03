@@ -153,15 +153,9 @@ clicks: 3
 }
 ```
 
-<<<<<<< HEAD
-Μπορείτε να τα παρακάμψετε για να προσαρμόσετε τα effects μετάβασης στα προσαρμοσμένα stylesheets σας. 
+Μπορείτε να τα παρακάμψετε για να προσαρμόσετε τα effects μετάβασης στα προσαρμοσμένα stylesheets σας.
 
-Για παράδειγμα, μπορείτε να επιτύχετε τις μεταβάσεις κλιμάκωσης προς τα πάνω με: 
-=======
-You can override them to customize the transition effects in your custom stylesheets.
-
-For example, you can achieve the scaling up transitions by:
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Για παράδειγμα, μπορείτε να επιτύχετε τις μεταβάσεις κλιμάκωσης προς τα πάνω με:
 
 ```css
 // styles.css

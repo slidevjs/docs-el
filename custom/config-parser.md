@@ -62,14 +62,8 @@ export default definePreparserSetup(({ filepath, headmatter }) => {
 @cover: /break.jpg
 @src: pages3-4.md
 @cover: https://source.unsplash.com/collection/94734566/1920x1080
-<<<<<<< HEAD
 # Ερωτήσεις;
 τα λέμε την επόμενη φορά
-
-=======
-# Questions?
-see you next time
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ```
 
 Για να επιτρέψετε αυτά τα συντακτικά `@src:` και `@cover:`, δημιουργήστε ένα αρχείο `./setup/preparser.ts` με το ακόλουθο περιεχόμενο:
@@ -117,12 +111,7 @@ export default definePreparserSetup(() => {
 
 Και αυτό ήταν όλο.
 
-<<<<<<< HEAD
-
 ### Περίπτωση χρήσης 2: χρήση προσαρμοσμένου frontmatter για το περιτύλιγμα των διαφανειών
-=======
-### Use case 2: using custom frontmatter to wrap slides
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Φανταστείτε μια περίπτωση όπου συχνά θέλετε να μεγεθύνετε ορισμένες διαφάνειες σας, αλλά εξακολουθείτε να θέλετε να χρησιμοποιήσετε μια ποικιλία από υπάρχουσες διατάξεις, οπότε η δημιουργία μιας νέας διάταξης δεν θα ήταν κατάλληλη.
 Για παράδειγμα, μπορεί να θέλετε να γράψετε το `slides.md` σας ως εξής:
@@ -150,24 +139,13 @@ _scale: 4
 layout: center
 _scale: 2.5
 ---
-<<<<<<< HEAD
 # Ερωτήσεις;
 τα λέμε την επόμενη φορά
-
-=======
-# Questions?
-see you next time
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ```
 
 Εδώ χρησιμοποιήσαμε μια κάτω παύλα στο `_scale` για να αποφύγουμε πιθανές συγκρούσεις με τις υπάρχουσες ιδιότητες του frontmatter (πράγματι, η περίπτωση του `scale`, χωρίς κάτω παύλα θα προκαλούσε πιθανά προβλήματα).
 
-<<<<<<< HEAD
-
 Για να χειριστείτε αυτή τη σύνταξη `_scale: ...` στο frontmatter, δημιουργήστε ένα αρχείο `./setup/preparser.ts` με το ακόλουθο περιεχόμενο:
-=======
-To handle this `_scale: ...` syntax in the frontmatter, create a `./setup/preparser.ts` file with the following content:
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```ts
 import { definePreparserSetup } from '@slidev/types'

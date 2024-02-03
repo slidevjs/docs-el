@@ -6,31 +6,12 @@
 
 Ο καλύτερος τρόπος για να ξεκινήσετε είναι να χρησιμοποιήσετε το επίσημο πρότυπο εκκίνησης μας.
 
-<<<<<<< HEAD
-Με NPM:
-=======
 ::: code-group
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ```bash [npm]
 npm init slidev@latest
 ```
 
-<<<<<<< HEAD
-Με Yarn:
-
-```bash
-$ yarn create slidev
-```
-
-Με PNPM:
-
-```bash
-$ pnpm create slidev
-```
-
-Ακολουθήστε τις οδηγίες και θα ανοίξει αυτόματα η προβολή διαφανειών στη διεύθυνση `http://localhost:3030/`.
-=======
 ```bash [yarn]
 yarn create slidev
 ```
@@ -41,8 +22,7 @@ pnpm create slidev
 
 :::
 
-Follow the prompts and it will open up the slideshow at `http://localhost:3030/` automatically for you.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Ακολουθήστε τις οδηγίες και θα ανοίξει αυτόματα η προβολή διαφανειών στη διεύθυνση `http://localhost:3030/`.
 
 Περιέχει επίσης το βασικό setup και ένα σύντομο demo με οδηγίες για το πώς να ξεκινήσετε με το Slidev.
 
@@ -60,17 +40,7 @@ touch slides.md
 npx slidev
 ```
 
-<<<<<<< HEAD
-> Παρακαλείστε να σημειώσετε ότι εάν χρησιμοποιείτε [pnpm](https://pnpm.io), θα πρέπει να ενεργοποιήσετε την επιλογή [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) για να λειτουργήσει σωστά το Slidev:
->
-> ```bash
-> echo 'shamefully-hoist=true' >> .npmrc
-> ```
-
 ## Εγκαταστήστε Globally
-=======
-## Install Globally
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 > Διαθέσιμο από v0.14
 
@@ -102,21 +72,12 @@ docker run --name slidev --rm -it \
     tangramor/slidev:latest
 ```
 
-<<<<<<< HEAD
-Εάν ο φάκελος εργασίας σας είναι άδειος, θα δημιουργήσει ένα πρότυπο `slides.md` και άλλα σχετικά αρχεία, και θα ξεκινήσει τον διακομιστή στη θύρα `3030`. 
-=======
-If your work folder is empty, it will generate a template `slides.md` and other related files under your work folder, and launch the server on port `3030`.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Εάν ο φάκελος εργασίας σας είναι άδειος, θα δημιουργήσει ένα πρότυπο `slides.md` και άλλα σχετικά αρχεία, και θα ξεκινήσει τον διακομιστή στη θύρα `3030`.
 
 Μπορείτε να έχετε πρόσβαση στις διαφάνειές σας από το `http://localhost:3030/`
 
-<<<<<<< HEAD
-
 ### Δημιουργία εικόνας που μπορεί να γίνει deploy
 =======
-### Build deployable image
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
-
 Ή μπορείτε να δημιουργήσετε το δικό σας slidev project σε μία εικόνα docker με ένα Dockerfile:
 
 ```Dockerfile
@@ -132,36 +93,19 @@ ADD . /slidev
 
 Μπορείτε να επισκεφθείτε τις διαφάνειές σας από το `http://localhost:3030/`
 
-<<<<<<< HEAD
-
 ### Κατασκευή φιλοξενήσιμης εφαρμογής SPA (Single Page Application)
-=======
-### Build hostable SPA (Single Page Application)
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Εκτελέστε την εντολή `docker exec -i slidev npx slidev build` στο τρέχον container `slidev`. Θα δημιουργήσει στατικά αρχεία HTML στο φάκελο `dist`.
 
-<<<<<<< HEAD
-
 #### Φιλοξενήστε στο Github Pages
 
-Μπορείτε να φιλοξενήσετε το `dist` σε μια στατική ιστοσελίδα όπως το [Github Pages](https://tangramor.github.io/slidev_docker/) ή το Gitlab Pages. 
-=======
-#### Host on Github Pages
-
-You can host `dist` in a static web site such as [Github Pages](https://tangramor.github.io/slidev_docker/) or Gitlab Pages.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Μπορείτε να φιλοξενήσετε το `dist` σε μια στατική ιστοσελίδα όπως το [Github Pages](https://tangramor.github.io/slidev_docker/) ή το Gitlab Pages.
 
 Επειδή στο Github pages το url μπορεί να περιέχει υποφακέλους, πρέπει να τροποποιήσετε το παραγόμενο `index.html` για να αλλάξετε το `href="/assets/xxx` σε `href="./assets/xxx`. Ή μπορείτε να χρησιμοποιήσετε την επιλογή `--base=/<subfolder>/` κατά τη διάρκεια της διαδικασίας κατασκευής, όπως: `docker exec -i slidev npx slidev build --base=/slidev_docker/`.
 
 Και για να αποφύγετε τη διαδικασία κατασκευής του Jekyll, πρέπει να προσθέσετε ένα κενό αρχείο `.nojekyll`.
 
-<<<<<<< HEAD
-
 #### Φιλοξενήστε σε docker
-=======
-#### Host by docker
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Μπορείτε επίσης να το φιλοξενήσετε μόνοι σας με docker:
 

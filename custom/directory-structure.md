@@ -115,11 +115,7 @@ import './code.css'
 import './layouts.css'
 ```
 
-<<<<<<< HEAD
-Τα styles θα επεξεργαστούν από το [UnoCSS](https://unocss.dev/) και το [PostCSS](https://postcss.org/), ώστε να μπορείτε να χρησιμοποιήσετε css nesting και [at-directives](https://windicss.org/features/directives.html) κατευθείαν. Για παράδειγμα:
-=======
-Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://unocss.dev/transformers/directives#apply) out-of-box. For example:
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+Τα styles θα επεξεργαστούν από το [UnoCSS](https://unocss.dev/) και το [PostCSS](https://postcss.org/), ώστε να μπορείτε να χρησιμοποιήσετε css nesting και [at-directives](https://unocss.dev/transformers/directives#apply) κατευθείαν. Για παράδειγμα:
 
 ```less
 .slidev-layout {
@@ -139,11 +135,7 @@ Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://
 }
 ```
 
-<<<<<<< HEAD
-[Μάθετε περισσότερα για τη σύνταξη](https://windicss.org/features/directives.html).
-=======
-[Learn more about the syntax](https://unocss.dev/transformers/directives#apply).
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+[Μάθετε περισσότερα για τη σύνταξη](https://unocss.dev/transformers/directives#apply).
 
 ## `index.html`
 
@@ -191,9 +183,4 @@ Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://
 
 Συμβάσεις: `global-top.vue` | `global-bottom.vue`
 
-<<<<<<< HEAD
 Μάθετε περισσότερα: [Global Layers](/custom/global-layers)
-
-=======
-Learn more: [Global Layers](/custom/global-layers)
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5

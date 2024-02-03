@@ -63,10 +63,4 @@ drawings:
 ---
 ```
 
-<<<<<<< HEAD
 Με αυτή τη ρύθμιση, μόνο οι ζωγραφιές από την εφαρμογή του παρουσιαστή θα μπορούν να συγχρονιστούν με άλλες.
-
-
-=======
-With this config, only the drawing from the presenter instance will be able to sync with others.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5

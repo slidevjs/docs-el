@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-
 # Στατική Φιλοξενία
-=======
-# Static Hosting
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ## Build Single Page Applications (SPA)
 

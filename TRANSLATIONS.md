@@ -17,15 +17,9 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ## Getting started
 
-<<<<<<< HEAD
 - [X] Fork the main docs repo: [slidevjs/docs](https://github.com/slidevjs/docs)
 - [X] Translate README.md, you can take one of the already translated repositories as an example.
-- [X] Share your repo's link to the `#translations` channel telling people you are working on it and find collaborators. 
-=======
-- [ ] Fork the main docs repo: [slidevjs/docs](https://github.com/slidevjs/docs)
-- [ ] Translate README.md, you can take one of the already translated repositories as an example.
-- [ ] Share your repo's link to the `#translations` channel telling people you are working on it and find collaborators.
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
+- [X] Share your repo's link to the `#translations` channel telling people you are working on it and find collaborators.
 
 ## Translating Markdown files
 
@@ -46,34 +40,18 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### custom/
 
-<<<<<<< HEAD
 - [X] `config-katex.md` - Configuring Katex
 - [X] `config-mermaid.md` - Configuring Mermaid
 - [X] `config-monaco.md` - Configuring Monaco
 - [X] `config-shortcuts.md` - Configuring Shortcuts
 - [X] `config-vite.md` - Configuring Vite
 - [X] `config-vue.md` - Configuring Vue
-- [X] `config-windicss.md`- Configuring Windicss
 - [X] `directory-structure.md` - Configuring the directory structure
 - [X] `fonts.md` - Configuring fonts
 - [X] `global-layers.md` - Configuring the global layers
 - [X] `highlighters.md` - Configuring code highlighters
 - [X] `index.md`- Customizations index page
 - [X] `vue-context.md` - The Vue global context
-=======
-- [ ] `config-katex.md` - Configuring Katex
-- [ ] `config-mermaid.md` - Configuring Mermaid
-- [ ] `config-monaco.md` - Configuring Monaco
-- [ ] `config-shortcuts.md` - Configuring Shortcuts
-- [ ] `config-vite.md` - Configuring Vite
-- [ ] `config-vue.md` - Configuring Vue
-- [ ] `directory-structure.md` - Configuring the directory structure
-- [ ] `fonts.md` - Configuring fonts
-- [ ] `global-layers.md` - Configuring the global layers
-- [ ] `highlighters.md` - Configuring code highlighters
-- [ ] `index.md`- Customizations index page
-- [ ] `vue-context.md` - The Vue global context
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ### guide/
 

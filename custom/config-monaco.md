@@ -115,17 +115,10 @@ export default defineMonacoSetup((monaco) => {
 
 Αν θέλετε να προσαρμόσετε τον συντάκτη Monaco, μπορείτε να περάσετε ένα object `editorOptions` που ταιριάζει με τον ορισμό [Monaco IEditorOptions](https://microsoft.github.io/monaco-editor/docs.html#interfaces/editor.IEditorOptions.html).
 
-<<<<<<< HEAD
-~~~ts
-//```ts {monaco} { editorOptions: { wordWrap:'on'} }
-console.log('Γεια σου Κόσμε')
-//```
-=======
 ~~~md
 ```ts {monaco} { editorOptions: { wordWrap:'on'} }
-console.log('HelloWorld')
+console.log('Γεια σου Κόσμε')
 ```
->>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 ~~~
 
 Εναλλακτικά, αν θέλετε αυτές οι επιλογές να εφαρμόζονται σε κάθε περίσταση Monaco, μπορείτε να τις επιστρέψετε στη συνάρτηση `defineMonacoSetup`
