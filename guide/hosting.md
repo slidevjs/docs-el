@@ -169,9 +169,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
 
@@ -181,15 +181,15 @@ jobs:
       - name: Build
         run: npm run build -- --base /<name_of_repo>/
 
-      - uses: actions/configure-pages@v3
+      - uses: actions/configure-pages@v4
 
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 ```
 - Στο repository σας, μεταβείτε στην επιλογή Settings>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "Github Actions".
 - Τέλος, αφού εκτελεστούν όλες οι διαδικασίες εργασιών, θα πρέπει να εμφανιστεί ένας σύνδεσμος προς τις διαφάνειες στο Settings>Pages.
