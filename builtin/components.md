@@ -238,9 +238,16 @@ hideInToc: true
 
 Παράμετροι:
 
+<<<<<<< HEAD
 * `id` (`number | string`, απαιτείται): id του tweet
 * `scale` (`number | string`, προεπιλογή `1`): τιμή κλίμακας μετασχηματισμού
 * `conversation` (`string`, προεπιλογή `'none'`): [παράμετρος ενσωμάτωσης tweet](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
+=======
+* `id` (`number | string`, required): id of the tweet
+* `scale` (`number | string`, default `1`): transform scale value
+* `conversation` (`string`, default `'none'`): [tweet embed parameter](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
+* `cards` (`'hidden' | 'visible'`, default `'visible'`): [tweet embed parameter](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
+>>>>>>> e52d01f8924fc2746acb41ca2510db795a7b0c4a
 
 ### `VAfter`, `VClick` and `VClicks`
 
