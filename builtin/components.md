@@ -263,13 +263,9 @@ hideInToc: true
 * `width` (`number`): πλάτος του βίντεο
 * `height` (`number`): ύψος του βίντεο
 
-<<<<<<< HEAD
-## Προσαρμοσμένα Components
-=======
-You can also make the video start at specific time if you add `?start=1234` to the id value (where 1234 are seconds),
+Μπορείτε επίσης να κάνετε το βίντεο να ξεκινάει σε συγκεκριμένη ώρα αν προσθέσετε `?start=1234` στην τιμή id (όπου 1234 είναι τα δευτερόλεπτα).
 
-## Custom Components
->>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
+## Προσαρμοσμένα Components
 
 Δημιουργήστε ένα φάκελο `components/` στη ρίζα του έργου σας, και απλά βάλτε τα προσαρμοσμένα Vue components σας σε αυτόν, στη συνέχεια μπορείτε να το χρησιμοποιήσετε με το ίδιο όνομα στο αρχείο markdown σας!
 
