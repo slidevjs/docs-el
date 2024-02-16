@@ -121,24 +121,7 @@ function add(
 ```
 ~~~
 
-<<<<<<< HEAD
-Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines:true`. Σε περίπτωση που θέλετε να απενεργοποιήσετε την αρίθμηση για ένα συγκεκριμένο μπλοκ όταν ισχύει το `lineNumbers: true` μπορείτε να ορίσετε το `lines:false` για το συγκεκριμένο μπλοκ:
-
-~~~md
-```ts {2,3}{lines:true}
-function add(
-  a: Ref<number> | number,
-  b: Ref<number> | number
-) {
-  return computed(() => unref(a) + unref(b))
-}
-```
-~~~
-
-Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε μπλοκ κώδικα και να επισημάνετε τις γραμμές ανάλογα, η προεπιλεγμένη τιμή είναι 1:
-=======
-You can enable line number to all slides by setting `lineNumbers: true` on the config or enable each code block individually by setting `lines:true`. You can also set the starting line for each code block and highlight the lines accordingly, defaults to 1:
->>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
+Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines:true`. Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε code block και να επισημάνετε τις γραμμές ανάλογα, με προεπιλογή 1:
 
 ~~~md
 ```ts {6,7}{lines:true, startLine:5}
@@ -151,11 +134,7 @@ function add(
 ```
 ~~~
 
-<<<<<<< HEAD
-Για να αλλάξετε την επισήμανση σε πολλαπλά βήματα, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε. Για παράδειγμα
-=======
-To change the highlight in multiple clicks, you can use `|` to separate them:
->>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
+Για να αλλάξετε την επισήμανση με πολλαπλά κλικ, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε:
 
 ~~~md
 ```ts {2-3|5|all}
@@ -168,15 +147,9 @@ function add(
 ```
 ~~~
 
-<<<<<<< HEAD
-Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block. Μάθετε περισσότερα στον [οδηγό κινήσεων clicks](/guide/animations).
+Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block.
 
-Μπορείτε να ξεκινήσετε την επισήμανση με ένα ορισμένο click:
-=======
-This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block.
-
-You can set the line number to `hide` to hide the code block or `none` to not highlight any line:
->>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
+Μπορείτε να ορίσετε τον αριθμό γραμμής σε `hide` για να αποκρύψετε το code block ή σε `none` για να μην επισημάνετε καμία γραμμή:
 
 ~~~md
 ```ts {hide|none}
@@ -189,36 +162,13 @@ function add(
 ```
 ~~~
 
-<<<<<<< HEAD
-Αυτό είναι ιδιαίτερα χρήσιμο όταν χρειάζεται να συγχρονίσετε διαφορετικές κινήσεις (για παράδειγμα, όταν χρησιμοποιείτε διάταξη `two-cols` και κινήσεις λίστας).
-Ίσως χρειαστεί να ορίσετε τον [προσαρμοσμένο αριθμό κλικ](/guide/animations#πpοσαpμοσμένος-αpιθμός-clicks) για να λειτουργήσει σωστά η εξέλιξη των διαφανειών.
-
-Για να παραλείψετε την επισήμανση οποιασδήποτε γραμμής, μπορείτε να ορίσετε τον αριθμό γραμμής σε `0`. Για παράδειγμα
-
-~~~md {1}
-```ts {0}
-function add(
-  a: Ref<number> | number,
-  b: Ref<number> | number
-) {
-  return computed(() => unref(a) + unref(b))
-}
-```
-~~~
-
-Αν ο κώδικας δεν χωράει σε μία διαφάνεια, μπορείτε να περάσετε μια επιπλέον επιλογή maxHeight που θα ορίσει σταθερό ύψος
-και θα ενεργοποιήσει το scrolling
-
-~~~md {1}
-=======
 ::: tip
-Learn more in the [clicks animations guide](./animations#positioning).
+Μάθετε περισσότερα στον [οδηγό κινήσεων κλικ](./animations#θεση).
 :::
 
-If the code doesn't fit into one slide, you use the `maxHeight` to set fixed height and enable scrolling:
+Αν ο κώδικας δεν χωράει σε μία διαφάνεια, μπορείτε να χρησιμοποιήσετε το `maxHeight` για να ορίσετε σταθερό ύψος και να ενεργοποιήσετε το scrolling:
 
-~~~md
->>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
+~~~md {1}
 ```ts {2|3|7|12}{maxHeight:'100px'}
 function add(
   a: Ref<number> | number,
@@ -495,11 +445,7 @@ layout: two-cols
 ```
 
 ::: tip
-<<<<<<< HEAD
 Η τιμή του `@` αντιστοιχεί στο root της πηγής, τον κατάλογο όπου βρίσκεται το αρχείο `slides.md`.
-=======
-The value of `@` corresponds to the source root, the directory where the `slides.md` is located.
->>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 :::
 
 Αυτή η λειτουργία προσφέρεται από το VitePress, μάθετε περισσότερα γι' αυτό στην [ιστοσελίδα του VitePress](https://vitepress.dev/guide/markdown#import-code-snippets).
@@ -575,13 +521,9 @@ $$ {1|3|all}
 $$
 ```
 
-<<<<<<< HEAD
-## Διαγράμματα
-=======
-The `at` and `finally` options of [code blocks](#line-highlighting) are also available for LaTeX blocks.
+Οι επιλογές `at` και `finally` των [code blocks](#επισημανση-γραμμης) είναι επίσης διαθέσιμες για μπλοκ LaTeX.
 
-## Diagrams
->>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
+## Διαγράμματα
 
 Μπορείτε επίσης να δημιουργήσετε διαγράμματα / γραφήματα από περιγραφές κειμένου στο Markdown σας, με τη βοήθεια του [Mermaid](https://mermaid-js.github.io/mermaid).
 
