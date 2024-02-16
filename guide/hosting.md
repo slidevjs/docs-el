@@ -106,15 +106,15 @@ $ slidev build *.md
 
 Δημιουργήστε το αρχείο `netlify.toml` στη ρίζα του έργου σας με το ακόλουθο περιεχόμενο.
 
-```ts
-[build.environment]
-NODE_VERSION = '14'
-
-  [build]
+```toml
+[build]
 publish = 'dist'
 command = 'npm run build'
 
-  [[redirects]]
+[build.environment]
+NODE_VERSION = '20'
+
+[[redirects]]
 from = '/*'
 to = '/index.html'
 status = 200
