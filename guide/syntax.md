@@ -647,9 +647,15 @@ src: ./content.md
 
 > Διαθέσιμο από v0.43.0
 
+<<<<<<< HEAD
 Το Slidev έχει πειραματική υποστήριξη για την [MDC (Markdown Components) Σύνταξη](https://content.nuxtjs.org/guide/writing/mdc) που υποστηρίζεται από το [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
 
 Μπορείτε να την ενεργοποιήσετε προσθέτοντας `mdc: true` στο frontmatter του αρχείου markdown σας.
+=======
+Slidev has an experimental support for [MDC (Markdown Components) Syntax](https://content.nuxtjs.org/guide/writing/mdc) powered by [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
+
+You can enable it by adding `mdc: true` to the frontmatter of your markdown file.
+>>>>>>> 081241c66e4b17a1a524facc9585f0b6f74f5699
 
 ```md
 ---
