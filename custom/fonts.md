@@ -86,7 +86,7 @@ fonts:
 ---
 fonts:
   mono: 'Fira Code, monospace'
-  fallback: false
+  fallbacks: false
 ---
 ```
 
