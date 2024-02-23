@@ -160,22 +160,13 @@ npm run slidev -- --open
 
 Επιλογές:
 
-<<<<<<< HEAD
 * `--port`, `-p` (`number`, προεπιλογή: `3030`): αριθμός port.
 * `--open`, `-o` (`boolean`, προεπιλογή: `false`): άνοιγμα στο πρόγραμμα περιήγησης.
 * `--remote [password]` (`string`): ακούει τον public host και ενεργοποιεί τον απομακρυσμένο έλεγχο, εάν περαστεί μια τιμή, τότε η λειτουργία του παρουσιαστή είναι ιδιωτική και προσβάσιμη μόνο με τη διαβίβαση του συγκεκριμένου κωδικού πρόσβασης στην παράμετρο `password` του URL query.
+* `--bind` (`string`, προεπιλογή: `0.0.0.0`): καθορίστε ποιες διευθύνσεις IP θα πρέπει να ακούει ο διακομιστής στην απομακρυσμένη λειτουργία.
 * `--log` (`'error', 'warn', 'info', 'silent'`, προεπιλογή: `'warn'`): επίπεδο καταγραφής δεδομένων.
-* `--force`, `-f` (`boolean`, προεπιλογή `false`): αναγκάζει τον βελτιστοποιητή να αγνοήσει την προσωρινή μνήμη και να κάνει re-bundle.
+* `--force`, `-f` (`boolean`, προεπιλογή: `false`): αναγκάζει τον βελτιστοποιητή να αγνοήσει την προσωρινή μνήμη και να κάνει re-bundle.
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
-=======
-* `--port`, `-p` (`number`, default: `3030`): port number.
-* `--open`, `-o` (`boolean`, default: `false`): open in browser.
-* `--remote [password]` (`string`): listen to public host and enable remote control, if a value is passed then the presenter mode is private and only accessible by passing the given password in the URL query `password` parameter.
-* `--bind` (`string`, default: `0.0.0.0`): specify which IP addresses the server should listen on in the remote mode.
-* `--log` (`'error', 'warn', 'info', 'silent'`, default: `'warn'`): Log level.
-* `--force`, `-f` (`boolean`, default: `false`): force the optimizer to ignore the cache and re-bundle.
-* `--theme`, `-t` (`string`): override theme.
->>>>>>> c3c1774bdf48295664f5b30d7ba7bfbda5a0f3d2
 
 ### `slidev build [entry]`
 
