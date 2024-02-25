@@ -342,7 +342,11 @@ transition: slide-left
 
 Μπορείτε να χρησιμοποιήσετε την ιδιότητα CSS `view-transition-name` για να ονομάσετε τα view transitions, τα οποία δημιουργούν συνδέσεις μεταξύ διαφορετικών στοιχείων της σελίδας και ομαλές μεταβάσεις κατά την εναλλαγή διαφανειών.
 
+<<<<<<< HEAD
 Μπορείτε να ενεργοποιήσετε την υποστήριξη [Σύνταξης MDC (Markdown Component)](https://content.nuxtjs.org/guide/writing/mdc) για να ονομάζετε εύκολα τις μεταβάσεις προβολής:
+=======
+You can enable [MDC (Markdown Component) Syntax](/syntax#mdc-syntax) support to conveniently name view-transitions:
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 
 ```md
 ---
