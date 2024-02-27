@@ -329,29 +329,16 @@ layout: cover
 
 ## Εικονίδια
 
-<<<<<<< HEAD
-Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
-=======
-Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown after installing the corresponding package. Powered by [`unplugin-icons`](https://github.com/antfu/unplugin-icons) and [Iconify](https://iconify.design/).
->>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
+Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας μετά την εγκατάσταση του αντίστοιχου πακέτου. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
 
 Η ονομασία ακολουθεί τη μετατροπή του [Iconify](https://iconify.design/) `{collection-name}-{icon-name}`. Για παράδειγμα:
 
-<<<<<<< HEAD
-- `<mdi-account-circle />` - <mdi-account-circle /> από τα [Material Design Icons](https://github.com/Templarian/MaterialDesign)
-- `<carbon-badge />` - <carbon-badge /> από το [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
-- `<uim-rocket />` - <uim-rocket /> από τα [Unicons Monochrome](https://github.com/Iconscout/unicons)
-- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> από τα [Twemoji](https://github.com/twitter/twemoji)
-- `<logos-vue />` - <logos-vue /> από τα [SVG Logos](https://github.com/gilbarbara/logos)
+- `<mdi-account-circle />` - <mdi-account-circle /> από τα [Material Design Icons](https://github.com/Templarian/MaterialDesign) - [`@iconify-json/mdi`](https://npmjs.com/package/@iconify-json/mdi)
+- `<carbon-badge />` - <carbon-badge /> από το [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) - [`@iconify-json/carbon`](https://npmjs.com/package/@iconify-json/carbon)
+- `<uim-rocket />` - <uim-rocket /> από τα [Unicons Monochrome](https://github.com/Iconscout/unicons) - [`@iconify-json/uim`](https://npmjs.com/package/@iconify-json/uim)
+- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> από τα [Twemoji](https://github.com/twitter/twemoji) - [`@iconify-json/twemoji`](https://npmjs.com/package/@iconify-json/twemoji)
+- `<logos-vue />` - <logos-vue /> από τα [SVG Logos](https://github.com/gilbarbara/logos) - [`@iconify-json/logos`](https://npmjs.com/package/@iconify-json/logos)
 - Και πολλά άλλα...
-=======
-- `<mdi-account-circle />` - <mdi-account-circle /> from [Material Design Icons](https://github.com/Templarian/MaterialDesign) - [`@iconify-json/mdi`](https://npmjs.com/package/@iconify-json/mdi)
-- `<carbon-badge />` - <carbon-badge /> from [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) - [`@iconify-json/carbon`](https://npmjs.com/package/@iconify-json/carbon)
-- `<uim-rocket />` - <uim-rocket /> from [Unicons Monochrome](https://github.com/Iconscout/unicons) - [`@iconify-json/uim`](https://npmjs.com/package/@iconify-json/uim)
-- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> from [Twemoji](https://github.com/twitter/twemoji) - [`@iconify-json/twemoji`](https://npmjs.com/package/@iconify-json/twemoji)
-- `<logos-vue />` - <logos-vue /> from [SVG Logos](https://github.com/gilbarbara/logos) - [`@iconify-json/logos`](https://npmjs.com/package/@iconify-json/logos)
-- And much more...
->>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 
 Περιηγηθείτε και αναζητήστε όλα τα εικονίδια που είναι διαθέσιμα με το [Icônes](https://icones.js.org/).
 
@@ -660,11 +647,7 @@ src: ./content.md
 
 > Διαθέσιμο από v0.43.0
 
-<<<<<<< HEAD
-Το Slidev έχει πειραματική υποστήριξη για την [MDC (Markdown Components) Σύνταξη](https://content.nuxtjs.org/guide/writing/mdc) που υποστηρίζεται από το [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
-=======
-Slidev supports optional [MDC (Markdown Components) Syntax](https://content.nuxtjs.org/guide/writing/mdc) powered by [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
->>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
+Το Slidev υποστηρίζει προαιρετικά την [MDC (Markdown Components) Σύνταξη](https://content.nuxtjs.org/guide/writing/mdc) που υποστηρίζεται από το [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
 
 Μπορείτε να την ενεργοποιήσετε προσθέτοντας `mdc: true` στο frontmatter του αρχείου markdown σας.
 
@@ -682,8 +665,4 @@ mdc: true
 ::
 ```
 
-<<<<<<< HEAD
-Μάθετε περισσότερα για [τη σύνταξη](https://content.nuxtjs.org/guide/writing/mdc).
-=======
-Learn more about [the syntax](https://content.nuxt.com/guide/writing/mdc).
->>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
+Μάθετε περισσότερα για [τη σύνταξη](https://content.nuxt.com/guide/writing/mdc).
