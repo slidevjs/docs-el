@@ -444,11 +444,36 @@ layout: two-cols
 <<< @/snippets/snippet.js
 ```
 
+<<<<<<< HEAD
 ::: tip
 Η τιμή του `@` αντιστοιχεί στο root της πηγής, τον κατάλογο όπου βρίσκεται το αρχείο `slides.md`.
 :::
 
 Αυτή η λειτουργία προσφέρεται από το VitePress, μάθετε περισσότερα γι' αυτό στην [ιστοσελίδα του VitePress](https://vitepress.dev/guide/markdown#import-code-snippets).
+=======
+:::tip
+The value of `@` corresponds to your package's root directory. It's recommended to put snippets in `@/snippets`, for compatibility with the Monaco editor. Alternatively, you can also import from relative paths.
+:::
+
+You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding) to only include the corresponding part of the code file:
+
+```md
+<<< @/snippets/snippet.js#region-name
+```
+
+To explicitly specify the language of the imported code, you can add a language identifier after:
+
+```md
+<<< @/snippets/snippet.js ts
+```
+
+Any code block features like [line highlighting](#line-highlighting) and [Monaco editor](#monaco-editor) are also supported:
+
+```md
+<<< @/snippets/snippet.js {2,3|5}{lines:true}
+<<< @/snippets/snippet.js ts {monaco}{height:200px}
+```
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 ## Ρυθμίσεις
 
