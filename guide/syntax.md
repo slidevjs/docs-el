@@ -329,15 +329,15 @@ layout: cover
 
 ## Εικονίδια
 
-Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
+Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας μετά την εγκατάσταση του αντίστοιχου πακέτου. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
 
 Η ονομασία ακολουθεί τη μετατροπή του [Iconify](https://iconify.design/) `{collection-name}-{icon-name}`. Για παράδειγμα:
 
-- `<mdi-account-circle />` - <mdi-account-circle /> από τα [Material Design Icons](https://github.com/Templarian/MaterialDesign)
-- `<carbon-badge />` - <carbon-badge /> από το [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
-- `<uim-rocket />` - <uim-rocket /> από τα [Unicons Monochrome](https://github.com/Iconscout/unicons)
-- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> από τα [Twemoji](https://github.com/twitter/twemoji)
-- `<logos-vue />` - <logos-vue /> από τα [SVG Logos](https://github.com/gilbarbara/logos)
+- `<mdi-account-circle />` - <mdi-account-circle /> από τα [Material Design Icons](https://github.com/Templarian/MaterialDesign) - [`@iconify-json/mdi`](https://npmjs.com/package/@iconify-json/mdi)
+- `<carbon-badge />` - <carbon-badge /> από το [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) - [`@iconify-json/carbon`](https://npmjs.com/package/@iconify-json/carbon)
+- `<uim-rocket />` - <uim-rocket /> από τα [Unicons Monochrome](https://github.com/Iconscout/unicons) - [`@iconify-json/uim`](https://npmjs.com/package/@iconify-json/uim)
+- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> από τα [Twemoji](https://github.com/twitter/twemoji) - [`@iconify-json/twemoji`](https://npmjs.com/package/@iconify-json/twemoji)
+- `<logos-vue />` - <logos-vue /> από τα [SVG Logos](https://github.com/gilbarbara/logos) - [`@iconify-json/logos`](https://npmjs.com/package/@iconify-json/logos)
 - Και πολλά άλλα...
 
 Περιηγηθείτε και αναζητήστε όλα τα εικονίδια που είναι διαθέσιμα με το [Icônes](https://icones.js.org/).
