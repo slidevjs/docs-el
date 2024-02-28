@@ -41,3 +41,7 @@
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
 <TheTweet id="1395333405345148930" />
+
+## Prettier Plugin
+
+Το Slidev παρέχει επίσης ένα πρόσθετο για το Prettier για τη μορφοποίηση των διαφανειών σας. Μπορείτε να το χρησιμοποιήσετε με τον αγαπημένο σας επεξεργαστή που υποστηρίζει το Prettier. Οδηγίες για το πρόσθετο μπορείτε να βρείτε [εδώ](https://github.com/slidevjs/prettier-plugin).

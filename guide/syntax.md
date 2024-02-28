@@ -444,11 +444,28 @@ layout: two-cols
 <<< @/snippets/snippet.js
 ```
 
-::: tip
-Η τιμή του `@` αντιστοιχεί στο root της πηγής, τον κατάλογο όπου βρίσκεται το αρχείο `slides.md`.
+:::tip
+Η τιμή του `@` αντιστοιχεί στο root directory του πακέτου σας. Συνιστάται να τοποθετείτε τα αποσπάσματα στο `@/snippets`, για λόγους συμβατότητας με τον επεξεργαστή Monaco. Εναλλακτικά, μπορείτε επίσης να εισάγετε από relative paths.
 :::
 
-Αυτή η λειτουργία προσφέρεται από το VitePress, μάθετε περισσότερα γι' αυτό στην [ιστοσελίδα του VitePress](https://vitepress.dev/guide/markdown#import-code-snippets).
+Μπορείτε επίσης να χρησιμοποιήσετε μια [περιοχή VS Code](https://code.visualstudio.com/docs/editor/codebasics#_folding) για να συμπεριλάβετε μόνο το αντίστοιχο τμήμα του αρχείου κώδικα:
+
+```md
+<<< @/snippets/snippet.js#region-name
+```
+
+Για να καθορίσετε ρητά τη γλώσσα του εισαγόμενου κώδικα, μπορείτε να προσθέσετε ένα αναγνωριστικό γλώσσας μετά:
+
+```md
+<<< @/snippets/snippet.js ts
+```
+
+Υποστηρίζονται επίσης οποιεσδήποτε λειτουργίες μπλοκ κώδικα όπως [επισήμανση γραμμής](#επισημανση-γραμμης) και [Monaco editor](#monaco-editor):
+
+```md
+<<< @/snippets/snippet.js {2,3|5}{lines:true}
+<<< @/snippets/snippet.js ts {monaco}{height:200px}
+```
 
 ## Ρυθμίσεις
 
