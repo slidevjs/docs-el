@@ -44,4 +44,4 @@
 
 ## Prettier Plugin
 
-Slidev also provides a Prettier plugin to format your slides. You can use it with your favorite editor that supports Prettier. Docs for the plugin can be found [here](https://github.com/slidevjs/prettier-plugin).
+Το Slidev παρέχει επίσης ένα πρόσθετο για το Prettier για τη μορφοποίηση των διαφανειών σας. Μπορείτε να το χρησιμοποιήσετε με τον αγαπημένο σας επεξεργαστή που υποστηρίζει το Prettier. Οδηγίες για το πρόσθετο μπορείτε να βρείτε [εδώ](https://github.com/slidevjs/prettier-plugin).

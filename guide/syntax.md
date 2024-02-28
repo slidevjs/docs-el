@@ -444,36 +444,28 @@ layout: two-cols
 <<< @/snippets/snippet.js
 ```
 
-<<<<<<< HEAD
-::: tip
-Η τιμή του `@` αντιστοιχεί στο root της πηγής, τον κατάλογο όπου βρίσκεται το αρχείο `slides.md`.
-:::
-
-Αυτή η λειτουργία προσφέρεται από το VitePress, μάθετε περισσότερα γι' αυτό στην [ιστοσελίδα του VitePress](https://vitepress.dev/guide/markdown#import-code-snippets).
-=======
 :::tip
-The value of `@` corresponds to your package's root directory. It's recommended to put snippets in `@/snippets`, for compatibility with the Monaco editor. Alternatively, you can also import from relative paths.
+Η τιμή του `@` αντιστοιχεί στο root directory του πακέτου σας. Συνιστάται να τοποθετείτε τα αποσπάσματα στο `@/snippets`, για λόγους συμβατότητας με τον επεξεργαστή Monaco. Εναλλακτικά, μπορείτε επίσης να εισάγετε από relative paths.
 :::
 
-You can also use a [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding) to only include the corresponding part of the code file:
+Μπορείτε επίσης να χρησιμοποιήσετε μια [περιοχή VS Code](https://code.visualstudio.com/docs/editor/codebasics#_folding) για να συμπεριλάβετε μόνο το αντίστοιχο τμήμα του αρχείου κώδικα:
 
 ```md
 <<< @/snippets/snippet.js#region-name
 ```
 
-To explicitly specify the language of the imported code, you can add a language identifier after:
+Για να καθορίσετε ρητά τη γλώσσα του εισαγόμενου κώδικα, μπορείτε να προσθέσετε ένα αναγνωριστικό γλώσσας μετά:
 
 ```md
 <<< @/snippets/snippet.js ts
 ```
 
-Any code block features like [line highlighting](#line-highlighting) and [Monaco editor](#monaco-editor) are also supported:
+Υποστηρίζονται επίσης οποιεσδήποτε λειτουργίες μπλοκ κώδικα όπως [επισήμανση γραμμής](#επισημανση-γραμμης) και [Monaco editor](#monaco-editor):
 
 ```md
 <<< @/snippets/snippet.js {2,3|5}{lines:true}
 <<< @/snippets/snippet.js ts {monaco}{height:200px}
 ```
->>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 ## Ρυθμίσεις
 
