@@ -342,7 +342,11 @@ transition: slide-left
 
 Μπορείτε να χρησιμοποιήσετε την ιδιότητα CSS `view-transition-name` για να ονομάσετε τα view transitions, τα οποία δημιουργούν συνδέσεις μεταξύ διαφορετικών στοιχείων της σελίδας και ομαλές μεταβάσεις κατά την εναλλαγή διαφανειών.
 
+<<<<<<< HEAD
 Μπορείτε να ενεργοποιήσετε την υποστήριξη [Σύνταξης MDC (Markdown Component)](/guide/syntax#συνταξη-mdc) για να ονομάζετε εύκολα τις μεταβάσεις προβολής:
+=======
+You can enable [MDC (Markdown Component) Syntax](/guide/syntax#mdc-syntax) support to conveniently name view-transitions:
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 
 ```md
 ---
