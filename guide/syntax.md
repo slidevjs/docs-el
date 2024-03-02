@@ -67,12 +67,12 @@ class: 'text-white'
 
 Ανατρέξτε στις [προσαρμογές](/custom/) για περισσότερες πληροφορίες.
 
-### Prettier Support
+### Υποστήριξη Prettier
 
-> Available since v0.44
+> Διαθέσιμο από v0.44
 
-The custom syntax might not be compactible with some formatters like Prettier.
-You can either install the [Prettier Plugin](/guide/editors#prettier-plugin) or use a direct `yaml` code block to define the frontmatter instead:
+Η προσαρμοσμένη σύνταξη ενδέχεται να μην είναι συμβατή με ορισμένους formatters όπως το Prettier.
+Μπορείτε είτε να εγκαταστήσετε το [Prettier Plugin](/guide/editors#prettier-plugin) είτε να χρησιμοποιήσετε απευθείας ένα μπλοκ κώδικα `yaml` για να ορίσετε το frontmatter:
 
 ~~~markdown
 ---
@@ -81,20 +81,20 @@ layout: cover
 
 # Slidev
 
-This is the cover page.
+Αυτό είναι το εξώφυλλο.
 
 ---
 
 ```yaml
-# The first yaml block will be treated as the frontmatter of that slide
+# Το πρώτο μπλοκ yaml θα θεωρηθεί ως το frontmatter αυτής της διαφάνειας
 layout: center
 background: './images/background-1.png'
 class: 'text-white'
 ```
 
-# Page 2
+# Σελίδα 2
 
-This is a page with the layout `center` and a background image.
+Αυτή είναι μια σελίδα με τη διάταξη `center` και μια εικόνα φόντου.
 ~~~
 
 ## Code Blocks
@@ -186,13 +186,9 @@ const c = add(1, 2)
 
 ### Ενσωμάτωση TwoSlash
 
-<<<<<<< HEAD
-Αυτή η λειτουργία είναι διαθέσιμη μόνο όταν [θέτετε το `highlighter` σε `shiki`](/custom/highlighters)
-=======
-> Available since v0.46
+> Διαθέσιμο από  v0.46
 
-This feature is only available when you [set `highlighter` to `shiki`](/custom/highlighters)
->>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
+Αυτή η λειτουργία είναι διαθέσιμη μόνο όταν [θέτετε το `highlighter` σε `shiki`](/custom/highlighters)
 
 Το [TwoSlash](https://www.typescriptlang.org/dev/twoslash/) είναι ένα ισχυρό εργαλείο για την απεικόνιση μπλοκ κώδικα TypeScript με πληροφορίες τύπων κατά την αιώρηση ή inlined. Είναι αρκετά χρήσιμο για την προετοιμασία διαφανειών για θέματα σχετικά με JavaScript/TypeScript.
 
@@ -216,27 +212,27 @@ const count = ref(0)
 //            ^?
 ```
 
-<!-- For the popup to not to overlap the content below -->
+<!-- Για να μην επικαλύπτει το popup το παρακάτω περιεχόμενο -->
 <div class="py-20" />
 
 ### Shiki Magic Move
 
-> Available since v0.48
+> Διαθέσιμο από v0.48
 
-Shiki Magic Move enables you to have granular transition between code changes like Keynote's Magic Move. You can check [this demo](https://shiki-magic-move.netlify.app/) to see how it works.
+Το Shiki Magic Move σας επιτρέπει να έχετε λεπτομερή μετάβαση μεταξύ των αλλαγών κώδικα όπως το Magic Move του Keynote. Μπορείτε να παρακολουθήσετε [αυτό το demo](https://shiki-magic-move.netlify.app/) για να δείτε πώς λειτουργεί.
 
-In Slidev, we bind it to the [clicks system](/guide/animations#click-animations). The syntax is wrap multiple code blocks representing each steps with <code>````md magic-move</code> (mind it's **4** backticks), this will be transformed into one code block, that morphing to each steps as you click.
+Στο Slidev, το συνδέουμε με το [σύστημα clicks](/guide/animations#κινησεις-click). Η σύνταξη είναι να τυλίξετε πολλαπλά μπλοκ κώδικα που αντιπροσωπεύουν κάθε βήμα με <code>````md magic-move</code> (προσέξτε ότι είναι **4** backticks), αυτό θα μετατραπεί σε ένα μπλοκ κώδικα, που μεταμορφώνεται σε κάθε βήμα καθώς κάνετε click.
 
 ~~~~md
 ````md magic-move
 ```ts
-console.log(`Step ${1}`)
+console.log(`Βήμα ${1}`)
 ```
 ```ts
-console.log(`Step ${1 + 1}`)
+console.log(`Βήμα ${1 + 1}`)
 ```
 ```ts
-console.log(`Step ${3}`)
+console.log(`Βήμα ${3}`)
 ```
 ````
 ~~~~
@@ -363,21 +359,17 @@ layout: cover
 -->
 ~~~
 
-<<<<<<< HEAD
-## Εικονίδια
-=======
-Basic Markdown and HTML are also supported in notes on Presenter renderering.
+Υποστηρίζονται επίσης οι απλές γλώσσες Markdown και HTML στις σημειώσεις κατά την απεικόνιση στην λειτουργία παρουσιαστή.
 
-### Click Markers
+### Δείκτες Click
 
-> Available since v0.48
+> Διαθέσιμο από v0.48
 
-For some slides you might have longer notes that might be hard to find where you are looking at, we introduced the click markers that allows highlighting and auto-scrolling to the section of notes of your corresponding content. Put `[click]` markers in your notes for the timming you need to go to another [click](/guide/animations#click-animations), Slidev divide the content between the click markers and highlight them in presenter notes, synchronized with your slide progress.
+Για ορισμένες διαφάνειες που μπορεί να έχετε μεγαλύτερες σημειώσεις που ενδέχεται να είναι δύσκολο να βρείτε το σημείο που ψάχνετε, δημιουργήσαμε τους δείκτες click που επιτρέπουν την επισήμανση και την αυτόματη κύλιση στο τμήμα των σημειώσεων του αντίστοιχου περιεχομένου σας. Βάλτε δείκτες `[click]` στις σημειώσεις σας για το χρονοδιάγραμμα που χρειάζεστε για να μεταβείτε σε ένα άλλο [click](/guide/animations#κινησεις-click), το Slidev χωρίζει το περιεχόμενο μεταξύ των δεικτών click και τα επισημαίνει στις σημειώσεις του παρουσιαστή, συγχρονισμένα με την πρόοδο της διαφάνειάς σας.
 
 <!-- TODO: add a video -->
 
-## Icons
->>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
+## Εικονίδια
 
 Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας μετά την εγκατάσταση του αντίστοιχου πακέτου. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
 
@@ -494,36 +486,11 @@ layout: two-cols
 <<< @/snippets/snippet.js
 ```
 
-<<<<<<< HEAD
-:::tip
-Η τιμή του `@` αντιστοιχεί στο root directory του πακέτου σας. Συνιστάται να τοποθετείτε τα αποσπάσματα στο `@/snippets`, για λόγους συμβατότητας με τον επεξεργαστή Monaco. Εναλλακτικά, μπορείτε επίσης να εισάγετε από relative paths.
-:::
-
-Μπορείτε επίσης να χρησιμοποιήσετε μια [περιοχή VS Code](https://code.visualstudio.com/docs/editor/codebasics#_folding) για να συμπεριλάβετε μόνο το αντίστοιχο τμήμα του αρχείου κώδικα:
-
-```md
-<<< @/snippets/snippet.js#region-name
-```
-
-Για να καθορίσετε ρητά τη γλώσσα του εισαγόμενου κώδικα, μπορείτε να προσθέσετε ένα αναγνωριστικό γλώσσας μετά:
-
-```md
-<<< @/snippets/snippet.js ts
-```
-
-Υποστηρίζονται επίσης οποιεσδήποτε λειτουργίες μπλοκ κώδικα όπως [επισήμανση γραμμής](#επισημανση-γραμμης) και [Monaco editor](#monaco-editor):
-
-```md
-<<< @/snippets/snippet.js {2,3|5}{lines:true}
-<<< @/snippets/snippet.js ts {monaco}{height:200px}
-```
-=======
 ::: tip
-The value of `@` corresponds to the source root, the directory where the `slides.md` is located.
+Η τιμή του `@` αντιστοιχεί στο root της πηγής σας, τον φάκελο όπου βρίσκεται το αρχείο `slides.md`.
 :::
 
-This feature is vendored from VitePress, learn more about it in [VitePress's documentation](https://vitepress.dev/guide/markdown#import-code-snippets).
->>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
+Αυτή η λειτουργία προσφέρεται από το VitePress, μάθετε περισσότερα γι' αυτό στις [οδηγίες του VitePress](https://vitepress.dev/guide/markdown#import-code-snippets).
 
 ## Ρυθμίσεις
 
