@@ -67,32 +67,35 @@ class: 'text-white'
 
 Ανατρέξτε στις [προσαρμογές](/custom/) για περισσότερες πληροφορίες.
 
-> The custom syntax might not be compactible with some formatters like Prettier. To improve that, we also support using a direct `yaml` code block to define the frontmatter:
->
-> ~~~markdown
-> ---
-> layout: cover
-> ---
->
-> # Slidev
->
-> This is the cover page.
->
-> ---
->
-> ```yaml
-> # The first yaml block will be treated as the frontmatter of that slide
-> layout: center
-> background: './images/background-1.png'
-> class: 'text-white'
-> ```
->
-> # Page 2
->
-> This is a page with the layout `center` and a background image.
-> ~~~
->
-> (Available since v0.44.0)
+### Υποστήριξη Prettier
+
+> Διαθέσιμο από v0.44
+
+Η προσαρμοσμένη σύνταξη ενδέχεται να μην είναι συμβατή με ορισμένους formatters όπως το Prettier.
+Μπορείτε είτε να εγκαταστήσετε το [Prettier Plugin](/guide/editors#prettier-plugin) είτε να χρησιμοποιήσετε απευθείας ένα μπλοκ κώδικα `yaml` για να ορίσετε το frontmatter:
+
+~~~markdown
+---
+layout: cover
+---
+
+# Slidev
+
+Αυτό είναι το εξώφυλλο.
+
+---
+
+```yaml
+# Το πρώτο μπλοκ yaml θα θεωρηθεί ως το frontmatter αυτής της διαφάνειας
+layout: center
+background: './images/background-1.png'
+class: 'text-white'
+```
+
+# Σελίδα 2
+
+Αυτή είναι μια σελίδα με τη διάταξη `center` και μια εικόνα φόντου.
+~~~
 
 ## Code Blocks
 
@@ -183,6 +186,8 @@ const c = add(1, 2)
 
 ### Ενσωμάτωση TwoSlash
 
+> Διαθέσιμο από  v0.46
+
 Αυτή η λειτουργία είναι διαθέσιμη μόνο όταν [θέτετε το `highlighter` σε `shiki`](/custom/highlighters)
 
 Το [TwoSlash](https://www.typescriptlang.org/dev/twoslash/) είναι ένα ισχυρό εργαλείο για την απεικόνιση μπλοκ κώδικα TypeScript με πληροφορίες τύπων κατά την αιώρηση ή inlined. Είναι αρκετά χρήσιμο για την προετοιμασία διαφανειών για θέματα σχετικά με JavaScript/TypeScript.
@@ -206,6 +211,33 @@ import { ref } from 'vue'
 const count = ref(0)
 //            ^?
 ```
+
+<!-- Για να μην επικαλύπτει το popup το παρακάτω περιεχόμενο -->
+<div class="py-20" />
+
+### Shiki Magic Move
+
+> Διαθέσιμο από v0.48
+
+Το Shiki Magic Move σας επιτρέπει να έχετε λεπτομερή μετάβαση μεταξύ των αλλαγών κώδικα όπως το Magic Move του Keynote. Μπορείτε να παρακολουθήσετε [αυτό το demo](https://shiki-magic-move.netlify.app/) για να δείτε πώς λειτουργεί.
+
+Στο Slidev, το συνδέουμε με το [σύστημα clicks](/guide/animations#κινησεις-click). Η σύνταξη είναι να τυλίξετε πολλαπλά μπλοκ κώδικα που αντιπροσωπεύουν κάθε βήμα με <code>````md magic-move</code> (προσέξτε ότι είναι **4** backticks), αυτό θα μετατραπεί σε ένα μπλοκ κώδικα, που μεταμορφώνεται σε κάθε βήμα καθώς κάνετε click.
+
+~~~~md
+````md magic-move
+```ts
+console.log(`Βήμα ${1}`)
+```
+```ts
+console.log(`Βήμα ${1 + 1}`)
+```
+```ts
+console.log(`Βήμα ${3}`)
+```
+````
+~~~~
+
+<!-- TODO: add an inline demo -->
 
 ### Monaco Editor
 
@@ -327,6 +359,16 @@ layout: cover
 -->
 ~~~
 
+Υποστηρίζονται επίσης οι απλές γλώσσες Markdown και HTML στις σημειώσεις κατά την απεικόνιση στην λειτουργία παρουσιαστή.
+
+### Δείκτες Click
+
+> Διαθέσιμο από v0.48
+
+Για ορισμένες διαφάνειες που μπορεί να έχετε μεγαλύτερες σημειώσεις που ενδέχεται να είναι δύσκολο να βρείτε το σημείο που ψάχνετε, δημιουργήσαμε τους δείκτες click που επιτρέπουν την επισήμανση και την αυτόματη κύλιση στο τμήμα των σημειώσεων του αντίστοιχου περιεχομένου σας. Βάλτε δείκτες `[click]` στις σημειώσεις σας για το χρονοδιάγραμμα που χρειάζεστε για να μεταβείτε σε ένα άλλο [click](/guide/animations#κινησεις-click), το Slidev χωρίζει το περιεχόμενο μεταξύ των δεικτών click και τα επισημαίνει στις σημειώσεις του παρουσιαστή, συγχρονισμένα με την πρόοδο της διαφάνειάς σας.
+
+<!-- TODO: add a video -->
+
 ## Εικονίδια
 
 Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας μετά την εγκατάσταση του αντίστοιχου πακέτου. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
@@ -444,28 +486,11 @@ layout: two-cols
 <<< @/snippets/snippet.js
 ```
 
-:::tip
-Η τιμή του `@` αντιστοιχεί στο root directory του πακέτου σας. Συνιστάται να τοποθετείτε τα αποσπάσματα στο `@/snippets`, για λόγους συμβατότητας με τον επεξεργαστή Monaco. Εναλλακτικά, μπορείτε επίσης να εισάγετε από relative paths.
+::: tip
+Η τιμή του `@` αντιστοιχεί στο root της πηγής σας, τον φάκελο όπου βρίσκεται το αρχείο `slides.md`.
 :::
 
-Μπορείτε επίσης να χρησιμοποιήσετε μια [περιοχή VS Code](https://code.visualstudio.com/docs/editor/codebasics#_folding) για να συμπεριλάβετε μόνο το αντίστοιχο τμήμα του αρχείου κώδικα:
-
-```md
-<<< @/snippets/snippet.js#region-name
-```
-
-Για να καθορίσετε ρητά τη γλώσσα του εισαγόμενου κώδικα, μπορείτε να προσθέσετε ένα αναγνωριστικό γλώσσας μετά:
-
-```md
-<<< @/snippets/snippet.js ts
-```
-
-Υποστηρίζονται επίσης οποιεσδήποτε λειτουργίες μπλοκ κώδικα όπως [επισήμανση γραμμής](#επισημανση-γραμμης) και [Monaco editor](#monaco-editor):
-
-```md
-<<< @/snippets/snippet.js {2,3|5}{lines:true}
-<<< @/snippets/snippet.js ts {monaco}{height:200px}
-```
+Αυτή η λειτουργία προσφέρεται από το VitePress, μάθετε περισσότερα γι' αυτό στις [οδηγίες του VitePress](https://vitepress.dev/guide/markdown#import-code-snippets).
 
 ## Ρυθμίσεις
 
