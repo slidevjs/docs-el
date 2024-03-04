@@ -12,11 +12,7 @@
 
 ## Επεκτάσεις Preparser
 
-<<<<<<< HEAD
 > Διαθέσιμο από v0.37.0
-=======
-> Available since v0.37.0.
->>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
 
 :::warning
 Σημαντικό: όταν τροποποιείτε τη ρύθμιση παραμέτρων του preparser, πρέπει να σταματήσετε και να εκκινήσετε ξανά το slidev (η επανεκκίνηση μπορεί να μην είναι αρκετή).
@@ -43,25 +39,14 @@ export default definePreparserSetup(({ filepath, headmatter, mode }) => {
 })
 ```
 
-<<<<<<< HEAD
 Αυτό το παράδειγμα αντικαθιστά συστηματικά κάθε σειρά με την ένδειξη `@@@` με μια σειρά με την ένδειξη `γεια`. Παρουσιάζει τη δομή ενός αρχείου ρυθμίσεων του preparser και μερικές από τις κύριες έννοιες που περιλαμβάνει ο preparser:
 - Το `definePreparserSetup` πρέπει να κληθεί με μια συνάρτηση ως παράμετρο.
-- Η συνάρτηση λαμβάνει το path του αρχείου (του κεντρικού αρχείου παρουσίασης) και το headmatter (από το αρχείο md). Αυτή μπορεί να χρησιμοποιήσει αυτές τις πληροφορίες (π.χ. για να ενεργοποιήσει επεκτάσεις με βάση το αρχείο παρουσίασης).
+- Η συνάρτηση λαμβάνει το path του αρχείου (του κεντρικού αρχείου παρουσίασης), το headmatter (από το αρχείο md) και, από την έκδοση v0.48.0, μία λειτουργία (dev, build ή export).Αυτή μπορεί να χρησιμοποιήσει αυτές τις πληροφορίες (π.χ. για να ενεργοποιήσει επεκτάσεις με βάση το αρχείο παρουσίασης).
 - Η συνάρτηση πρέπει να επιστρέφει μια λίστα επεκτάσεων του preparser.
 - Μια επέκταση μπορεί να περιέχει:
   - μια συνάρτηση `transformRawLines(lines)` που εκτελείται αμέσως μετά το parsing του frontmatter του αρχείου md και λαμβάνει μια λίστα όλων των σειρών (από το αρχείο md). Η συνάρτηση μπορεί να μεταλλάσσει τη λίστα αυθαίρετα.
   - μια συνάρτηση `transformSlide(content, frontmatter)` που καλείται για κάθε διαφάνεια, αμέσως μετά τη διάσπαση του αρχείου, και λαμβάνει το περιεχόμενο της διαφάνειας ως συμβολοσειρά και το frontmatter της διαφάνειας ως αντικείμενο. Η συνάρτηση μπορεί να μεταβάλλει το frontmatter και πρέπει να επιστρέφει τη συμβολοσειρά του περιεχομένου (ενδεχομένως τροποποιημένη, ενδεχομένως `undefined` αν δεν έχουν γίνει τροποποιήσεις).
   - ένα `name`
-=======
-This example systematically replaces any `@@@` line by a line with `hello`. It illustrates the structure of a preparser configuration file and some of the main concepts the preparser involves:
-- `definePreparserSetup` must be called with a function as parameter.
-- The function receives the file path (of the root presentation file), the headmatter (from the md file) and, since v0.48.0, a mode (dev, build or export). It could use this information (e.g., enable extensions based on the presentation file or whether we are exporting a PDF).
-- The function must return a list of preparser extensions.
-- An extension can contain:
-  - a `transformRawLines(lines)` function that runs just after parsing the headmatter of the md file and receives a list of all lines (from the md file). The function can mutate the list arbitrarily.
-  - a `transformSlide(content, frontmatter)` function that is called for each slide, just after splitting the file, and receives the slide content as a string and the frontmatter of the slide as an object. The function can mutate the frontmatter and must return the content string (possibly modified, possibly `undefined` if no modifications have been done).
-  - a `name`
->>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
 
 ## Παράδειγμα επεκτάσεων Preparser
 
