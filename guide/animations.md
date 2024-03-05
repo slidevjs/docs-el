@@ -239,7 +239,7 @@ clicks: 10
 Για παράδειγμα, μπορείτε να επιτύχετε τις μεταβάσεις κλιμάκωσης προς τα πάνω με:
 
 ```css
-// styles.css
+/* styles.css */
 
 .slidev-vclick-target {
   transition: all 500ms ease;
@@ -267,7 +267,47 @@ clicks: 10
 
 Μάθετε περισσότερα για την [προσαρμογή των styles](/custom/directory-structure#style).
 
+<<<<<<< HEAD
 ## Κίνηση
+=======
+## Rough Markers
+
+> Available since v0.48.0
+
+Slidev integrates [Rough Notation](https://github.com/linkstrifer/react-rough-notation) to allow marking or highlighting elements in your slides.
+
+### `v-mark`
+
+Rough Notation integrates comes with the `v-mark` directive.
+
+#### Type
+
+`v-mark.underline` for Underline mark, `v-mark.circle` for Circle mark, etc. Default to `underline`
+
+#### Color
+
+`v-mark.red` make the notation `red`. Supported builtin color themes from UnoCSS. For custom colors, use object syntax `v-mark="{ color: '#234' }"`
+
+#### Clicks
+
+`v-mark` works like `v-click` and will trigger after a click. Same as `v-click`, it allows you to pass a custom click value, like `v-mark="5"` or `v-mark="'+1'"`.
+
+#### Options
+
+Optionally you can pass an object to `v-mark` to specify the options, for example:
+
+```vue
+<span v-mark="{ at: 5, color: '#234', type: 'circle' }">
+Important text
+</span>
+```
+
+#### Preview
+
+<video src="https://github.com/slidevjs/slidev/assets/11247099/c840340c-0aa1-4cde-b228-e6c67e5f6879" rounded-lg shadow controls></video>
+
+## Motion
+>>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
 
 Το Slidev έχει ενσωματωμένο το [@vueuse/motion](https://motion.vueuse.org/). Μπορείτε να χρησιμοποιήσετε την οδηγία `v-motion` σε οποιαδήποτε στοιχεία για να εφαρμόσετε κίνηση σε αυτά. Για παράδειγμα
 

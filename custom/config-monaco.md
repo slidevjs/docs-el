@@ -19,7 +19,7 @@ export default defineMonacoSetup(async (monaco) => {
 Για να χρησιμοποιήσετε το Monaco στις διαφάνειές σας, απλά προσθέστε `{monaco}` στα αποσπάσματα του κώδικά σας:
 
 ~~~md
-```js
+```js {monaco} // [!code ++]
 const count = ref(1)
 const plusOne = computed(() => count.value + 1)
 
@@ -29,6 +29,7 @@ plusOne.value++ // error
 ```
 ~~~
 
+<<<<<<< HEAD
 Σε
 
 ~~~md
@@ -53,6 +54,9 @@ monaco: true # προεπιλεγμένο "dev"
 ```
 
 ## Αυτόματη Εγκατάσταση Τύπων
+=======
+## TypeScript Types
+>>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
 
 Όταν χρησιμοποιείτε TypeScript με το Monaco, οι τύποι εξαρτήσεων θα εγκατασταθούν αυτόματα στο client-side.
 
@@ -65,10 +69,39 @@ const counter = ref(0)
 ```
 ~~~
 
+<<<<<<< HEAD
 Στο παραπάνω παράδειγμα, βεβαιωθείτε ότι τα `vue` και `@vueuse/core` είναι εγκατεστημένα τοπικά ως dependencies / devDependencies, το Slidev θα αναλάβει τα υπόλοιπα, ώστε οι τύποι να λειτουργούν αυτόματα για τον συντάκτη!
+=======
+In the example above, make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest to get the types working for the editor automatically. When deploy as SPA, those types will also be bundled for static hosting.
+
+### Additional Types
+
+Slidev will scan all the monaco codeblocks in your slides and import the types for those used libraries for you. In case it missed some, you can explicitly specify extra packages to import the types for:
+
+```md
+---
+monacoTypesAdditionalPackages:
+  - lodash-es
+  - foo
+---
+```
+
+### Auto Type Acquisition
+
+You can optionally switch to load types from CDN by setting the following headmatter:
+
+```md
+---
+monacoTypesSource: ata
+---
+```
+
+This feature is powered by [`@typescript/ata`](https://github.com/microsoft/TypeScript-Website/tree/v2/packages/ata) and runs completely on the client-side.
+>>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
 
 ## Ρύθμιση Θεμάτων
 
+<<<<<<< HEAD
 Το θέμα ελέγχεται από το Slidev με βάση το φωτεινό/σκοτεινό θέμα. Αν θέλετε να το προσαρμόσετε, μπορείτε να περάσετε το id του θέματος στη συνάρτηση setup:
 
 ```ts
@@ -108,6 +141,9 @@ export default defineMonacoSetup((monaco) => {
 ```
 
 > Εάν δημιουργείτε ένα θέμα για το Slidev, χρησιμοποιήστε δυναμικά `import()` μέσα στη συνάρτηση setup για να έχετε καλύτερα αποτελέσματα σε tree-shaking και code-splitting.
+=======
+Since v0.48.0, Monaco will reuse the Shiki theme you configured in [Shiki's setup file](/custom/highlighters#configure-shiki), powered by [`@shikijs/monaco`](https://shiki.style/packages/monaco). You don't need to worry about it anymore and it will have a consistent style with the rest of your code blocks.
+>>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
 
 ## Ρύθμιση του Συντάκτη
 
@@ -134,4 +170,14 @@ export default defineMonacoSetup(() => {
     }
   }
 })
+```
+
+## Disabling
+
+Since v0.48.0, Monaco editor is enabled by default and only be bundled when you use it. If you want to disable it, you can set `monaco` to `false` in the frontmatter of your slide:
+
+```yaml
+---
+monaco: false # can also be `dev` or `build` tp conditionally enable it
+---
 ```
