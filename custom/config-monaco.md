@@ -19,7 +19,7 @@ export default defineMonacoSetup(async (monaco) => {
 Για να χρησιμοποιήσετε το Monaco στις διαφάνειές σας, απλά προσθέστε `{monaco}` στα αποσπάσματα του κώδικά σας:
 
 ~~~md
-```js
+```js {monaco} // [!code ++]
 const count = ref(1)
 const plusOne = computed(() => count.value + 1)
 
@@ -29,30 +29,7 @@ plusOne.value++ // error
 ```
 ~~~
 
-Σε
-
-~~~md
-```js {monaco}
-const count = ref(1)
-const plusOne = computed(() => count.value + 1)
-
-console.log(plusOne.value) // 2
-
-plusOne.value++ // error
-```
-~~~
-
-## Εξαγωγή
-
-Από προεπιλογή, το Monaco θα λειτουργήσει ΜΟΝΟ σε λειτουργία `dev`. Αν θέλετε να το έχετε διαθέσιμο στο εξαγόμενο SPA, ρυθμίστε το στο frontmatter σας:
-
-```yaml
----
-monaco: true # προεπιλεγμένο "dev"
----
-```
-
-## Αυτόματη Εγκατάσταση Τύπων
+## TypeScript Types
 
 Όταν χρησιμοποιείτε TypeScript με το Monaco, οι τύποι εξαρτήσεων θα εγκατασταθούν αυτόματα στο client-side.
 
@@ -65,49 +42,35 @@ const counter = ref(0)
 ```
 ~~~
 
-Στο παραπάνω παράδειγμα, βεβαιωθείτε ότι τα `vue` και `@vueuse/core` είναι εγκατεστημένα τοπικά ως dependencies / devDependencies, το Slidev θα αναλάβει τα υπόλοιπα, ώστε οι τύποι να λειτουργούν αυτόματα για τον συντάκτη!
+Στο παραπάνω παράδειγμα, βεβαιωθείτε ότι τα `vue` και `@vueuse/core` είναι εγκατεστημένα τοπικά ως dependencies / devDependencies, το Slidev θα αναλάβει τα υπόλοιπα, ώστε οι τύποι να λειτουργούν αυτόματα για τον συντάκτη. Κατά το deploy ως SPA, αυτοί οι τύποι θα είναι επίσης συσκευασμένοι για στατική φιλοξενία.
+
+### Επιπλέον Τύποι
+
+Το Slidev θα σαρώσει όλα τα codeblocks του monaco στις διαφάνειές σας και θα κάνει εισαγωγή των τύπων για τις βιβλιοθήκες που χρησιμοποιούνται για εσάς. Σε περίπτωση που του ξέφυγαν κάποιες, μπορείτε να καθορίσετε ρητά επιπλέον πακέτα για την εισαγωγή των τύπων:
+
+```md
+---
+monacoTypesAdditionalPackages:
+  - lodash-es
+  - foo
+---
+```
+
+### Αυτόματη Απόκτηση Τύπων
+
+Μπορείτε προαιρετικά να ενεργοποιήσετε τη δυνατότητα εισαγωγής τύπων από το CDN ρυθμίζοντας το ακόλουθο headmatter:
+
+```md
+---
+monacoTypesSource: ata
+---
+```
+
+Αυτή η λειτουργία υποστηρίζεται από το [`@typescript/ata`](https://github.com/microsoft/TypeScript-Website/tree/v2/packages/ata) και εκτελείται εξ ολοκλήρου client-side.
 
 ## Ρύθμιση Θεμάτων
 
-Το θέμα ελέγχεται από το Slidev με βάση το φωτεινό/σκοτεινό θέμα. Αν θέλετε να το προσαρμόσετε, μπορείτε να περάσετε το id του θέματος στη συνάρτηση setup:
-
-```ts
-// ./setup/monaco.ts
-import { defineMonacoSetup } from '@slidev/types'
-
-export default defineMonacoSetup(() => {
-  return {
-    theme: {
-      dark: 'vs-dark',
-      light: 'vs',
-    },
-  }
-})
-```
-
-Αν θέλετε να φορτώσετε προσαρμοσμένα θέματα:
-
-```ts
-import { defineMonacoSetup } from '@slidev/types'
-
-// αλλάξετε στα θέματά σας
-import dark from 'theme-vitesse/themes/vitesse-dark.json'
-import light from 'theme-vitesse/themes/vitesse-light.json'
-
-export default defineMonacoSetup((monaco) => {
-  monaco.editor.defineTheme('vitesse-light', light as any)
-  monaco.editor.defineTheme('vitesse-dark', dark as any)
-
-  return {
-    theme: {
-      light: 'vitesse-light',
-      dark: 'vitesse-dark',
-    },
-  }
-})
-```
-
-> Εάν δημιουργείτε ένα θέμα για το Slidev, χρησιμοποιήστε δυναμικά `import()` μέσα στη συνάρτηση setup για να έχετε καλύτερα αποτελέσματα σε tree-shaking και code-splitting.
+Από την έκδοση v0.48.0, το Monaco θα επαναχρησιμοποιεί το θέμα Shiki που έχετε ρυθμίσει στο [αρχείο ρυθμίσεων του Shiki](/custom/highlighters#ρυθμιστε-shiki), το οποίο τροφοδοτείται από το [`@shikijs/monaco`](https://shiki.style/packages/monaco). Δεν χρειάζεται να ανησυχείτε πια γι' αυτό και θα έχει ένα συνεπές στυλ με τα υπόλοιπα code blocks σας.
 
 ## Ρύθμιση του Συντάκτη
 
@@ -134,4 +97,14 @@ export default defineMonacoSetup(() => {
     }
   }
 })
+```
+
+## Απενεργοποίηση
+
+Από την έκδοση v0.48.0, ο συντάκτης Monaco είναι ενεργοποιημένος από προεπιλογή και θα συμπεριλαμβάνεται μόνο όταν τον χρησιμοποιείτε. Αν θέλετε να τον απενεργοποιήσετε, μπορείτε να θέσετε το `monaco` σε `false` στο frontmatter της διαφάνειάς σας:
+
+```yaml
+---
+monaco: false # μπορεί επίσης να είναι `dev` ή `build` για να το ενεργοποιήσει υπό όρους
+---
 ```

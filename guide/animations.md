@@ -239,7 +239,7 @@ clicks: 10
 Για παράδειγμα, μπορείτε να επιτύχετε τις μεταβάσεις κλιμάκωσης προς τα πάνω με:
 
 ```css
-// styles.css
+/* styles.css */
 
 .slidev-vclick-target {
   transition: all 500ms ease;
@@ -266,6 +266,42 @@ clicks: 10
 ```
 
 Μάθετε περισσότερα για την [προσαρμογή των styles](/custom/directory-structure#style).
+
+## Rough Markers
+
+> Διαθέσιμο από v0.48.0
+
+Το Slidev ενσωματώνει το [Rough Notation](https://github.com/linkstrifer/react-rough-notation) για να επιτρέπει τη σημείωση ή την επισήμανση στοιχείων στις διαφάνειές σας.
+
+### `v-mark`
+
+Το Rough Notation ενσωματώνεται με την οδηγία `v-mark`.
+
+#### Type
+
+`v-mark.underline` για το σημάδι υπογράμμισης, `v-mark.circle` για το σημάδι κύκλου, κ.λπ. Η προεπιλογή είναι `underline`.
+
+#### Color
+
+`v-mark.red` κάνει την σημείωση `red`. Υποστηριζόμενα ενσωματωμένα θέματα χρωμάτων του UnoCSS. Για προσαρμοσμένα χρώματα, χρησιμοποιήστε την object σύνταξη `v-mark="{ color: '#234' }"`.
+
+#### Clicks
+
+Το `v-mark` λειτουργεί όπως το `v-click` και θα ενεργοποιηθεί μετά από ένα click. Όπως και το `v-click`, σας επιτρέπει να περάσετε μια προσαρμοσμένη τιμή click, όπως `v-mark="5"` ή `v-mark="'+1'"`.
+
+#### Ρυθμίσεις
+
+Προαιρετικά μπορείτε να περάσετε ένα object στο `v-mark` για να καθορίσετε τις ρυθμίσεις, για παράδειγμα:
+
+```vue
+<span v-mark="{ at: 5, color: '#234', type: 'circle' }">
+Σημαντικό κείμενο
+</span>
+```
+
+#### Προεπισκόπηση
+
+<video src="https://github.com/slidevjs/slidev/assets/11247099/c840340c-0aa1-4cde-b228-e6c67e5f6879" rounded-lg shadow controls></video>
 
 ## Κίνηση
 
