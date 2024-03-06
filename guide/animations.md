@@ -267,47 +267,43 @@ clicks: 10
 
 Μάθετε περισσότερα για την [προσαρμογή των styles](/custom/directory-structure#style).
 
-<<<<<<< HEAD
-## Κίνηση
-=======
 ## Rough Markers
 
-> Available since v0.48.0
+> Διαθέσιμο από v0.48.0
 
-Slidev integrates [Rough Notation](https://github.com/linkstrifer/react-rough-notation) to allow marking or highlighting elements in your slides.
+Το Slidev ενσωματώνει το [Rough Notation](https://github.com/linkstrifer/react-rough-notation) για να επιτρέπει τη σημείωση ή την επισήμανση στοιχείων στις διαφάνειές σας.
 
 ### `v-mark`
 
-Rough Notation integrates comes with the `v-mark` directive.
+Το Rough Notation ενσωματώνεται με την οδηγία `v-mark`.
 
 #### Type
 
-`v-mark.underline` for Underline mark, `v-mark.circle` for Circle mark, etc. Default to `underline`
+`v-mark.underline` για το σημάδι υπογράμμισης, `v-mark.circle` για το σημάδι κύκλου, κ.λπ. Η προεπιλογή είναι `underline`.
 
 #### Color
 
-`v-mark.red` make the notation `red`. Supported builtin color themes from UnoCSS. For custom colors, use object syntax `v-mark="{ color: '#234' }"`
+`v-mark.red` κάνει την σημείωση `red`. Υποστηριζόμενα ενσωματωμένα θέματα χρωμάτων του UnoCSS. Για προσαρμοσμένα χρώματα, χρησιμοποιήστε την object σύνταξη `v-mark="{ color: '#234' }"`.
 
 #### Clicks
 
-`v-mark` works like `v-click` and will trigger after a click. Same as `v-click`, it allows you to pass a custom click value, like `v-mark="5"` or `v-mark="'+1'"`.
+Το `v-mark` λειτουργεί όπως το `v-click` και θα ενεργοποιηθεί μετά από ένα click. Όπως και το `v-click`, σας επιτρέπει να περάσετε μια προσαρμοσμένη τιμή click, όπως `v-mark="5"` ή `v-mark="'+1'"`.
 
-#### Options
+#### Ρυθμίσεις
 
-Optionally you can pass an object to `v-mark` to specify the options, for example:
+Προαιρετικά μπορείτε να περάσετε ένα object στο `v-mark` για να καθορίσετε τις ρυθμίσεις, για παράδειγμα:
 
 ```vue
 <span v-mark="{ at: 5, color: '#234', type: 'circle' }">
-Important text
+Σημαντικό κείμενο
 </span>
 ```
 
-#### Preview
+#### Προεπισκόπηση
 
 <video src="https://github.com/slidevjs/slidev/assets/11247099/c840340c-0aa1-4cde-b228-e6c67e5f6879" rounded-lg shadow controls></video>
 
-## Motion
->>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
+## Κίνηση
 
 Το Slidev έχει ενσωματωμένο το [@vueuse/motion](https://motion.vueuse.org/). Μπορείτε να χρησιμοποιήσετε την οδηγία `v-motion` σε οποιαδήποτε στοιχεία για να εφαρμόσετε κίνηση σε αυτά. Για παράδειγμα
 

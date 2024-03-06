@@ -124,11 +124,7 @@ function add(
 ```
 ~~~
 
-<<<<<<< HEAD
-Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines:true`. Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε code block και να επισημάνετε τις γραμμές ανάλογα, με προεπιλογή 1:
-=======
-You can enable line number to all slides by setting `lineNumbers: true` on the config or enable each code block individually by setting `lines: true`. You can also set the starting line for each code block and highlight the lines accordingly, defaults to 1:
->>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
+Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines: true`. Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε code block και να επισημάνετε τις γραμμές ανάλογα, με προεπιλογή 1:
 
 ~~~md
 ```ts {6,7}{lines:true,startLine:5}
@@ -223,39 +219,25 @@ const count = ref(0)
 
 > Διαθέσιμο από v0.48
 
-<<<<<<< HEAD
-Το Shiki Magic Move σας επιτρέπει να έχετε λεπτομερή μετάβαση μεταξύ των αλλαγών κώδικα όπως το Magic Move του Keynote. Μπορείτε να παρακολουθήσετε [αυτό το demo](https://shiki-magic-move.netlify.app/) για να δείτε πώς λειτουργεί.
-=======
-[Shiki Magic Move](https://github.com/shikijs/shiki-magic-move) enables you to have granular transition between code changes, similar to Keynote's Magic Move. You can check [the playground](https://shiki-magic-move.netlify.app/) to see how it works.
->>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
+Το [Shiki Magic Move](https://github.com/shikijs/shiki-magic-move) σας επιτρέπει να έχετε λεπτομερή μετάβαση μεταξύ των αλλαγών κώδικα, σαν το Magic Move του Keynote. Μπορείτε να παρακολουθήσετε [το demo](https://shiki-magic-move.netlify.app/) για να δείτε πώς λειτουργεί.
 
 Στο Slidev, το συνδέουμε με το [σύστημα clicks](/guide/animations#κινησεις-click). Η σύνταξη είναι να τυλίξετε πολλαπλά μπλοκ κώδικα που αντιπροσωπεύουν κάθε βήμα με <code>````md magic-move</code> (προσέξτε ότι είναι **4** backticks), αυτό θα μετατραπεί σε ένα μπλοκ κώδικα, που μεταμορφώνεται σε κάθε βήμα καθώς κάνετε click.
 
 ~~~~md
 ````md magic-move
-<<<<<<< HEAD
-```ts
+```js
 console.log(`Βήμα ${1}`)
 ```
-```ts
+```js
 console.log(`Βήμα ${1 + 1}`)
 ```
 ```ts
-console.log(`Βήμα ${3}`)
-=======
-```js
-console.log(`Step ${1}`)
-```
-```js
-console.log(`Step ${1 + 1}`)
-```
-```ts
-console.log(`Step ${3}` as string)
+console.log(`Βήμα ${3}` as string)
 ```
 ````
 ~~~~
 
-It's also possible mix Magic Move with [line highlighting](#line-highlighting), for example:
+Είναι επίσης δυνατό να συνδυάσετε το Magic Move με την [επισήμανση γραμμής](#επισημανση-γραμμης), για παράδειγμα:
 
 ~~~~md
 ````md magic-move {at:4} // [!code hl]
@@ -266,12 +248,11 @@ function add() {
 }
 ```
 
-Non-code blocks in between as ignored, you can put some comments.
+Τα μη code μπλοκ στο ενδιάμεσο αγνοούνται, μπορείτε να βάλετε κάποια σχόλια.
 
 ```js
 let count = 1
 const add = () => count += 1
->>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
 ```
 ````
 ~~~~
