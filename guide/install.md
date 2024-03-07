@@ -33,9 +33,11 @@ pnpm create slidev
 ```bash
 npm install @slidev/cli @slidev/theme-default
 ```
+
 ```bash
 touch slides.md
 ```
+
 ```bash
 npx slidev
 ```
@@ -69,10 +71,17 @@ docker run --name slidev --rm -it \
     --user node \
     -v ${PWD}:/slidev \
     -p 3030:3030 \
+    -e NPM_MIRROR="https://registry.npmmirror.com" \
     tangramor/slidev:latest
 ```
 
+<<<<<<< HEAD
 Εάν ο φάκελος εργασίας σας είναι άδειος, θα δημιουργήσει ένα πρότυπο `slides.md` και άλλα σχετικά αρχεία, και θα ξεκινήσει τον διακομιστή στη θύρα `3030`.
+=======
+**_Note_**: You can use `NPM_MIRROR` to specify a npm mirror to speed up the installation process.
+
+If your work folder is empty, it will generate a template `slides.md` and other related files under your work folder, and launch the server on port `3030`.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Μπορείτε να έχετε πρόσβαση στις διαφάνειές σας από το `http://localhost:3030/`
 
@@ -84,7 +93,6 @@ docker run --name slidev --rm -it \
 FROM tangramor/slidev:latest
 
 ADD . /slidev
-
 ```
 
 Δημιουργήσετε την εικόνα docker: `docker build -t myppt .`
@@ -131,7 +139,12 @@ COPY dist /usr/share/nginx/html
 
 ## Περιβάλλον Γραμμής Εντολών (CLI)
 
+<<<<<<< HEAD
 `@slidev/cli` Εκθέστε μερικές εντολές που μπορείτε να χρησιμοποιήσετε με το `npx slidev ...` ή προσθέτοντας scripts στο `package.json`:
+=======
+`@slidev/cli` Expose a few commands you can use with `npx slidev ...` or by adding scripts in your `package.json`:
+
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 ```json
 {
   "script": {
@@ -144,10 +157,18 @@ COPY dist /usr/share/nginx/html
 
 Μπορείτε να περάσετε επιλογές σε οποιεσδήποτε εντολές:
 
+<<<<<<< HEAD
 * η επιλογή boolean είναι `true` αν είναι παρούσα, αλλιώς είναι `false` (για παράδειγμα: `slidev --open`)
 * ορισμένες επιλογές μπορούν να έχουν τιμές που μπορείτε να προσθέσετε ακριβώς μετά την επιλογή ή χρησιμοποιώντας τον χαρακτήρα `=` (για παράδειγμα: `slidev --port 8080` ή `slidev --port=8080`)
 
 Αν χρησιμοποιείτε npm scripts, μην ξεχάσετε να προσθέσετε `--` μετά την εντολή npm:
+=======
+- boolean option are `true` if they are present, false otherwise (example: `slidev --open`)
+- some options can have values you can add just after the option or by using the `=` character (example: `slidev --port 8080` or `slidev --port=8080`)
+
+If you use npm scripts, don't forget to add `--` after the npm command:
+
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 ```bash
 npm run slidev -- --open
 ```
@@ -156,10 +177,15 @@ npm run slidev -- --open
 
 Ξεκινήστε έναν τοπικό διακομιστή για το Slidev.
 
+<<<<<<< HEAD
 * `[entry]` (`string`, προεπιλογή: `slides.md`): το path για την είσοδο διαφανειών markdown.
+=======
+- `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Επιλογές:
 
+<<<<<<< HEAD
 * `--port`, `-p` (`number`, προεπιλογή: `3030`): αριθμός port.
 * `--open`, `-o` (`boolean`, προεπιλογή: `false`): άνοιγμα στο πρόγραμμα περιήγησης.
 * `--remote [password]` (`string`): ακούει τον public host και ενεργοποιεί τον απομακρυσμένο έλεγχο, εάν περαστεί μια τιμή, τότε η λειτουργία του παρουσιαστή είναι ιδιωτική και προσβάσιμη μόνο με τη διαβίβαση του συγκεκριμένου κωδικού πρόσβασης στην παράμετρο `password` του URL query.
@@ -167,29 +193,55 @@ npm run slidev -- --open
 * `--log` (`'error', 'warn', 'info', 'silent'`, προεπιλογή: `'warn'`): επίπεδο καταγραφής δεδομένων.
 * `--force`, `-f` (`boolean`, προεπιλογή: `false`): αναγκάζει τον βελτιστοποιητή να αγνοήσει την προσωρινή μνήμη και να κάνει re-bundle.
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
+=======
+- `--port`, `-p` (`number`, default: `3030`): port number.
+- `--open`, `-o` (`boolean`, default: `false`): open in browser.
+- `--remote [password]` (`string`): listen to public host and enable remote control, if a value is passed then the presenter mode is private and only accessible by passing the given password in the URL query `password` parameter.
+- `--bind` (`string`, default: `0.0.0.0`): specify which IP addresses the server should listen on in the remote mode.
+- `--log` (`'error', 'warn', 'info', 'silent'`, default: `'warn'`): Log level.
+- `--force`, `-f` (`boolean`, default: `false`): force the optimizer to ignore the cache and re-bundle.
+- `--theme`, `-t` (`string`): override theme.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ### `slidev build [entry]`
 
 Κατασκευή φιλοξενήσιμου SPA.
 
+<<<<<<< HEAD
 * `[entry]` (`string`, προεπιλογή: `slides.md`): το path για την είσοδο διαφανειών markdown.
+=======
+- `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Επιλογές:
 
+<<<<<<< HEAD
 * `--watch`, `-w` (`boolean`, προεπιλογή: `false`): παρακολούθηση κατασκευής.
 * `--out`, `-o` (`string`, προεπιλογή: `dist`): φάκελος εξόδου.
 * `--base` (`string`, προεπιλογή: `/`): base URL (δείτε https://cli.vuejs.org/config/#publicpath)
 * `--download` (`boolean`, προεπιλογή: `false`): επιτρέπει τη λήψη των διαφανειών σε μορφή PDF μέσα στο SPA.
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
+=======
+- `--watch`, `-w` (`boolean`, default: `false`): build watch.
+- `--out`, `-o` (`string`, default: `dist`): output dir.
+- `--base` (`string`, default: `/`): base URL (see https://cli.vuejs.org/config/#publicpath)
+- `--download` (`boolean`, default: `false`): allow to download the slides as PDF inside the SPA.
+- `--theme`, `-t` (`string`): override theme.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ### `slidev export [entry]`
 
 Εξαγωγή διαφανειών σε PDF (ή άλλη μορφή).
 
+<<<<<<< HEAD
 * `[entry]` (`string`, προεπιλογή: `slides.md`): το path για την είσοδο διαφανειών markdown.
+=======
+- `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Επιλογές:
 
+<<<<<<< HEAD
 * `--output` (`string`, προεπιλογή: χρησιμοποιήστε το `exportFilename` (δείτε https://el.sli.dev/custom/#%CF%81%CF%85%CE%B8%CE%BC%CE%AF%CF%83%CE%B5%CE%B9%CF%82-frontmatter) ή χρησιμοποιήστε `[entry]-export`): το path για την εξαγωγή.
 * `--format` (`'pdf', 'png', 'md'`, προεπιλογή: `'pdf'`): μορφή εξόδου.
 * `--timeout` (`number`, προεπιλογή: `30000`): χρονικό όριο για την απεικόνιση της σελίδας εκτύπωσης (δείτε https://playwright.dev/docs/api/class-page#page-goto).
@@ -197,12 +249,25 @@ npm run slidev -- --open
 * `--dark` (`boolean`, προεπιλογή: `false`): εξαγωγή με σκοτεινό θέμα.
 * `--with-clicks`, `-c` (`boolean`, προεπιλογή: `false`): εξαγωγή σελίδων για κάθε κλικ (δείτε https://el.sli.dev/guide/animations.html#κινήσεις-click).
 * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
+=======
+- `--output` (`string`, default: use `exportFilename` (see https://sli.dev/custom/#frontmatter-configures) or use `[entry]-export`): path to the output.
+- `--format` (`'pdf', 'png', 'md'`, default: `'pdf'`): output format.
+- `--timeout` (`number`, default: `30000`): timeout for rendering the print page (see https://playwright.dev/docs/api/class-page#page-goto).
+- `--range` (`string`): page ranges to export (example: `'1,4-5,6'`).
+- `--dark` (`boolean`, default: `false`): export as dark theme.
+- `--with-clicks`, `-c` (`boolean`, default: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).
+- `--theme`, `-t` (`string`): override theme.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ### `slidev format [entry]`
 
 Διαμορφώστε το αρχείο markdown.
 
+<<<<<<< HEAD
 * `[entry]` (`string`, προεπιλογή: `slides.md`): το path για την είσοδο διαφανειών markdown.
+=======
+- `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ### `slidev theme [subcommand]`
 
@@ -210,8 +275,16 @@ npm run slidev -- --open
 
 Υποεντολές:
 
+<<<<<<< HEAD
 * `eject [entry]`: Εξαγωγή του τρέχοντος θέματος στο τοπικό σύστημα αρχείων
   * `[entry]` (`string`, προεπιλογή: `slides.md`): το path για την είσοδο διαφανειών markdown.
   * Επιλογές:
     * `--dir` (`string`, προεπιλογή: `theme`): φάκελος εξόδου.
     * `--theme`, `-t` (`string`): παρακάμπτει το θέμα.
+=======
+- `eject [entry]`: Eject current theme into local file system
+  - `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+  - Options:
+    - `--dir` (`string`, default: `theme`): output dir.
+    - `--theme`, `-t` (`string`): override theme.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2

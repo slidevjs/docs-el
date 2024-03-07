@@ -99,6 +99,7 @@ htmlAttrs:
 
 Επιπλέον, κάθε διαφάνεια δέχεται την ακόλουθη ρύθμιση στο μπλοκ Frontmatter:
 
+<<<<<<< HEAD
 * `clicks` (`number`): Προσαρμοσμένος αριθμός clicks (μάθετε περισσότερα [εδώ](/guide/animations.html#προσαρμοσμενη-συνολικη-καταμετρηση-κλικ)).
 * `disabled` (`boolean`): Απενεργοποιήστε και κρύψτε πλήρως τη διαφάνεια.
 * `hide` (`boolean`): Το ίδιο με το `disabled`.
@@ -111,6 +112,20 @@ htmlAttrs:
 * `title` (`string`): Παρακάμψτε τον τίτλο για τα στοιχεία `<Title>` και `<Toc>` (μάθετε περισσότερα [εδώ](/builtin/components.html#titles)).
 * `transition` (`string | TransitionProps`): Ορίστε τη μετάβαση μεταξύ της διαφάνειας και της επόμενης (μάθετε περισσότερα [εδώ](/guide/animations.html#μεταβάσεις-διαφανειών)).
 * `zoom` (`number`): Προσαρμοσμένη κλίμακα ζουμ. Χρήσιμο για διαφάνειες με πολύ περιεχόμενο.
+=======
+- `clicks` (`number`): Custom clicks count (learn more [here](/guide/animations.html#custom-total-clicks-count)).
+- `disabled` (`boolean`): Completely disable and hide the slide.
+- `hide` (`boolean`): The same as `disabled`.
+- `hideInToc` (`boolean`): Hide the slide for the `<Toc>` components (learn more [here](/builtin/components.html#toc)).
+- `layout` (`string`): Defines the layout component applied to the slide (learn more [here](/guide/syntax.html#front-matter-layouts) and [here](/builtin/layouts.html)).
+- `level` (`number`): Override the title level for the `<Title>` and `<Toc>` components (only if `title` has also been declared, learn more [here](/builtin/components.html#titles)).
+- `preload` (`boolean`, default `true`): Preload the next slide (learn more [here](/guide/animations.html#motion)).
+- `routeAlias` (`string`): Create a route alias that can be used in the URL or with the `<Link>` component (learn more [here](/builtin/components.html#link)).
+- `src` (`string`): Includes a markdown file (learn more [here](/guide/syntax.html#multiple-entries)).
+- `title` (`string`): Override the title for the `<Title>` and `<Toc>` components (learn more [here](/builtin/components.html#titles)).
+- `transition` (`string | TransitionProps`): Defines the transition between the slide and the next one (learn more [here](/guide/animations.html#slide-transitions)).
+- `zoom` (`number`): Custom zoom scale. Useful for slides with a lot of content.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ## Δομή Φακέλου
 
