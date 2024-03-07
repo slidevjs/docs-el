@@ -8,7 +8,7 @@ outline: deep
 
 Μπορείτε να χρησιμοποιήσετε [τις δυνατότητες του Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) όπως θα κάνατε κανονικά, με την πρόσθετη υποστήριξη του ενσωματωμένου HTML και των Vue Components. Επίσης υποστηρίζεται styling χρησιμοποιώντας [UnoCSS](/custom/config-unocss). Χρησιμοποιήστε το `---` συνοδευμένο από μια νέα γραμμή για να διαχωρίσετε τις διαφάνειές σας.
 
-~~~md
+````md
 # Slidev
 
 Γεια σου, Κόσμε!
@@ -19,9 +19,15 @@ outline: deep
 
 Άμεση χρήση code blocks για επισήμανση
 
+<<<<<<< HEAD
 //```ts
 console.log('Γεια σου, Κόσμε!')
 //```
+=======
+```ts
+console.log('Hello, World!')
+```
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ---
 
@@ -33,13 +39,15 @@ console.log('Γεια σου, Κόσμε!')
 <div class="p-3">
   <Tweet id="20" />
 </div>
-~~~
+````
 
 ## Frontmatter & Layouts
 
 Καθορίστε layouts και άλλα μεταδεδομένα για κάθε διαφάνεια μετατρέποντας τα διαχωριστικά σε [frontmatter blocks](https://jekyllrb.com/docs/front-matter/). Κάθε frontmatter αρχίζει με μια τριπλή παύλα και τελειώνει με μια άλλη. Τα κείμενα μεταξύ τους είναι objects δεδομένων σε μορφή [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Για παράδειγμα:
 
-~~~md
+<!-- eslint-skip -->
+
+```md
 ---
 layout: cover
 ---
@@ -62,8 +70,13 @@ class: 'text-white'
 
 # Σελίδα 3
 
+<<<<<<< HEAD
 Πρόκειται για μια προεπιλεγμένη σελίδα χωρίς πρόσθετα μεταδεδομένα.
 ~~~
+=======
+This is a default page without any additional metadata.
+```
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Ανατρέξτε στις [προσαρμογές](/custom/) για περισσότερες πληροφορίες.
 
@@ -74,7 +87,7 @@ class: 'text-white'
 Η προσαρμοσμένη σύνταξη ενδέχεται να μην είναι συμβατή με ορισμένους formatters όπως το Prettier.
 Μπορείτε είτε να εγκαταστήσετε το [Prettier Plugin](/guide/editors#prettier-plugin) είτε να χρησιμοποιήσετε απευθείας ένα μπλοκ κώδικα `yaml` για να ορίσετε το frontmatter:
 
-~~~markdown
+````md
 ---
 layout: cover
 ---
@@ -94,18 +107,23 @@ class: 'text-white'
 
 # Σελίδα 2
 
+<<<<<<< HEAD
 Αυτή είναι μια σελίδα με τη διάταξη `center` και μια εικόνα φόντου.
 ~~~
+=======
+This is a page with the layout `center` and a background image.
+````
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ## Code Blocks
 
 Ένας μεγάλος λόγος που φτιάχνω το Slidev είναι ότι πρέπει να κάνω τον κώδικά μου να φαίνεται σωστά στις διαφάνειες. Έτσι, όπως ακριβώς περιμένατε, μπορείτε να χρησιμοποιήσετε code block με μορφή Markdown για να επισημάνετε τον κώδικά σας.
 
-~~~md
+````md
 ```ts
 console.log('Γεια σου, Κόσμε!')
 ```
-~~~
+````
 
 Υποστηρίζουμε και [Prism](https://prismjs.com) και [Shiki](https://github.com/shikijs/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
 
@@ -113,7 +131,7 @@ console.log('Γεια σου, Κόσμε!')
 
 Για να επισημάνετε συγκεκριμένες γραμμές, απλά προσθέστε τους αριθμούς γραμμών μέσα σε μία αγκύλη `{}`. Οι αριθμοί γραμμών αρχίζουν να μετρούν από το 1 από προεπιλογή.
 
-~~~md
+````md
 ```ts {2,3}
 function add(
   a: Ref<number> | number,
@@ -122,11 +140,11 @@ function add(
   return computed(() => unref(a) + unref(b))
 }
 ```
-~~~
+````
 
 Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines: true`. Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε code block και να επισημάνετε τις γραμμές ανάλογα, με προεπιλογή 1:
 
-~~~md
+````md
 ```ts {6,7}{lines:true,startLine:5}
 function add(
   a: Ref<number> | number,
@@ -135,11 +153,11 @@ function add(
   return computed(() => unref(a) + unref(b))
 }
 ```
-~~~
+````
 
 Για να αλλάξετε την επισήμανση με πολλαπλά κλικ, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε:
 
-~~~md
+````md
 ```ts {2-3|5|all}
 function add(
   a: Ref<number> | number,
@@ -148,13 +166,13 @@ function add(
   return computed(() => unref(a) + unref(b))
 }
 ```
-~~~
+````
 
 Αυτό θα επισημάνει πρώτα τα `a: Ref<number> | number` και `b: Ref<number> | number`, και μετά `return computed(() => unref(a) + unref(b))` μετά από ένα click, και τέλος, ολόκληρο το block.
 
 Μπορείτε να ορίσετε τον αριθμό γραμμής σε `hide` για να αποκρύψετε το code block ή σε `none` για να μην επισημάνετε καμία γραμμή:
 
-~~~md
+````md
 ```ts {hide|none}
 function add(
   a: Ref<number> | number,
@@ -163,7 +181,7 @@ function add(
   return computed(() => unref(a) + unref(b))
 }
 ```
-~~~
+````
 
 ::: tip
 Μάθετε περισσότερα στον [οδηγό κινήσεων κλικ](./animations#θεση).
@@ -171,7 +189,11 @@ function add(
 
 Αν ο κώδικας δεν χωράει σε μία διαφάνεια, μπορείτε να χρησιμοποιήσετε το `maxHeight` για να ορίσετε σταθερό ύψος και να ενεργοποιήσετε το scrolling:
 
+<<<<<<< HEAD
 ~~~md {1}
+=======
+````md
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 ```ts {2|3|7|12}{maxHeight:'100px'}
 function add(
   a: Ref<number> | number,
@@ -182,7 +204,7 @@ function add(
 /// ...as many lines as you want
 const c = add(1, 2)
 ```
-~~~
+````
 
 ### Ενσωμάτωση TwoSlash
 
@@ -194,14 +216,14 @@ const c = add(1, 2)
 
 Για να το χρησιμοποιήσετε, μπορείτε να προσθέσετε το `twoslash` στο αναγνωριστικό γλώσσας του μπλοκ κώδικα:
 
-~~~md
+````md
 ```ts twoslash
 import { ref } from 'vue'
 
 const count = ref(0)
 //            ^?
 ```
-~~~
+````
 
 It will be rendered as:
 
@@ -223,7 +245,7 @@ const count = ref(0)
 
 Στο Slidev, το συνδέουμε με το [σύστημα clicks](/guide/animations#κινησεις-click). Η σύνταξη είναι να τυλίξετε πολλαπλά μπλοκ κώδικα που αντιπροσωπεύουν κάθε βήμα με <code>````md magic-move</code> (προσέξτε ότι είναι **4** backticks), αυτό θα μετατραπεί σε ένα μπλοκ κώδικα, που μεταμορφώνεται σε κάθε βήμα καθώς κάνετε click.
 
-~~~~md
+`````md
 ````md magic-move
 ```js
 console.log(`Βήμα ${1}`)
@@ -235,11 +257,11 @@ console.log(`Βήμα ${1 + 1}`)
 console.log(`Βήμα ${3}` as string)
 ```
 ````
-~~~~
+`````
 
 Είναι επίσης δυνατό να συνδυάσετε το Magic Move με την [επισήμανση γραμμής](#επισημανση-γραμμης), για παράδειγμα:
 
-~~~~md
+`````md
 ````md magic-move {at:4} // [!code hl]
 ```js {*|1|2-5} // [!code hl]
 let count = 1
@@ -255,7 +277,7 @@ let count = 1
 const add = () => count += 1
 ```
 ````
-~~~~
+`````
 
 <!-- TODO: add an inline demo -->
 
@@ -263,11 +285,11 @@ const add = () => count += 1
 
 Κάθε φορά που θέλετε να κάνετε κάποια τροποποίηση στην παρουσίαση, απλά προσθέστε `{monaco}` μετά το αναγνωριστικό γλώσσας - αυτό μετατρέπει το block σε έναν πλήρως εξοπλισμένο Monaco editor!
 
-~~~md
+````md
 ```ts {monaco}
 console.log('ΓειαΣουΚόσμε')
 ```
-~~~
+````
 
 Μάθετε περισσότερα για την [ρύθμιση Monaco](/custom/config-monaco).
 
@@ -355,7 +377,7 @@ blockquote {
 
 Σε Markdown, το τελευταίο block σχολίων σε κάθε διαφάνεια θα αντιμετωπίζεται ως σημείωση.
 
-~~~md
+```md
 ---
 layout: cover
 ---
@@ -377,7 +399,7 @@ layout: cover
 <!--
 Αυτή είναι μια άλλη σημείωση
 -->
-~~~
+```
 
 Υποστηρίζονται επίσης οι απλές γλώσσες Markdown και HTML στις σημειώσεις κατά την απεικόνιση στην λειτουργία παρουσιαστή.
 
@@ -591,24 +613,39 @@ $$
 
 Τα code blocks που χαρακτηρίζονται ως `mermaid` θα μετατρέπονται σε διαγράμματα, για παράδειγμα:
 
-~~~md
-//```mermaid
+````md
+```mermaid
 sequenceDiagram
+<<<<<<< HEAD
   Αλίκη->Γιάννης: Γεια σου Γιάννη, τι κάνεις;
   Σημείωση για την Αλίκη, Γιάννη: Μια τυπική επικοινωνία
 //```
 ~~~
+=======
+  Alice->John: Hello John, how are you?
+  Note over Alice,John: A typical interaction
+```
+````
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Μπορείτε επίσης να του περάσετε ένα object επιλογών για να καθορίσετε την κλιμάκωση και τη θεματοποίηση. Η σύνταξη του object είναι ένα JavaScript object literal, θα πρέπει να προσθέσετε εισαγωγικά (`'`) για τα strings και να χρησιμοποιήσετε κόμμα (`,`) μεταξύ κλειδιών.
 
-~~~md
-//```mermaid {theme: 'neutral', scale: 0.8}
+````md
+```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
+<<<<<<< HEAD
 B[Κείμενο] --> C{Απόφαση}
 C -->|Ένα| D[Αποτέλεσμα 1]
 C -->|Δύο| E[Αποτέλεσμα 2]
 //```
 ~~~
+=======
+B[Text] --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```
+````
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
 
@@ -619,6 +656,8 @@ C -->|Δύο| E[Αποτέλεσμα 2]
 Μπορείτε να χωρίσετε το `slides.md` σας σε πολλαπλά αρχεία και να τα οργανώσετε όπως θέλετε.
 
 `slides.md` :
+
+<!-- eslint-skip -->
 
 ```md
 # Σελίδα 1

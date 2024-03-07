@@ -16,13 +16,23 @@ presenter: false
 ---
 ```
 
+<<<<<<< HEAD
 Ή μπορείτε να την ενεργοποιήσετε μόνο για τη λειτουργία `dev` ή `build`, ορίζοντας τη λειτουργία που θέλετε στη ρύθμιση παραμέτρων:
+=======
+Or you can enable it only for `dev` or `build` mode by setting the mode you want in the config:
+
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 ```md
 ---
 presenter: dev
 ---
 ```
+<<<<<<< HEAD
 Σε αυτή την περίπτωση ο παρουσιαστής θα είναι διαθέσιμος μόνο όταν εκτελείται το `slidev` αλλά όχι όταν εκτελείται το `slidev build`.
+=======
+
+In that case the presenter will only be available when running `slidev` but not when running `slidev build`.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 ## Περιορισμένη απομακρυσμένη πρόσβαση
 
