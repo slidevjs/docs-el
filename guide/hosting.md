@@ -52,8 +52,13 @@ $ slidev build --download
 
 Όταν χρησιμοποιείτε την επιλογή λήψης, μπορείτε επίσης να παρέχετε τις επιλογές εξαγωγής:
 
+<<<<<<< HEAD
 * Χρησιμοποιώντας [επιλογές εξαγωγής CLI](/guide/exporting.html)
 * Ή [επιλογές εξαγωγής frontmatter](/custom/#frontmatter-configures)
+=======
+- By using [CLI export options](/guide/exporting.html)
+- Or [frontmatter export options](/custom/#frontmatter-configures)
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ### Φάκελος εξόδου
 
@@ -142,9 +147,16 @@ status = 200
 
 - [GitHub Pages](https://pages.github.com/)
 
+<<<<<<< HEAD
 Για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages:
 - ανεβάστε όλα τα αρχεία του έργου στο repo σας (π.χ. με το όνομα `name_of_repo`)
 - δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions. Σε αυτό το αρχείο, αντικαταστήστε το `<name_of_repo>` με το `name_of_repo`. Βεβαιωθείτε ότι αφήσατε τις επικεφαλής και τις τελικές κάθετους στη θέση τους.
+=======
+To deploy your slides on GitHub Pages:
+
+- upload all the files of the project in your repo (i.e. named `name_of_repo`)
+- create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions. In this file, replace `<name_of_repo>` with `name_of_repo`. Make sure to leave the leading and trailing slashes in place.
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ```yaml
 name: Deploy pages
@@ -191,5 +203,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+<<<<<<< HEAD
 - Στο repository σας, μεταβείτε στην επιλογή Settings>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "Github Actions".
 - Τέλος, αφού εκτελεστούν όλες οι διαδικασίες εργασιών, θα πρέπει να εμφανιστεί ένας σύνδεσμος προς τις διαφάνειες στο Settings>Pages.
+=======
+
+- In your repository, go to Settings>Pages. Under "Build and deployment", select "Github Actions".
+- Finally, after all workflows are executed, a link to the slides should appear under Settings>Pages.
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
