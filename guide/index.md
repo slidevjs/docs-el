@@ -82,7 +82,7 @@ $ npx slidev
 
 Το Slidev διαβάζει το αρχείο `slides.md` στη ρίζα του έργου σας και τα μετατρέπει σε διαφάνειες. Κάθε φορά που κάνετε αλλαγές σε αυτό, το περιεχόμενο των διαφανειών θα ενημερώνεται αμέσως. Για παράδειγμα:
 
-~~~md
+````md
 # Slidev
 
 Γεια σου κόσμε
@@ -99,8 +99,13 @@ console.log('Γεια σου, κόσμε!')
 
 ---
 
+<<<<<<< HEAD
 # Σελίδα 3
 ~~~
+=======
+# Page 3
+````
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 Διαβάστε περισσότερα για τη σύνταξη Markdown του Slidev στο [οδηγός σύνταξης](/guide/syntax).
 
@@ -119,3 +124,16 @@ console.log('Γεια σου, κόσμε!')
 - [KaTeX](https://katex.org/) - Μαθηματική απεικόνιση LaTeX.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Κειμενικά Διαγράμματα.
 
+<<<<<<< HEAD
+=======
+- [Vite](https://vitejs.dev) - An extremely fast frontend tooling
+- [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Focus on the content while having the power of HTML and Vue components whenever needed
+- [UnoCSS](https://github.com/unocss/unocss) - On-demand utility-first CSS framework, style your slides at ease
+- [Shiki](https://github.com/shikijs/shiki), [Prism](https://github.com/PrismJS/prism), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - First-class code snippets support with live coding capability
+- [RecordRTC](https://recordrtc.org) - Built-in recording and camera view
+- [VueUse](https://vueuse.org) family - [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
+- [Iconify](https://iconify.design/) - Iconsets collection.
+- [Drauu](https://github.com/antfu/drauu) - Drawing and annotations support
+- [KaTeX](https://katex.org/) - LaTeX math rendering.
+- [Mermaid](https://mermaid-js.github.io/mermaid) - Textual Diagrams.
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f

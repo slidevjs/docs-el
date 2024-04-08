@@ -191,6 +191,10 @@ const slidebars: DefaultTheme.SidebarItem[] = [
     text: 'Ενσωματωμένα',
     items: BuiltIn,
   },
+  {
+    text: 'Resources',
+    items: Resources,
+  },
 ]
 
 export default defineConfig({

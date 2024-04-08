@@ -39,6 +39,7 @@ export default definePreparserSetup(({ filepath, headmatter, mode }) => {
 })
 ```
 
+<<<<<<< HEAD
 Αυτό το παράδειγμα αντικαθιστά συστηματικά κάθε σειρά με την ένδειξη `@@@` με μια σειρά με την ένδειξη `γεια`. Παρουσιάζει τη δομή ενός αρχείου ρυθμίσεων του preparser και μερικές από τις κύριες έννοιες που περιλαμβάνει ο preparser:
 - Το `definePreparserSetup` πρέπει να κληθεί με μια συνάρτηση ως παράμετρο.
 - Η συνάρτηση λαμβάνει το path του αρχείου (του κεντρικού αρχείου παρουσίασης), το headmatter (από το αρχείο md) και, από την έκδοση v0.48.0, μία λειτουργία (dev, build ή export).Αυτή μπορεί να χρησιμοποιήσει αυτές τις πληροφορίες (π.χ. για να ενεργοποιήσει επεκτάσεις με βάση το αρχείο παρουσίασης).
@@ -47,12 +48,25 @@ export default definePreparserSetup(({ filepath, headmatter, mode }) => {
   - μια συνάρτηση `transformRawLines(lines)` που εκτελείται αμέσως μετά το parsing του frontmatter του αρχείου md και λαμβάνει μια λίστα όλων των σειρών (από το αρχείο md). Η συνάρτηση μπορεί να μεταλλάσσει τη λίστα αυθαίρετα.
   - μια συνάρτηση `transformSlide(content, frontmatter)` που καλείται για κάθε διαφάνεια, αμέσως μετά τη διάσπαση του αρχείου, και λαμβάνει το περιεχόμενο της διαφάνειας ως συμβολοσειρά και το frontmatter της διαφάνειας ως αντικείμενο. Η συνάρτηση μπορεί να μεταβάλλει το frontmatter και πρέπει να επιστρέφει τη συμβολοσειρά του περιεχομένου (ενδεχομένως τροποποιημένη, ενδεχομένως `undefined` αν δεν έχουν γίνει τροποποιήσεις).
   - ένα `name`
+=======
+This example systematically replaces any `@@@` line by a line with `hello`. It illustrates the structure of a preparser configuration file and some of the main concepts the preparser involves:
+
+- `definePreparserSetup` must be called with a function as parameter.
+- The function receives the file path (of the root presentation file), the headmatter (from the md file) and, since v0.48.0, a mode (dev, build or export). It could use this information (e.g., enable extensions based on the presentation file or whether we are exporting a PDF).
+- The function must return a list of preparser extensions.
+- An extension can contain:
+  - a `transformRawLines(lines)` function that runs just after parsing the headmatter of the md file and receives a list of all lines (from the md file). The function can mutate the list arbitrarily.
+  - a `transformSlide(content, frontmatter)` function that is called for each slide, just after splitting the file, and receives the slide content as a string and the frontmatter of the slide as an object. The function can mutate the frontmatter and must return the content string (possibly modified, possibly `undefined` if no modifications have been done).
+  - a `name`
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ## Παράδειγμα επεκτάσεων Preparser
 
 ### Περίπτωση χρήσης 1: συμπαγής σύνταξη παρουσίασης σε ανώτατο επίπεδο
 
 Φανταστείτε μια κατάσταση όπου (μέρος) της παρουσίασής σας παρουσιάζει κυρίως εικόνες εξωφύλλου και περιλαμβάνει άλλα αρχεία md. Μπορεί να θέλετε μια συμπαγή σημειογραφία όπου για παράδειγμα (μέρος του) `slides.md` έχει ως εξής:
+
+<!-- eslint-skip -->
 
 ```md
 @cover: /nice.jpg
@@ -115,6 +129,8 @@ export default definePreparserSetup(() => {
 
 Φανταστείτε μια περίπτωση όπου συχνά θέλετε να μεγεθύνετε ορισμένες διαφάνειες σας, αλλά εξακολουθείτε να θέλετε να χρησιμοποιήσετε μια ποικιλία από υπάρχουσες διατάξεις, οπότε η δημιουργία μιας νέας διάταξης δεν θα ήταν κατάλληλη.
 Για παράδειγμα, μπορεί να θέλετε να γράψετε το `slides.md` σας ως εξής:
+
+<!-- eslint-skip -->
 
 ```md
 ---
