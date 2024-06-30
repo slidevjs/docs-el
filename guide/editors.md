@@ -1,12 +1,20 @@
 # Υποστήριξη Συντάκτη
 
+<<<<<<< HEAD
 Δεδομένου ότι το Slidev χρησιμοποιεί Markdown ως πηγή εισόδου, μπορείτε να χρησιμοποιήσετε ΟΠΟΙΟΝΔΗΠΟΤΕ συντάκτη αγαπάτε για να το γράψετε.
+=======
+Since Slidev uses Markdown as the source entry, you can use any editor you prefer to create your slides.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Αν θέλετε κάποια υψηλού επιπέδου διαχείριση των διαφανειών σας, σας παρέχουμε τις ακόλουθες ενσωματώσεις επεξεργαστή!
 
 ## Ενσωματωμένος Συντάκτης
 
+<<<<<<< HEAD
 Το Slidev περιλαμβάνει ένα ενσωματωμένο συντάκτη [CodeMirror](https://codemirror.net/) που θα επαναφορτώσει και θα αποθηκεύσει αμέσως τις αλλαγές στο αρχείο σας.
+=======
+Slidev comes with an integrated editor that will instantly reload and save the changes to your file.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Κάντε κλικ στο κουμπί <carbon-edit class="inline-icon-btn"/> για να το ανοίξετε.
 
@@ -32,15 +40,54 @@
 
 ### Δυνατότητες
 
+<<<<<<< HEAD
 - Προβολή διαφανειών στον πλευρικό πίνακα
 - Κουμπιά μετάβασης στην επόμενη / προηγούμενη διαφάνεια
 - Αναδιάταξη διαφανειών
 - Αναδίπλωση για block ολίσθησης
 - Μετατροπή Markdown σε HTML
+=======
+- Preview slides in the side panel
+- Slides tree view
+- Re-ordering slides
+- Folding for slide blocks
+- Multiple slides project support
+- Start the dev server with one click
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
-![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
+![](https://github.com/slidevjs/slidev/assets/63178754/2c9ba01a-d21f-4b33-b6b6-4e249873f865)
+
+::: code-group
 
 <TheTweet id="1395333405345148930" />
+
+<TheTweet id="1789684139152810151" />
+
+:::
+
+### Installation
+
+You can install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=antfu.slidev).
+
+### Usage
+
+Click the `Slidev` icon in the activity bar to open the **Slidev panel**. In the Slidev panel, you can see the projects tree view, slides tree view, and the preview webview.
+
+In the **projects tree view**, you can see all the Slidev projects in your workspace. You can dlick the item to open the corresponding file, and click the <codicon-eye /> icon over it to switch the active project. The <codicon-add /> icon allows you to load a slides project that wasn't scanned automatically.
+
+In the **slides tree view**, you can see all the slides in the active project. You can click the item to move you cursor to the slide in the editor, and drag and drop to reorder the slides.
+
+In the **preview webview**, you can click the <codicon-run-all /> icon to start the dev server and click the <codicon-globe /> icon to open the slides in the browser. Toggle <codicon-lock /> icon to sync/unsync the preview navigation with the editor cursor.
+
+There are also some **commands** you can use. Type `Slidev` in the command palette to see them.
+
+You can add glob patterns to the `slidev.include` configuration to include files as Slidev entries. The default value is `["**/*.md"]`. Example:
+
+```json
+{
+  "slidev.include": ["**/presentation.md"]
+}
+```
 
 ## Prettier Plugin
 
