@@ -38,8 +38,13 @@
 ---
 layout: image-left
 
+<<<<<<< HEAD
 # η πηγή της εικόνας
 image: ./path/για/την/εικόνα
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 # ένα προσαρμοσμένο όνομα class για το περιεχόμενο
 class: το-cool-περιεχόμενό-μου-στα-δεξιά
@@ -56,8 +61,13 @@ class: το-cool-περιεχόμενό-μου-στα-δεξιά
 ---
 layout: image-right
 
+<<<<<<< HEAD
 # η πηγή της εικόνας
 image: ./path/για/την/εικόνα
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 # ένα προσαρμοσμένο όνομα class για το περιεχόμενο
 class: το-cool-περιεχόμενό-μου-στα-αριστερά
@@ -74,8 +84,13 @@ class: το-cool-περιεχόμενό-μου-στα-αριστερά
 ---
 layout: image
 
+<<<<<<< HEAD
 # η πηγή της εικόνας
 image: ./path/για/την/εικόνα
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 ---
 ```
 
@@ -84,7 +99,7 @@ You can change the default background size (`cover`) by adding the `backgroundSi
 ```yaml
 ---
 layout: image
-image: ./path/to/the/image
+image: /path/to/the/image
 backgroundSize: contain
 ---
 ```
@@ -92,7 +107,7 @@ backgroundSize: contain
 ```yaml
 ---
 layout: image-left
-image: ./path/to/the/image
+image: /path/to/the/image
 backgroundSize: 20em 70%
 ---
 ```

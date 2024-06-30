@@ -2,7 +2,11 @@
 
 ## Build Single Page Applications (SPA)
 
+<<<<<<< HEAD
 Μπορείτε επίσης να μετατρέψετε τις διαφάνειες σε ένα αυτο-φιλοξενούμενο SPA:
+=======
+You can build the slides into a self-hostable SPA:
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ```bash
 $ slidev build
@@ -12,7 +16,11 @@ $ slidev build
 
 Μπορείτε να δοκιμάσετε την παραγόμενη εφαρμογή χρησιμοποιώντας έναν web server (Apache, NGINX, Caddy...κλπ.) ή στο project μπορείτε να εκτελέσετε απευθείας: `npx vite preview`.
 
+<<<<<<< HEAD
 Και στη συνέχεια μπορείτε να την φιλοξενήσετε στα [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), ή όπου αλλού θέλετε. Τώρα μπορείτε να μοιραστείτε τις διαφάνειές σας με τον υπόλοιπο κόσμο με έναν μόνο σύνδεσμο.
+=======
+Then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever other web server or service that you want. Now you can share your slides with the rest of the world with a single link.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ### Βασικό Path
 
@@ -24,7 +32,11 @@ $ slidev build --base /ομιλίες/η-cool-ομιλία-μου/
 
 Ανατρέξτε στις [οδηγίες χρήσης του Vite](https://vitejs.dev/guide/build.html#public-base-path) για περισσότερες πληροφορίες.
 
+<<<<<<< HEAD
 ### Παροχή PDF με δυνατότητα λήψης
+=======
+### Provide a Downloadable PDF
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Μπορείτε να παρέχετε ένα PDF με δυνατότητα λήψης στους θεατές του SPA σας με την ακόλουθη ρύθμιση:
 
@@ -52,8 +64,13 @@ $ slidev build --download
 
 Όταν χρησιμοποιείτε την επιλογή λήψης, μπορείτε επίσης να παρέχετε τις επιλογές εξαγωγής:
 
+<<<<<<< HEAD
 * Χρησιμοποιώντας [επιλογές εξαγωγής CLI](/guide/exporting.html)
 * Ή [επιλογές εξαγωγής frontmatter](/custom/#frontmatter-configures)
+=======
+- By using [CLI export options](/guide/exporting.html)
+- Or [frontmatter export options](/custom/#frontmatter-configures)
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ### Φάκελος εξόδου
 
@@ -73,10 +90,14 @@ $ slidev build --watch
 
 ### Πολλαπλές καταχωρήσεις
 
+<<<<<<< HEAD
 Μπορείτε επίσης να εξάγετε πολλές διαφάνειες ταυτόχρονα.
+=======
+You can build multiple slide decks at once.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ```bash
-$ slidev build slides1.md slides1.md
+$ slidev build slides1.md slides2.md
 ```
 
 Ή
@@ -142,9 +163,16 @@ status = 200
 
 - [GitHub Pages](https://pages.github.com/)
 
+<<<<<<< HEAD
 Για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages:
 - ανεβάστε όλα τα αρχεία του έργου στο repo σας (π.χ. με το όνομα `name_of_repo`)
 - δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions. Σε αυτό το αρχείο, αντικαταστήστε το `<name_of_repo>` με το `name_of_repo`. Βεβαιωθείτε ότι αφήσατε τις επικεφαλής και τις τελικές κάθετους στη θέση τους.
+=======
+To deploy your slides on GitHub Pages:
+
+- upload all the files of the project in your repo (i.e. named `name_of_repo`)
+- create `.github/workflows/deploy.yml` with the following content to deploy your slides to GitHub Pages via GitHub Actions.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ```yaml
 name: Deploy pages
@@ -179,7 +207,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build -- --base /<name_of_repo>/
+        run: npm run build -- --base /${{github.event.repository.name}}/
 
       - uses: actions/configure-pages@v4
 
@@ -191,5 +219,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+<<<<<<< HEAD
 - Στο repository σας, μεταβείτε στην επιλογή Settings>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "Github Actions".
 - Τέλος, αφού εκτελεστούν όλες οι διαδικασίες εργασιών, θα πρέπει να εμφανιστεί ένας σύνδεσμος προς τις διαφάνειες στο Settings>Pages.
+=======
+
+- In your repository, go to Settings>Pages. Under "Build and deployment", select "Github Actions".
+- Finally, after all workflows are executed, a link to the slides should appear under Settings>Pages.
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
