@@ -109,18 +109,15 @@ themeConfig:
 
 > Διαθέσιμο από v0.43.0
 
-<<<<<<< HEAD
 Μια συντομογραφία του `$slidev.nav`.
-=======
-A shorthand of `$slidev.nav`.
 
-## Composable Usage
+## Χρήση Composable
 
-> Available since v0.48.0
+> Διαθέσιμο από v0.48.0
 
 ### Context
 
-If you want to get the context programmatically (also type-safely), you can import composables from `@slidev/client`:
+Αν θέλετε να λάβετε το context προγραμματιστικά (επίσης με type-safety), μπορείτε να κάνετε import composables από το `@slidev/client`:
 
 ```vue
 <script setup>
@@ -137,11 +134,11 @@ onSlideLeave(() => { /* ... */ })
 ```
 
 > [!NOTE]
-> Previously, you might see the usage of importing nested modules like `import { isDark } from '@slidev/client/logic/dark.ts'`, this is **NOT RECOMMENDED** as they are internal implementation details and might be broken in the future. Try always to use the public API from `@slidev/client` whenever possible.
+> Προηγουμένως, μπορεί να είδατε τη χρήση της εισαγωγής εμφωλευμένων modules όπως `import { isDark } from '@slidev/client/logic/dark.ts'`, αυτό είναι **ΔΕΝ ΣΥΝΙΣΤΑΤΑΤΑΙ** καθώς είναι εσωτερικές λεπτομέρειες υλοποίησης και μπορεί να χαλάσουν στο μέλλον. Προσπαθήστε πάντα να χρησιμοποιείτε το δημόσιο API από το `@slidev/client` όποτε είναι δυνατόν.
 
-### Types
+### Τύποι
 
-If you want to get a type programmatically, you can import types like `TocItem` from `@slidev/types`:
+Αν θέλετε να λάβετε έναν τύπο προγραμματιστικά, μπορείτε να εισαγάγετε τύπους όπως το `TocItem` από το `@slidev/types`:
 
 ```vue
 <script setup>
@@ -152,4 +149,3 @@ function tocFunc(tree: TocItem[]): TocItem[] {
 }
 </script>
 ```
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3

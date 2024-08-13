@@ -17,12 +17,8 @@ title: Slidev
 titleTemplate: '%s - Slidev'
 # πληροφορίες για τις διαφάνειές σας, μπορεί να είναι μια συμβολοσειρά markdown.
 info: false
-<<<<<<< HEAD
-# πεδίο δημιουργού για το εξαγόμενο PDF
-=======
-# author field for exported PDF or PPTX
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
-author: Your Name Here
+# πεδίο δημιουργού για το εξαγόμενο PDF ή PPTX
+author: Το όνομα σου
 # πεδίο λέξεων-κλειδιών για το εξαγόμενο PDF, χωρισμένο με κόμμα.
 keywords: keyword1,keyword2
 
@@ -45,29 +41,23 @@ export:
 highlighter: shiki
 # εμφάνιση αριθμών γραμμών σε blocks
 lineNumbers: false
-<<<<<<< HEAD
 # ενεργοποίηση του επεξεργαστή monaco, μπορεί να είναι boolean, 'dev' ή 'build'
-monaco: dev
-# λήψη απομακρυσμένων assets τοπικά χρησιμοποιώντας το vite-plugin-remote-assets, μπορεί να είναι boolean, 'dev' ή 'build'
-=======
-# enable monaco editor, can be boolean, 'dev' or 'build'
 monaco: true
-# Where to load monaco types from, can be 'cdn', 'local' or 'none'
+# Από πού θα φορτώνονται οι τύποι monaco, μπορεί να είναι 'cdn', 'local' ή 'none'
 monacoTypesSource: local
-# explicitly specify extra local packages to import the types for
+# καθορίσετε ρητά επιπλέον local packages για την εισαγωγή των τύπων για
 monacoTypesAdditionalPackages: []
-# explicitly specify extra local modules as dependency of monaco runnable
+# καθορίσετε ρητά επιπλέον local modules ως dependency του monaco runnable
 monacoRunAdditionalDeps: []
-# download remote assets in local using vite-plugin-remote-assets, can be boolean, 'dev' or 'build'
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+# λήψη απομακρυσμένων assets τοπικά χρησιμοποιώντας το vite-plugin-remote-assets, μπορεί να είναι boolean, 'dev' ή 'build'
 remoteAssets: false
 # ελέγχει αν τα κείμενα στις διαφάνειες είναι επιλέξιμα
 selectable: true
 # ενεργοποίηση της εγγραφής διαφανειών, μπορεί να είναι boolean, 'dev' ή 'build'
 record: dev
-# enable Slidev's context menu, can be boolean, 'dev' or 'build'
+# ενεργοποίηση του context menu του Slidev, μπορεί να είναι boolean, 'dev' ή 'build'
 contextMenu: true
-# enable wake lock, can be boolean, 'dev' or 'build'
+# ενεργοποίηση του wake lock, μπορεί να είναι boolean, 'dev' ή 'build'
 wakeLock: true
 
 # αναγκάστε χρωματικό σχήμα για τις διαφάνειες, μπορεί να είναι 'auto', 'light', ή 'dark'
@@ -119,34 +109,19 @@ htmlAttrs:
 
 Επιπλέον, κάθε διαφάνεια δέχεται την ακόλουθη ρύθμιση στο μπλοκ Frontmatter:
 
-<<<<<<< HEAD
-* `clicks` (`number`): Προσαρμοσμένος αριθμός clicks (μάθετε περισσότερα [εδώ](/guide/animations.html#προσαρμοσμενη-συνολικη-καταμετρηση-κλικ)).
-* `disabled` (`boolean`): Απενεργοποιήστε και κρύψτε πλήρως τη διαφάνεια.
-* `hide` (`boolean`): Το ίδιο με το `disabled`.
-* `hideInToc` (`boolean`): Αποκρύψτε τη διαφάνεια για τα στοιχεία `<Toc>` (μάθετε περισσότερα [εδώ](/builtin/components.html#toc)).
-* `layout` (`string`): Καθορίζει το στοιχείο διάταξης που εφαρμόζεται στη διαφάνεια (μάθετε περισσότερα [εδώ](/guide/syntax.html#front-matter-layouts) και [εδώ](/builtin/layouts.html)).
-* `level` (`number`): Παρακάμψτε το επίπεδο τίτλου για τα στοιχεία `<Title>` και `<Toc>` (μόνο αν έχει δηλωθεί και το `title`, μάθετε περισσότερα [εδώ](/builtin/components.html#titles)).
-* `preload` (`boolean`, προεπιλογή `true`): προφόρτωση της επόμενης διαφάνειας (μάθετε περισσότερα [εδώ](/guide/animations.html#κίνηση)).
-* `routeAlias` (`string`): δημιουργήστε ένα ψευδώνυμο route που μπορεί να χρησιμοποιηθεί στη διεύθυνση URL ή με το στοιχείο `<Link>` (μάθετε περισσότερα [εδώ](/builtin/components.html#link)).
-* `src` (`string`): Συμπεριλάβετε ένα αρχείο markdown (μάθετε περισσότερα [εδώ](/guide/syntax.html#πολλαπλές-είσοδοι)).
-* `title` (`string`): Παρακάμψτε τον τίτλο για τα στοιχεία `<Title>` και `<Toc>` (μάθετε περισσότερα [εδώ](/builtin/components.html#titles)).
-* `transition` (`string | TransitionProps`): Ορίστε τη μετάβαση μεταξύ της διαφάνειας και της επόμενης (μάθετε περισσότερα [εδώ](/guide/animations.html#μεταβάσεις-διαφανειών)).
-* `zoom` (`number`): Προσαρμοσμένη κλίμακα ζουμ. Χρήσιμο για διαφάνειες με πολύ περιεχόμενο.
-=======
-- `clicks` (`number`): Custom clicks count (learn more [here](/guide/animations.html#custom-total-clicks-count)).
-- `disabled` (`boolean`): Completely disable and hide the slide.
-- `hide` (`boolean`): The same as `disabled`.
-- `hideInToc` (`boolean`): Hide the slide for the `<Toc>` components (learn more [here](/builtin/components.html#toc)).
-- `layout` (`string`): Defines the layout component applied to the slide (learn more [here](/guide/syntax.html#front-matter-layouts) and [here](/builtin/layouts.html)).
-- `level` (`number`): Override the title level for the `<Title>` and `<Toc>` components (only if `title` has also been declared, learn more [here](/builtin/components.html#titles)).
-- `preload` (`boolean`, default `true`): Preload the next slide (learn more [here](/guide/animations.html#motion)).
-- `routeAlias` (`string`): Create a route alias that can be used in the URL or with the `<Link>` component (learn more [here](/builtin/components.html#link)).
-- `src` (`string`): Includes a markdown file (learn more [here](/guide/syntax.html#multiple-entries)).
-- `title` (`string`): Override the title for the `<Title>` and `<Toc>` components (learn more [here](/builtin/components.html#titles)).
-- `transition` (`string | TransitionProps`): Defines the transition between the slide and the next one (learn more [here](/guide/animations.html#slide-transitions)).
-- `zoom` (`number`): Custom zoom scale. Useful for slides with a lot of content.
-- `dragPos` (`Record<string,string>`): Used as positions of draggable elements (learn more [here](/guide/draggable.html).
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+- `clicks` (`number`): Προσαρμοσμένος αριθμός clicks (μάθετε περισσότερα [εδώ](/guide/animations.html#προσαρμοσμενη-συνολικη-καταμετρηση-κλικ)).
+- `disabled` (`boolean`): Απενεργοποιήστε και κρύψτε πλήρως τη διαφάνεια.
+- `hide` (`boolean`): Το ίδιο με το `disabled`.
+- `hideInToc` (`boolean`): Αποκρύψτε τη διαφάνεια για τα στοιχεία `<Toc>` (μάθετε περισσότερα [εδώ](/builtin/components.html#toc)).
+- `layout` (`string`): Καθορίζει το στοιχείο διάταξης που εφαρμόζεται στη διαφάνεια (μάθετε περισσότερα [εδώ](/guide/syntax.html#front-matter-layouts) και [εδώ](/builtin/layouts.html)).
+- `level` (`number`): Παρακάμψτε το επίπεδο τίτλου για τα στοιχεία `<Title>` και `<Toc>` (μόνο αν έχει δηλωθεί και το `title`, μάθετε περισσότερα [εδώ](/builtin/components.html#titles)).
+- `preload` (`boolean`, προεπιλογή `true`): προφόρτωση της επόμενης διαφάνειας (μάθετε περισσότερα [εδώ](/guide/animations.html#κίνηση)).
+- `routeAlias` (`string`): δημιουργήστε ένα ψευδώνυμο route που μπορεί να χρησιμοποιηθεί στη διεύθυνση URL ή με το στοιχείο `<Link>` (μάθετε περισσότερα [εδώ](/builtin/components.html#link)).
+- `src` (`string`): Συμπεριλάβετε ένα αρχείο markdown (μάθετε περισσότερα [εδώ](/guide/syntax.html#πολλαπλές-είσοδοι)).
+- `title` (`string`): Παρακάμψτε τον τίτλο για τα στοιχεία `<Title>` και `<Toc>` (μάθετε περισσότερα [εδώ](/builtin/components.html#titles)).
+- `transition` (`string | TransitionProps`): Ορίστε τη μετάβαση μεταξύ της διαφάνειας και της επόμενης (μάθετε περισσότερα [εδώ](/guide/animations.html#μεταβάσεις-διαφανειών)).
+- `zoom` (`number`): Προσαρμοσμένη κλίμακα ζουμ. Χρήσιμο για διαφάνειες με πολύ περιεχόμενο.
+- `dragPos` (`Record<string,string>`): Χρησιμοποιούνται ως θέσεις draggable στοιχείων (μάθετε περισσότερα [εδώ](/guide/draggable.html)).
 
 ## Δομή Φακέλου
 

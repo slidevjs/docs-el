@@ -1,42 +1,26 @@
 # Global Layers
 
-<<<<<<< HEAD
-> Διαθέσιμο από v0.17
-
 Τα global layers σας επιτρέπουν να έχετε προσαρμοσμένα στοιχεία που είναι **μόνιμα** σε όλες τις διαφάνειες. Αυτό θα μπορούσε να είναι χρήσιμο για footers, κινήσεις διαφανειών, global effects, κτλ.
-=======
-Global layers allow you to have custom components that **persist** across slides. This could be useful for having footers, cross-slide animations, global effects, etc.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Το Slidev παρέχει τρία layers για αυτή τη χρήση, δημιουργήστε `global-top.vue`, `global-bottom.vue` ή `custom-nav-controls.vue` στη ρίζα του έργου σας και θα το αναλάβει αυτόματα.
 
-<<<<<<< HEAD
-Σχέση layers:
-
-- Global Top (`global-top.vue`)
-- Διαφάνειες
-- Global Bottom (`global-bottom.vue`)
-- NavControls
-  - Προσαρμοσμένοι έλεγχοι πλοήγησης (`custom-nav-controls.vue`)
-=======
-There are also layers for **each** slide: `layouts/slide-top.vue` and `layouts/slide-bottom.vue`. The usage is similar to the global layers, but they are applied to every slide, so there may be more than one instance of them.
+Υπάρχουν επίσης layers για **κάθε** διαφάνεια: `layouts/slide-top.vue` και `layouts/slide-bottom.vue`. Η χρήση τους είναι παρόμοια με τα global layers, αλλά εφαρμόζονται σε κάθε διαφάνεια, οπότε μπορεί να υπάρχουν περισσότερες από μία instance.
 
 ::: tip
-When exporting, the `--per-slide` option should be used to ensure the global layers are applied to each slide correctly.
+Κατά την εξαγωγή, η επιλογή `--per-slide` θα πρέπει να χρησιμοποιείται για να διασφαλιστεί ότι τα global layers εφαρμόζονται σωστά σε κάθε διαφάνεια.
 :::
 
-## Layers relationship
+## Σχέση layers
 
-At z-axis, from top to bottom:
+Στον άξονα z, από πάνω προς τα κάτω:
 
 - NavControls
-  - Customized Navigation Controls (`custom-nav-controls.vue`)
-- Global Top (`global-top.vue`) - single instance
-- Slide Top (`slide-top.vue`) - instance per slide
+  - Προσαρμοσμένοι έλεγχοι πλοήγησης (`custom-nav-controls.vue`)
+- Global Top (`global-top.vue`) - μεμονωμένη περίπτωση
+- Slide Top (`slide-top.vue`) - instance ανά διαφάνεια
 - Slide Content
-- Slide Bottom (`slide-bottom.vue`) - instance per slide
-- Global Bottom (`global-bottom.vue`) - single instance
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+- Slide Bottom (`slide-bottom.vue`) - instance ανά διαφάνεια
+- Global Bottom (`global-bottom.vue`) - μεμονωμένη περίπτωση
 
 ## Παράδειγμα
 

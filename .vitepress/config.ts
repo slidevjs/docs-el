@@ -30,25 +30,20 @@ const Guide: DefaultTheme.NavItemWithLink[] = [
     link: '/guide/animations',
   },
   {
-<<<<<<< HEAD
-    text: 'Εξαγωγή',
-    link: '/guide/exporting',
-=======
-    text: 'Draggable Elements',
+    text: 'Σύρσιμα Στοιχεία',
     link: '/guide/draggable',
   },
   {
-    text: 'Presenter Mode',
+    text: 'Λειτουργία Παρουσιαστή',
     link: '/guide/presenter-mode',
   },
   {
-    text: 'Slides Overview',
+    text: 'Επισκόπηση Διαφανειών',
     link: '/guide/overview',
   },
   {
-    text: 'Drawing & Annotations',
+    text: 'Ζωγραφική & Σημειώσεις',
     link: '/guide/drawing',
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
   },
   {
     text: 'Στατική Φιλοξενία',
@@ -57,14 +52,6 @@ const Guide: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Καταγραφή Παρουσίασης',
     link: '/guide/recording',
-  },
-  {
-    text: 'Λειτουργία Παρουσιαστή',
-    link: '/guide/presenter-mode',
-  },
-  {
-    text: 'Ζωγραφική & Σημειώσεις',
-    link: '/guide/drawing',
   },
   {
     text: 'Ενσωματώσεις Συντάκτη',
@@ -159,23 +146,19 @@ const Customizations: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildr
     link: '/custom/config-parser',
   },
   {
-<<<<<<< HEAD
-    text: 'Ρυθμίστε Συντομεύσεις',
-=======
-    text: 'Configure Routes',
+    text: 'Ρυθμίστε τις Διαδρομές',
     link: '/custom/config-routes',
   },
   {
-    text: 'Configure Shortcuts',
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+    text: 'Ρυθμίστε Συντομεύσεις',
     link: '/custom/config-shortcuts',
   },
   {
-    text: 'Configure Code Runners',
+    text: 'Ρυθμίστε τους Code Runners',
     link: '/custom/config-code-runners',
   },
   {
-    text: 'Configure Context Menu',
+    text: 'Ρυθμίστε το Context Menu',
     link: '/custom/config-context-menu',
   },
   {
@@ -267,13 +250,8 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     editLink: {
-<<<<<<< HEAD
-      pattern: 'https://github.com/slidevjs/docs-el/edit/main/:path',
-      text: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
-=======
       pattern: 'https://github.com/slidevjs/slidev/edit/main/docs/:path',
-      text: 'Suggest changes to this page',
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+      text: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
     },
 
     search: {

@@ -38,13 +38,8 @@
 ---
 layout: image-left
 
-<<<<<<< HEAD
 # η πηγή της εικόνας
-image: ./path/για/την/εικόνα
-=======
-# the image source
-image: /path/to/the/image
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+image: /path/για/την/εικόνα
 
 # ένα προσαρμοσμένο όνομα class για το περιεχόμενο
 class: το-cool-περιεχόμενό-μου-στα-δεξιά
@@ -61,13 +56,8 @@ class: το-cool-περιεχόμενό-μου-στα-δεξιά
 ---
 layout: image-right
 
-<<<<<<< HEAD
 # η πηγή της εικόνας
-image: ./path/για/την/εικόνα
-=======
-# the image source
-image: /path/to/the/image
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+image: /path/για/την/εικόνα
 
 # ένα προσαρμοσμένο όνομα class για το περιεχόμενο
 class: το-cool-περιεχόμενό-μου-στα-αριστερά
@@ -84,22 +74,17 @@ class: το-cool-περιεχόμενό-μου-στα-αριστερά
 ---
 layout: image
 
-<<<<<<< HEAD
 # η πηγή της εικόνας
-image: ./path/για/την/εικόνα
-=======
-# the image source
-image: /path/to/the/image
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+image: /path/για/την/εικόνα
 ---
 ```
 
-You can change the default background size (`cover`) by adding the `backgroundSize` attribute:
+Μπορείτε να αλλάξετε το προεπιλεγμένο μέγεθος φόντου (`cover`) προσθέτοντας το χαρακτηριστικό `backgroundSize`:
 
 ```yaml
 ---
 layout: image
-image: /path/to/the/image
+image: /path/για/την/εικόνα
 backgroundSize: contain
 ---
 ```
@@ -107,16 +92,16 @@ backgroundSize: contain
 ```yaml
 ---
 layout: image-left
-image: /path/to/the/image
+image: /path/για/την/εικόνα
 backgroundSize: 20em 70%
 ---
 ```
 
 ### `iframe-left`
 
-Shows a web page on the left side of the screen, the content will be placed on the right side.
+Εμφανίζει μια ιστοσελίδα στην αριστερή πλευρά της οθόνης, το περιεχόμενο θα τοποθετηθεί στη δεξιά πλευρά.
 
-#### Usage
+#### Χρήση
 
 ```yaml
 ---
@@ -125,16 +110,16 @@ layout: iframe-left
 # the web page source
 url: https://github.com/slidevjs/slidev
 
-# a custom class name to the content
-class: my-cool-content-on-the-right
+# ένα προσαρμοσμένο όνομα class για το περιεχόμενο
+class: το-cool-περιεχόμενό-μου-στα-δεξιά
 ---
 ```
 
 ### `iframe-right`
 
-Shows a web page on the right side of the screen, the content will be placed on the left side.
+Εμφανίζει μια ιστοσελίδα στη δεξιά πλευρά της οθόνης, το περιεχόμενο θα τοποθετηθεί στην αριστερή πλευρά.
 
-#### Usage
+#### Χρήση
 
 ```yaml
 ---
@@ -143,16 +128,16 @@ layout: iframe-right
 # the web page source
 url: https://github.com/slidevjs/slidev
 
-# a custom class name to the content
-class: my-cool-content-on-the-left
+# ένα προσαρμοσμένο όνομα class για το περιεχόμενο
+class: το-cool-περιεχόμενό-μου-στα-αριστερά
 ---
 ```
 
 ### `iframe`
 
-Shows a web page as the main content of the page.
+Εμφανίζει μια ιστοσελίδα ως το κύριο περιεχόμενο της σελίδας.
 
-#### Usage
+#### Χρήση
 
 ```yaml
 ---

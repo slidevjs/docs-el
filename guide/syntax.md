@@ -19,15 +19,9 @@ outline: deep
 
 Άμεση χρήση code blocks για επισήμανση
 
-<<<<<<< HEAD
-//```ts
-console.log('Γεια σου, Κόσμε!')
-//```
-=======
 ```ts
-console.log('Hello, World!')
+console.log('Γεια σου, Κόσμε!')
 ```
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ---
 
@@ -70,13 +64,8 @@ class: 'text-white'
 
 # Σελίδα 3
 
-<<<<<<< HEAD
 Πρόκειται για μια προεπιλεγμένη σελίδα χωρίς πρόσθετα μεταδεδομένα.
-~~~
-=======
-This is a default page without any additional metadata.
 ```
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Ανατρέξτε στις [προσαρμογές](/custom/) για περισσότερες πληροφορίες.
 
@@ -107,21 +96,12 @@ class: 'text-white'
 
 # Σελίδα 2
 
-<<<<<<< HEAD
 Αυτή είναι μια σελίδα με τη διάταξη `center` και μια εικόνα φόντου.
-~~~
-
-## Code Blocks
-
-Ένας μεγάλος λόγος που φτιάχνω το Slidev είναι ότι πρέπει να κάνω τον κώδικά μου να φαίνεται σωστά στις διαφάνειες. Έτσι, όπως ακριβώς περιμένατε, μπορείτε να χρησιμοποιήσετε code block με μορφή Markdown για να επισημάνετε τον κώδικά σας.
-=======
-This is a page with the layout `center` and a background image.
 ````
 
 ## Code Blocks
 
-One big reason that led to the creation of Slidev was the need to perfectly display code in slides. Consequently, you can use Markdown-flavored code blocks to highlight your code.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Ένας μεγάλος λόγος που φτιάξαμε το Slidev είναι ότι πρέπει να κάνουμε τον κώδικά μας να φαίνεται σωστά στις διαφάνειες. Έτσι, μπορείτε να χρησιμοποιήσετε code block με μορφή Markdown για να επισημάνετε τον κώδικά σας.
 
 ````md
 ```ts
@@ -129,19 +109,11 @@ console.log('Γεια σου, Κόσμε!')
 ```
 ````
 
-<<<<<<< HEAD
-Υποστηρίζουμε και [Prism](https://prismjs.com) και [Shiki](https://github.com/shikijs/shiki) ως επισημαντήρες σύνταξης. Ανατρέξτε στην ενότητα [επισημαντήρες](/custom/highlighters) για περισσότερες πληροφορίες.
-=======
-Slidev has [Shiki](https://github.com/shikijs/shiki) built in as the syntax highlighter. Refer to [the highlighters section](/custom/highlighters) for more details.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Το Slidev έχει το [Shiki](https://github.com/shikijs/shiki) προ-εγκαταστημένο ως επισημαντήρα σύνταξης. Ανατρέξτε [στην ενότητα επισημαντήρων](/custom/highlighters) για περισσότερες πληροφορίες.
 
 ### Επισήμανση Γραμμής
 
-<<<<<<< HEAD
 Για να επισημάνετε συγκεκριμένες γραμμές, απλά προσθέστε τους αριθμούς γραμμών μέσα σε μία αγκύλη `{}`. Οι αριθμοί γραμμών αρχίζουν να μετρούν από το 1 από προεπιλογή.
-=======
-To highlight specific lines, simply add line numbers within brackets `{}`. Line numbers start counting from 1 by default.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ````md
 ```ts {2,3}
@@ -154,28 +126,9 @@ function add(
 ```
 ````
 
-<<<<<<< HEAD
-Μπορείτε να ενεργοποιήσετε τον αριθμό γραμμής σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο config ή να το ενεργοποιήσετε σε κάθε μπλοκ κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines: true`. Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε code block και να επισημάνετε τις γραμμές ανάλογα, με προεπιλογή 1:
-
-~~~md
-```ts {6,7}{lines:true,startLine:5}
-function add(
-  a: Ref<number> | number,
-  b: Ref<number> | number
-) {
-  return computed(() => unref(a) + unref(b))
-}
-```
-~~~
-
-Για να αλλάξετε την επισήμανση με πολλαπλά κλικ, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε:
-
-~~~md
-=======
-To change what's highlighted with multiple clicks, you can use `|` to separate each stage:
+Για να αλλάξετε την επισήμανση με πολλαπλά click, μπορείτε να χρησιμοποιήσετε `|` για να τα διαχωρίσετε:
 
 ````md
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 ```ts {2-3|5|all}
 function add(
   a: Ref<number> | number,
@@ -202,20 +155,12 @@ function add(
 ````
 
 ::: tip
-<<<<<<< HEAD
 Μάθετε περισσότερα στον [οδηγό κινήσεων κλικ](./animations#θεση).
 :::
 
-Αν ο κώδικας δεν χωράει σε μία διαφάνεια, μπορείτε να χρησιμοποιήσετε το `maxHeight` για να ορίσετε σταθερό ύψος και να ενεργοποιήσετε το scrolling:
+### Αριθμοί Γραμμών
 
-~~~md {1}
-=======
-Learn more in the [click animations guide](./animations#positioning).
-:::
-
-### Line Numbers
-
-You can enable line numbering for all slides by setting `lineNumbers: true` in the global config or enable each code block individually by setting `lines: true`. You can also set the starting line for each code block and highlight the lines accordingly; it defaults to 1:
+Μπορείτε να ενεργοποιήσετε τους αριθμούς γραμμών σε όλες τις διαφάνειες θέτοντας τη ρύθμιση `lineNumbers: true` στο global config ή να το ενεργοποιήσετε σε κάθε block κώδικα ξεχωριστά θέτοντας τη ρύθμιση `lines: true`. Μπορείτε επίσης να ορίσετε τη γραμμή έναρξης για κάθε code block και να επισημάνετε τις γραμμές ανάλογα, με προεπιλογή το 1:
 
 ````md
 ```ts {6,7}{lines:true,startLine:5}
@@ -228,12 +173,11 @@ function add(
 ```
 ````
 
-### Max Height
+### Μέγιστο Ύψος
 
-If the code doesn't fit into one slide, you use the `maxHeight` to set fixed height and enable scrolling:
+Αν ο κώδικας δεν χωράει σε μία διαφάνεια, μπορείτε να χρησιμοποιήσετε το `maxHeight` για να ορίσετε σταθερό ύψος και να ενεργοποιήσετε το scrolling:
 
 ````md
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 ```ts {2|3|7|12}{maxHeight:'100px'}
 function add(
   a: Ref<number> | number,
@@ -241,7 +185,7 @@ function add(
 ) {
   return computed(() => unref(a) + unref(b))
 }
-/// ...as many lines as you want
+/// ...όσες γραμμές θέλετε
 const c = add(1, 2)
 ```
 ````
@@ -283,13 +227,9 @@ const count = ref(0)
 
 Το [Shiki Magic Move](https://github.com/shikijs/shiki-magic-move) σας επιτρέπει να έχετε λεπτομερή μετάβαση μεταξύ των αλλαγών κώδικα, σαν το Magic Move του Keynote. Μπορείτε να παρακολουθήσετε [το demo](https://shiki-magic-move.netlify.app/) για να δείτε πώς λειτουργεί.
 
-<<<<<<< HEAD
-Στο Slidev, το συνδέουμε με το [σύστημα clicks](/guide/animations#κινησεις-click). Η σύνταξη είναι να τυλίξετε πολλαπλά μπλοκ κώδικα που αντιπροσωπεύουν κάθε βήμα με <code>````md magic-move</code> (προσέξτε ότι είναι **4** backticks), αυτό θα μετατραπεί σε ένα μπλοκ κώδικα, που μεταμορφώνεται σε κάθε βήμα καθώς κάνετε click.
-=======
 <video src="https://github.com/slidevjs/slidev/assets/11247099/79927794-27ba-4342-9911-9996cec889d6" controls rounded shadow w-full></video>
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
-In Slidev, we bind the magic-move to the [clicks system](/guide/animations#click-animations). The syntax is to wrap multiple code blocks representing each step with <code>````md magic-move</code> (mind it's **4** backticks), this will be transformed into one code block, that morphs to each step as you click.
+Στο Slidev, το συνδέουμε με το [σύστημα clicks](/guide/animations#κινησεις-click). Η σύνταξη είναι να τυλίξετε πολλαπλά block κώδικα που αντιπροσωπεύουν κάθε βήμα με <code>````md magic-move</code> (προσέξτε ότι είναι **4** backticks), αυτό θα μετατραπεί σε ένα block κώδικα, που μεταμορφώνεται σε κάθε βήμα καθώς κάνετε click.
 
 `````md
 ````md magic-move
@@ -305,11 +245,7 @@ console.log(`Βήμα ${3}` as string)
 ````
 `````
 
-<<<<<<< HEAD
 Είναι επίσης δυνατό να συνδυάσετε το Magic Move με την [επισήμανση γραμμής](#επισημανση-γραμμης), για παράδειγμα:
-=======
-It's also possible to mix Magic Move with [line highlighting](#line-highlighting) and [line numbers](#line-numbers), for example:
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 `````md
 ````md magic-move {at:4, lines: true} // [!code hl]
@@ -363,43 +299,39 @@ zzzzefgh
 ```
 ````
 
-<<<<<<< HEAD
-## Ενσωματωμένα Styles
-=======
-It provides the editor with a "Run" button, and shows the result of the code execution right below the code block. You may also modify the code and the result will be re-evaluated on the fly.
+Παρέχει στον συντάκτη ένα κουμπί "Run" και εμφανίζει το αποτέλεσμα της εκτέλεσης του κώδικα ακριβώς κάτω από το μπλοκ κώδικα. Μπορείτε επίσης να τροποποιήσετε τον κώδικα και το αποτέλεσμα θα επανεκτιμηθεί αμέσως.
 
-By default it will automatically run the code when the slide is loaded; if you want to instead explicitly trigger the run, you can set `{autorun:false}`.
+Από προεπιλογή, ο κώδικας θα εκτελεστεί αυτόματα όταν φορτωθεί η διαφάνεια - αν θέλετε να ενεργοποιήσετε την εκτέλεση ρητά, μπορείτε να ορίσετε `{autorun:false}`.
 
 ````md
 ```ts {monaco-run} {autorun:false}
-console.log('Click the play button to run me')
+console.log('Κάντε click στο κουμπί play για να με εκτελέσετε')
 ```
 ````
 
-If you want to only show the output in certain clicks, you can use the `showOutputAt` prop. The value is the same as `v-click`.
+Αν θέλετε να εμφανίζετε την έξοδο μόνο σε συγκεκριμένα click, μπορείτε να χρησιμοποιήσετε την ιδιότητα `showOutputAt`. Η τιμή είναι η ίδια με την τιμή `v-click`.
 
 ````md
 ```ts {monaco-run} {showOutputAt:'+1'}
-console.log('Shown after 1 click')
+console.log('Εμφανίζεται μετά από 1 click')
 ```
 ````
 
-Currently Slidev supports running JavaScript and TypeScript code out-of-box. Refer to [Custom Code Runners](/custom/config-code-runners) for custom languages support.
+Επί του παρόντος, το Slidev υποστηρίζει την εκτέλεση κώδικα JavaScript και TypeScript out-of-box. Ανατρέξτε στο [Custom Code Runners](/custom/config-code-runners) για προσαρμοσμένη υποστήριξη γλωσσών.
 
 #### Writable Monaco Editor
 
-> Available since v0.49.5
+> Διαθέσιμο από v0.49.5
 
-You can also use the [Import Code Snippets](#import-code-snippets) syntax combining with the `{monaco-write}` directive, to link your Monaco Editor with a file on your filesystem. This will allow you to edit the code directly in the editor and save the changes back to the file.
+Μπορείτε επίσης να χρησιμοποιήσετε τη σύνταξη [Εισαγωγής Αποσπασμάτων Κώδικα](#εισαγωγη-αποσπασματων-κωδικα) σε συνδυασμό με την οδηγία `{monaco-write}`, για να συνδέσετε τον Monaco Editor με ένα αρχείο στο σύστημα αρχείων σας. Αυτό θα σας επιτρέψει να επεξεργαστείτε τον κώδικα απευθείας στον συντάκτη και να αποθηκεύσετε τις αλλαγές πίσω στο αρχείο.
 
 ```md
-<<< ./some-file.ts {monaco-write}
+<<< ./κάποιο-αρχείο.ts {monaco-write}
 ```
 
-When using this, be sure to back up your files beforehand, as the changes will be saved directly to the file.
+Όταν το χρησιμοποιείτε αυτό, φροντίστε να δημιουργήσετε προηγουμένως αντίγραφα ασφαλείας των αρχείων σας, καθώς οι αλλαγές θα αποθηκευτούν απευθείας στο αρχείο.
 
-## Embedded Styles
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+## Ενσωματωμένα Styles
 
 Μπορείτε να χρησιμοποιήσετε την ετικέτα `<style>` στο Markdown σας απευθείας για να παρακάμψετε τα styles για την **τρέχουσα διαφάνεια**.
 
@@ -417,11 +349,7 @@ h1 {
 # Η επόμενη διαφάνεια δεν επηρεάζεται
 ```
 
-<<<<<<< HEAD
 Η ετικέτα `<style>` στο Markdown είναι πάντα [περιορισμένη](https://vuejs.org/api/sfc-css-features.html#scoped-css). Ως αποτέλεσμα, ένας selector με το child combinator (`.a > .b`) είναι άχρηστος ως έχει; δείτε τον προηγούμενο σύνδεσμο. Για να έχετε global style overrides, δείτε την [ενότητα προσαρμογής](/custom/directory-structure#style).
-=======
-The `<style>` tag in Markdown is always [scoped](https://vuejs.org/api/sfc-css-features.html#scoped-css). As a result, a selector with a child combinator (`.a > .b`) is unusable as such; see the previous link. To have global style overrides, check out the [customization section](/custom/directory-structure#style).
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Με την βοήθεια του [UnoCSS](/custom/config-unocss), μπορείτε να χρησιμοποιήσετε άμεσα εμφωλευμένα css και [οδηγίες](https://unocss.dev/transformers/directives) (π.χ. `--uno:` ή `@apply`)
 
@@ -443,11 +371,7 @@ blockquote {
 
 Ακριβώς όπως θα κάνατε σε markdown, μπορείτε να χρησιμοποιήσετε εικόνες από μια απομακρυσμένη ή τοπική διεύθυνση URL.
 
-<<<<<<< HEAD
 Για τα απομακρυσμένα assets, το ενσωματωμένο [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) θα τα αποθηκεύσει στη μνήμη cache στο δίσκο κατά την πρώτη εκτέλεση, ώστε να μπορείτε να έχετε άμεση φόρτωση ακόμα και για μεγάλες εικόνες αργότερα.
-=======
-For remote assets, the built-in [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) will cache them onto the disk at first run, ensuring instant loading even for large images later on.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ```md
 ![Remote Image](https://sli.dev/favicon.png)
@@ -467,11 +391,7 @@ For remote assets, the built-in [`vite-plugin-remote-assets`](https://github.com
 
 ## Σημειώσεις
 
-<<<<<<< HEAD
 Μπορείτε επίσης να κρατάτε σημειώσεις για κάθε διαφάνεια. Θα εμφανίζονται στη [Λειτουργία Παρουσιαστή](/guide/presenter-mode) για να μπορείτε να ανατρέχετε σε αυτές κατά τη διάρκεια των παρουσιάσεων.
-=======
-You can also create presenter notes for each slide. They will show up in [Presenter Mode](/guide/presenter-mode) for you to reference during presentations.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Σε Markdown, το τελευταίο block σχολίων σε κάθε διαφάνεια θα αντιμετωπίζεται ως σημείωση.
 
@@ -499,51 +419,37 @@ layout: cover
 -->
 ```
 
-<<<<<<< HEAD
 Υποστηρίζονται επίσης οι απλές γλώσσες Markdown και HTML στις σημειώσεις κατά την απεικόνιση στην λειτουργία παρουσιαστή.
-=======
-Basic Markdown and HTML are also supported in notes when the Presenter renders note content.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ### Δείκτες Click
 
 > Διαθέσιμο από v0.48
 
-<<<<<<< HEAD
-Για ορισμένες διαφάνειες που μπορεί να έχετε μεγαλύτερες σημειώσεις που ενδέχεται να είναι δύσκολο να βρείτε το σημείο που ψάχνετε, δημιουργήσαμε τους δείκτες click που επιτρέπουν την επισήμανση και την αυτόματη κύλιση στο τμήμα των σημειώσεων του αντίστοιχου περιεχομένου σας. Βάλτε δείκτες `[click]` στις σημειώσεις σας για το χρονοδιάγραμμα που χρειάζεστε για να μεταβείτε σε ένα άλλο [click](/guide/animations#κινησεις-click), το Slidev χωρίζει το περιεχόμενο μεταξύ των δεικτών click και τα επισημαίνει στις σημειώσεις του παρουσιαστή, συγχρονισμένα με την πρόοδο της διαφάνειάς σας.
-=======
-For some slides you might have longer notes that could be hard to find your place. Slidev supports click markers that allow highlighting and auto-scrolling to the section of notes from your corresponding content. Put `[click]` markers at the beginning of any line in your notes for the timing you need to go to another [click](/guide/animations#click-animations). You may skip `n` clicks by using `[click:{n+1}]`. For example:
+Για ορισμένες διαφάνειες που μπορεί να έχετε μεγαλύτερες σημειώσεις που ενδέχεται να είναι δύσκολο να βρείτε το σημείο που ψάχνετε. Το Slidev υποστηρίζει δείκτες click που επιτρέπουν την επισήμανση και το αυτόματο scrolling στο τμήμα των σημειώσεων από το αντίστοιχο περιεχόμενό σας. Τοποθετήστε δείκτες `[click]` στην αρχή οποιασδήποτε γραμμής των σημειώσεών σας για το χρόνο που χρειάζεστε για να μεταβείτε σε άλλο [click](/guide/animations#κινησεις-click). Μπορείτε να παραλείψετε `n` click χρησιμοποιώντας `[click:{n+1}]`. Για παράδειγμα:
 
 ```md
 <!--
-Content before the first click
+Περιεχόμενο πριν από το πρώτο click
 
-[click] This will be highlighted after the first click
+[click] Αυτό θα επισημανθεί μετά το πρώτο click
 
-Also highlighted after the first click
+Επισημαίνεται επίσης μετά το πρώτο click
 
-- [click] This list element will be highlighted after the second click
+- [click] Αυτό το στοιχείο της λίστας θα επισημανθεί μετά το δεύτερο click
 
-[click:3] Last click (skip two clicks)
+[click:3] Τελευταίο click (παραλείψτε δύο click)
 -->
 ```
 
-Slidev divides the content between the click markers and highlights it in presenter notes, synchronized with your slide progress.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Το Slidev χωρίζει το περιεχόμενο μεταξύ των δεικτών click και το επισημαίνει στις σημειώσεις του παρουσιαστή, συγχρονισμένο με την πρόοδο της διαφάνειάς σας.
 
 <!-- TODO: add a video -->
 
 ## Εικονίδια
 
-<<<<<<< HEAD
 Το Slidev σας επιτρέπει να έχετε πρόσβαση σε σχεδόν όλα τα δημοφιλή σύνολα εικονιδίων ανοιχτού κώδικα **απευθείας** στο markdown σας μετά την εγκατάσταση του αντίστοιχου πακέτου. Με την βοήθεια του [`unplugin-icons`](https://github.com/antfu/unplugin-icons) και του [Iconify](https://iconify.design/).
 
 Η ονομασία ακολουθεί τη μετατροπή του [Iconify](https://iconify.design/) `{collection-name}-{icon-name}`. Για παράδειγμα:
-=======
-Slidev allows you to have access to virtually all open-source icon sets **directly** in your markdown after installing the corresponding package. Powered by [`unplugin-icons`](https://github.com/antfu/unplugin-icons) and [Iconify](https://iconify.design/).
-
-The naming follows [Iconify](https://iconify.design/)'s convention of `{collection-name}-{icon-name}`. For example:
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 - `<mdi-account-circle />` - <mdi-account-circle /> από τα [Material Design Icons](https://github.com/Templarian/MaterialDesign) - [`@iconify-json/mdi`](https://npmjs.com/package/@iconify-json/mdi)
 - `<carbon-badge />` - <carbon-badge /> από το [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons) - [`@iconify-json/carbon`](https://npmjs.com/package/@iconify-json/carbon)
@@ -608,11 +514,7 @@ layout: two-cols
 </div>
 </div>
 
-<<<<<<< HEAD
 Παρέχουμε επίσης μια συντόμευση σύνταξης `::name::` για το όνομα του slot. Το ακόλουθο παράδειγμα λειτουργεί ακριβώς όπως και το προηγούμενο.
-=======
-We also provide a shorthand syntactical sugar `::name::` for slot name. The following works exactly the same as the previous example.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ```md
 ---
@@ -630,11 +532,7 @@ layout: two-cols
 Αυτό εμφανίζεται στα δεξιά
 ```
 
-<<<<<<< HEAD
-Μπορείτε επίσης να καθορίσετε ρητά το προεπιλεγμένο slot και να το παρέχετε σε προσαρμοσμένη σειρά
-=======
-You can also explicitly specify the default slot and provide in the custom order.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Μπορείτε επίσης να καθορίσετε ρητά το προεπιλεγμένο slot και να το παρέχετε στην προσαρμοσμένη σειρά.
 
 ```md
 ---
@@ -672,11 +570,7 @@ layout: two-cols
 
 ## Ρυθμίσεις
 
-<<<<<<< HEAD
-Όλες οι ρυθμίσεις που απαιτούνται μπορούν να οριστούν στο αρχείο Markdown. Για παράδειγμα:
-=======
-All configurations can be defined in the Markdown file. For example:
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Όλες οι ρυθμίσεις μπορούν να οριστούν στο αρχείο Markdown. Για παράδειγμα:
 
 ```md
 ---
@@ -756,36 +650,21 @@ $$
 ````md
 ```mermaid
 sequenceDiagram
-<<<<<<< HEAD
   Αλίκη->Γιάννης: Γεια σου Γιάννη, τι κάνεις;
   Σημείωση για την Αλίκη, Γιάννη: Μια τυπική επικοινωνία
-//```
-~~~
-=======
-  Alice->John: Hello John, how are you?
-  Note over Alice,John: A typical interaction
 ```
 ````
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Μπορείτε επίσης να του περάσετε ένα object επιλογών για να καθορίσετε την κλιμάκωση και τη θεματοποίηση. Η σύνταξη του object είναι ένα JavaScript object literal, θα πρέπει να προσθέσετε εισαγωγικά (`'`) για τα strings και να χρησιμοποιήσετε κόμμα (`,`) μεταξύ κλειδιών.
 
 ````md
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-<<<<<<< HEAD
 B[Κείμενο] --> C{Απόφαση}
 C -->|Ένα| D[Αποτέλεσμα 1]
 C -->|Δύο| E[Αποτέλεσμα 2]
-//```
-~~~
-=======
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
 ```
 ````
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Μάθετε περισσότερα: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
 
@@ -793,11 +672,7 @@ C -->|Two| E[Result 2]
 
 > Διαθέσιμο από v0.15
 
-<<<<<<< HEAD
 Μπορείτε να χωρίσετε το `slides.md` σας σε πολλαπλά αρχεία και να τα οργανώσετε όπως θέλετε.
-=======
-You can split your `slides.md` into multiple files and organize them however you'd like.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 `slides.md` :
 
@@ -826,11 +701,7 @@ src: ./subpage2.md
 
 ### Συγχώνευση Frontmatter
 
-<<<<<<< HEAD
-Μπορείτε να παρέχετε frontmatters τόσο από την κύρια είσοδό σας όσο και από εξωτερικές σελίδες markdown. Εάν υπάρχουν τα ίδια κλειδιά σε αυτές, αυτά από την **κύρια είσοδο έχουν μεγαλύτερη προτεραιότητα**. Για παράδειγμα
-=======
-You can provide frontmatter instructions from both your main entry and external markdown pages. If there are duplicate keys in them, the ones from the **main entry have the higher priority**. For example:
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Μπορείτε να παρέχετε frontmatters τόσο από την κύρια είσοδό σας όσο και από εξωτερικές σελίδες markdown. Εάν υπάρχουν τα ίδια κλειδιά σε αυτές, αυτά από την **κύρια είσοδο έχουν μεγαλύτερη προτεραιότητα**. Για παράδειγμα:
 
 `slides.md` :
 
@@ -869,11 +740,7 @@ class: text-center
 Σελίδα Εξωφύλλου
 ```
 
-<<<<<<< HEAD
 ### Επαναχρησιμοποίηση Σελίδων
-=======
-### Page Reuse
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Με την υποστήριξη πολλαπλών εισόδων, η επαναχρησιμοποίηση σελίδων είναι απλή. Για παράδειγμα:
 
@@ -918,8 +785,4 @@ mdc: true
 ::
 ```
 
-<<<<<<< HEAD
-Μάθετε περισσότερα για [τη σύνταξη](https://content.nuxt.com/guide/writing/mdc).
-=======
-Learn more about [MDC Syntax](https://content.nuxt.com/guide/writing/mdc).
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Μάθετε περισσότερα για [τη σύνταξη MDC](https://content.nuxt.com/guide/writing/mdc).

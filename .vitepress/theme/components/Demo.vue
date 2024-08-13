@@ -80,15 +80,9 @@ onMounted(() => {
       code.value = JSON.parse(JSON.stringify(block.value!.innerText.replace('|', '')))
     },
   })
-<<<<<<< HEAD
     .type('<br><span class="token title"># Καλώς ήρθατε στο Slidev!</span><br><br>', { delay: 400 })
     .type('Διαφάνειες παρουσίασης για προγραμματιστές', { delay: 400 })
-    .move('START', { speed: 0 })
-=======
-    .type('<br><span class="token title"># Welcome to Slidev!</span><br><br>', { delay: 400 })
-    .type('Presentation Slides for Developers', { delay: 400 })
     .move(null, { to: 'START', speed: 0 })
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
     .type('<br>')
     .move(null, { to: 'START' })
     .exec(pause)

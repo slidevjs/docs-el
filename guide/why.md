@@ -26,11 +26,7 @@
 
 ## Φιλικό προς Προγραμματιστές
 
-<<<<<<< HEAD
-Το Slidev παρέχει πρώτης τάξεως υποστήριξη για αποσπάσματα κώδικα για προγραμματιστές. Υποστηρίζει και [Prism](https://prismjs.com/) και [Shiki](https://github.com/shikijs/shiki) για να έχετε τέλεια επισήμανση σύνταξης, ενώ παράλληλα να μπορείτε να τροποποιείτε τον κώδικα ανά πάσα στιγμή. Με ενσωματωμένο το [Monaco editor](https://microsoft.github.io/monaco-editor/), σας δίνει επίσης τη δυνατότητα να κάνετε live coding / επίδειξη στην παρουσίασή σας με αυτόματη συμπλήρωση, type hovering ακόμη και υποστήριξη ελέγχου τύπων TypeScript.
-=======
-Slidev provides first-class support for code snippets for developers. It supports [Shiki](https://github.com/shikijs/shiki) to get pixel-perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Το Slidev παρέχει πρώτης τάξεως υποστήριξη για αποσπάσματα κώδικα για προγραμματιστές. Υποστηρίζει και [Shiki](https://github.com/shikijs/shiki) για να έχετε τέλεια επισήμανση σύνταξης, ενώ παράλληλα να μπορείτε να τροποποιείτε τον κώδικα ανά πάσα στιγμή. Με ενσωματωμένο το [Monaco editor](https://microsoft.github.io/monaco-editor/), σας δίνει επίσης τη δυνατότητα να κάνετε live coding / επίδειξη στην παρουσίασή σας με αυτόματη συμπλήρωση, type hovering ακόμη και υποστήριξη ελέγχου τύπων TypeScript.
 
 Μάθετε περισσότερα για τους [επισημαντήρες](/custom/highlighters) και για τη [ρύθμιση του Monaco](/custom/config-monaco).
 
@@ -52,11 +48,7 @@ Slidev provides first-class support for code snippets for developers. It support
 
 ## Φορητό
 
-<<<<<<< HEAD
-Εξαγωγή σε PDF, PNGs, ή ακόμα και σε ένα φιλοξενήσιμο Single-page Application (SPA) με μία μόνο εντολή, και μοιραστείτε τα οπουδήποτε.
-=======
-Export your slides into PDF, PPTX, PNGs, or even a hostable Single-page Application (SPA) with a single command, and share them anywhere.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Εξαγωγή σε PDF, PPTX, PNGs, ή ακόμα και σε ένα φιλοξενήσιμο Single-page Application (SPA) με μία μόνο εντολή, και μοιραστείτε τα οπουδήποτε.
 
 Διαβάστε περισσότερα γι' αυτό στις [οδηγίες εξαγωγής](/guide/exporting).
 

@@ -1,10 +1,6 @@
 # Καταγραφή Παρουσίασης
 
-<<<<<<< HEAD
-Το Slidev έχει ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας. Μπορείτε να τα χρησιμοποιήσετε για να καταγράψετε την παρουσίασή σας εύκολα σε ένα μέρος.
-=======
-Slidev has a built-in recording feature, as well as a camera view. You can use them to record your presentation easily in one simple tool rather than juggling a bunch of disparate recording options while also giving a talk.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Το Slidev έχει ενσωματωμένη λειτουργία καταγραφής παρουσίασης, καθώς και προβολής κάμερας. Μπορείτε να τα χρησιμοποιήσετε για να καταγράψετε την παρουσίασή σας εύκολα με ένα απλό εργαλείο, αντί να παλεύετε με ένα σωρό διαφορετικές επιλογές εγγραφής, ενώ παράλληλα δίνετε μια ομιλία.
 
 ## Προβολή Κάμερας
 
@@ -14,11 +10,7 @@ Slidev has a built-in recording feature, as well as a camera view. You can use t
 
 ## Καταγραφή Παρουσίασης
 
-<<<<<<< HEAD
-Κάνοντας click στο <carbon-video class="inline-icon-btn"/> κουμπί στον πίνακα πλοήγησης θα σας εμφανίσει ένα παράθυρο διαλόγου. Εδώ μπορείτε να επιλέξετε είτε να καταγράψετε την κάμερά σας ενσωματωμένη στις διαφάνειές σας είτε να τις διαχωρίσετε σε δύο αρχεία βίντεο.
-=======
-Clicking the <carbon-video class="inline-icon-btn"/> button in the navigation panel will bring up a dialog for you. Here you can choose to either record your camera output embedded in your slides or to separate them into two video files.
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+Κάνοντας click στο <carbon-video class="inline-icon-btn"/> κουμπί στον πίνακα πλοήγησης, θα σας εμφανίσει ένα παράθυρο διαλόγου. Εδώ μπορείτε να επιλέξετε είτε να καταγράψετε την κάμερά σας ενσωματωμένη στις διαφάνειές σας είτε να τις διαχωρίσετε σε δύο αρχεία βίντεο.
 
 Αυτή η δυνατότητα λειτουργεί με τη βοήθεια του [RecordRTC](https://github.com/muaz-khan/RecordRTC) και χρησιμοποιεί το [WebRTC API](https://webrtc.org/).
 

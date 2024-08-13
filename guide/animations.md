@@ -14,16 +14,10 @@ outline: deep
 Για να εφαρμόσετε "κινήσεις click" σε στοιχεία, μπορείτε να χρησιμοποιήσετε την οδηγία `v-click` ή τα `<v-click>` components
 
 ```md
-<<<<<<< HEAD
 <!-- Χρήση component:
      αυτό θα είναι αόρατο μέχρι να πατήσετε "next" -->
-<v-click> Γεια σου **Κόσμε** </v-click>
-=======
-<!-- Component usage:
-     this will be invisible until you press "next" -->
 
-<v-click> Hello **World** </v-click>
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+<v-click> Γεια σου **Κόσμε** </v-click>
 
 <!-- Χρήση directive:
      αυτό θα είναι αόρατο μέχρι να πατήσετε "next" για δεύτερη φορά -->
@@ -111,17 +105,10 @@ outline: deep
 
 Αυτή η πραγματική θέση των σχετικών στοιχείων υπολογίζεται με βάση τα προηγούμενα σχετικά στοιχεία:
 
-<<<<<<< HEAD
-~~~md
+````md
 <div v-click> ορατό μετά από 1 κλικ </div>
 <v-click at="+2"><div> ορατό μετά από 3 κλικ </div></v-click>
 <div v-click.hide="'-1'"> κρυμμένο μετά από 2 κλικ </div>
-=======
-````md
-<div v-click> visible after 1 click </div>
-<v-click at="+2"><div> visible after 3 clicks </div></v-click>
-<div v-click.hide="'-1'"> hidden after 2 clicks </div>
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ```js {none|1|2}{at:'+5'}
 1  // επισημαίνεται μετά από 7 κλικ
@@ -161,17 +148,10 @@ outline: deep
 
 Η καθορισμένη τιμή είναι ο ακριβής αριθμός κλικ για την εμφάνιση του στοιχείου:
 
-<<<<<<< HEAD
-~~~md
+````md
 <div v-click="3"> ορατό μετά από 3 κλικ </div>
 <v-click at="2"><div> ορατό μετά από 2 κλικ </div></v-click>
 <div v-click.hide="1"> κρυμμένο μετά από 1 κλικ </div>
-=======
-````md
-<div v-click="3"> visible after 3 clicks </div>
-<v-click at="2"><div> visible after 2 clicks </div></v-click>
-<div v-click.hide="1"> hidden after 1 click </div>
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 ```js {none|1|2}{at:3}
 1  // επισημαίνεται μετά από 3 κλικ
@@ -183,23 +163,13 @@ outline: deep
 
 Μπορείτε να συνδυάσετε τις απόλυτες και τις σχετικές θέσεις:
 
-<<<<<<< HEAD
-~~~md
+```md
 <div v-click> ορατό μετά από 1 κλικ </div>
 <div v-click="3"> ορατό μετά από 3 κλικ </div>
 <div v-click> ορατό μετά από 2 κλικ </div>
 <div v-click="'-1'"> ορατό μετά από 1 κλικ </div>
 <div v-click="4"> ορατό μετά από 4 κλικ </div>
-~~~
-=======
-```md
-<div v-click> visible after 1 click </div>
-<div v-click="3"> visible after 3 clicks </div>
-<div v-click> visible after 2 click </div>
-<div v-click="'-1'"> visible after 1 click </div>
-<div v-click="4"> visible after 4 clicks </div>
 ```
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Το ακόλουθο παράδειγμα συγχρονίζει την επισήμανση των δύο τμημάτων κώδικα:
 
@@ -217,43 +187,31 @@ outline: deep
 
 ### Είσοδος & Έξοδος
 
-<<<<<<< HEAD
-> Διαθέσιμο από v0.43.0
-
 Μπορείτε επίσης να καθορίσετε το δείκτη εισόδου και εξόδου για την οδηγία `v-click` περνώντας ένα array. Ο δείκτης τέλους είναι αποκλειστικός.
 
 ```md
-<div v-click="[2, 4]">Αυτό θα εμφανιστεί στο 2ο και 3ο κλικ και θα κρυφτεί ξανά μετά το 4ο.</div>
-```
-
-### Προσαρμοσμένη Συνολική Καταμέτρηση Κλικ
-=======
-You can also specify the enter and leave index for the `v-click` directive by passing an array. The end index is exclusive.
-
-```md
 <div v-click.hide="[2, 4]">
-  This will be hidden at click 2 and 3.
+  Αυτό θα είναι κρυμμένο στο click 2 και 3.
 </div>
 <div v-click />
 <div v-click="'[+1, +1]'">
-  This will be shown at click 3, and hidden since click 4.
+  Αυτό θα εμφανιστεί στο click 3 και θα κρυφτεί από το click 4.
 </div>
 ```
 
-You can also use `v-switch` to achieve the same effect:
+Μπορείτε επίσης να χρησιμοποιήσετε το `v-switch` για να επιτύχετε το ίδιο αποτέλεσμα:
 
 ```md
 <v-switch>
-  <template #1> show at click 1, hide at click 2. </template>
-  <template #2> show at click 2, hide at click 5. </template>
-  <template #5-7> show at click 5, hide at click 7. </template>
+  <template #1> εμφάνιση στο click 1, απόκρυψη στο click 2. </template>
+  <template #2> εμφάνιση στο click 2, απόκρυψη στο click 5. </template>
+  <template #5-7> εμφάνιση στο click 5, απόκρυψη στο click 7. </template>
 </v-switch>
 ```
 
-See [`VSwitch` Component](/builtin/components#vswitch) for more details.
+Δείτε [`VSwitch` Component](/builtin/components#vswitch) για περισσότερες πληροφορίες.
 
-### Custom Total Clicks Count
->>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
+### Προσαρμοσμένη Συνολική Καταμέτρηση Κλικ
 
 Από προεπιλογή, το Slidev μετράει πόσα βήματα απαιτούνται πριν από τη μετάβαση στην επόμενη διαφάνεια. Μπορείτε να παρακάμψετε αυτή τη ρύθμιση θέτοντας την επιλογή `clicks` frontmatter:
 
