@@ -2,7 +2,7 @@
 
 ## Build Single Page Applications (SPA)
 
-Μπορείτε επίσης να μετατρέψετε τις διαφάνειες σε ένα αυτο-φιλοξενούμενο SPA:
+Μπορείτε να μετατρέψετε τις διαφάνειες σε ένα αυτο-φιλοξενούμενο SPA:
 
 ```bash
 $ slidev build
@@ -12,7 +12,7 @@ $ slidev build
 
 Μπορείτε να δοκιμάσετε την παραγόμενη εφαρμογή χρησιμοποιώντας έναν web server (Apache, NGINX, Caddy...κλπ.) ή στο project μπορείτε να εκτελέσετε απευθείας: `npx vite preview`.
 
-Και στη συνέχεια μπορείτε να την φιλοξενήσετε στα [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), ή όπου αλλού θέλετε. Τώρα μπορείτε να μοιραστείτε τις διαφάνειές σας με τον υπόλοιπο κόσμο με έναν μόνο σύνδεσμο.
+Και στη συνέχεια μπορείτε να την φιλοξενήσετε στα [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), ή σε όποιο άλλο διακομιστή θέλετε. Τώρα μπορείτε να μοιραστείτε τις διαφάνειές σας με τον υπόλοιπο κόσμο με έναν μόνο σύνδεσμο.
 
 ### Βασικό Path
 
@@ -24,7 +24,7 @@ $ slidev build --base /ομιλίες/η-cool-ομιλία-μου/
 
 Ανατρέξτε στις [οδηγίες χρήσης του Vite](https://vitejs.dev/guide/build.html#public-base-path) για περισσότερες πληροφορίες.
 
-### Παροχή PDF με δυνατότητα λήψης
+### Παροχή ενός PDF με δυνατότητα λήψης
 
 Μπορείτε να παρέχετε ένα PDF με δυνατότητα λήψης στους θεατές του SPA σας με την ακόλουθη ρύθμιση:
 
@@ -52,8 +52,8 @@ $ slidev build --download
 
 Όταν χρησιμοποιείτε την επιλογή λήψης, μπορείτε επίσης να παρέχετε τις επιλογές εξαγωγής:
 
-* Χρησιμοποιώντας [επιλογές εξαγωγής CLI](/guide/exporting.html)
-* Ή [επιλογές εξαγωγής frontmatter](/custom/#frontmatter-configures)
+- Χρησιμοποιώντας [επιλογές εξαγωγής CLI](/guide/exporting.html)
+- Ή [επιλογές εξαγωγής frontmatter](/custom/#frontmatter-configures)
 
 ### Φάκελος εξόδου
 
@@ -73,10 +73,10 @@ $ slidev build --watch
 
 ### Πολλαπλές καταχωρήσεις
 
-Μπορείτε επίσης να εξάγετε πολλές διαφάνειες ταυτόχρονα.
+Μπορείτε να εξάγετε πολλές διαφάνειες ταυτόχρονα.
 
 ```bash
-$ slidev build slides1.md slides1.md
+$ slidev build slides1.md slides2.md
 ```
 
 Ή
@@ -143,8 +143,9 @@ status = 200
 - [GitHub Pages](https://pages.github.com/)
 
 Για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages:
+
 - ανεβάστε όλα τα αρχεία του έργου στο repo σας (π.χ. με το όνομα `name_of_repo`)
-- δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions. Σε αυτό το αρχείο, αντικαταστήστε το `<name_of_repo>` με το `name_of_repo`. Βεβαιωθείτε ότι αφήσατε τις επικεφαλής και τις τελικές κάθετους στη θέση τους.
+- δημιουργήστε το αρχείο `.github/workflows/deploy.yml` με το ακόλουθο περιεχόμενο για να εγκαταστήσετε τις διαφάνειές σας στο GitHub Pages μέσω των GitHub Actions.
 
 ```yaml
 name: Deploy pages
@@ -179,7 +180,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build -- --base /<name_of_repo>/
+        run: npm run build -- --base /${{github.event.repository.name}}/
 
       - uses: actions/configure-pages@v4
 
@@ -191,5 +192,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+
 - Στο repository σας, μεταβείτε στην επιλογή Settings>Pages. Στην ενότητα "Build and deployment", επιλέξτε "Deploy from a branch", επιλέξτε "Github Actions".
 - Τέλος, αφού εκτελεστούν όλες οι διαδικασίες εργασιών, θα πρέπει να εμφανιστεί ένας σύνδεσμος προς τις διαφάνειες στο Settings>Pages.

@@ -30,8 +30,20 @@ const Guide: DefaultTheme.NavItemWithLink[] = [
     link: '/guide/animations',
   },
   {
-    text: 'Εξαγωγή',
-    link: '/guide/exporting',
+    text: 'Σύρσιμα Στοιχεία',
+    link: '/guide/draggable',
+  },
+  {
+    text: 'Λειτουργία Παρουσιαστή',
+    link: '/guide/presenter-mode',
+  },
+  {
+    text: 'Επισκόπηση Διαφανειών',
+    link: '/guide/overview',
+  },
+  {
+    text: 'Ζωγραφική & Σημειώσεις',
+    link: '/guide/drawing',
   },
   {
     text: 'Στατική Φιλοξενία',
@@ -40,14 +52,6 @@ const Guide: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Καταγραφή Παρουσίασης',
     link: '/guide/recording',
-  },
-  {
-    text: 'Λειτουργία Παρουσιαστή',
-    link: '/guide/presenter-mode',
-  },
-  {
-    text: 'Ζωγραφική & Σημειώσεις',
-    link: '/guide/drawing',
   },
   {
     text: 'Ενσωματώσεις Συντάκτη',
@@ -142,8 +146,20 @@ const Customizations: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildr
     link: '/custom/config-parser',
   },
   {
+    text: 'Ρυθμίστε τις Διαδρομές',
+    link: '/custom/config-routes',
+  },
+  {
     text: 'Ρυθμίστε Συντομεύσεις',
     link: '/custom/config-shortcuts',
+  },
+  {
+    text: 'Ρυθμίστε τους Code Runners',
+    link: '/custom/config-code-runners',
+  },
+  {
+    text: 'Ρυθμίστε το Context Menu',
+    link: '/custom/config-context-menu',
   },
   {
     text: 'Vue Global Context',
@@ -191,6 +207,10 @@ const slidebars: DefaultTheme.SidebarItem[] = [
     text: 'Ενσωματωμένα',
     items: BuiltIn,
   },
+  {
+    text: 'Resources',
+    items: Resources,
+  },
 ]
 
 export default defineConfig({
@@ -230,7 +250,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     editLink: {
-      pattern: 'https://github.com/slidevjs/docs-el/edit/main/:path',
+      pattern: 'https://github.com/slidevjs/slidev/edit/main/docs/:path',
       text: 'Προτείνετε αλλαγές σε αυτή τη σελίδα',
     },
 

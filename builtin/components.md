@@ -1,3 +1,7 @@
+---
+outline: [2, 3]
+---
+
 # Components
 
 ## Ενσωματωμένα Components
@@ -8,24 +12,35 @@
 
 #### Χρήση
 
-~~~md
+```md
 <Arrow x1="10" y1="20" x2="100" y2="200" />
-~~~
+```
 
 Ή:
 
-~~~md
+```md
 <Arrow v-bind="{ x1:10, y1:10, x2:200, y2:200 }" />
-~~~
+```
 
 Παράμετροι:
 
-* `x1` (`string | number`, απαιτείται): θέση x του σημείου εκκίνησης
-* `y1` (`string | number`, απαιτείται): θέση y του σημείου εκκίνησης
-* `x2` (`string | number`, απαιτείται): θέση x του σημείου τέλους
-* `y2` (`string | number`, απαιτείται): θέση y του σημείου τέλους
-* `width` (`string | number`, προεπιλογή: `2`): πλάτος γραμμής
-* `color` (`string`, προεπιλογή: `'currentColor'`): χρώμα γραμμής
+- `x1` (`string | number`, απαιτείται): θέση x του σημείου εκκίνησης
+- `y1` (`string | number`, απαιτείται): θέση y του σημείου εκκίνησης
+- `x2` (`string | number`, απαιτείται): θέση x του σημείου τέλους
+- `y2` (`string | number`, απαιτείται): θέση y του σημείου τέλους
+- `width` (`string | number`, προεπιλογή: `2`): πλάτος γραμμής
+- `color` (`string`, προεπιλογή: `'currentColor'`): χρώμα γραμμής
+- `two-way` (`boolean`, προεπιλογή: `false`): σχεδιάστε ένα αμφίδρομο βέλος
+
+### `VDragArrow`
+
+Ένα στοιχείο `Arrow` που μπορεί να συρθεί.
+
+#### Χρήση
+
+Δείτε https://el.sli.dev/guide/draggable.html#draggable-arrow
+
+Οι παράμετροι που δεν σχετίζονται με τη θέση είναι οι ίδιες με [το στοιχείο `Arrow`](#arrow).
 
 ### `AutoFitText`
 
@@ -35,15 +50,15 @@
 
 #### Χρήση
 
-~~~md
+```md
 <AutoFitText :max="200" :min="100" modelValue="Some text"/>
-~~~
+```
 
 Παράμετροι:
 
-* `max` (`string | number`, προεπιλογή `100`): Μέγιστο μέγεθος γραμματοσειράς
-* `min` (`string | number`, προεπιλογή `30`): Ελάχιστο μέγεθος γραμματοσειράς
-* `modelValue` (`string`, προεπιλογή `''`): το περιεχόμενο κείμενο
+- `max` (`string | number`, προεπιλογή `100`): Μέγιστο μέγεθος γραμματοσειράς
+- `min` (`string | number`, προεπιλογή `30`): Ελάχιστο μέγεθος γραμματοσειράς
+- `modelValue` (`string`, προεπιλογή `''`): το περιεχόμενο κείμενο
 
 ### `LightOrDark`
 
@@ -52,15 +67,17 @@
 #### Χρήση
 
 Χρησιμοποιήστε το με τα δύο ονομαζόμενα Slots `#dark` και `#light`:
-~~~md
+
+```md
 <LightOrDark>
   <template #dark>Η σκοτεινή λειτουργία είναι ενεργοποιημένη</template>
   <template #light>Η φωτεινή λειτουργία είναι ενεργοποιημένη</template>
 </LightOrDark>
-~~~
+```
 
 Τα παρεχόμενα props στο στοιχείο `LightOrDark` θα είναι διαθέσιμα χρησιμοποιώντας scoped slot props:
-~~~md
+
+```md
 <LightOrDark width="100" alt="some image">
   <template #dark="props">
     <img src="/dark.png" v-bind="props"/>
@@ -69,10 +86,11 @@
     <img src="/light.png" v-bind="props"/>
   </template>
 </LightOrDark>
-~~~
+```
 
 Μπορείτε να παρέχετε markdown στα slots, αλλά θα πρέπει να περιβάλλετε το περιεχόμενο με κενές γραμμές:
-~~~md
+
+```md
 <LightOrDark>
   <template #dark>
 
@@ -85,7 +103,7 @@
 
   </template>
 </LightOrDark>
-~~~
+```
 
 ### `Link`
 
@@ -93,25 +111,30 @@
 
 #### Χρήση
 
-~~~md
+```md
 <Link to="42">Πηγαίνετε στη διαφάνεια 42</Link>
 <Link to="42" title="Πηγαίνετε στη διαφάνεια 42"/>
 <Link to="solutions" title="Μεταβείτε στις λύσεις"/>
-~~~
+```
 
 Παράμετροι:
 
-* `to` (`string | number`): Το path της διαφάνειας στην οποία θέλετε να πλοηγηθείτε (οι διαφάνειες ξεκινούν από το `1`)
-* `title` (`string`): Ο τίτλος που θα εμφανιστεί
+- `to` (`string | number`): Το path της διαφάνειας στην οποία θέλετε να πλοηγηθείτε (οι διαφάνειες ξεκινούν από το `1`)
+- `title` (`string`): Ο τίτλος που θα εμφανιστεί
 
 Μπορείτε να χρησιμοποιήσετε μια συμβολοσειρά ως `to`, εφόσον υπάρχει η αντίστοιχη διαδρομή, π.χ.
 
-~~~md
+```md
 ---
 routeAlias: solutions
 ---
+
 # Και τώρα μερικές λύσεις!
-~~~
+```
+
+### `PoweredBySlidev`
+
+Παρουσιάζει το "Powered by Slidev" με έναν σύνδεσμο προς τον ιστότοπο του Slidev.
 
 ### `RenderWhen`
 
@@ -119,15 +142,15 @@ routeAlias: solutions
 
 #### Χρήση
 
-~~~md
+```md
 <RenderWhen context="presenter">Αυτό θα γίνει render μόνο στο presenter view.</RenderWhen>
-~~~
+```
 
 Τύπος context: `'main' | 'slide' | 'overview' | 'presenter' | 'previewNext'`
 
 Παράμετροι:
 
-* `context` (`Context | Context[]`): context ή array των contexts που θέλετε να γίνει render το slot
+- `context` (`Context | Context[]`): context ή array των contexts που θέλετε να γίνει render το slot
 
 ### `SlideCurrentNo`
 
@@ -135,9 +158,9 @@ routeAlias: solutions
 
 #### Χρήση
 
-~~~md
+```md
 <SlideCurrentNo />
-~~~
+```
 
 ### `SlidesTotal`
 
@@ -145,9 +168,9 @@ routeAlias: solutions
 
 #### Χρήση
 
-~~~md
+```md
 <SlidesTotal />
-~~~
+```
 
 ### `Titles`
 
@@ -156,6 +179,7 @@ routeAlias: solutions
 Οι τίτλοι και τα επίπεδα τίτλων ανακτώνται αυτόματα από το πρώτο στοιχείο τίτλου κάθε διαφάνειας.
 
 Μπορείτε να παρακάμψετε αυτή την αυτόματη συμπεριφορά για μια διαφάνεια χρησιμοποιώντας τη σύνταξη front matter:
+
 ```yml
 ---
 title: Καταπληκτικός τίτλος διαφάνειας
@@ -166,24 +190,27 @@ level: 2
 #### Χρήση
 
 Το στοιχείο `<Titles>` είναι ένα εικονικό στοιχείο που μπορείτε να εισαγάγετε με:
+
 ```js
 import Titles from '/@slidev/titles.md'
 ```
 
 Στη συνέχεια, μπορείτε να το χρησιμοποιήσετε με:
-~~~md
+
+```md
 <Titles no="42" />
-~~~
+```
 
 Παράμετροι:
 
-* `no` (`string | number`): Ο αριθμός της διαφάνειας από την οποία θα εμφανιστεί ο τίτλος (οι διαφάνειες ξεκινούν από το `1`)
+- `no` (`string | number`): Ο αριθμός της διαφάνειας από την οποία θα εμφανιστεί ο τίτλος (οι διαφάνειες ξεκινούν από το `1`)
 
 ### `Toc`
 
 Εισαγωγή πίνακα περιεχομένων (TOC).
 
 Αν θέλετε μια διαφάνεια να μην εμφανίζεται στο στοιχείο `<Toc>`, μπορείτε να χρησιμοποιήσετε στο μπλοκ front matter της διαφάνειας:
+
 ```yml
 ---
 hideInToc: true
@@ -194,20 +221,20 @@ hideInToc: true
 
 #### Χρήση
 
-~~~md
+```md
 <Toc />
-~~~
+```
 
 Παράμετροι:
 
-* `columns` (`string | number`, προεπιλογή: `1`): Ο αριθμός των στηλών της απεικόνισης
-* `listClass` (`string | string[]`, προεπιλογή: `''`): Κλάσεις που εφαρμόζονται στον πίνακα περιεχομένων
-* `maxDepth` (`string | number`, προεπιλογή: `Infinity`): Το μέγιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
-* `minDepth` (`string | number`, προεπιλογή: `1`): Το ελάχιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, προεπιλογή: `'all'`):
-  * `'all'`: Εμφάνιση όλων των στοιχείων
-  * `'onlyCurrentTree'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο (ενεργό στοιχείο, γονείς και παιδιά του ενεργού στοιχείου)
-  * `'onlySiblings'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο και των άμεσων αδελφών τους
+- `columns` (`string | number`, προεπιλογή: `1`): Ο αριθμός των στηλών της απεικόνισης
+- `listClass` (`string | string[]`, προεπιλογή: `''`): Κλάσεις που εφαρμόζονται στον πίνακα περιεχομένων
+- `maxDepth` (`string | number`, προεπιλογή: `Infinity`): Το μέγιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
+- `minDepth` (`string | number`, προεπιλογή: `1`): Το ελάχιστο επίπεδο βάθους του τίτλου που θα εμφανιστεί
+- `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, προεπιλογή: `'all'`):
+  - `'all'`: Εμφάνιση όλων των στοιχείων
+  - `'onlyCurrentTree'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο (ενεργό στοιχείο, γονείς και παιδιά του ενεργού στοιχείου)
+  - `'onlySiblings'`: Εμφάνιση μόνο των στοιχείων που βρίσκονται στο τρέχον δέντρο και των άμεσων αδελφών τους
 
 ### `Transform`
 
@@ -215,16 +242,16 @@ hideInToc: true
 
 #### Χρήση
 
-~~~md
+```md
 <Transform :scale="0.5">
   <YourElements />
 </Transform>
-~~~
+```
 
 Παράμετροι:
 
-* `scale` (`number | string`, προεπιλογή `1`): τιμή κλίμακας μετασχηματισμού
-* `origin` (`string`, προεπιλογή `'top left'`): τιμή προέλευσης μετασχηματισμού
+- `scale` (`number | string`, προεπιλογή `1`): τιμή κλίμακας μετασχηματισμού
+- `origin` (`string`, προεπιλογή `'top left'`): τιμή προέλευσης μετασχηματισμού
 
 ### `Tweet`
 
@@ -232,20 +259,76 @@ hideInToc: true
 
 #### Χρήση
 
-~~~md
+```md
 <Tweet id="20" />
-~~~
+```
 
 Παράμετροι:
 
-* `id` (`number | string`, απαιτείται): id του tweet
-* `scale` (`number | string`, προεπιλογή `1`): τιμή κλίμακας μετασχηματισμού
-* `conversation` (`string`, προεπιλογή `'none'`): [παράμετρος ενσωμάτωσης tweet](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
-* `cards` (`'hidden' | 'visible'`, προεπιλογή `'visible'`): [παράμετρος ενσωμάτωσης tweet](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
+- `id` (`number | string`, απαιτείται): id του tweet
+- `scale` (`number | string`, προεπιλογή `1`): τιμή κλίμακας μετασχηματισμού
+- `conversation` (`string`, προεπιλογή `'none'`): [παράμετρος ενσωμάτωσης tweet](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
+- `cards` (`'hidden' | 'visible'`, προεπιλογή `'visible'`): [παράμετρος ενσωμάτωσης tweet](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
 
-### `VAfter`, `VClick` and `VClicks`
+### `VAfter`, `VClick` και `VClicks`
 
 Δείτε https://el.sli.dev/guide/animations.html
+
+### `VSwitch`
+
+Εναλλαγή μεταξύ πολλαπλών slots με βάση τα click.
+
+Δείτε https://el.sli.dev/guide/animations.html#εισοδος-εξοδος
+
+- Αν το prop `unmount` έχει οριστεί σε `true`, το προηγούμενο slot θα αποσυνδεθεί κατά την εναλλαγή στο επόμενο slot. Η προεπιλογή είναι `false`.
+- Χρησιμοποιήστε τα props `tag` και `childTag` για να αλλάξετε την προεπιλεγμένη ετικέτα του στοιχείου και των παιδιών του. Η προεπιλογή είναι `div`.
+- Χρησιμοποιήστε το prop `transition` για να αλλάξετε το εφέ μετάβασης. Η προεπιλογή είναι `false` (απενεργοποιημένο).
+
+### `VDrag`
+
+Δείτε https://sli.dev/guide/draggable.html
+
+### `SlidevVideo`
+
+Ενσωματώστε ένα βίντεο.
+
+#### Χρήση
+
+```md
+<SlidevVideo v-click autoplay controls>
+  <!-- Οτιδήποτε μπορεί να μπει σε ένα στοιχείο βίντεο HTML. -->
+  <source src="/ηΤαινιαΜου.mp4" type="video/mp4" />
+  <source src="/ηΤαινιαΜου.webm" type="video/webm" />
+  <p>
+    Το πρόγραμμα περιήγησής σας δεν υποστηρίζει βίντεο. Μπορείτε να το κατεβάσετε
+    <a href="/ηΤαινιαΜου.mp4">εδώ</a>.
+  </p>
+</SlidevVideo>
+```
+
+Δείτε το [έγγραφο του στοιχείου βίντεο HTML](https://developer.mozilla.org/docs/Web/HTML/Element/Video) για να δείτε τι μπορεί να συμπεριληφθεί στο slot αυτού του στοιχείου.
+
+Παράμετροι:
+
+- `controls` (`boolean`, προεπιλογή: `false`): εμφάνιση των στοιχείων χειρισμού του βίντεο
+- `autoplay` (`boolean | 'once'`, προεπιλογή: `false`):
+  - `true` ή `'once'`: ξεκινάει το βίντεο μόνο μία φορά και δεν το επανεκκινεί μετά το τέλος ή την παύση.
+  - `false`: να μην ξεκινάει ποτέ αυτόματα το βίντεο (αντ' αυτού βασιστείτε στα `controls`)
+- `autoreset` (`'slide' | 'click'`, προεπιλογή: `undefined`):
+  - `'slide'`: επιστροφή στην αρχή του βίντεο κατά την επιστροφή στη διαφάνεια
+  - `'click'`: επιστροφή στην αρχή του βίντεο κατά την επιστροφή στη σειρά click του στοιχείου
+- `poster` (`string | undefined`, προεπιλογή: `undefined`):
+  - Η πηγή της εικόνας που θα εμφανίζεται όταν το βίντεο δεν αναπαράγεται.
+- `printPoster` (`string | undefined`, προεπιλογή: `undefined`):
+  - Η παράκαμψη για το `poster` κατά την εκτύπωση.
+- `timestamp` (`string | number`, προεπιλογή: `0`):
+  - Ο χρόνος έναρξης του βίντεο σε δευτερόλεπτα.
+- `printTimestamp` (`string | number | 'last' | undefined`, προεπιλογή: `undefined`):
+  - Η παράκαμψη για το `timestamp` κατά την εκτύπωση.
+
+::: warning
+Κατά την εξαγωγή, το βίντεο ενδέχεται να μην φορτωθεί επειδή το Chromium δεν υποστηρίζει ορισμένες μορφές βίντεο. Σε αυτή την περίπτωση, μπορείτε να καθορίσετε τη διαδρομή εκτέλεσης του προγράμματος περιήγησης. Ανατρέξτε στην ενότητα [Chromium executable path](/guide/exporting.html#executable-path) για περισσότερες πληροφορίες.
+:::
 
 ### `Youtube`
 
@@ -253,15 +336,15 @@ hideInToc: true
 
 #### Χρήση
 
-~~~md
+```md
 <Youtube id="luoMHjh-XcQ" />
-~~~
+```
 
 Παράμετροι:
 
-* `id` (`string`, απαιτείται): id του βίντεο στο youtube
-* `width` (`number`): πλάτος του βίντεο
-* `height` (`number`): ύψος του βίντεο
+- `id` (`string`, απαιτείται): id του βίντεο στο youtube
+- `width` (`number`): πλάτος του βίντεο
+- `height` (`number`): ύψος του βίντεο
 
 Μπορείτε επίσης να κάνετε το βίντεο να ξεκινάει σε συγκεκριμένη ώρα αν προσθέσετε `?start=1234` στην τιμή id (όπου 1234 είναι τα δευτερόλεπτα).
 

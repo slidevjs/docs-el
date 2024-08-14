@@ -16,8 +16,8 @@ $ npm init slidev-theme
 - Παροχή προεπιλεγμένων ρυθμίσεων (γραμματοσειρές, χρωματικό σχήμα, επισημαντήρες, κτλ.)
 - Παροχή προσαρμοσμένων layouts ή παράκαμψη των υπαρχόντων
 - Παροχή προσαρμοσμένων components ή παράκαμψη των υπαρχόντων
-- Επέκταση ρυθμίσεων του UnoCSS/Windi CSS
-- Ρύθμιση εργαλείων όπως Monaco και Prism
+- Επέκταση ρυθμίσεων του UnoCSS
+- Ρύθμιση εργαλείων όπως Shiki και Monaco
 
 ## Συμβάσεις
 
@@ -118,20 +118,7 @@ html.dark {
 
 ### Επισημαντήρας
 
-Τα χρώματα επισήμανσης σύνταξης παρέχονται επίσης στο θέμα. Υποστηρίζουμε και [Prism](https://prismjs.com/) και [Shiki](https://github.com/shikijs/shiki). Για περισσότερες πληροφορίες ανατρέξτε [στις οδηγίες επισήμανσης σύνταξης](/custom/highlighters).
-
-Μπορείτε να υποστηρίξετε ένα από τα δύο ή και τα δύο. Ανατρέξτε στο προεπιλεγμένο θέμα για παραδείγματα ρυθμίσεων [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
-
-Επίσης, θυμηθείτε να καθορίσετε τους υποστηριζόμενους επισημαντήρες στο `package.json` σας
-
-```json
-// package.json
-{
-  "slidev": {
-    "highlighter": "shiki" // ή "prism" ή "both"
-  }
-}
-```
+Τα χρώματα επισήμανσης σύνταξης παρέχονται επίσης στο θέμα. Για παράδειγμα [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts). Ανατρέξτε στις [οδηγίες επισημαντήρων](/custom/highlighters) για περισσότερες πληροφορίες.
 
 ### Έκδοση Slidev
 

@@ -70,7 +70,7 @@ pnpm create slidev
 }
 ```
 
-Διαφορετικά, μπορείτε να το χρησιμοποιήσετε με [`npx`](https://www.npmjs.com/package/npx)
+Διαφορετικά, μπορείτε να το χρησιμοποιήσετε με [`npx`](https://github.com/npm/cli/blob/latest/bin/npx)
 
 ```bash
 $ npx slidev
@@ -82,7 +82,7 @@ $ npx slidev
 
 Το Slidev διαβάζει το αρχείο `slides.md` στη ρίζα του έργου σας και τα μετατρέπει σε διαφάνειες. Κάθε φορά που κάνετε αλλαγές σε αυτό, το περιεχόμενο των διαφανειών θα ενημερώνεται αμέσως. Για παράδειγμα:
 
-~~~md
+````md
 # Slidev
 
 Γεια σου κόσμε
@@ -100,7 +100,7 @@ console.log('Γεια σου, κόσμε!')
 ---
 
 # Σελίδα 3
-~~~
+````
 
 Διαβάστε περισσότερα για τη σύνταξη Markdown του Slidev στο [οδηγός σύνταξης](/guide/syntax).
 
@@ -111,11 +111,10 @@ console.log('Γεια σου, κόσμε!')
 - [Vite](https://vitejs.dev) - Ένα εξαιρετικά γρήγορο frontend tooling
 - [Vue 3](https://v3.vuejs.org/) με [Markdown](https://daringfireball.net/projects/markdown/syntax) - Συγκεντρωθείτε στο υλικό έχοντας παράλληλα τη δύναμη του HTML και των Vue components όποτε χρειάζεται.
 - [UnoCSS](https://github.com/unocss/unocss) - On-demand utility-first CSS framework, σχεδιάστε τις διαφάνειές σας με άνεση
-- [Shiki](https://github.com/shikijs/shiki), [Prism](https://github.com/PrismJS/prism), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Πρώτης κατηγορίας υποστήριξη αποσπασμάτων κώδικα με δυνατότητα live coding
+- [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Πρώτης κατηγορίας υποστήριξη αποσπασμάτων κώδικα με δυνατότητα live coding
 - [RecordRTC](https://recordrtc.org) - Ενσωματωμένη καταγραφή παρουσίασης και προβολή κάμερας
-- [VueUse](https://vueuse.org) οικογένεια -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), κτλ.
+- [VueUse](https://vueuse.org) οικογένεια - [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), κτλ.
 - [Iconify](https://iconify.design/) - Συλλογή εικονιδίων.
 - [Drauu](https://github.com/antfu/drauu) - Υποστήριξη ζωγραφικής και σημειώσεων
 - [KaTeX](https://katex.org/) - Μαθηματική απεικόνιση LaTeX.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Κειμενικά Διαγράμματα.
-

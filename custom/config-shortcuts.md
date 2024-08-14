@@ -2,7 +2,7 @@
 
 > Διαθέσιμο από v0.20
 
-> Since v0.35.6 (excluded), you decide which base shortcuts to keep (see `...base,` below).
+> Από την έκδοση v0.35.6 (εξαιρείται), εσείς αποφασίζετε ποιες βασικές συντομεύσεις θα κρατήσετε (δείτε `...base,` παρακάτω).
 
 <Environment type="client" />
 
@@ -16,7 +16,7 @@ import { defineShortcutsSetup } from '@slidev/types'
 
 export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]) => {
   return [
-    ...base, // keep the existing shortcuts
+    ...base, // διατηρήσετε τις υπάρχουσες συντομεύσεις
     {
       key: 'enter',
       fn: () => nav.next(),

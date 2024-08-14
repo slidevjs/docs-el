@@ -1,5 +1,12 @@
 # [sli.dev](https://sli.dev)
 
+<!-- > [!IMPORTANT]
+> Αυτό το repository είναι αντίγραφο του φακέλου `docs/` στο [slidevjs/slidev](https://github.com/slidevjs/slidev/tree/main/docs). Κυρίως για τον συγχρονισμό άλλων repositories μεταφράσεων.
+>
+> **‼️ Παρακαλούμε ΜΗΝ υποβάλλετε εδώ pull requests ‼️**. Αντ' αυτού, στείλτε τα στο [κύριο αποθετήριο](https://github.com/slidevjs/slidev), και θα συγχρονιστούν εδώ αυτόματα.
+
+Αντίγραφο του ιστότοπου οδηγιών για το [Slidev](https://github.com/slidevjs/slidev) -->
+
 > [!WARNING]
 >
 > This translation is out-dated and not maintained. Please refer to the [English documentation](https://sli.dev) instead.
@@ -12,7 +19,7 @@
 >
 > Translations with strikethroughs are no longer maintained. The content is outdated and not encouraged to refer.
 
-|                           | Repo                                           |                             Site | Maintainers                                                           |
+|                           | Repo                                           |                             Ιστοσελίδα | Συντηρητές                                                           |
 | ------------------------- | ---------------------------------------------- | -------------------------------: | --------------------------------------------------------------------- |
 | English                   | [docs](https://github.com/slidevjs/docs)       |       [sli.dev](https://sli.dev) | [@antfu](https://github.com/antfu)                                    |
 | 简体中文                  | [docs-cn](https://github.com/slidevjs/docs-cn) | [cn.sli.dev](https://cn.sli.dev) | [@QC-L](https://github.com/QC-L) [@Ivocin](https://github.com/Ivocin) |

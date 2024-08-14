@@ -110,3 +110,42 @@ themeConfig:
 > Διαθέσιμο από v0.43.0
 
 Μια συντομογραφία του `$slidev.nav`.
+
+## Χρήση Composable
+
+> Διαθέσιμο από v0.48.0
+
+### Context
+
+Αν θέλετε να λάβετε το context προγραμματιστικά (επίσης με type-safety), μπορείτε να κάνετε import composables από το `@slidev/client`:
+
+```vue
+<script setup>
+import { onSlideEnter, onSlideLeave, useDarkMode, useIsSlideActive, useNav, useSlideContext } from '@slidev/client'
+
+const { $slidev } = useSlideContext()
+const { currentPage, currentLayout, currentSlideRoute } = useNav()
+const { isDark } = useDarkMode()
+const isActive = useIsSlideActive()
+onSlideEnter(() => { /* ... */ })
+onSlideLeave(() => { /* ... */ })
+// ...
+</script>
+```
+
+> [!NOTE]
+> Προηγουμένως, μπορεί να είδατε τη χρήση της εισαγωγής εμφωλευμένων modules όπως `import { isDark } from '@slidev/client/logic/dark.ts'`, αυτό είναι **ΔΕΝ ΣΥΝΙΣΤΑΤΑΤΑΙ** καθώς είναι εσωτερικές λεπτομέρειες υλοποίησης και μπορεί να χαλάσουν στο μέλλον. Προσπαθήστε πάντα να χρησιμοποιείτε το δημόσιο API από το `@slidev/client` όποτε είναι δυνατόν.
+
+### Τύποι
+
+Αν θέλετε να λάβετε έναν τύπο προγραμματιστικά, μπορείτε να εισαγάγετε τύπους όπως το `TocItem` από το `@slidev/types`:
+
+```vue
+<script setup>
+import type { TocItem } from '@slidev/types'
+
+function tocFunc(tree: TocItem[]): TocItem[] {
+  // ...
+}
+</script>
+```
